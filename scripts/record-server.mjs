@@ -84,7 +84,7 @@ process.on('SIGTERM', () => process.exit(0))
 http
   .createServer((req, res) => {
     const url = new URL(req.url, `http://localhost:${PORT}`)
-    const fmt = url.searchParams.get('fmt') === 'shorts' ? 'shorts' : 'x'
+    const fmt = ['shorts', 'og'].includes(url.searchParams.get('fmt')) ? url.searchParams.get('fmt') : 'x'
 
     // 보안: 저장 요청(POST)은 이 서버가 띄운 녹화 페이지에서 온 것만 받습니다.
     // (녹화 중 브라우저로 연 다른 웹사이트가 localhost 로 요청을 보내는 것을 차단)
