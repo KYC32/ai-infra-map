@@ -122,10 +122,17 @@ export function PinsInstanced({ sites }) {
     onPointerMove: (e) => {
       e.stopPropagation()
       const s = placed[e.instanceId]?.site
-      if (s && useAppStore.getState().hoverId !== s.id) setHover(s.id)
+      // 같은 id 여도 매번 호출: 막대→캡처럼 같은 핀의 다른 메시로 옮길 때
+      // 앞 메시의 떠남이 예약한 해제를 setHover 가 취소해 줌 (같은 값이면 상태는 안 바뀜)
+      if (s) setHover(s.id, '3d')
       document.body.style.cursor = 'pointer'
     },
-    onPointerOut: () => { setHover(null); document.body.style.cursor = '' },
+    onPointerOut: (e) => {
+      // 떠난 그 핀의 호버만 (조금 뒤에) 해제 — 다른 핀·라벨로 옮겨 간 호버는 건드리지 않음
+      const s = placed[e.instanceId]?.site
+      if (s) useAppStore.getState().clearHover(s.id, '3d')
+      document.body.style.cursor = ''
+    },
     onClick: (e) => {
       e.stopPropagation()
       const s = placed[e.instanceId]?.site
@@ -194,24 +201,28 @@ function PinLabel({ site, pos, members, expanded }) {
     ref.current.style.pointerEvents = show ? 'auto' : 'none'
   })
 
-  const list = [site, ...members]
+  // 핀 라벨 한 줄 (lead = 대표 줄이면 "+N" 표시)
+  const pinRow = (m, lead) => (
+    <button
+      key={m.id}
+      className={`pin-label${hoverId === m.id ? ' is-hover' : ''}`}
+      onPointerEnter={() => setHover(m.id)}
+      onPointerLeave={() => useAppStore.getState().clearHover(m.id)}
+      onClick={() => requestSite(m.id)}
+    >
+      <span className="dot" style={{ background: pinColor(m, colorMode, companyColor) }} />
+      <span className="name">{pickName(m, lang)}</span>
+      <span className="mw">{fmtMw(m.grid_mw)}</span>
+      {lead && members.length > 0 && <span className="more">+{members.length}</span>}
+    </button>
+  )
   return (
     <Html position={position} center zIndexRange={[20, 0]}>
+      {/* 대표 줄 + (있으면) 구성원 목록. 목록은 대표 줄 아래에 띄워서(CSS .members)
+          펼쳐져도 대표 줄 위치가 그대로 → 마우스가 벗어났다 들어오기를 반복하는 깜빡임 방지 */}
       <div ref={ref} className="pin-cluster" data-expanded={expanded ? '1' : '0'}>
-        {list.map((m, i) => (
-          <button
-            key={m.id}
-            className={`pin-label${hoverId === m.id ? ' is-hover' : ''}${i > 0 ? ' member' : ''}`}
-            onPointerEnter={() => setHover(m.id)}
-            onPointerLeave={() => setHover(null)}
-            onClick={() => requestSite(m.id)}
-          >
-            <span className="dot" style={{ background: pinColor(m, colorMode, companyColor) }} />
-            <span className="name">{pickName(m, lang)}</span>
-            <span className="mw">{fmtMw(m.grid_mw)}</span>
-            {i === 0 && members.length > 0 && <span className="more">+{members.length}</span>}
-          </button>
-        ))}
+        {pinRow(site, true)}
+        {members.length > 0 && <div className="members">{members.map((m) => pinRow(m, false))}</div>}
       </div>
     </Html>
   )
