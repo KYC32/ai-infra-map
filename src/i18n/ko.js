@@ -57,6 +57,7 @@ export default {
   groups: { miner: '채굴→AI', neocloud: '네오클라우드', hyperscaler: '하이퍼스케일러', korea: '한국' },
   colorMode: { status: '상태색', company: '회사색' },
   regions: { na: '북미', eu: '유럽', asia: '아시아' },
+  timeline: { play: '재생', pause: '정지', asOf: '기준일', future: '회사 발표 목표 기준', today: '기준일로', label: '날짜' },
   kpi2: { secured: '확보 전력', energized: '통전', ai: 'AI 가동', mining: '채굴', building: '건설·시운전', sites: '사이트', companies: '회사' },
   empty: '발표된 건물 없음 — 계통 전력만 확보',
 }

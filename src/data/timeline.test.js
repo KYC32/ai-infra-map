@@ -72,6 +72,12 @@ describe('실제 데이터 (IREN)', () => {
     expect(t.gpus).toBe(23000)
   })
 
+  it('채굴동은 폐쇄 전(가동 단계)에도 AI 가동이 아닌 채굴로 집계', () => {
+    const t = totalsAt(infra, M('2026-09'))
+    expect(t.ai).toBe(155)
+    expect(t.mining).toBe(380)
+  })
+
   it('기준일 사이트 상태가 원본 설명과 일치', () => {
     const st = Object.fromEntries(infra.sites.map((s) => [s.id, siteStatusAt(s, asOf)]))
     expect(st.childress).toBe('operating')

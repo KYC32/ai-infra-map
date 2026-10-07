@@ -1,0 +1,752 @@
+{
+  "company": {
+    "id": "galaxy",
+    "name": "Galaxy Digital",
+    "name_ko": "갤럭시 디지털",
+    "group": "miner",
+    "ticker": { "symbol": "GLXY", "exchange": "NASDAQ" },
+    "color": "#c3a6e8",
+    "hq_country": "US",
+    "summary_ko": "뉴욕 본사의 디지털자산·데이터센터 기업. 텍사스 Helios 비트코인 채굴장을 AI/HPC 데이터센터로 전환해 CoreWeave에 526MW(IT)를 15년 임대했으며, 텍사스 전역에서 5.7GW 규모의 전력 파이프라인을 추진 중이다.",
+    "summary_en": "New York-based digital asset and data center company. Converted its Helios bitcoin mine in Texas into an AI/HPC campus leasing 526MW of critical IT to CoreWeave for 15 years, with a 5.7GW Texas power pipeline.",
+    "metrics": [
+      {
+        "key": "contracted_critical_it_mw",
+        "value": 526,
+        "unit": "MW",
+        "label_ko": "계약 IT 부하(CoreWeave)",
+        "label_en": "Contracted critical IT (CoreWeave)",
+        "as_of": "2026-08",
+        "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm"
+      },
+      {
+        "key": "delivered_critical_it_mw",
+        "value": 133,
+        "unit": "MW",
+        "label_ko": "인도 완료 IT 부하",
+        "label_en": "Delivered critical IT",
+        "as_of": "2026-06",
+        "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm"
+      },
+      {
+        "key": "approved_power_gw",
+        "value": 1.63,
+        "unit": "GW",
+        "label_ko": "Helios 승인 전력",
+        "label_en": "Helios approved power",
+        "as_of": "2026-01",
+        "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000005/heliosercotapproval_1x15.htm"
+      },
+      {
+        "key": "power_pipeline_gw",
+        "value": 5.7,
+        "unit": "GW",
+        "label_ko": "텍사스 전력 파이프라인(잠재)",
+        "label_en": "Texas power pipeline (potential)",
+        "as_of": "2026-08",
+        "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/exhibit992-q22026overvie.htm"
+      },
+      {
+        "key": "lease_revenue_annual_usd_bn",
+        "value": 1,
+        "unit": "USD bn",
+        "label_ko": "CoreWeave 임대 예상 연매출(평균)",
+        "label_en": "Expected avg. annual CoreWeave lease revenue",
+        "as_of": "2026-07",
+        "source": "https://www.prnewswire.com/news-releases/galaxy-completes-phase-i-of-its-helios-data-center-campus-delivering-133-megawatts-of-critical-it-load-to-coreweave-302818664.html"
+      }
+    ],
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm",
+      "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/exhibit992-q22026overvie.htm",
+      "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm",
+      "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000005/heliosercotapproval_1x15.htm"
+    ]
+  },
+  "file": {
+    "company_id": "galaxy",
+    "as_of": "2026-10-07",
+    "sites": [
+      {
+        "id": "helios",
+        "name": "Helios",
+        "name_ko": "헬리오스",
+        "country": "US",
+        "admin1": "US-TX",
+        "region": "Texas (Dickens County)",
+        "coord": {
+          "lat": 33.617,
+          "lng": -100.779,
+          "confidence": "low",
+          "method": "county_centroid",
+          "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm"
+        },
+        "primary": "galaxy",
+        "parties": [
+          {
+            "company": "galaxy",
+            "role": "owner",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm"
+          },
+          {
+            "company": "galaxy",
+            "role": "developer",
+            "source": "https://investingnews.com/galaxy-provides-update-on-ercot-batch-zero-large-load-classifications"
+          },
+          {
+            "company": "coreweave",
+            "role": "tenant",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm"
+          }
+        ],
+        "detail": "full",
+        "announced": "2025-03",
+        "acres": 1500,
+        "grid_operator": "ERCOT",
+        "cooling": "undisclosed",
+        "summary_ko": "2022년 Argo에서 인수한 비트코인 채굴장을 AI/HPC 캠퍼스로 전환. ERCOT 승인 1.63GW 중 800MW(gross, IT 526MW)를 CoreWeave에 15년 임대. 1단계 133MW(IT)는 2026년 6월까지 인도 완료, 2단계 260MW(IT)는 2027년 2분기부터, 3단계 133MW(IT)는 2028년 인도 목표. 미계약 830MW는 2028년 통전 예정.",
+        "summary_en": "Former bitcoin mine (acquired from Argo in 2022) converted to an AI/HPC campus. Of 1.63GW ERCOT-approved power, 800MW gross (526MW IT) is leased to CoreWeave for 15 years. Phase I (133MW IT) fully delivered by June 2026; Phase II (260MW IT) deliveries from Q2 2027; Phase III (133MW IT) targeted for 2028. Uncontracted 830MW slated to receive power in 2028.",
+        "power": [
+          {
+            "from": "2025-05",
+            "secured_mw": 800,
+            "energized_mw": 0,
+            "basis": "reported",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000162828025027997/glxy-20250527.htm"
+          },
+          {
+            "from": "2026-01-15",
+            "secured_mw": 1630,
+            "energized_mw": 0,
+            "basis": "reported",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000005/heliosercotapproval_1x15.htm"
+          },
+          {
+            "from": "2026-06",
+            "secured_mw": 1630,
+            "energized_mw": 200,
+            "basis": "reported",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm"
+          },
+          {
+            "from": "2027",
+            "secured_mw": 1630,
+            "energized_mw": 600,
+            "basis": "target",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000091/glxy-20260630.htm"
+          },
+          {
+            "from": "2028",
+            "secured_mw": 1630,
+            "energized_mw": 800,
+            "basis": "target",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000009/glxy-20251231xpressrelease_.htm"
+          }
+        ],
+        "substation": { "voltage": "345kV" },
+        "buildings": [
+          {
+            "id": "phase-1",
+            "name": "Phase I (CoreWeave)",
+            "name_ko": "1단계 (CoreWeave)",
+            "it_mw": 133,
+            "gross_mw": 200,
+            "mw_basis": "it",
+            "customer": "CoreWeave",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm",
+              "https://www.prnewswire.com/news-releases/galaxy-completes-phase-i-of-its-helios-data-center-campus-delivering-133-megawatts-of-critical-it-load-to-coreweave-302818664.html"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-03",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000007/glxy-20250331xpressrelease.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2025-Q2",
+                "basis": "estimate",
+                "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000032/glxy-20250630xpressrelease.htm"
+              },
+              {
+                "status": "commissioning",
+                "from": "2026-02",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000009/glxy-20251231xpressrelease_.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2026-06",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm"
+              }
+            ]
+          },
+          {
+            "id": "phase-2",
+            "name": "Phase II (CoreWeave, 2 buildings / 8 data halls)",
+            "name_ko": "2단계 (CoreWeave, 건물 2동·데이터홀 8개)",
+            "it_mw": 260,
+            "gross_mw": 400,
+            "mw_basis": "it",
+            "progress": 0.3,
+            "customer": "CoreWeave",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm",
+              "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000079/glxy-20260728.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-04",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1859392/000162828025027997/glxy-20250527.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-04",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm"
+              },
+              {
+                "status": "commissioning",
+                "from": "2027-Q2",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2027",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000073/glxy-20250930xpressrelease.htm"
+              }
+            ]
+          },
+          {
+            "id": "phase-3",
+            "name": "Phase III (CoreWeave)",
+            "name_ko": "3단계 (CoreWeave)",
+            "it_mw": 133,
+            "gross_mw": 200,
+            "mw_basis": "it",
+            "customer": "CoreWeave",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000032/glxy-20250630xpressrelease.htm",
+              "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-Q3",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000032/glxy-20250630xpressrelease.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2028",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000009/glxy-20251231xpressrelease_.htm"
+              }
+            ]
+          },
+          {
+            "id": "helios-ii-830",
+            "name": "Helios II block (830MW, uncontracted)",
+            "name_ko": "Helios II 블록 (830MW, 미계약)",
+            "gross_mw": 830,
+            "mw_basis": "grid",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000005/heliosercotapproval_1x15.htm",
+              "https://investingnews.com/galaxy-provides-update-on-ercot-batch-zero-large-load-classifications"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2026-01-15",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000005/heliosercotapproval_1x15.htm"
+              }
+            ]
+          }
+        ],
+        "deliveries": [],
+        "timeline": [
+          {
+            "date": "2022-12",
+            "event": "Argo Blockchain으로부터 Helios 비트코인 채굴장 인수",
+            "event_en": "Acquired the Helios bitcoin mining facility from Argo Blockchain",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm"
+          },
+          {
+            "date": "2025-03-28",
+            "event": "CoreWeave와 15년 임대 계약 (1단계 133MW IT / 200MW gross)",
+            "event_en": "15-year lease with CoreWeave (Phase I, 133MW IT / 200MW gross)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000007/glxy-20250331xpressrelease.htm"
+          },
+          {
+            "date": "2025-03",
+            "event": "Helios 자가 채굴 1분기 말 중단 (데이터센터 전환 준비)",
+            "event_en": "Proprietary mining at Helios ceased at end of Q1 2025 ahead of conversion",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm"
+          },
+          {
+            "date": "2025-04",
+            "event": "CoreWeave 2단계 옵션 행사 (260MW IT 추가, 합계 393MW)",
+            "event_en": "CoreWeave exercises Phase II option (+260MW IT, 393MW total)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000162828025027997/glxy-20250527.htm"
+          },
+          {
+            "date": "2025-Q3",
+            "event": "CoreWeave 3단계 최종 옵션 행사 (133MW IT) → 승인 전력 800MW 전량 약정. 인접 160에이커·1GW 부하 신청 인수 계약",
+            "event_en": "CoreWeave exercises final Phase III option (133MW IT), committing all 800MW approved; adjacent 160 acres + 1GW load request agreed",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000032/glxy-20250630xpressrelease.htm"
+          },
+          {
+            "date": "2025-08-15",
+            "event": "Deutsche Bank $1.4bn 프로젝트 파이낸싱 (1단계 $1.7bn 공사비)",
+            "event_en": "$1.4bn Deutsche Bank project financing for the $1.7bn Phase I build",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000039/glxy-20250815.htm"
+          },
+          {
+            "date": "2026-01-15",
+            "event": "ERCOT 대형부하 연계 연구 완료, 830MW 추가 승인 → 총 1.63GW",
+            "event_en": "ERCOT LLIS complete; additional 830MW approved, total 1.63GW",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000005/heliosercotapproval_1x15.htm"
+          },
+          {
+            "date": "2026-02-03",
+            "event": "1단계 공사 사실상 완료, 커미셔닝 진행 중",
+            "event_en": "Phase I construction substantially complete; commissioning underway",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000009/glxy-20251231xpressrelease_.htm"
+          },
+          {
+            "date": "2026-04",
+            "event": "첫 데이터홀 CoreWeave 인도 (임대료 개시). 2단계 시공사 HITT 현장 투입",
+            "event_en": "First data hall delivered to CoreWeave (rent begins); HITT mobilized for Phase II",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000047/glxy-2026331xpressrelease.htm"
+          },
+          {
+            "date": "2026-06",
+            "event": "1단계 133MW(IT) 전량 가동 (분기 말 기준)",
+            "event_en": "All 133MW IT of Phase I in service by quarter end",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm"
+          },
+          {
+            "date": "2026-07-28",
+            "event": "2단계(건물 2동·데이터홀 8개, 400MW/260MW IT) 자금 $3.507bn 선순위 담보채 발행",
+            "event_en": "$3.507bn senior secured notes to fund Phase II (2 buildings, 8 data halls, 400MW / 260MW IT)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000079/glxy-20260728.htm"
+          },
+          {
+            "date": "2026-09-08",
+            "event": "ERCOT Batch Zero: Helios I(800MW)·II(830MW) Base Load, Helios III(1GW) Studied Load. Helios II는 2028년 통전 예정",
+            "event_en": "ERCOT Batch Zero: Helios I (800MW) and II (830MW) Base Load; Helios III (1GW) Studied Load; Helios II on track for power in 2028",
+            "source": "https://investingnews.com/galaxy-provides-update-on-ercot-batch-zero-large-load-classifications"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "1단계 착공 시점(2025-Q2)은 추정: 자가 채굴이 2025년 1분기 말 중단됐고, 2025-08-05 발표 시점에 내부 철거 완료·설비 공사 진행 중이었음",
+            "note_en": "Phase I construction start (2025-Q2) is estimated: mining ceased end-Q1 2025 and interior demolition was complete by the 2025-08-05 report",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000032/glxy-20250630xpressrelease.htm"
+          },
+          {
+            "note": "2단계 진행률 0.3은 추정: 2026-04 착공, 2026-08 기준 토공 완료·기초 공사 중, 첫 인도 목표 2027-Q2 → 기준일(2026-10) 약 30%",
+            "note_en": "Phase II progress 0.3 is estimated: construction began 2026-04, earthwork done and foundations underway as of 2026-08, first delivery targeted 2027-Q2",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm"
+          },
+          {
+            "note": "power 의 energized_mw 는 '데이터홀에 인도된 gross 전력' 기준으로 해석함. 2025-05~2026-05 는 채굴 중단 후 AI 부하 인도 전이라 0 으로 둠 (변전소 자체는 2025년 이전 800MW 변압기 설치 완료)",
+            "note_en": "energized_mw is interpreted as gross power delivered to data halls; set to 0 between mining shutdown and first delivery (substation transformers for 800MW were installed before 2025)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm"
+          },
+          {
+            "note": "2단계 'commissioning 2027-Q2'는 회사가 밝힌 첫 데이터홀 인도·임대료 개시 목표(Q2'27)를 부분 인도 시작으로 표현한 것이며, 전량 가동은 '2027년 중(throughout 2027)' 문구에 따라 2027 말로 둠",
+            "note_en": "Phase II 'commissioning 2027-Q2' represents the first data-hall delivery / rent commencement target; full operation set to end-2027 per 'throughout 2027'",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000068/launch8-kexhibit99172226.htm"
+          }
+        ],
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm",
+          "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/exhibit992-q22026overvie.htm",
+          "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm",
+          "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000091/glxy-20260630.htm",
+          "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000005/heliosercotapproval_1x15.htm",
+          "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000079/glxy-20260728.htm"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "merlin",
+        "name": "Merlin (McGregor)",
+        "name_ko": "멀린 (맥그리거)",
+        "country": "US",
+        "admin1": "US-TX",
+        "region": "Texas (McGregor)",
+        "coord": {
+          "lat": 31.443,
+          "lng": -97.409,
+          "confidence": "medium",
+          "method": "city_centroid",
+          "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/exhibit992-q22026overvie.htm"
+        },
+        "primary": "galaxy",
+        "parties": [
+          {
+            "company": "galaxy",
+            "role": "developer",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/exhibit992-q22026overvie.htm"
+          }
+        ],
+        "detail": "lite",
+        "announced": "2026-06",
+        "acres": 500,
+        "grid_operator": "ERCOT",
+        "cooling": "closed-loop (planned)",
+        "summary_ko": "맥그리거 산업단지 내 500에이커 AI/HPC 캠퍼스 개발 계약. 초기 약 74MW 전력 확보 계약, 송전망 증강 시 최대 500MW 확장 가능. 시의회가 2026년 6월 계획 승인, 자체 변전소 건설 예정.",
+        "summary_en": "500-acre AI/HPC campus in the McGregor Industrial Park. Initial agreement for ~74MW, expandable to 500MW as transmission is upgraded. City council approved plans in June 2026; Galaxy to build its own substation.",
+        "power": [
+          {
+            "from": "2026-08",
+            "secured_mw": 74,
+            "energized_mw": 0,
+            "basis": "reported",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/exhibit992-q22026overvie.htm"
+          }
+        ],
+        "substation": {},
+        "buildings": [],
+        "deliveries": [],
+        "timeline": [
+          {
+            "date": "2026-06-23",
+            "event": "맥그리거 시의회, Galaxy 'Project Merlin' 데이터센터 계획 승인 ($4억+ 투자, 500에이커)",
+            "event_en": "McGregor city council approves Galaxy's Project Merlin ($400M+, 500 acres)",
+            "source": "https://www.kltv.com/2026/06/24/mcgregor-city-council-approves-new-data-center-plans/"
+          },
+          {
+            "date": "2026-08-05",
+            "event": "Q2 실적에서 개발 계약·초기 74MW 확보, 최대 500MW 잠재력 공시",
+            "event_en": "Q2 results disclose development agreement, ~74MW initial capacity, up to 500MW potential",
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/exhibit992-q22026overvie.htm"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "가동 시점 2028년은 크립토 매체 보도(단독, Tier 3)로 공식 확인되지 않음 — phases 에 반영하지 않음",
+            "note_en": "A 2028 operational date appears only in crypto media (single, Tier 3) and is not reflected in phases",
+            "source": "https://cryptobriefing.com/galaxy-texas-data-center-campus/"
+          }
+        ],
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/exhibit992-q22026overvie.htm",
+          "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm",
+          "https://www.kltv.com/2026/06/24/mcgregor-city-council-approves-new-data-center-plans/"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "c1",
+      "field": "sites[0].buildings[0] (Phase I 133MW IT / 200MW gross, operating)",
+      "value": { "it_mw": 133, "gross_mw": 200, "status": "operating", "from": "2026-06" },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm",
+      "published": "2026-08-05",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "with all 133 MW of critical IT load under the Phase I lease in service by quarter end",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c2",
+      "field": "sites[0].buildings[0].phases[3] (Phase I complete on schedule)",
+      "value": "Phase I delivered, 200MW gross / 133MW IT",
+      "source_url": "https://www.prnewswire.com/news-releases/galaxy-completes-phase-i-of-its-helios-data-center-campus-delivering-133-megawatts-of-critical-it-load-to-coreweave-302818664.html",
+      "published": "2026-07-06",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "approximately 200 megawatts of gross power — 133 MW of critical IT load",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c3",
+      "field": "sites[0].timeline (first data hall April 2026)",
+      "value": "2026-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000047/glxy-2026331xpressrelease.htm",
+      "published": "2026-04-28",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Delivery of first data hall occurred in April 2026.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c4",
+      "field": "sites[0].buildings[0].phases[2] (commissioning)",
+      "value": "2026-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000009/glxy-20251231xpressrelease_.htm",
+      "published": "2026-02-03",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Construction for the initial Phase I deployment is substantially complete, the site is fully dried-in, and commissioning is underway.",
+      "verification": "single_source"
+    },
+    {
+      "id": "c5",
+      "field": "sites[0].buildings[1].phases[1] (Phase II under construction since 2026-04)",
+      "value": "2026-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm",
+      "published": "2026-08-05",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "HITT has been mobilized and on site since April 2026, with earthwork complete and structural foundation work now underway.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c6",
+      "field": "sites[0].buildings[1].phases[2] (Phase II first deliveries Q2 2027)",
+      "value": "2027-Q2",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm",
+      "published": "2026-08-05",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Data hall deliveries under Phase II are expected to begin in the second quarter of 2027.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c7",
+      "field": "sites[0].buildings[1] (Phase II 2 buildings, 8 halls, 400MW utility / 260MW IT)",
+      "value": { "buildings": 2, "data_halls": 8, "gross_mw": 400, "it_mw": 260 },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000079/glxy-20260728.htm",
+      "published": "2026-07-28",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "two buildings containing eight data halls with a combined total of 400 megawatts (\"MW\") of utility capacity and 260 MW of critical IT capacity",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c8",
+      "field": "sites[0].buildings[1].phases[3] / buildings[2].phases[1] (Phase II 2027, Phase III 2028)",
+      "value": { "phase_2": "2027", "phase_3": "2028" },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000073/glxy-20250930xpressrelease.htm",
+      "published": "2025-10-21",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "full capacity for Phase I expected to be delivered by the end of the first half of 2026, Phase II throughout 2027 and Phase III starting in 2028",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c9",
+      "field": "sites[0].buildings (phase gross split 200/400/200 = 800MW)",
+      "value": { "phase_1": 200, "phase_2": 400, "phase_3": 200 },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000047/exhibit992-q12026overvie.htm",
+      "published": "2026-04-28",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Approximately 200 MW of gross power capacity for Phase I, approximately 400 MW of gross power capacity for Phase II, and approximately 200 MW ... for Phase III.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c10",
+      "field": "sites[0].buildings[0].phases[0] (Phase I lease 2025-03-28)",
+      "value": "2025-03-28",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000007/glxy-20250331xpressrelease.htm",
+      "published": "2025-05-13",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "the previously announced 15-year, 133 MW lease agreement from March 28, 2025",
+      "verification": "conflict"
+    },
+    {
+      "id": "c11",
+      "field": "sites[0].buildings[1].phases[0] (Phase II option April 2025)",
+      "value": "2025-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000162828025027997/glxy-20250527.htm",
+      "published": "2025-05-27",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "In April 2025, CoreWeave exercised and entered into its first option with Galaxy pursuant to a Phase II option agreement",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c12",
+      "field": "sites[0].buildings[2].phases[0] (Phase III option exercised Q3 2025)",
+      "value": "2025-Q3",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000032/glxy-20250630xpressrelease.htm",
+      "published": "2025-08-05",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "In the third quarter, CoreWeave exercised its final option to access an additional 133 megawatts",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c13",
+      "field": "sites[0].power[0] (800MW approved by May 2025)",
+      "value": 800,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000162828025027997/glxy-20250527.htm",
+      "published": "2025-05-27",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "In addition to the 800 MW of gross power capacity we have received approval for, we have 1.7 GW under various stages of load study",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c14",
+      "field": "sites[0].power[1] (ERCOT +830MW, total 1.63GW)",
+      "value": { "added_mw": 830, "total_mw": 1630, "date": "2026-01-15" },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000005/heliosercotapproval_1x15.htm",
+      "published": "2026-01-15",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "brings Galaxy's total LLIS-complete, ERCOT-approved, and utility-contracted power capacity at Helios to over 1.6 gigawatts",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c15",
+      "field": "sites[0].buildings[3] (830MW uncontracted, Base Load, power in 2028)",
+      "value": { "gross_mw": 830, "ercot": "Batch Zero Base Load", "energize": "2028" },
+      "source_url": "https://investingnews.com/galaxy-provides-update-on-ercot-batch-zero-large-load-classifications",
+      "published": "2026-09-08",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Helios II — 830 MW at the Helios data center campus, classified as Batch Zero Base Load.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c16",
+      "field": "sites[0].substation.voltage",
+      "value": "345kV",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000047/exhibit992-q12026overvie.htm",
+      "published": "2026-04-28",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Our privately owned 345 kV grid connected substation at the Helios campus supporting up to 900 MW of transformer capacity",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c17",
+      "field": "sites[0].acres",
+      "value": 1500,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000047/exhibit992-q12026overvie.htm",
+      "published": "2026-04-28",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "The Helios campus consists of over 1,500 acres of contiguous land under Galaxy's control",
+      "verification": "conflict"
+    },
+    {
+      "id": "c18",
+      "field": "sites[0].coord (Dickens County)",
+      "value": "Dickens County, TX",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm",
+      "published": "2026-02-26",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "finance the construction and development of a data center project in Dickens County, Texas",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c19",
+      "field": "sites[0].parties[2] (CoreWeave tenant, 526MW IT, 15 years)",
+      "value": { "company": "coreweave", "it_mw": 526, "term_years": 15 },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm",
+      "published": "2026-02-26",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "expected to increase CoreWeave's contracted capacity at the Helios data center campus to 526 MW of critical IT load by 2028",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c20",
+      "field": "sites[0].timeline (mining ceased end Q1 2025)",
+      "value": "2025-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm",
+      "published": "2026-02-26",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "the cessation of proprietary mining at the Helios site at the end of the first quarter of 2025",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c21",
+      "field": "sites[0].power[3] (Phase II+III 600MW from Q2 2027)",
+      "value": { "gross_mw": 600, "from": "2027-Q2" },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000091/glxy-20260630.htm",
+      "published": "2026-08-10",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "600 MW of this gross power capacity ... is expected to be delivered starting in the second quarter of 2027.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c22",
+      "field": "sites[1].power[0] / acres (Merlin 74MW initial, 500 acres, 500MW potential)",
+      "value": { "secured_mw": 74, "acres": 500, "potential_mw": 500 },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm",
+      "published": "2026-08-05",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "acquire 500 acres in the McGregor Industrial Park for its Merlin campus, securing an initial agreement to support 74 MW of capacity",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c23",
+      "field": "sites[1].timeline (McGregor council approval)",
+      "value": "2026-06-23",
+      "source_url": "https://www.kltv.com/2026/06/24/mcgregor-city-council-approves-new-data-center-plans/",
+      "published": "2026-06-24",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "Council approval of Project Merlin on 500 acres; $400 million or more in capital investment.",
+      "verification": "single_source"
+    },
+    {
+      "id": "c24",
+      "field": "company.metrics.power_pipeline_gw / open_questions (Caspian 700MW, Selene 900MW)",
+      "value": { "pipeline_gw": 5.7, "caspian_mw": 700, "selene_mw": 900 },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/exhibit992-q22026overvie.htm",
+      "published": "2026-08-05",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Caspian and Selene, which have potential capacity of approximately 700 MW and 900 MW, respectively, subject to ERCOT's interconnection process",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c25",
+      "field": "company.metrics.lease_revenue_annual_usd_bn",
+      "value": 1,
+      "source_url": "https://www.prnewswire.com/news-releases/galaxy-completes-phase-i-of-its-helios-data-center-campus-delivering-133-megawatts-of-critical-it-load-to-coreweave-302818664.html",
+      "published": "2026-07-06",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "expected to generate more than $1 billion in average annual revenue",
+      "verification": "conflict"
+    },
+    {
+      "id": "c26",
+      "field": "sites[0].timeline (Phase II financing $3.507bn notes)",
+      "value": 3.507,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000079/glxy-20260728.htm",
+      "published": "2026-07-28",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "completed its previously announced private offering (the \"Offering\") of 9.875% Senior Secured Notes due 2031",
+      "verification": "confirmed"
+    }
+  ],
+  "open_questions": [
+    "CoreWeave(id 'coreweave')는 아직 data/companies.json 에 없음 — 병합 전에 회사 항목(group neocloud, NASDAQ: CRWV) 추가 필요",
+    "Helios 정확한 좌표: 공식 주소·인허가 필지 미확인. 현재 Dickens County 중심(low). 카운티 감정평가·TCEQ·ERCOT 연계 문서로 필지 확인 필요(위성사진 추적 금지)",
+    "Caspian(~700MW)·Selene(~900MW) 사이트의 위치(카운티)가 공시에 없음 → 사이트로 넣지 않음. 위치 공개 시 lite 사이트로 추가",
+    "Helios III·IV(각 1GW 부하 신청, Helios III는 Batch Zero Studied Load) — 확보 전력 아님. 승인 시 Helios power 이력에 추가",
+    "Helios 냉각 방식(액체/공랭)·GPU 모델 미공개 → cooling 'undisclosed', 건물 kind 생략(화면 기본값 공랭)",
+    "Helios 캠퍼스 면적: 1,500+에이커(연속 부지, ~2026-Q1) vs 2,200+에이커(직접 통제 부지, 2026-Q2) — 정의가 다름. 규칙에 따라 낮은 값 채택",
+    "1단계 실제 착공 월 미공개 (2025-Q2 추정)",
+    "3단계(133MW IT) 착공 시점·건물 구성 미공개; 10-Q는 2·3단계 600MW가 2027-Q2부터 인도 시작한다고 기재, 실적자료는 3단계 2028 시작 — 3단계 운영 목표를 2028로 둠",
+    "830MW(Helios II 블록) 입주사 미정 — 계약 시 건물 분할·tenant 추가 필요",
+    "Merlin 가동 목표 시점·전력회사(TDSP) 공식 미확인"
+  ]
+}

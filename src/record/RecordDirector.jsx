@@ -14,7 +14,7 @@ import { useThree } from '@react-three/fiber'
 import { Vector3 } from 'three'
 import { useAppStore } from '../store/useAppStore.js'
 import { latLngToVec3, spreadPins, labelRanks, pinHeight, fmtMw } from '../scene/geo.js'
-import { layoutCampus } from '../scene/layoutCampus.js'
+import { layoutCampus, campusStateAt } from '../scene/layoutCampus.js'
 import { styleOf, PENDING_COLOR } from '../data/statusStyle.js'
 import ko from '../i18n/ko.js'
 import en from '../i18n/en.js'
@@ -53,7 +53,7 @@ export default function RecordDirector() {
     const byId = Object.fromEntries(sites.map((s) => [s.id, s]))
     const display = spreadPins(sites)
     const ranks = labelRanks(sites)
-    const layouts = Object.fromEntries(sites.map((s) => [s.id, layoutCampus(s)]))
+    const layouts = Object.fromEntries(sites.map((s) => [s.id, layoutCampus(s._raw)]))
     // 캠퍼스에서 카메라가 바라볼 곳: 실제 건물(빈 부지 제외)과 변전소의 중심
     const focusOf = Object.fromEntries(
       Object.entries(layouts).map(([id, L]) => {
@@ -153,10 +153,11 @@ export default function RecordDirector() {
         }
       } else {
         const site = byId[shot.site]
-        const L = layouts[shot.site]
+        // 고정 배치 + 지금 날짜의 상태 (블록 상태·변전소 통전 여부)
+        const L = { ...layouts[shot.site], ...campusStateAt(layouts[shot.site], site._raw, useAppStore.getState().month) }
         const bById = Object.fromEntries(site.buildings.map((b) => [b.id, b]))
         for (const b of L.blocks) {
-          if (!b.isAnchor) continue
+          if (!b.isAnchor || b.asLot) continue
           const xy = project(new Vector3(b.x, b.h + 1.6, b.z))
           if (!xy) continue
           const bld = b.buildingId ? bById[b.buildingId] : null

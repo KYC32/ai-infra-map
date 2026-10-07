@@ -1,5 +1,4 @@
 // infra.json(v2) 을 불러와 기준일의 화면용 데이터로 바꾸고, KPI 합계를 계산합니다.
-import { viewInfra, asOfMonth } from './view.js'
 import { siteMetricsAt, totalsAt } from './timeline.js'
 
 export async function loadSites() {
@@ -15,7 +14,7 @@ export async function loadSites() {
       throw new Error('infra.json 스키마 오류\n' + msg)
     }
   }
-  return viewInfra(raw, asOfMonth(raw.as_of))
+  return raw // 날짜별 화면용 변환은 스토어(setRaw/setMonth)가 담당
 }
 
 // ---------- KPI (화면용 사이트 → 그 날짜의 원본으로 계산) ----------

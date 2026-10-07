@@ -79,7 +79,7 @@ export default function CameraRig() {
     const st = useAppStore.getState()
     const site = selectSelectedSite(st)
     if (st.view === 'site' && site) {
-      const L = layoutCampus(site)
+      const L = layoutCampus(site._raw)
       applyLimits(c, 'site', L.side)
       c.setLookAt(...campusHome(L.side), false)
       applyFocalOffset(c, 'site', L.side, false)
@@ -118,7 +118,7 @@ export default function CameraRig() {
       st.setTransitioning(true)
       await sleep(FADE_MS)
       st.selectSite(id)
-      const L = layoutCampus(site)
+      const L = layoutCampus(site._raw)
       applyLimits(c, 'site', L.side)
       c.smoothTime = 0.25
       const [px, py, pz] = campusHome(L.side)

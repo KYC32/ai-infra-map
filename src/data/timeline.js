@@ -148,7 +148,10 @@ export function siteMetricsAt(site, m) {
   let ai = 0, mining = 0, building = 0, gpus = 0, hasEstimate = false
   for (const { building: b, status: st, mw, estimated } of effectiveBuildingsAt(site, m)) {
     if (estimated) hasEstimate = true
-    if (st === 'operating') ai += mw
+    // 채굴동은 상태와 상관없이 '채굴' 로 분류 (AI 가동에 섞이지 않게)
+    const isMining = b.kind === 'miner_hall'
+    if (isMining && (st === 'operating' || st === 'decommissioning')) mining += mw
+    else if (st === 'operating') ai += mw
     else if (st === 'decommissioning') mining += mw
     else if (st === 'commissioning' || st === 'under_construction') building += mw
     if (st === 'operating' || st === 'commissioning') gpus += b.gpu?.count ?? 0

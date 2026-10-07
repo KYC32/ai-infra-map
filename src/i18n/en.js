@@ -57,6 +57,7 @@ export default {
   groups: { miner: 'Miner→AI', neocloud: 'Neocloud', hyperscaler: 'Hyperscaler', korea: 'Korea' },
   colorMode: { status: 'Status', company: 'Company' },
   regions: { na: 'N. America', eu: 'Europe', asia: 'Asia' },
+  timeline: { play: 'Play', pause: 'Pause', asOf: 'As of', future: 'Company targets', today: 'Back to as-of', label: 'Date' },
   kpi2: { secured: 'Secured power', energized: 'energized', ai: 'AI live', mining: 'mining', building: 'Building / commissioning', sites: 'Sites', companies: 'companies' },
   empty: 'No announced buildings yet — grid power secured only',
 }
