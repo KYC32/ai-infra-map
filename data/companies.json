@@ -591,7 +591,377 @@
         "https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_8k.htm",
         "https://www.sec.gov/Archives/edgar/data/1083301/000162828026064757/wulf-20261001.htm"
       ]
+    },
+    {
+      "id": "oracle",
+      "name": "Oracle",
+      "name_ko": "오라클",
+      "group": "hyperscaler",
+      "color": "#e25a63",
+      "hq_country": "US",
+      "summary_ko": "OCI 클라우드 운영사. Stargate Abilene 의 임차인으로 OpenAI 에 용량 공급.",
+      "summary_en": "Runs Oracle Cloud Infrastructure; tenant at Stargate Abilene, supplying capacity to OpenAI.",
+      "metrics": [],
+      "sources": [
+        "https://www.oracle.com/"
+      ]
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "name_ko": "마이크로소프트",
+      "group": "hyperscaler",
+      "color": "#8ee3eb",
+      "hq_country": "US",
+      "summary_ko": "Azure 운영사. Nebius 바인랜드·Crusoe Abilene 2캠퍼스의 최종 사용자.",
+      "summary_en": "Runs Azure; end user at Nebius Vineland and Crusoe Abilene campus 2.",
+      "metrics": [],
+      "sources": [
+        "https://www.microsoft.com/"
+      ]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "name_ko": "오픈AI",
+      "group": "partner",
+      "color": "#a9a49c",
+      "hq_country": "US",
+      "summary_ko": "AI 연구소. Stargate 프로그램 참여사, Abilene 의 최종 사용자.",
+      "summary_en": "AI lab; Stargate member and end user at Abilene.",
+      "metrics": [],
+      "sources": [
+        "https://openai.com/index/announcing-the-stargate-project/"
+      ]
+    },
+    {
+      "id": "softbank",
+      "name": "SoftBank Group",
+      "name_ko": "소프트뱅크",
+      "group": "partner",
+      "color": "#96a0ac",
+      "hq_country": "JP",
+      "summary_ko": "Stargate 프로그램 참여사(자금).",
+      "summary_en": "Stargate member (funding).",
+      "metrics": [],
+      "sources": [
+        "https://openai.com/index/announcing-the-stargate-project/"
+      ]
+    },
+    {
+      "id": "lancium",
+      "name": "Lancium",
+      "name_ko": "랜시움",
+      "group": "partner",
+      "color": "#aba59d",
+      "hq_country": "US",
+      "summary_ko": "전력·부지 개발사. Abilene·Childress 부지 개발.",
+      "summary_en": "Power and land developer behind the Abilene and Childress sites.",
+      "metrics": [],
+      "sources": [
+        "https://www.crusoe.ai/resources/newsroom/crusoe-expands-ai-data-center-campus-in-abilene-to-1-2-gigawatts"
+      ]
+    },
+    {
+      "id": "primary-digital-infrastructure",
+      "name": "Primary Digital Infrastructure",
+      "name_ko": "프라이머리 디지털 인프라",
+      "group": "partner",
+      "color": "#99a3a8",
+      "hq_country": "US",
+      "summary_ko": "디지털 인프라 투자사. Abilene 합작 소유.",
+      "summary_en": "Digital-infrastructure investor; co-owner of the Abilene JV.",
+      "metrics": [],
+      "sources": [
+        "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+      ]
+    },
+    {
+      "id": "jpmorgan",
+      "name": "JPMorgan Chase",
+      "name_ko": "JP모건",
+      "group": "partner",
+      "color": "#a1a1a9",
+      "hq_country": "US",
+      "summary_ko": "Abilene 건설 대출 주간사.",
+      "summary_en": "Lead arranger of the Abilene construction loans.",
+      "metrics": [],
+      "sources": [
+        "https://seekingalpha.com/pr/20114105-newmark-facilitates-7_1-billion-construction-loan-to-develop-ai-data-center"
+      ]
+    },
+    {
+      "id": "dataone",
+      "name": "DataOne",
+      "name_ko": "데이터원",
+      "group": "partner",
+      "color": "#a5a097",
+      "hq_country": "US",
+      "summary_ko": "데이터센터 개발사. Nebius 바인랜드 개발·소유.",
+      "summary_en": "Data-center developer; builds and owns Nebius Vineland.",
+      "metrics": [],
+      "sources": [
+        "https://www.datacenterdynamics.com/en/news/dataone-to-build-nebius-data-center-in-new-jersey/"
+      ]
+    },
+    {
+      "id": "polarnode",
+      "name": "Polarnode",
+      "name_ko": "폴라노드",
+      "group": "partner",
+      "color": "#9aa5a0",
+      "hq_country": "FI",
+      "summary_ko": "핀란드 데이터센터 개발사. Nebius 라펜란타 개발.",
+      "summary_en": "Finnish data-center developer behind Nebius Lappeenranta.",
+      "metrics": [],
+      "sources": [
+        "https://www.lappeenranta.fi/en/decision-making-and-administration/pajarila-data-center"
+      ]
+    },
+    {
+      "id": "crusoe",
+      "name": "Crusoe",
+      "name_ko": "크루소",
+      "group": "neocloud",
+      "color": "#b26ce5",
+      "hq_country": "US",
+      "summary_ko": "덴버 기반 비상장 AI 인프라 기업(옛 Crusoe Energy). 전력 확보부터 데이터센터 건설·운영, 클라우드(Crusoe Cloud)까지 수직 통합. Lancium 부지의 Abilene 캠퍼스(1.2GW, Oracle 임차·OpenAI Stargate 1호)를 지었고, 그 옆에 Microsoft용 900MW 캠퍼스, 텍사스 Armstrong County(Google)·Childress(Lancium), 미주리 Warrenton 캠퍼스를 개발 중이다.",
+      "summary_en": "Denver-based private AI infrastructure company (formerly Crusoe Energy), vertically integrated from power sourcing to data center construction, operation and cloud. Built the 1.2GW Abilene campus on Lancium's site (leased to Oracle, OpenAI's flagship Stargate), and is developing an adjacent 900MW campus for Microsoft plus campuses in Armstrong County TX (Google), Childress TX (with Lancium) and Warrenton MO.",
+      "metrics": [
+        {
+          "key": "gross_contracted_capacity_gw",
+          "value": 6,
+          "unit": "GW",
+          "label_ko": "총 계약 용량(데이터센터+클라우드, gross, '6GW 이상')",
+          "label_en": "Gross contracted capacity (data centers + cloud, '6GW+')",
+          "as_of": "2026-09",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-f-funding"
+        },
+        {
+          "key": "operational_capacity_gw",
+          "value": 1,
+          "unit": "GW",
+          "label_ko": "인도·가동 중 용량(gross, 포트폴리오 전체)",
+          "label_en": "Gross capacity delivered and operational (portfolio-wide)",
+          "as_of": "2026-09",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-f-funding"
+        },
+        {
+          "key": "post_money_valuation_usd_bn",
+          "value": 30.9,
+          "unit": "USD bn",
+          "label_ko": "시리즈 F 투자 후 기업가치",
+          "label_en": "Post-money valuation (Series F)",
+          "as_of": "2026-09",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-f-funding"
+        },
+        {
+          "key": "series_f_raise_usd_bn",
+          "value": 3.9,
+          "unit": "USD bn",
+          "label_ko": "시리즈 F 조달액",
+          "label_en": "Series F raise",
+          "as_of": "2026-09",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-f-funding"
+        },
+        {
+          "key": "development_pipeline_gw",
+          "value": 40,
+          "unit": "GW",
+          "label_ko": "개발 파이프라인('40GW 초과')",
+          "label_en": "Development pipeline ('exceeds 40GW')",
+          "as_of": "2026-06",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoes-contracted-ai-infrastructure-capacity-approaches-5-gigawatts-across-data-centers-and-cloud"
+        }
+      ],
+      "sources": [
+        "https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-f-funding",
+        "https://www.crusoe.ai/resources/newsroom/crusoes-contracted-ai-infrastructure-capacity-approaches-5-gigawatts-across-data-centers-and-cloud",
+        "https://www.crusoe.ai/resources/newsroom/crusoe-expands-ai-data-center-campus-in-abilene-to-1-2-gigawatts",
+        "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+      ]
+    },
+    {
+      "id": "nebius",
+      "name": "Nebius Group N.V.",
+      "name_ko": "네비우스 그룹",
+      "group": "neocloud",
+      "ticker": {
+        "symbol": "NBIS",
+        "exchange": "NASDAQ"
+      },
+      "color": "#b5dc6e",
+      "hq_country": "NL",
+      "summary_ko": "암스테르담 본사의 풀스택 AI 클라우드(네오클라우드) 기업(옛 Yandex N.V.). 핀란드 맨쨀래 자체 데이터센터(75MW)와 Microsoft 전용 뉴저지 바인랜드 build-to-suit 캠퍼스(최대 300MW)를 운영하고, 미주리 인디펜던스·펜실베이니아 하이리지(각 최대 1.2GW)·앨라배마 버밍엄·핀란드 라펜란타 등 자체 AI 팩토리를 건설 중이며 2026년 말 계약 전력 5GW를 목표로 한다.",
+      "summary_en": "Amsterdam-based full-stack AI cloud (neocloud), formerly Yandex N.V. Operates its owned Mäntsälä, Finland data center (75MW) and the Microsoft-dedicated Vineland, NJ build-to-suit campus (up to 300MW), and is building owned AI factories in Independence, MO and Highridge, PA (up to 1.2GW each), Birmingham, AL and Lappeenranta, Finland; targets 5GW contracted power by end-2026.",
+      "metrics": [
+        {
+          "key": "contracted_power_gw",
+          "value": 3.5,
+          "unit": "GW",
+          "label_ko": "계약 전력(토지·전력 약정 확보, '3.5GW 초과')",
+          "label_en": "Contracted power (secured land and power commitments, 'exceeds 3.5 GW')",
+          "as_of": "2026-05",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+        },
+        {
+          "key": "active_power_mw",
+          "value": 170,
+          "unit": "MW",
+          "label_ko": "활성 전력(IT 장비 사용 중)",
+          "label_en": "Active power (consumed by IT equipment)",
+          "as_of": "2025-12",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "key": "quarterly_revenue_usd_m",
+          "value": 582.3,
+          "unit": "USD m",
+          "label_ko": "분기 매출(2Q26, 전년비 +454%)",
+          "label_en": "Quarterly revenue (Q2 2026, +454% YoY)",
+          "as_of": "2026-Q2",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm"
+        },
+        {
+          "key": "quarterly_capex_usd_bn",
+          "value": 5.7,
+          "unit": "USD bn",
+          "label_ko": "분기 설비투자(2Q26)",
+          "label_en": "Quarterly capex (Q2 2026)",
+          "as_of": "2026-Q2",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm"
+        },
+        {
+          "key": "microsoft_contract_usd_bn",
+          "value": 17.4,
+          "unit": "USD bn",
+          "label_ko": "Microsoft 계약 금액(최대, 바인랜드, 5년)",
+          "label_en": "Microsoft agreement value (up to, Vineland, 5 years)",
+          "as_of": "2025-09",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "key": "meta_second_contract_usd_bn",
+          "value": 27,
+          "unit": "USD bn",
+          "label_ko": "Meta 2차 계약(최대, 5년, 2027년 초 개시)",
+          "label_en": "Second Meta agreement (up to, 5 years, starting early 2027)",
+          "as_of": "2026-03",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-2.htm",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm"
+      ],
+      "colocations": [
+        {
+          "name": "Béthune AI Factory",
+          "name_ko": "베튄 AI 팩토리",
+          "country": "FR",
+          "host": "Azur Datacenter",
+          "mw": 240,
+          "status": "under_construction",
+          "basis": "target",
+          "note_ko": "옛 브리지스톤 공장 재개발, 건설비 Azur 부담·Nebius 운영. 2026년 말 120MW 목표",
+          "note_en": "Former Bridgestone plant; Azur funds construction, Nebius operates. ~120MW targeted by end-2026",
+          "source": "https://finance.yahoo.com/news/amsterdam-based-ai-firm-nebius-120558201.html"
+        },
+        {
+          "name": "Kansas City",
+          "name_ko": "캔자스시티",
+          "country": "US",
+          "host": "Patmos",
+          "mw": 40,
+          "status": "operating",
+          "basis": "reported",
+          "note_ko": "초기 5MW → 최대 40MW",
+          "note_en": "5MW initially, up to 40MW",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465924120402/tm2428871d1_ex99-1.htm"
+        },
+        {
+          "name": "United Kingdom (4 sites)",
+          "name_ko": "영국 4곳",
+          "country": "GB",
+          "host": "Vantage + partners",
+          "mw": 65,
+          "status": "under_construction",
+          "basis": "target",
+          "note_ko": "런던 외 3곳, 합계 65MW·2027 목표",
+          "note_en": "London plus three more, 65MW total by 2027",
+          "source": "https://nebius.com/newsroom/nebius-expands-in-uk-with-more-nvidia-powered-infrastructure-more-customers-and-more-cloud-capabilities-for-agentic-and-enterprise-ai"
+        },
+        {
+          "name": "Tallinn (Hiiu)",
+          "name_ko": "탈린",
+          "country": "EE",
+          "host": "Greenergy Data Centers",
+          "mw": 22,
+          "status": "under_construction",
+          "basis": "target",
+          "note_ko": "IT 22MW, 2026년 말 가동 목표",
+          "note_en": "22MW IT, live by end-2026",
+          "source": "https://estonia.ee/stories/estonia-to-open-its-first-ai-factory-this-year"
+        },
+        {
+          "name": "Paris",
+          "name_ko": "파리",
+          "country": "FR",
+          "host": "Equinix",
+          "mw": null,
+          "status": "operating",
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "name": "Keflavík",
+          "name_ko": "케플라비크",
+          "country": "IS",
+          "host": "Verne Global",
+          "mw": null,
+          "status": "operating",
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "name": "Israel (3 sites)",
+          "name_ko": "이스라엘 3곳",
+          "country": "IL",
+          "host": "—",
+          "mw": null,
+          "status": "operating",
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "name": "Minnesota · Oklahoma",
+          "name_ko": "미네소타·오클라호마",
+          "country": "US",
+          "host": "—",
+          "mw": null,
+          "status": "operating",
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        }
+      ]
     }
   ],
-  "programs": []
+  "programs": [
+    {
+      "id": "stargate",
+      "name": "Stargate",
+      "name_ko": "스타게이트",
+      "members": [
+        "openai",
+        "oracle",
+        "softbank"
+      ],
+      "sources": [
+        "https://openai.com/index/announcing-the-stargate-project/"
+      ]
+    }
+  ]
 }

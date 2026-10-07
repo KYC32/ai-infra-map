@@ -1,0 +1,1103 @@
+{
+  "company_id": "nebius",
+  "as_of": "2026-10-07",
+  "sites": [
+    {
+      "id": "nebius-mantsala",
+      "name": "Mäntsälä",
+      "name_ko": "맨쨀래",
+      "country": "FI",
+      "admin1": "FI-18",
+      "region": "Uusimaa (Mäntsälä, ~60km north of Helsinki)",
+      "coord": {
+        "lat": 60.629,
+        "lng": 25.262,
+        "confidence": "high",
+        "method": "official_address",
+        "source": "https://www.datacentermap.com/finland/helsinki/yandex-mantsala-data-center/"
+      },
+      "primary": "nebius",
+      "parties": [
+        {
+          "company": "nebius",
+          "role": "owner",
+          "share": 1,
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "company": "nebius",
+          "role": "developer",
+          "share": 1,
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "company": "nebius",
+          "role": "operator",
+          "share": 1,
+          "source": "https://nebius.com/newsroom/nebius-to-triple-capacity-at-finland-data-center-to-75-mw"
+        }
+      ],
+      "detail": "full",
+      "announced": "2015",
+      "acres": null,
+      "grid_operator": "Fingrid (TSO) / Mäntsälän Sähkö (local network)",
+      "cooling": "air-based free cooling with heat recovery to district heating (PUE as low as 1.1)",
+      "summary_ko": "Nebius 의 첫 자체(그린필드) 데이터센터이자 '홈 베이스'. 2015년 Yandex 가 가동했고 2024-10 25MW→75MW 3배 증설을 발표, 기존 건물 증축+신축 2동으로 2026년 초 완공(유럽 첫 GB300 NVL72 가동). 공랭 프리쿨링·폐열 지역난방(PUE 최저 1.1). 2026-08 같은 지역에 2호 데이터센터(70MW, 2027년부터 가동)를 추가 발표.",
+      "summary_en": "Nebius's first owned (greenfield) data center and 'home base', opened by Yandex in 2015. A 25MW→75MW expansion announced in Oct 2024 (building extension plus two new buildings) completed in early 2026, hosting Europe's first operational GB300 NVL72. Air free-cooling with heat recovery (PUE as low as 1.1). A second Mäntsälä data center (70MW, online from 2027) was announced in Aug 2026.",
+      "power": [
+        {
+          "from": "2015",
+          "secured_mw": 25,
+          "energized_mw": 25,
+          "basis": "estimate",
+          "source": "https://www.datacenterdynamics.com/power-cooling/yandex-data-center-heats-finnish-city/95529.article"
+        },
+        {
+          "from": "2024-10",
+          "secured_mw": 75,
+          "energized_mw": 25,
+          "basis": "estimate",
+          "source": "https://nebius.com/newsroom/nebius-to-triple-capacity-at-finland-data-center-to-75-mw"
+        },
+        {
+          "from": "2026-Q1",
+          "secured_mw": 75,
+          "energized_mw": 75,
+          "basis": "reported",
+          "source": "https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland"
+        },
+        {
+          "from": "2026-08",
+          "secured_mw": 145,
+          "energized_mw": 75,
+          "basis": "reported",
+          "source": "https://w.media/nebius-expands-its-infrastructure-in-finland-with-second-data-center/"
+        },
+        {
+          "from": "2027",
+          "secured_mw": 145,
+          "energized_mw": 145,
+          "basis": "target",
+          "source": "https://w.media/nebius-expands-its-infrastructure-in-finland-with-second-data-center/"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "mt-dc1-original",
+          "name": "DC1 original building (~25MW)",
+          "name_ko": "DC1 기존 건물 (약 25MW)",
+          "kind": "datahall_air",
+          "gross_mw": 25,
+          "mw_basis": "grid",
+          "sources": [
+            "https://www.datacenterdynamics.com/power-cooling/yandex-data-center-heats-finnish-city/95529.article",
+            "https://nebius.com/newsroom/nebius-to-triple-capacity-at-finland-data-center-to-75-mw"
+          ],
+          "phases": [
+            {
+              "status": "operating",
+              "from": "2015",
+              "basis": "reported",
+              "source": "https://www.datacenterdynamics.com/power-cooling/yandex-data-center-heats-finnish-city/95529.article"
+            }
+          ]
+        },
+        {
+          "id": "mt-dc1-expansion",
+          "name": "DC1 expansion (building extension + 2 new buildings, +50MW)",
+          "name_ko": "DC1 증설 (기존 건물 증축 + 신축 2동, +50MW)",
+          "kind": "datahall_air",
+          "gross_mw": 50,
+          "mw_basis": "grid",
+          "gpu": {
+            "model": "NVIDIA H200 / GB200 / GB300 NVL72",
+            "count": null
+          },
+          "sources": [
+            "https://nebius.com/newsroom/nebius-to-triple-capacity-at-finland-data-center-to-75-mw",
+            "https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2024-10",
+              "basis": "reported",
+              "source": "https://nebius.com/newsroom/nebius-to-triple-capacity-at-finland-data-center-to-75-mw"
+            },
+            {
+              "status": "under_construction",
+              "from": "2025-Q1",
+              "basis": "estimate",
+              "source": "https://www.caverion.com/newsroom/releases/2025/caverion-strengthens-its-position-as-key-partner-in-major-infrastructure-investments-in-europe--secures-a-large-contract-related-to-the-expansion-of-a-state-of-the-art-data-centre-in-finland/"
+            },
+            {
+              "status": "operating",
+              "from": "2026-Q1",
+              "basis": "reported",
+              "source": "https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland"
+            }
+          ]
+        },
+        {
+          "id": "mt-dc2",
+          "name": "DC2 second Mäntsälä data center (70MW)",
+          "name_ko": "DC2 맨쨀래 2호 데이터센터 (70MW)",
+          "gross_mw": 70,
+          "mw_basis": "grid",
+          "sources": [
+            "https://w.media/nebius-expands-its-infrastructure-in-finland-with-second-data-center/",
+            "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-08",
+              "basis": "reported",
+              "source": "https://w.media/nebius-expands-its-infrastructure-in-finland-with-second-data-center/"
+            },
+            {
+              "status": "operating",
+              "from": "2027",
+              "basis": "target",
+              "source": "https://w.media/nebius-expands-its-infrastructure-in-finland-with-second-data-center/"
+            }
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2015",
+          "event": "Yandex 가 맨쨀래 데이터센터 가동(첫 해외 데이터센터, 폐열을 지역난방에 공급)",
+          "event_en": "Yandex opened the Mäntsälä data center (its first outside Russia), feeding server heat into district heating",
+          "source": "https://www.datacenterdynamics.com/power-cooling/yandex-data-center-heats-finnish-city/95529.article"
+        },
+        {
+          "date": "2024-10-08",
+          "event": "Nebius, 맨쨀래 용량을 75MW 로 3배 증설 발표(최대 GPU 6만 개, PUE 최저 1.1)",
+          "event_en": "Nebius announced tripling Mäntsälä to 75MW (up to 60,000 GPUs; PUE as low as 1.1)",
+          "source": "https://nebius.com/newsroom/nebius-to-triple-capacity-at-finland-data-center-to-75-mw"
+        },
+        {
+          "date": "2026-Q1",
+          "event": "75MW 증설 완공. 유럽 첫 GB300 NVL72 상용 가동",
+          "event_en": "75MW expansion completed; Europe's first operational GB300 NVL72 deployment",
+          "source": "https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland"
+        },
+        {
+          "date": "2026-08-14",
+          "event": "맨쨀래 2호 데이터센터(70MW, 2027년부터 가동) 발표 — 핀란드 3개 사이트 합계 455MW",
+          "event_en": "Second Mäntsälä data center announced (70MW, online from 2027); 455MW across three Finnish sites",
+          "source": "https://w.media/nebius-expands-its-infrastructure-in-finland-with-second-data-center/"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "2024-10 이전 용량 25MW 는 3배 증설 발표(25→75MW) 기준값을 2015 가동 시점까지 거꾸로 적용한 추정. 실제 Yandex 시절 단계별 용량은 미확인",
+          "note_en": "Pre-Oct 2024 capacity of 25MW back-cast to 2015 from the 25→75MW tripling announcement; Yandex-era phase capacities unverified",
+          "source": "https://nebius.com/newsroom/nebius-to-triple-capacity-at-finland-data-center-to-75-mw"
+        },
+        {
+          "note": "75MW 계통 확보 시점을 증설 발표월(2024-10)로 둔 것은 추정. 증설 착공 시점(2025 Q1)은 Caverion 의 2025년 기술설비 수주 발표로 근사",
+          "note_en": "75MW secured from the Oct 2024 announcement month is an estimate; expansion construction start (2025-Q1) approximated from Caverion's 2025 technical-systems contract",
+          "source": "https://www.caverion.com/newsroom/releases/2025/caverion-strengthens-its-position-as-key-partner-in-major-infrastructure-investments-in-europe--secures-a-large-contract-related-to-the-expansion-of-a-state-of-the-art-data-centre-in-finland/"
+        },
+        {
+          "note": "회사 MW(25/75/70)가 IT 기준인지 계통 기준인지 미공개 → 낮은 쪽 해석으로 grid(계통) 기준 gross 로 표기. PUE 1.1 이라 차이는 작음. 2호 데이터센터는 회사가 '세 번째 사이트'로 셈하지만 지도에서는 같은 맨쨀래 핀의 건물로 묶음(정확한 필지 미공개)",
+          "note_en": "Whether 25/75/70MW are IT or grid figures is undisclosed; modeled as grid/gross (lower reading; PUE ~1.1 so small gap). DC2 is a separate site per the company but grouped under the Mäntsälä pin (exact parcel undisclosed)",
+          "source": "https://w.media/nebius-expands-its-infrastructure-in-finland-with-second-data-center/"
+        }
+      ],
+      "sources": [
+        "https://nebius.com/newsroom/nebius-to-triple-capacity-at-finland-data-center-to-75-mw",
+        "https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm",
+        "https://w.media/nebius-expands-its-infrastructure-in-finland-with-second-data-center/",
+        "https://www.datacenterdynamics.com/power-cooling/yandex-data-center-heats-finnish-city/95529.article"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "nebius-vineland",
+      "name": "Vineland (DataOne build-to-suit)",
+      "name_ko": "바인랜드 (DataOne 맞춤형 임차)",
+      "country": "US",
+      "admin1": "US-NJ",
+      "region": "New Jersey (Cumberland County, Vineland)",
+      "coord": {
+        "lat": 39.486,
+        "lng": -75.025,
+        "confidence": "medium",
+        "method": "city_centroid",
+        "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+      },
+      "primary": "nebius",
+      "parties": [
+        {
+          "company": "nebius",
+          "role": "tenant",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "company": "nebius",
+          "role": "operator",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "company": "dataone",
+          "role": "developer",
+          "source": "https://www.datacenterdynamics.com/en/news/dataone-to-build-nebius-data-center-in-new-jersey/"
+        },
+        {
+          "company": "dataone",
+          "role": "owner",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "company": "microsoft",
+          "role": "end_user",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        }
+      ],
+      "detail": "full",
+      "announced": "2025-03",
+      "acres": null,
+      "grid_operator": "PJM (Atlantic City Electric) + behind-the-meter generation",
+      "cooling": "undisclosed (third parties report air-cooled chillers)",
+      "summary_ko": "Nebius 첫 build-to-suit 시설(개발·소유 DataOne). 최대 300MW 단계 개발, Microsoft 5년 계약(최대 $17.4bn, 9개 트랜치)을 이곳에서 전용 공급. 첫 트랜치 2025-11, 2026-08 까지 계약 트랜치 전부 인도(회사 발표). 전력은 자가발전 위주 — 가스엔진 계획을 Bloom 연료전지 328MW 로 바꿨으나(2026-05), 2026-08 시 공사중지명령·2026-09 NJDEP 무허가 발전기 62대 과징금($1.07M) 등 인허가 리스크.",
+      "summary_en": "Nebius's first build-to-suit facility (developed and owned by DataOne): phased up to 300MW, dedicated to Microsoft's 5-year, up-to-$17.4bn agreement (nine tranches). First tranche Nov 2025; all contracted tranches delivered by Aug 2026 (per company). Mostly behind-the-meter power: gas engines swapped for 328MW Bloom fuel cells (May 2026), but city stop-construction orders (Aug 2026) and a $1.07m NJDEP fine over 62 unpermitted generators (Sep 2026) flag permitting risk.",
+      "power": [
+        {
+          "from": "2025-03",
+          "secured_mw": 55,
+          "energized_mw": 0,
+          "basis": "estimate",
+          "source": "https://nebius.com/newsroom/nebius-accelerates-us-expansion-adding-up-to-300-mw-capacity-at-new-data-center-in-new-jersey"
+        },
+        {
+          "from": "2025-11",
+          "secured_mw": 55,
+          "energized_mw": 55,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "vl-phase-1",
+          "name": "Phase 1 (Microsoft dedicated GPU clusters)",
+          "name_ko": "1단계 (Microsoft 전용 GPU 클러스터)",
+          "it_mw": 50,
+          "pue": 1.1,
+          "mw_basis": "it",
+          "customer": "Microsoft (5-year agreement, nine tranches 2025–2026)",
+          "gpu": {
+            "model": "NVIDIA GB300 / B300",
+            "count": null
+          },
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
+            "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm",
+            "https://epoch.ai/data/ai-data-centers/directory/microsoft-nebius-new-jersey"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2025-03",
+              "basis": "reported",
+              "source": "https://nebius.com/newsroom/nebius-accelerates-us-expansion-adding-up-to-300-mw-capacity-at-new-data-center-in-new-jersey"
+            },
+            {
+              "status": "under_construction",
+              "from": "2025-03",
+              "basis": "reported",
+              "source": "https://www.datacenterdynamics.com/en/news/dataone-to-build-nebius-data-center-in-new-jersey/"
+            },
+            {
+              "status": "commissioning",
+              "from": "2025-11",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2026-08",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm"
+            }
+          ]
+        }
+      ],
+      "deliveries": [
+        {
+          "what": "Bloom Energy solid-oxide fuel cells, 328MW installed (replacing reciprocating engines)",
+          "from": "Bloom Energy",
+          "eta": "2026",
+          "status": "in_progress",
+          "source": "https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2025-02",
+          "event": "바인랜드 첫 build-to-suit 시설 계약 체결",
+          "event_en": "Signed the agreement for the first build-to-suit facility in Vineland, NJ",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "date": "2025-03-05",
+          "event": "뉴저지 최대 300MW 신규 데이터센터 발표(단계 개발, 첫 용량 이르면 2025 여름). 개발사 DataOne 은 1단계 20주 인도를 언급",
+          "event_en": "Announced a phased up-to-300MW NJ data center (first capacity as early as summer 2025); developer DataOne cited a 20-week first phase",
+          "source": "https://nebius.com/newsroom/nebius-accelerates-us-expansion-adding-up-to-300-mw-capacity-at-new-data-center-in-new-jersey"
+        },
+        {
+          "date": "2025-09-08",
+          "event": "Microsoft 와 5년 계약(최대 $17.4bn, 추가 구매 시 $19.4bn) — 바인랜드에서 전용 용량 공급",
+          "event_en": "5-year Microsoft agreement (up to $17.4bn; $19.4bn with additional services), served from Vineland",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925088312/tm2525580d1_ex99-1.htm"
+        },
+        {
+          "date": "2025-11",
+          "event": "Microsoft 첫 트랜치 인도(일정 준수)",
+          "event_en": "First Microsoft tranche delivered on time",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "date": "2026-02",
+          "event": "Microsoft 두 번째 트랜치 인도",
+          "event_en": "Second Microsoft tranche delivered",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "date": "2026-05-20",
+          "event": "Bloom Energy 연료전지 328MW 계약 — 왕복동 가스엔진 대체, 2026년 가동 목표",
+          "event_en": "328MW Bloom fuel-cell deal replacing reciprocating engines; targeted operational in 2026",
+          "source": "https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out"
+        },
+        {
+          "date": "2026-08",
+          "event": "바인랜드시 공사중지명령 2건(8/6 LNG 탱크, 8/10 Bloom 설비) 보도(Tier 2·3)",
+          "event_en": "Two city stop-construction orders reported (Aug 6 LNG tank; Aug 10 Bloom units) (Tier 2/3)",
+          "source": "https://hntrbrk.com/breaking-news/vineland"
+        },
+        {
+          "date": "2026-08-12",
+          "event": "Microsoft 계약상 트랜치 전부 인도 완료(최근 한 달 2개) 발표",
+          "event_en": "All Microsoft tranches under the contract delivered to date, including two in the past month",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm"
+        },
+        {
+          "date": "2026-09",
+          "event": "NJDEP, 개발사 DataOne 에 무허가 가스발전기 62대(각 1.98MW) 운전으로 $1.07M 과징금, 45일 내 허가 취득 또는 운전 중단 명령(Tier 2)",
+          "event_en": "NJDEP fined DataOne $1.07m for 62 unpermitted gas generators (1.98MW each); permits within 45 days or cease operating (Tier 2)",
+          "source": "https://njbiz.com/vineland-dataone-data-center-fine/"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "실제 가동 확인분만 반영: 회사는 최대 300MW 단계 개발을 발표했지만, 위성 분석(Epoch, 2026-07)으로 확인되는 가동은 IT 약 50MW. 잔여 증설(약 250MW IT)은 연료전지 인허가·공사중지명령이 풀리고 가동이 확인되면 추가. 확보 전력 55MW = 50MW × PUE 1.1 (추정)",
+          "note_en": "Only verified live capacity is shown: the company announced a phased build to up to 300MW, but satellite analysis (Epoch, Jul 2026) shows ~50MW IT live. The remaining ~250MW IT will be added once fuel-cell permits and stop-work orders clear and operation is confirmed. 55MW secured = 50MW × PUE 1.1 (estimate)",
+          "source": "https://epoch.ai/data/ai-data-centers/directory/microsoft-nebius-new-jersey"
+        },
+        {
+          "note": "PUE 1.1 지정: 300MW IT 설계와 328MW 연료전지(+계통 약 5MW)를 회사·파트너가 함께 제시해 1.1 수준이 암묵 전제. 맨쨀래 PUE(최저 1.1)도 참고. 실제 바인랜드 PUE 미공개(Epoch 는 공랭 칠러 기준 1.4 추정)",
+          "note_en": "PUE 1.1 set because a 300MW IT design alongside 328MW fuel cells (+~5MW grid) implies ~1.1; Mäntsälä reaches 1.1. Actual Vineland PUE undisclosed (Epoch estimates 1.4 with air-cooled chillers)",
+          "source": "https://nebius.com/newsroom/nebius-to-triple-capacity-at-finland-data-center-to-75-mw"
+        },
+        {
+          "note": "1단계 50MW IT 는 Epoch AI 위성·칠러 분석(2026-07 기준, Tier 3) 값. 회사는 트랜치별 MW 를 밝히지 않음. 2025-11 통전 55MW(=50×1.1)도 추정. NJDEP 가 확인한 무허가 가스발전기 62대×1.98MW≈123MW 는 임시 전원 규모를 시사",
+          "note_en": "Phase-1 50MW IT is from Epoch AI satellite/chiller analysis (as of Jul 2026, Tier 3); tranche MW undisclosed. 55MW energized from Nov 2025 (=50×1.1) is an estimate. NJDEP's 62 unpermitted ~1.98MW generators (~123MW) hint at temporary power scale",
+          "source": "https://epoch.ai/data/ai-data-centers/directory/microsoft-nebius-new-jersey"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465925088312/tm2525580d1_ex99-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-2.htm",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm",
+        "https://nebius.com/newsroom/nebius-accelerates-us-expansion-adding-up-to-300-mw-capacity-at-new-data-center-in-new-jersey",
+        "https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out",
+        "https://www.datacenterdynamics.com/en/news/dataone-to-build-nebius-data-center-in-new-jersey/",
+        "https://epoch.ai/data/ai-data-centers/directory/microsoft-nebius-new-jersey",
+        "https://cleanview.co/reports/behind-the-meter-data-centers/full-report/nebius-vineland",
+        "https://njbiz.com/vineland-dataone-data-center-fine/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "nebius-independence",
+      "name": "Independence AI Factory (EastGate)",
+      "name_ko": "인디펜던스 AI 팩토리 (이스트게이트)",
+      "country": "US",
+      "admin1": "US-MO",
+      "region": "Missouri (Jackson County, Independence — Kansas City metro)",
+      "coord": {
+        "lat": 39.094,
+        "lng": -94.316,
+        "confidence": "medium",
+        "method": "official_address",
+        "source": "https://nebius.com/independencemo"
+      },
+      "primary": "nebius",
+      "parties": [
+        {
+          "company": "nebius",
+          "role": "developer",
+          "share": 1,
+          "source": "https://nebius.com/independencemo"
+        },
+        {
+          "company": "nebius",
+          "role": "owner",
+          "share": 1,
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "company": "nebius",
+          "role": "operator",
+          "share": 1,
+          "source": "https://nebius.com/independencemo"
+        }
+      ],
+      "detail": "full",
+      "announced": "2026-01",
+      "acres": 400,
+      "grid_operator": "SPP (Independence Power & Light)",
+      "cooling": "closed-loop mechanical cooling (~1M gallon initial fill per 200MW)",
+      "summary_ko": "Nebius 첫 기가와트급 자체 AI 팩토리. 이스트게이트 커머스센터(Route 78·Little Blue Pkwy) 약 400에이커를 2025-12 매입, 4개 동·최대 1.2GW(IPL 800MW + 현장 발전 400MW 검토). 2026-03 시의회 승인, 2026-05 착공(1동 200MW, ARCO 시공), 2027년 가동 목표. 전력은 IPP 가 재건하는 Blue Valley 발전소에서 공급.",
+      "summary_en": "Nebius's first gigawatt-scale owned AI factory: ~400 acres at EastGate Commerce Center (Route 78 & Little Blue Pkwy) bought Dec 2025; four buildings, up to 1.2GW (800MW from IPL + 400MW on-site generation under evaluation). Council approval Mar 2026, groundbreaking May 2026 (Building 1, 200MW, ARCO), operation targeted in 2027. Power from the rebuilt Blue Valley plant (IPP).",
+      "power": [
+        {
+          "from": "2026-03",
+          "secured_mw": 800,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://nebius.com/independencemo"
+        },
+        {
+          "from": "2027-10",
+          "secured_mw": 800,
+          "energized_mw": 200,
+          "basis": "estimate",
+          "source": "https://www.independencemo.gov/community-faqs/nebius-data-center-faqs"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "in-b1",
+          "name": "Building 1 (200MW, 488,000 sq ft)",
+          "name_ko": "1동 (200MW, 48.8만 sq ft)",
+          "gross_mw": 200,
+          "mw_basis": "grid",
+          "progress": 0.15,
+          "sources": [
+            "https://www.arconational.com/arco-national-construction-celebrates-groundbreaking-of-nebius-ai-factory-campus-in-independence-missouri/",
+            "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm",
+            "https://nebius.com/independencemo"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-03",
+              "basis": "reported",
+              "source": "https://nebius.com/newsroom/nebius-secures-approval-for-its-first-gigawatt-scale-ai-factory"
+            },
+            {
+              "status": "under_construction",
+              "from": "2026-05",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2027",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+            }
+          ]
+        },
+        {
+          "id": "in-later-phases",
+          "name": "Later phases (IPL-supplied, ~600MW)",
+          "name_ko": "후속 단계 (IPL 공급분, 약 600MW)",
+          "gross_mw": 600,
+          "mw_basis": "grid",
+          "sources": [
+            "https://www.independencemo.gov/community-faqs/nebius-data-center-faqs",
+            "https://nebius.com/independencemo"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-03",
+              "basis": "reported",
+              "source": "https://www.independencemo.gov/community-faqs/nebius-data-center-faqs"
+            }
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2025-12",
+          "event": "NorthPoint 로부터 이스트게이트 부지 약 400에이커 매입",
+          "event_en": "Bought ~400 acres at EastGate from NorthPoint",
+          "source": "https://nebius.com/independencemo"
+        },
+        {
+          "date": "2026-01-12",
+          "event": "시의회 스터디 세션에서 데이터센터 캠퍼스 계획 공개(최소 800MW, 최대 4개 동)",
+          "event_en": "Campus plan presented at the city council study session (at least 800MW, up to four buildings)",
+          "source": "https://www.independencemo.gov/community-faqs/nebius-data-center-faqs"
+        },
+        {
+          "date": "2026-03-02",
+          "event": "시의회, Chapter 100 산업개발 인센티브 승인(5대2) — 최대 1.2GW 공사 진행 가능",
+          "event_en": "City council approved the Chapter 100 incentive plan (5-2), enabling construction of up to 1.2GW",
+          "source": "https://nebius.com/newsroom/nebius-secures-approval-for-its-first-gigawatt-scale-ai-factory"
+        },
+        {
+          "date": "2026-05-12",
+          "event": "착공식 — 1동(200MW, 48.8만 sq ft) ARCO National Construction 시공",
+          "event_en": "Groundbreaking; Building 1 (200MW, 488,000 sq ft) built by ARCO National Construction",
+          "source": "https://www.businesswire.com/news/home/20260512738854/en/Nebius-breaks-ground-on-gigawatt-scale-AI-factory-in-Independence-Missouri"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "진행률 0.15: 2026-05 착공 → 2027년(실적 콜 요약상 2027-10) 가동 목표, 약 17개월 공정 중 5개월 경과로 근사",
+          "note_en": "Progress 0.15 from a May 2026 start toward 2027 operation (Oct 2027 per call summaries): ~5 of ~17 months",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+        },
+        {
+          "note": "2027-10 통전 200MW: 시 FAQ 의 Blue Valley 발전소 1단계 200MW(언론은 250MW·2027-10)를 적용한 추정. 낮은 값 200 채택",
+          "note_en": "200MW energized from Oct 2027 is an estimate from the city FAQ's 200MW initial Blue Valley phase (press: 250MW by Oct 2027); lower value used",
+          "source": "https://www.govtech.com/artificial-intelligence/independence-mo-to-reopen-old-power-plant-for-ai-data-center"
+        },
+        {
+          "note": "확보 전력은 IPL 계약분 800MW 만 반영. 회사는 '최대 1.2GW = IPL 800MW + 현장 발전 400MW' 라 하나 현장 발전은 '검토 중' → 400MW·4번째 동은 미포함. 후속 3개 동을 600MW 한 건물로 묶음",
+          "note_en": "Only the 800MW IPL supply is modeled; the extra 400MW on-site generation is 'under evaluation', so that phase is excluded. Later buildings grouped as one 600MW entry",
+          "source": "https://nebius.com/independencemo"
+        }
+      ],
+      "sources": [
+        "https://nebius.com/independencemo",
+        "https://nebius.com/newsroom/nebius-secures-approval-for-its-first-gigawatt-scale-ai-factory",
+        "https://www.independencemo.gov/community-faqs/nebius-data-center-faqs",
+        "https://www.businesswire.com/news/home/20260512738854/en/Nebius-breaks-ground-on-gigawatt-scale-AI-factory-in-Independence-Missouri",
+        "https://www.arconational.com/arco-national-construction-celebrates-groundbreaking-of-nebius-ai-factory-campus-in-independence-missouri/",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm",
+        "https://www.govtech.com/artificial-intelligence/independence-mo-to-reopen-old-power-plant-for-ai-data-center"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "nebius-highridge",
+      "name": "Highridge Business Park AI Factory",
+      "name_ko": "하이리지 비즈니스파크 AI 팩토리",
+      "country": "US",
+      "admin1": "US-PA",
+      "region": "Pennsylvania (Schuylkill County, Butler Township)",
+      "coord": {
+        "lat": 40.736,
+        "lng": -76.31,
+        "confidence": "medium",
+        "method": "official_address",
+        "source": "https://nebius.com/schuylkillcountypa"
+      },
+      "primary": "nebius",
+      "parties": [
+        {
+          "company": "nebius",
+          "role": "developer",
+          "share": 1,
+          "source": "https://nebius.com/schuylkillcountypa"
+        },
+        {
+          "company": "nebius",
+          "role": "owner",
+          "share": 1,
+          "source": "https://nebius.com/schuylkillcountypa"
+        },
+        {
+          "company": "nebius",
+          "role": "operator",
+          "share": 1,
+          "source": "https://nebius.com/schuylkillcountypa"
+        }
+      ],
+      "detail": "full",
+      "announced": "2026-05",
+      "acres": 600,
+      "grid_operator": "PJM (PPL Electric Utilities)",
+      "cooling": "closed-loop (air + liquid)",
+      "summary_ko": "두 번째 기가와트급 자체 AI 팩토리. I-81·Gordon Mountain Rd 교차점 하이리지 비즈니스파크 약 600에이커(2026-05-01 토지 매입 보도), 6개 동·최대 1.2GW. PPL 전용 에너지 서비스 계약으로 전력 확보. 전력 인도 260MW(2027-10)→660MW(2029-01)→1,000MW+(2029-11) 단계 계획, 현재 1단계 개발 중.",
+      "summary_en": "Second gigawatt-scale owned AI factory: ~600 acres in Highridge Business Park at I-81 & Gordon Mountain Rd (land reportedly closed May 1, 2026), six buildings, up to 1.2GW. Power secured under a dedicated PPL Energy Service Agreement, delivered in phases: 260MW (Oct 2027), 660MW (Jan 2029), 1,000MW+ (Nov 2029). Currently in first-phase development.",
+      "power": [
+        {
+          "from": "2026-05",
+          "secured_mw": 1200,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+        },
+        {
+          "from": "2027-10",
+          "secured_mw": 1200,
+          "energized_mw": 260,
+          "basis": "target",
+          "source": "https://nebius.com/schuylkillcountypa"
+        },
+        {
+          "from": "2029-01",
+          "secured_mw": 1200,
+          "energized_mw": 660,
+          "basis": "target",
+          "source": "https://nebius.com/schuylkillcountypa"
+        },
+        {
+          "from": "2029-11",
+          "secured_mw": 1200,
+          "energized_mw": 1000,
+          "basis": "target",
+          "source": "https://nebius.com/schuylkillcountypa"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "hr-phase-1",
+          "name": "Phase 1 (260MW)",
+          "name_ko": "1단계 (260MW)",
+          "gross_mw": 260,
+          "mw_basis": "grid",
+          "sources": [
+            "https://nebius.com/schuylkillcountypa"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-05",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2027-10",
+              "basis": "target",
+              "source": "https://nebius.com/schuylkillcountypa"
+            }
+          ]
+        },
+        {
+          "id": "hr-phase-2",
+          "name": "Phase 2 (+400MW, to 660MW)",
+          "name_ko": "2단계 (+400MW, 누적 660MW)",
+          "gross_mw": 400,
+          "mw_basis": "grid",
+          "sources": [
+            "https://nebius.com/schuylkillcountypa"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-05",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2029-01",
+              "basis": "target",
+              "source": "https://nebius.com/schuylkillcountypa"
+            }
+          ]
+        },
+        {
+          "id": "hr-phase-3",
+          "name": "Phase 3 (+340MW, to 1,000MW+)",
+          "name_ko": "3단계 (+340MW, 누적 1,000MW+)",
+          "gross_mw": 340,
+          "mw_basis": "grid",
+          "sources": [
+            "https://nebius.com/schuylkillcountypa"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-05",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2029-11",
+              "basis": "target",
+              "source": "https://nebius.com/schuylkillcountypa"
+            }
+          ]
+        },
+        {
+          "id": "hr-phase-4",
+          "name": "Full build-out remainder (~200MW, to 1.2GW)",
+          "name_ko": "최종 잔여분 (약 200MW, 누적 1.2GW)",
+          "gross_mw": 200,
+          "mw_basis": "grid",
+          "sources": [
+            "https://nebius.com/schuylkillcountypa"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-05",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+            }
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2026-05-01",
+          "event": "하이리지 비즈니스파크 토지 매입 완료($187.5M, 언론 보도)",
+          "event_en": "Closed on the Highridge land ($187.5m, per local press)",
+          "source": "https://w.media/nebius-contemplating-1-2-gw-data-center-campus-in-pennsylvania/"
+        },
+        {
+          "date": "2026-05-13",
+          "event": "1Q26 실적에서 펜실베이니아 최대 1.2GW 자체 AI 팩토리 발표(2027년부터 단계 인도)",
+          "event_en": "Announced an owned up-to-1.2GW Pennsylvania AI factory with Q1 results (phased delivery from 2027)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "단계별 MW 는 회사의 '전력 인도' 일정(260/660/1,000+MW)을 차분해 건물로 나눈 것. 4단계 200MW 는 1.2GW 와 1,000MW 의 차이로, 일정 미공개. 2026-10 현재 공사 착수 여부 미확인 → 1단계를 '계획'으로 둠",
+          "note_en": "Phase MW are differences of the company's power-delivery schedule (260/660/1,000+MW); the final ~200MW is the gap to 1.2GW with no date. Construction start unconfirmed as of Oct 2026, so Phase 1 stays 'planned'",
+          "source": "https://nebius.com/schuylkillcountypa"
+        }
+      ],
+      "sources": [
+        "https://nebius.com/schuylkillcountypa",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm",
+        "https://w.media/nebius-contemplating-1-2-gw-data-center-campus-in-pennsylvania/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "nebius-birmingham",
+      "name": "Birmingham BHM01 (Oxmoor)",
+      "name_ko": "버밍엄 BHM01 (옥스무어)",
+      "country": "US",
+      "admin1": "US-AL",
+      "region": "Alabama (Jefferson County, Birmingham — Oxmoor)",
+      "coord": {
+        "lat": 33.429,
+        "lng": -86.885,
+        "confidence": "high",
+        "method": "official_address",
+        "source": "https://nebius.com/birminghamal"
+      },
+      "primary": "nebius",
+      "parties": [
+        {
+          "company": "nebius",
+          "role": "developer",
+          "share": 1,
+          "source": "https://nebius.com/birminghamal"
+        },
+        {
+          "company": "nebius",
+          "role": "owner",
+          "share": 1,
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "company": "nebius",
+          "role": "operator",
+          "share": 1,
+          "source": "https://nebius.com/birminghamal"
+        }
+      ],
+      "detail": "lite",
+      "announced": "2026-02",
+      "acres": 75,
+      "grid_operator": "SERC (Alabama Power)",
+      "cooling": "closed-loop water recycling",
+      "summary_ko": "옛 Regions Bank 백오피스(201 Milan Pkwy) 75에이커를 2025-09 매입한 자체 AI 팩토리. Alabama Power 가 Nebius 비용으로 전용 개폐소·변전소 건설. 2026 Q2 착공, 2026 Q4 1단계 시운전·통전, 2027 가동, 2028년까지 전체 완공 목표. 용량 미공개(현지 보도 300MW). 구역 적합성 소송 진행 중.",
+      "summary_en": "Owned AI factory on the 75-acre former Regions Bank back-office site (201 Milan Pkwy) bought Sep 2025. Alabama Power builds a Nebius-funded switching station and substation. Construction from Q2 2026, initial-phase commissioning/energization Q4 2026, operation in 2027, full build-out through 2028. Capacity undisclosed (local press: 300MW); zoning lawsuits pending.",
+      "power": [
+        {
+          "from": "2026-02",
+          "secured_mw": 300,
+          "energized_mw": 0,
+          "basis": "estimate",
+          "source": "https://www.datacenterdynamics.com/en/news/nebius-targets-data-center-development-in-birmingham-alabama/"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "bh-campus",
+          "name": "BHM01 campus (~300MW, phased to 2028)",
+          "name_ko": "BHM01 캠퍼스 (약 300MW, 2028년까지 단계 완공)",
+          "gross_mw": 300,
+          "mw_basis": "grid",
+          "progress": 0.35,
+          "sources": [
+            "https://nebius.com/birminghamal",
+            "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-02",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+            },
+            {
+              "status": "under_construction",
+              "from": "2026-Q2",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+            },
+            {
+              "status": "commissioning",
+              "from": "2026-Q4",
+              "basis": "target",
+              "source": "https://nebius.com/birminghamal"
+            },
+            {
+              "status": "operating",
+              "from": "2027",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+            }
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2025-09",
+          "event": "Nebius, 201 Milan Parkway 일대 75에이커 매입(계열사 Alabama ADC Holdings, 총 $90M 보도)",
+          "event_en": "Nebius acquired 75 acres at 201 Milan Parkway (affiliate Alabama ADC Holdings; $90m total per press)",
+          "source": "https://nebius.com/birminghamal"
+        },
+        {
+          "date": "2026-02",
+          "event": "앨라배마 신규 자체 데이터센터 부지 확보 공시(9개 신규 사이트 중 하나)",
+          "event_en": "Disclosed the newly owned Alabama data center site (one of nine new sites)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "date": "2026-03-27",
+          "event": "버밍엄 구역위원회, Alabama Power 개폐소·변전소 요청 권고",
+          "event_en": "Birmingham zoning board recommended the Alabama Power switching station/substation request",
+          "source": "https://www.wbrc.com/2026/03/27/birmingham-zoning-board-recommends-substation-request-proposed-ai-factory"
+        },
+        {
+          "date": "2026-05-13",
+          "event": "앨라배마 사이트 '적극 건설 단계', 2027년 가동 예상 발표",
+          "event_en": "Alabama site in the active construction phase, expected operational in 2027",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+        },
+        {
+          "date": "2026-09-03",
+          "event": "주민 측 구역 적합성 소송 다수 진행 중(회사는 적법 절차 준수 입장)",
+          "event_en": "Multiple resident lawsuits challenge zoning compliance; company says it followed all legal processes",
+          "source": "https://www.wbhm.org/local-news/2026-09-03/data-center-dilemma-what-nebius-has-to-say-about-its-controversial-birmingham-project"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "300MW 는 현지·업계 보도(DCD 등) 값이며 회사는 MW 미공개 → 확보 전력·건물 MW 모두 추정. 참고: 회사의 '자체 시설 5곳 합계 3GW' 에서 다른 4곳(75+310+1,200+1,200MW)을 빼면 약 215MW 로 더 낮을 수 있음",
+          "note_en": "300MW is from local/trade press (DCD etc.); Nebius has not disclosed MW, so power and building MW are estimates. Note: '3GW across five owned sites' minus the other four (75+310+1,200+1,200MW) implies ~215MW, possibly lower",
+          "source": "https://www.datacenterdynamics.com/en/news/nebius-targets-data-center-development-in-birmingham-alabama/"
+        },
+        {
+          "note": "진행률 0.35: 2026 Q2 착공, 약 30개월 단계 공사 중 1단계 2026 Q4 시운전 목표 기준으로 근사(1단계 기준 약 절반, 전체 기준 낮음)",
+          "note_en": "Progress 0.35 approximated from a Q2 2026 start, a ~30-month phased build and Q4 2026 first-phase commissioning target",
+          "source": "https://nebius.com/birminghamal"
+        }
+      ],
+      "sources": [
+        "https://nebius.com/birminghamal",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm",
+        "https://www.datacenterdynamics.com/en/news/nebius-targets-data-center-development-in-birmingham-alabama/",
+        "https://www.wbrc.com/2026/03/27/birmingham-zoning-board-recommends-substation-request-proposed-ai-factory",
+        "https://www.wbhm.org/local-news/2026-09-03/data-center-dilemma-what-nebius-has-to-say-about-its-controversial-birmingham-project"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "nebius-lappeenranta",
+      "name": "Lappeenranta AI Factory (Pajarila)",
+      "name_ko": "라펜란타 AI 팩토리 (파야릴라)",
+      "country": "FI",
+      "admin1": "FI-02",
+      "region": "South Karelia (Lappeenranta, Pajarila)",
+      "coord": {
+        "lat": 61.054,
+        "lng": 28.272,
+        "confidence": "high",
+        "method": "official_address",
+        "source": "https://www.lappeenranta.fi/en/decision-making-and-administration/pajarila-data-center"
+      },
+      "primary": "nebius",
+      "parties": [
+        {
+          "company": "nebius",
+          "role": "operator",
+          "source": "https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland"
+        },
+        {
+          "company": "nebius",
+          "role": "owner",
+          "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+        },
+        {
+          "company": "polarnode",
+          "role": "developer",
+          "source": "https://www.lappeenranta.fi/en/decision-making-and-administration/pajarila-data-center"
+        }
+      ],
+      "detail": "lite",
+      "announced": "2026-03",
+      "acres": 100,
+      "grid_operator": "Fingrid (Finnish grid; 70MW initial substation by Caverion)",
+      "cooling": "closed-loop liquid cooling with heat recovery",
+      "summary_ko": "파야릴라 지구 Kettukuja(6번 국도 남쪽) 41ha(약 100에이커) 다동 캠퍼스, 완공 시 310MW. 현지 개발사 Polarnode 와 시가 협력, Nebius 는 '자체 소유 신규 부지'로 표현. 2026 봄 착공, 1단계 2027년 가동 목표. Caverion 이 초기 70MW 변전소(€15M, 2026-07 착공·2027 봄 완공) 시공.",
+      "summary_en": "Multi-building campus on 41ha (~100 acres) at Kettukuja, Pajarila (south of Highway 6), 310MW at full build-out. Developed with local developer Polarnode and the city; Nebius calls it a new owned location. Construction from spring 2026, first phase in 2027. Caverion builds the initial 70MW substation (€15m, Jul 2026 to spring 2027).",
+      "power": [
+        {
+          "from": "2026-03",
+          "secured_mw": 310,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland"
+        },
+        {
+          "from": "2027-Q2",
+          "secured_mw": 310,
+          "energized_mw": 70,
+          "basis": "estimate",
+          "source": "https://www.caverion.com/newsroom/releases/2026/caverion-to-deliver-eur-15-million-substation-for-nebius-data-center-in-finland-creating-jobs-for-more-than-80-professionals/"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "lp-phase-1",
+          "name": "Phase 1 (initial 70MW)",
+          "name_ko": "1단계 (초기 70MW)",
+          "kind": "datahall_liquid",
+          "gross_mw": 70,
+          "mw_basis": "grid",
+          "progress": 0.3,
+          "sources": [
+            "https://www.lappeenranta.fi/en/decision-making-and-administration/pajarila-data-center",
+            "https://www.caverion.com/newsroom/releases/2026/caverion-to-deliver-eur-15-million-substation-for-nebius-data-center-in-finland-creating-jobs-for-more-than-80-professionals/"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-03",
+              "basis": "reported",
+              "source": "https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland"
+            },
+            {
+              "status": "under_construction",
+              "from": "2026-03",
+              "basis": "reported",
+              "source": "https://www.datacenter-forum.com/datacenter-forum/nebius-to-operate-polarnodes-new-310-mw-data-center-campus-in-finland"
+            },
+            {
+              "status": "operating",
+              "from": "2027",
+              "basis": "target",
+              "source": "https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland"
+            }
+          ]
+        },
+        {
+          "id": "lp-later-phases",
+          "name": "Later phases (to 310MW)",
+          "name_ko": "후속 단계 (310MW 까지)",
+          "kind": "datahall_liquid",
+          "gross_mw": 240,
+          "mw_basis": "grid",
+          "sources": [
+            "https://www.lappeenranta.fi/en/decision-making-and-administration/pajarila-data-center"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-03",
+              "basis": "reported",
+              "source": "https://www.lappeenranta.fi/en/decision-making-and-administration/pajarila-data-center"
+            }
+          ]
+        }
+      ],
+      "deliveries": [
+        {
+          "what": "Initial 70MW substation (EUR 15m)",
+          "from": "Caverion",
+          "eta": "2027 spring",
+          "status": "in_progress",
+          "source": "https://www.caverion.com/newsroom/releases/2026/caverion-to-deliver-eur-15-million-substation-for-nebius-data-center-in-finland-creating-jobs-for-more-than-80-professionals/"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2025",
+          "event": "라펜란타시·Polarnode 협력협약 체결",
+          "event_en": "City of Lappeenranta and Polarnode signed a cooperation agreement",
+          "source": "https://www.lappeenranta.fi/en/decision-making-and-administration/pajarila-data-center"
+        },
+        {
+          "date": "2026-03-31",
+          "event": "Nebius, 라펜란타 310MW AI 팩토리 건설 발표(첫 용량 2027), 시는 '봄 즉시 착공' 공지",
+          "event_en": "Nebius announced the 310MW Lappeenranta AI factory (first capacity 2027); city said construction begins immediately in spring",
+          "source": "https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland"
+        },
+        {
+          "date": "2026-05-13",
+          "event": "Caverion, 초기 70MW 변전소 수주(€15M, 2026-07 착공·2027 봄 완공)",
+          "event_en": "Caverion won the initial 70MW substation (€15m; build from Jul 2026, complete spring 2027)",
+          "source": "https://www.caverion.com/newsroom/releases/2026/caverion-to-deliver-eur-15-million-substation-for-nebius-data-center-in-finland-creating-jobs-for-more-than-80-professionals/"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "1단계 70MW 는 Caverion 초기 변전소 용량을 1단계 규모로 본 추정. 2027 Q2 통전 70MW 도 '2027 봄 완공' 문구로 근사",
+          "note_en": "Phase 1 = 70MW assumes the initial Caverion substation size; 70MW energized in Q2 2027 approximated from 'completion spring 2027'",
+          "source": "https://www.caverion.com/newsroom/releases/2026/caverion-to-deliver-eur-15-million-substation-for-nebius-data-center-in-finland-creating-jobs-for-more-than-80-professionals/"
+        },
+        {
+          "note": "진행률 0.3: 2026 봄 착공 → 2027 1단계 완공 목표, 약 20개월 중 6개월 경과로 근사",
+          "note_en": "Progress 0.3 from a spring 2026 start toward 2027 first-phase completion (~6 of ~20 months)",
+          "source": "https://www.lappeenranta.fi/en/decision-making-and-administration/pajarila-data-center"
+        }
+      ],
+      "sources": [
+        "https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland",
+        "https://www.lappeenranta.fi/en/decision-making-and-administration/pajarila-data-center",
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm",
+        "https://www.caverion.com/newsroom/releases/2026/caverion-to-deliver-eur-15-million-substation-for-nebius-data-center-in-finland-creating-jobs-for-more-than-80-professionals/",
+        "https://www.datacenter-forum.com/datacenter-forum/nebius-to-operate-polarnodes-new-310-mw-data-center-campus-in-finland"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "reviewed_at": "2026-10-07"
+}

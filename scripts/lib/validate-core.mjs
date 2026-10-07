@@ -152,6 +152,18 @@ for (const c of infra.companies) {
   colorSeen.set(col, c.id)
 }
 
+// 완전히 같지 않아도 "눈으로 구분이 안 될 만큼" 가까운 색은 경고
+// (참여사 partner 는 핀이 없으니 제외. 거리 = RGB 공간의 직선 거리, 0~441)
+const SIMILAR_RGB = 28
+const rgbOf = (hex) => [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16))
+const pinned = infra.companies.filter((c) => c.group !== 'partner')
+for (let i = 0; i < pinned.length; i++)
+  for (let j = i + 1; j < pinned.length; j++) {
+    const a = rgbOf(pinned[i].color), b = rgbOf(pinned[j].color)
+    const dist = Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2])
+    if (dist > 0 && dist < SIMILAR_RGB) warn(`${pinned[i].id} ↔ ${pinned[j].id}: 회사색이 너무 비슷함 (${pinned[i].color} / ${pinned[j].color}, 거리 ${dist.toFixed(0)})`)
+  }
+
 // ---------- 9) 지도 타일 갱신 필요 여부 ----------
 const hash = createHash('sha1').update(JSON.stringify(infra.sites.map((s) => [s.id, s.coord.lat, s.coord.lng]))).digest('hex').slice(0, 12)
 const hexFile = new URL('../../public/data/land-hex.json', import.meta.url)

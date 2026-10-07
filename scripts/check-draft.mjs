@@ -34,7 +34,7 @@ const known = new Set([...others.map((c) => c.id), draft.company.id])
 const missing = new Set()
 for (const s of draft.file.sites) for (const p of s.parties) if (!known.has(p.company)) missing.add(p.company)
 const placeholders = [...missing].map((cid, i) => ({
-  id: cid, name: cid, group: 'neocloud', color: `#${(0x404040 + i * 0x101010).toString(16)}`, hq_country: 'US',
+  id: cid, name: cid, group: 'partner', color: `#${(0x404040 + i * 0x101010).toString(16)}`, hq_country: 'US',
   summary_ko: '(임시)', summary_en: '(placeholder)', metrics: [], sources: ['https://example.com'],
 }))
 const result = validateAll({

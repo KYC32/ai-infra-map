@@ -99,11 +99,44 @@ function Leaderboard() {
                   <i style={{ width: `${(r.planned / max) * 100}%`, background: styleOf('planned').color }} />
                 </span>
               </button>
+              {/* 이 회사만 골랐을 때: 코로케이션 입주 시설을 아래에 병기 */}
+              {activeCompanies.size === 1 && activeCompanies.has(r.companyId) && <Colocations company={c} />}
             </li>
           )
         })}
       </ol>
       <div className="rank-note">{t.rank.note}</div>
+    </div>
+  )
+}
+
+// 코로케이션(다른 회사 시설에 입주) 목록 — 지도 핀·순위 합계에는 들어가지 않는 참고 정보
+function Colocations({ company }) {
+  const t = useT()
+  const lang = useAppStore((s) => s.lang)
+  const list = company.colocations ?? []
+  if (!list.length) return null
+  // 규모가 공개된 곳만 더한 합계 (미공개는 "+N곳" 으로 따로 표시)
+  const known = list.filter((x) => x.mw != null)
+  const sum = known.reduce((n, x) => n + x.mw, 0)
+  return (
+    <div className="coloc">
+      <div className="coloc-head">
+        {t.rank.coloc} · {fmtMw(sum)}{list.length > known.length ? ` + ${list.length - known.length}${t.rank.colocMore}` : ''}
+      </div>
+      <ul>
+        {list.map((x) => (
+          <li key={x.name}>
+            <span className="dot" style={{ background: styleOf(x.status).color }} />
+            <a href={x.source} target="_blank" rel="noreferrer" title={lang === 'ko' ? x.note_ko : x.note_en}>
+              {pickName(x, lang)}
+            </a>
+            <span className="coloc-host">{x.host}</span>
+            <span className="coloc-mw">{x.mw != null ? `${x.basis === 'reported' ? '' : '~'}${fmtMw(x.mw)}` : t.rank.undisclosed}</span>
+          </li>
+        ))}
+      </ul>
+      <div className="coloc-note">{t.rank.colocNote}</div>
     </div>
   )
 }

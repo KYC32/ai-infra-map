@@ -30,6 +30,21 @@ const ReportedMetric = z.object({
   source: Url,
 }).strict()
 
+// 코로케이션·임차 시설: 다른 회사가 짓고 소유한 데이터센터에 입주한 곳
+// → 지도 핀·순위 합계에는 넣지 않고, 회사 정보에만 "병기" 합니다 (자체 캠퍼스와 이중 계산 방지)
+const Colocation = z.object({
+  name: z.string(),
+  name_ko: z.string().optional(),
+  country: Iso2,
+  host: z.string(),                       // 시설 소유·운영사 (예: Equinix, Verne Global)
+  mw: z.number().nonnegative().nullable(), // 발표된 규모 (미공개면 null)
+  status: z.enum(STATUS),
+  basis: Basis,
+  note_ko: z.string().optional(),
+  note_en: z.string().optional(),
+  source: Url,
+}).strict()
+
 export const Company = z.object({
   id: Id,
   name: z.string(),
@@ -42,6 +57,7 @@ export const Company = z.object({
   summary_ko: z.string(),
   summary_en: z.string(),
   metrics: z.array(ReportedMetric).default([]),
+  colocations: z.array(Colocation).optional(), // 코로케이션 입주 시설 (지도·순위 미포함)
   sources: z.array(Url).min(1),
 }).strict()
 

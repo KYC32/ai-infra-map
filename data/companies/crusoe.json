@@ -1,0 +1,881 @@
+{
+  "company_id": "crusoe",
+  "as_of": "2026-10-07",
+  "sites": [
+    {
+      "id": "abilene-stargate",
+      "name": "Abilene Campus 1 (Stargate, Lancium Clean Campus)",
+      "name_ko": "애빌린 1캠퍼스 (Stargate·Lancium 클린 캠퍼스)",
+      "country": "US",
+      "admin1": "US-TX",
+      "region": "Texas (Taylor County, Abilene)",
+      "coord": {
+        "lat": 32.449,
+        "lng": -99.733,
+        "confidence": "medium",
+        "method": "city_centroid",
+        "source": "https://www.tdlr.texas.gov/TABS/Search/Project/TABS2025007742"
+      },
+      "primary": "crusoe",
+      "parties": [
+        {
+          "company": "crusoe",
+          "role": "developer",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-primary-digital-joint-venture"
+        },
+        {
+          "company": "crusoe",
+          "role": "operator",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-primary-digital-joint-venture"
+        },
+        {
+          "company": "crusoe",
+          "role": "owner",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+        },
+        {
+          "company": "blue-owl",
+          "role": "owner",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+        },
+        {
+          "company": "primary-digital-infrastructure",
+          "role": "owner",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+        },
+        {
+          "company": "lancium",
+          "role": "developer",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-expands-ai-data-center-campus-in-abilene-to-1-2-gigawatts"
+        },
+        {
+          "company": "oracle",
+          "role": "tenant",
+          "source": "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf"
+        },
+        {
+          "company": "openai",
+          "role": "end_user",
+          "source": "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf"
+        },
+        {
+          "company": "jpmorgan",
+          "role": "financier",
+          "source": "https://seekingalpha.com/pr/20114105-newmark-facilitates-7_1-billion-construction-loan-to-develop-ai-data-center"
+        }
+      ],
+      "detail": "full",
+      "announced": "2024-10",
+      "acres": 1100,
+      "grid_operator": "ERCOT",
+      "cooling": "direct-to-chip liquid, closed-loop zero-water-evaporation (non-evaporative)",
+      "summary_ko": "Lancium 클린 캠퍼스(약 1,100에이커) 위 8개 동, 총 1.2GW·약 400만 sq ft. Crusoe가 설계·건설·운영하고 Crusoe·Blue Owl·Primary Digital 합작법인($15bn)이 소유, Oracle(OCI)이 임차해 OpenAI Stargate 1호로 쓴다. 1단계 2개 동(206MW) 2025-09 가동 시작, 2단계 6개 동 2025-03 착공. Oracle 2026-09 실적 발표 기준 8개 동 중 6개 동·618MW(전체의 75%) 인도, 나머지 2개 동은 2026년 말 완공 목표. ERCOT 1.2GW 계통 연결, GE Vernova 가스터빈은 백업용.",
+      "summary_en": "Eight buildings (~4M sq ft, 1.2GW) on Lancium's ~1,100-acre Clean Campus. Designed, built and operated by Crusoe; owned by a $15bn Crusoe/Blue Owl/Primary Digital JV; leased to Oracle (OCI) for OpenAI as the flagship Stargate site. Phase 1 (2 buildings, 206MW) went live Sep 2025; phase 2 (6 buildings) began Mar 2025. Per Oracle's Sep 2026 call, 6 of 8 buildings / 618MW (75%) delivered; last two targeted by end-2026. 1.2GW ERCOT interconnect; GE Vernova gas turbines for backup.",
+      "power": [
+        {
+          "from": "2024-10",
+          "secured_mw": 268,
+          "energized_mw": 0,
+          "basis": "estimate",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-primary-digital-joint-venture"
+        },
+        {
+          "from": "2025-03",
+          "secured_mw": 1200,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-expands-ai-data-center-campus-in-abilene-to-1-2-gigawatts"
+        },
+        {
+          "from": "2025-06",
+          "secured_mw": 1200,
+          "energized_mw": 268,
+          "basis": "estimate",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-flagship-abilene-data-center-is-live"
+        },
+        {
+          "from": "2026-06",
+          "secured_mw": 1200,
+          "energized_mw": 450,
+          "basis": "estimate",
+          "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+        },
+        {
+          "from": "2026-08",
+          "secured_mw": 1200,
+          "energized_mw": 804,
+          "basis": "estimate",
+          "source": "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+        },
+        {
+          "from": "2026-Q4",
+          "secured_mw": 1200,
+          "energized_mw": 1200,
+          "basis": "target",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "abl-b1",
+          "name": "Building 1 (351 Lancium Way)",
+          "name_ko": "1동 (351 Lancium Way)",
+          "kind": "datahall_liquid",
+          "it_mw": 103,
+          "mw_basis": "it",
+          "customer": "Oracle (OCI) for OpenAI",
+          "gpu": {
+            "model": "NVIDIA GB200 NVL72",
+            "count": null
+          },
+          "sources": [
+            "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-primary-digital-joint-venture",
+            "https://www.tdlr.texas.gov/TABS/Search/Project/TABS2025000156",
+            "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf"
+          ],
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2024-06",
+              "basis": "reported",
+              "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+            },
+            {
+              "status": "operating",
+              "from": "2025-09",
+              "basis": "reported",
+              "source": "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf"
+            }
+          ]
+        },
+        {
+          "id": "abl-b2",
+          "name": "Building 2 (251 Lancium Way)",
+          "name_ko": "2동 (251 Lancium Way)",
+          "kind": "datahall_liquid",
+          "it_mw": 103,
+          "mw_basis": "it",
+          "customer": "Oracle (OCI) for OpenAI",
+          "gpu": {
+            "model": "NVIDIA GB200 NVL72",
+            "count": null
+          },
+          "sources": [
+            "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-primary-digital-joint-venture",
+            "https://www.tdlr.texas.gov/TABS/Search/Project/TABS2025007742",
+            "https://www.crusoe.ai/resources/newsroom/crusoe-announces-flagship-abilene-data-center-is-live"
+          ],
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2024-06",
+              "basis": "reported",
+              "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+            },
+            {
+              "status": "commissioning",
+              "from": "2025-09",
+              "basis": "reported",
+              "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-flagship-abilene-data-center-is-live"
+            },
+            {
+              "status": "operating",
+              "from": "2025-12",
+              "basis": "estimate",
+              "source": "https://www.tdlr.texas.gov/TABS/Search/Project/TABS2025007742"
+            }
+          ]
+        },
+        {
+          "id": "abl-b3",
+          "name": "Building 3 (phase 2)",
+          "name_ko": "3동 (2단계)",
+          "kind": "datahall_liquid",
+          "it_mw": 103,
+          "mw_basis": "it",
+          "customer": "Oracle (OCI) for OpenAI",
+          "sources": [
+            "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture",
+            "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/",
+            "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+          ],
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2025-03",
+              "basis": "reported",
+              "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+            },
+            {
+              "status": "commissioning",
+              "from": "2026-06",
+              "basis": "estimate",
+              "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+            },
+            {
+              "status": "operating",
+              "from": "2026-08",
+              "basis": "reported",
+              "source": "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+            }
+          ]
+        },
+        {
+          "id": "abl-b4",
+          "name": "Building 4 (phase 2)",
+          "name_ko": "4동 (2단계)",
+          "kind": "datahall_liquid",
+          "it_mw": 103,
+          "mw_basis": "it",
+          "customer": "Oracle (OCI) for OpenAI",
+          "sources": [
+            "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture",
+            "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/",
+            "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+          ],
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2025-03",
+              "basis": "reported",
+              "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+            },
+            {
+              "status": "commissioning",
+              "from": "2026-06",
+              "basis": "estimate",
+              "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+            },
+            {
+              "status": "operating",
+              "from": "2026-08",
+              "basis": "reported",
+              "source": "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+            }
+          ]
+        },
+        {
+          "id": "abl-b5",
+          "name": "Building 5 (phase 2)",
+          "name_ko": "5동 (2단계)",
+          "kind": "datahall_liquid",
+          "it_mw": 103,
+          "mw_basis": "it",
+          "customer": "Oracle (OCI) for OpenAI",
+          "sources": [
+            "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture",
+            "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+          ],
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2025-03",
+              "basis": "reported",
+              "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+            },
+            {
+              "status": "operating",
+              "from": "2026-08",
+              "basis": "reported",
+              "source": "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+            }
+          ]
+        },
+        {
+          "id": "abl-b6",
+          "name": "Building 6 (phase 2)",
+          "name_ko": "6동 (2단계)",
+          "kind": "datahall_liquid",
+          "it_mw": 103,
+          "mw_basis": "it",
+          "customer": "Oracle (OCI) for OpenAI",
+          "sources": [
+            "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture",
+            "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+          ],
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2025-03",
+              "basis": "reported",
+              "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+            },
+            {
+              "status": "operating",
+              "from": "2026-08",
+              "basis": "reported",
+              "source": "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+            }
+          ]
+        },
+        {
+          "id": "abl-b7",
+          "name": "Building 7 (phase 2)",
+          "name_ko": "7동 (2단계)",
+          "kind": "datahall_liquid",
+          "it_mw": 103,
+          "mw_basis": "it",
+          "progress": 0.85,
+          "customer": "Oracle (OCI) for OpenAI",
+          "sources": [
+            "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture",
+            "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/",
+            "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+          ],
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2025-03",
+              "basis": "reported",
+              "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+            },
+            {
+              "status": "operating",
+              "from": "2026-Q4",
+              "basis": "target",
+              "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+            }
+          ]
+        },
+        {
+          "id": "abl-b8",
+          "name": "Building 8 (phase 2)",
+          "name_ko": "8동 (2단계)",
+          "kind": "datahall_liquid",
+          "it_mw": 103,
+          "mw_basis": "it",
+          "progress": 0.85,
+          "customer": "Oracle (OCI) for OpenAI",
+          "sources": [
+            "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture",
+            "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/",
+            "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+          ],
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2025-03",
+              "basis": "reported",
+              "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+            },
+            {
+              "status": "operating",
+              "from": "2026-Q4",
+              "basis": "target",
+              "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+            }
+          ]
+        }
+      ],
+      "deliveries": [
+        {
+          "what": "NVIDIA GB200 racks (Oracle-delivered) — first racks",
+          "from": "Oracle / NVIDIA",
+          "eta": "2025-06",
+          "status": "done",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-flagship-abilene-data-center-is-live"
+        },
+        {
+          "what": "~131,000 GPUs delivered at Abilene in Oracle FQ1 FY27 (Jun–Aug 2026)",
+          "from": "Oracle",
+          "eta": "2026-08",
+          "status": "done",
+          "source": "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2024-06",
+          "event": "1단계(2개 동, 200MW+) 착공",
+          "event_en": "Phase 1 (2 buildings, 200MW+) construction began",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+        },
+        {
+          "date": "2024-10-15",
+          "event": "Crusoe·Blue Owl·Primary Digital $3.4bn 합작 발표 — 206MW·998,000 sq ft 2개 동, 포춘 100 하이퍼스케일 테넌트에 100% 장기 임대",
+          "event_en": "$3.4bn Crusoe/Blue Owl/Primary Digital JV: 206MW, 998,000 sq ft two-building facility 100% leased long-term to a Fortune 100 hyperscale tenant",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-primary-digital-joint-venture"
+        },
+        {
+          "date": "2025-03-18",
+          "event": "캠퍼스 1.2GW 확장 발표 — 6개 동 추가(총 8개 동, 약 400만 sq ft), 1.2GW 계통 연결, 2026년 중반 완공 목표. 2단계 착공",
+          "event_en": "Expansion to 1.2GW announced: 6 more buildings (8 total, ~4M sq ft), 1.2GW grid interconnect, mid-2026 completion target; phase 2 construction began",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-expands-ai-data-center-campus-in-abilene-to-1-2-gigawatts"
+        },
+        {
+          "date": "2025-05-21",
+          "event": "2단계 $15bn 합작(Crusoe·Blue Owl·Primary Digital) 발표, JPMorgan 주도 $7.1bn 건설 대출",
+          "event_en": "Phase 2 of $15bn JV announced; $7.1bn JPMorgan-led construction loan",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+        },
+        {
+          "date": "2025-09-23",
+          "event": "Oracle 팩트시트: 1개 동 가동 중, 나머지 7개 동 건설 중(2026년 중반 완공 예정), 부지 1,100에이커",
+          "event_en": "Oracle fact sheet: one building running, seven more under construction (mid-2026), 1,100 acres",
+          "source": "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf"
+        },
+        {
+          "date": "2025-09-30",
+          "event": "Crusoe, Abilene 1단계 가동 발표(첫 2개 동 통전, OCI 위에서 OpenAI 워크로드 실행)",
+          "event_en": "Crusoe announces phase 1 live (first two buildings energized; OpenAI workloads on OCI)",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-flagship-abilene-data-center-is-live"
+        },
+        {
+          "date": "2025-11",
+          "event": "8번째(마지막) 동 상량(topping out)",
+          "event_en": "Eighth and final building topped out",
+          "source": "https://w.media/crusoe-tops-off-final-ai-data-center-in-abilene-texas/"
+        },
+        {
+          "date": "2026-03-06",
+          "event": "Bloomberg: Oracle·OpenAI, Abilene 인근 추가 확장(약 600MW) 계획 철회 보도 — 이후 해당 용량은 Microsoft 캠퍼스로",
+          "event_en": "Bloomberg: Oracle and OpenAI drop plans to expand near Abilene (~600MW); capacity later went to Microsoft",
+          "source": "https://www.bloomberg.com/news/articles/2026-03-06/oracle-and-openai-end-plans-to-expand-flagship-data-center"
+        },
+        {
+          "date": "2026-06-10",
+          "event": "Oracle 실적 발표: Abilene 전체 용량의 42% 인도, 90일 내 35% 추가, 나머지는 그다음 분기",
+          "event_en": "Oracle call: 42% of Abilene capacity delivered; another 35% within 90 days, remainder the following quarter",
+          "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+        },
+        {
+          "date": "2026-09-10",
+          "event": "Oracle 실적 발표: 8개 동 중 6개 동, 618MW(75%) 고객 인도. 분기 중 GPU 13.1만 개 인도",
+          "event_en": "Oracle call: 6 of 8 buildings, 618MW (75%) delivered; 131k GPUs delivered in the quarter",
+          "source": "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "건물별 IT 103MW: Oracle 2026-09 '6개 동 618MW = 75%' → 동당 약 103MW, 전체 약 824MW IT. 2024-10 Crusoe 1단계 '206MW 2개 동'과도 일치. 화면 환산(×1.3) 시 8개 동 합계 약 1,071MW 로 1.2GW 계통 안. 동별 실제 MW 는 미공개 (추정)",
+          "note_en": "103MW IT per building from Oracle's Sep 2026 '6 of 8 buildings, 618MW, 75%' (~824MW IT total), consistent with Crusoe's 206MW two-building phase 1; ~1,071MW gross at PUE 1.3, within the 1.2GW interconnect. Per-building MW undisclosed (estimate)",
+          "source": "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+        },
+        {
+          "note": "2동 가동 2025-12: Crusoe는 2025-09 '첫 2개 동 통전'이라 했지만 Oracle(2025-09-23)은 '1개 동 가동'이라 함 → 낮은 값 채택. 2동은 2025-09 시운전, TDLR 인허가상 251 Lancium Way 데이터홀 4개 공사 완료 예정일(2025-12-24)을 가동 시점으로 둠 (추정)",
+          "note_en": "Building 2 operating Dec 2025: Crusoe said two buildings energized (Sep 2025) but Oracle (Sep 23, 2025) said one running; lower value adopted. B2 commissioning from Sep 2025, operating at the TDLR fit-out completion date for 251 Lancium Way (Dec 24, 2025) (estimate)",
+          "source": "https://www.tdlr.texas.gov/TABS/Search/Project/TABS2025007742"
+        },
+        {
+          "note": "3·4동 시운전 2026-06: Oracle 2026-06-10 '42% 인도'(약 3.4개 동 분량)인데 Crusoe 2026-06-09 자료는 '2개 동 가동·6개 동 건설 중' → 3·4동은 부분 인도·시운전 상태로 처리. 6개 동 인도(2026-09-10 발표, Oracle 회계 1분기=6~8월)는 3~6동으로 배정 (동 번호 배정은 추정)",
+          "note_en": "B3–B4 commissioning Jun 2026: Oracle's 42% (≈3.4 buildings) vs Crusoe's '2 operational, 6 under construction' the day before → modeled as partial delivery/commissioning. The 6 delivered buildings (Sep 10, 2026; Oracle FQ1 = Jun–Aug) assigned to B1–B6 (assignment is our estimate)",
+          "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+        },
+        {
+          "note": "7·8동 진행률 0.85: 2025-11 상량(골조 완료), 2026-09 기준 미인도. Oracle은 '나머지는 그다음 분기(회계 2분기, 2026-09~11)', Crusoe는 '2026년 말 완공' 목표 → 내부 설비·시운전 단계로 근사 (추정)",
+          "note_en": "B7–B8 progress 0.85: topped out Nov 2025, not delivered as of Sep 2026; Oracle guides remainder the following quarter (FQ2, Sep–Nov 2026), Crusoe end-2026 → approximated as late fit-out (estimate)",
+          "source": "https://w.media/crusoe-tops-off-final-ai-data-center-in-abilene-texas/"
+        },
+        {
+          "note": "통전 이력(268→450→804MW)은 인도된 IT 용량×1.3 으로 환산한 추정치. 회사는 사이트 통전 MW 를 따로 공개하지 않음. 1.2GW 이전(2024-10~2025-02) 계통 용량(Epoch: 200MW 변전소)은 Tier 3 라 power 에 넣지 않음",
+          "note_en": "Energized steps (268→450→804MW) = delivered IT ×1.3 (estimate); site-level energized MW not disclosed. Pre-1.2GW grid capacity (Epoch: 200MW substation) is Tier 3 and left out of power[]",
+          "source": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-abilene"
+        },
+        {
+          "note": "2024-10~2025-02 확보 전력 268MW 는 추정: 1단계 2개 동 206MW(IT)×1.3. 당시 계통 연결 규모는 회사 미공개(Epoch 위성·인허가 분석은 200MW 변전소, Tier 3). 2025-03 부터 회사가 밝힌 1.2GW 계통 연결 적용",
+          "note_en": "268MW secured for Oct 2024–Feb 2025 is our estimate (phase-1 206MW IT ×1.3); interconnect size then undisclosed (Epoch: 200MW substation, Tier 3). The company-stated 1.2GW interconnect applies from Mar 2025",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-primary-digital-joint-venture"
+        }
+      ],
+      "sources": [
+        "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-primary-digital-joint-venture",
+        "https://www.crusoe.ai/resources/newsroom/crusoe-expands-ai-data-center-campus-in-abilene-to-1-2-gigawatts",
+        "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture",
+        "https://www.crusoe.ai/resources/newsroom/crusoe-announces-flagship-abilene-data-center-is-live",
+        "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf",
+        "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/",
+        "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/",
+        "https://www.tdlr.texas.gov/TABS/Search/Project/TABS2025000156",
+        "https://www.tdlr.texas.gov/TABS/Search/Project/TABS2025007742",
+        "https://seekingalpha.com/pr/20114105-newmark-facilitates-7_1-billion-construction-loan-to-develop-ai-data-center"
+      ],
+      "confidence": "high",
+      "program": "stargate"
+    },
+    {
+      "id": "abilene-microsoft",
+      "name": "Abilene Campus 2 (Microsoft AI factory)",
+      "name_ko": "애빌린 2캠퍼스 (Microsoft AI 팩토리)",
+      "country": "US",
+      "admin1": "US-TX",
+      "region": "Texas (Taylor County, Abilene — adjacent to Campus 1)",
+      "coord": {
+        "lat": 32.449,
+        "lng": -99.733,
+        "confidence": "medium",
+        "method": "city_centroid",
+        "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+      },
+      "primary": "crusoe",
+      "parties": [
+        {
+          "company": "crusoe",
+          "role": "developer",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+        },
+        {
+          "company": "microsoft",
+          "role": "tenant",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+        }
+      ],
+      "detail": "full",
+      "announced": "2026-03",
+      "acres": null,
+      "grid_operator": "ERCOT (plus 900MW on-site power plant)",
+      "cooling": "closed-loop non-evaporative liquid cooling",
+      "summary_ko": "1캠퍼스 바로 옆의 Microsoft 전용 900MW 캠퍼스(2026-03-27 발표). 동당 336MW IT 인 2개 동과 900MW 현장 발전소(+중압 BESS). 2026-06 착공(Crusoe '최근 착공'), 첫 동 2027년 중반 통전 목표. Abilene 전체 예상 용량은 2.1GW. Oracle·OpenAI 가 접은 Abilene 추가 확장 용량을 Microsoft 가 가져간 것으로 보도됨(Tier 2).",
+      "summary_en": "Dedicated 900MW campus for Microsoft adjacent to Campus 1 (announced Mar 27, 2026): two buildings of 336MW IT each plus a 900MW on-site power plant with MV BESS. Ground broken by Jun 2026; first building targeted to energize mid-2027. Full Abilene site projected at 2.1GW. Reported (Tier 2) to take the expansion capacity Oracle/OpenAI dropped.",
+      "power": [
+        {
+          "from": "2026-03",
+          "secured_mw": 900,
+          "energized_mw": 0,
+          "basis": "target",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+        },
+        {
+          "from": "2027-06",
+          "secured_mw": 900,
+          "energized_mw": 437,
+          "basis": "target",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "abm-b1",
+          "name": "Microsoft Building 1 (336MW IT)",
+          "name_ko": "MS 1동 (336MW IT)",
+          "kind": "datahall_liquid",
+          "it_mw": 336,
+          "mw_basis": "it",
+          "progress": 0.15,
+          "customer": "Microsoft",
+          "sources": [
+            "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure",
+            "https://www.crusoe.ai/resources/newsroom/crusoes-contracted-ai-infrastructure-capacity-approaches-5-gigawatts-across-data-centers-and-cloud"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-03",
+              "basis": "reported",
+              "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+            },
+            {
+              "status": "under_construction",
+              "from": "2026-06",
+              "basis": "reported",
+              "source": "https://www.crusoe.ai/resources/newsroom/crusoes-contracted-ai-infrastructure-capacity-approaches-5-gigawatts-across-data-centers-and-cloud"
+            },
+            {
+              "status": "commissioning",
+              "from": "2027-06",
+              "basis": "target",
+              "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+            }
+          ]
+        },
+        {
+          "id": "abm-b2",
+          "name": "Microsoft Building 2 (336MW IT)",
+          "name_ko": "MS 2동 (336MW IT)",
+          "kind": "datahall_liquid",
+          "it_mw": 336,
+          "mw_basis": "it",
+          "customer": "Microsoft",
+          "sources": [
+            "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-03",
+              "basis": "reported",
+              "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+            }
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2026-03-27",
+          "event": "Microsoft 용 900MW AI 팩토리 캠퍼스 발표(2개 동×336MW IT, 900MW 현장 발전소, 첫 동 2027년 중반 통전 목표). 부지 정리 착수",
+          "event_en": "900MW AI factory campus for Microsoft announced (2 × 336MW IT, 900MW on-site plant, first building energized mid-2027); land clearing underway",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+        },
+        {
+          "date": "2026-06-09",
+          "event": "Crusoe: Microsoft 캠퍼스 '최근 착공'",
+          "event_en": "Crusoe: Microsoft campus 'recently broke ground'",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoes-contracted-ai-infrastructure-capacity-approaches-5-gigawatts-across-data-centers-and-cloud"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "1동 진행률 0.15: 2026-06 착공, 2027-06 통전 목표(약 12개월 공정 중 4개월 경과)로 근사. 2동 일정은 미공개라 계획 단계로만 둠 (추정)",
+          "note_en": "B1 progress 0.15 from Jun 2026 groundbreaking and mid-2027 energization target (~4 of ~12 months). B2 schedule undisclosed, kept as planned (estimate)",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoes-contracted-ai-infrastructure-capacity-approaches-5-gigawatts-across-data-centers-and-cloud"
+        },
+        {
+          "note": "확보 전력 900MW 는 아직 짓지 않은 현장 발전소 용량(목표). 계통(ERCOT) 연결 규모는 미공개. 2027-06 통전 437MW 는 1동 336MW IT×1.3 환산 (목표 기반 추정)",
+          "note_en": "900MW 'secured' is the planned on-site plant (target); grid (ERCOT) interconnect size undisclosed. 437MW energized in mid-2027 = B1 336MW IT ×1.3 (target-based)",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+        },
+        {
+          "note": "좌표: '1캠퍼스 인접'만 공개 → 1캠퍼스와 같은 애빌린 시 중심 좌표 사용(3km 중복 경고는 의도된 것)",
+          "note_en": "Coordinates: only 'adjacent to Campus 1' disclosed → same Abilene city centroid as Campus 1 (3km duplicate warning is expected)",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+        }
+      ],
+      "sources": [
+        "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure",
+        "https://www.crusoe.ai/resources/newsroom/crusoes-contracted-ai-infrastructure-capacity-approaches-5-gigawatts-across-data-centers-and-cloud"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "armstrong-goodnight",
+      "name": "Armstrong County Campus (Goodnight, Google)",
+      "name_ko": "암스트롱 카운티 캠퍼스 (굿나잇·Google)",
+      "country": "US",
+      "admin1": "US-TX",
+      "region": "Texas (Armstrong County, near Claude / Amarillo)",
+      "coord": {
+        "lat": 35.112,
+        "lng": -101.363,
+        "confidence": "medium",
+        "method": "city_centroid",
+        "source": "https://theenergymag.com/news/2026-09-29/crusoe-google-texas-ai-armstrong"
+      },
+      "primary": "crusoe",
+      "parties": [
+        {
+          "company": "crusoe",
+          "role": "developer",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-developing-data-center-campus-in-armstrong-county-texas"
+        },
+        {
+          "company": "google",
+          "role": "tenant",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-developing-data-center-campus-in-armstrong-county-texas"
+        }
+      ],
+      "detail": "lite",
+      "announced": "2025-06",
+      "acres": null,
+      "grid_operator": "undisclosed (direct connection to Goodnight 1·2 wind farms, 531MW; 933MW gas plant permit filed)",
+      "cooling": "closed-loop non-evaporative liquid cooling",
+      "summary_ko": "아마릴로 동쪽 Armstrong County(클로드 인근) Google 용 캠퍼스. 2025-06 착공, 하루 5,500명 이상 투입. 인접한 Goodnight 1(265.5MW, 가동)·2(265.5MW, 건설 중) 풍력단지에 직접 연결. 세금감면 계약상 1단계 4개 동·최대 530MW(동당 25MW 데이터홀 4개), 933MW 가스발전소 인허가 신청(Tier 2). 가동 시점·총 MW 는 회사 미공개.",
+      "summary_en": "Google campus in Armstrong County near Claude, east of Amarillo. Broke ground Jun 2025; 5,500+ workers daily. Directly connected to adjacent Goodnight 1 (265.5MW, operating) and Goodnight 2 (265.5MW, under construction) wind farms. Per tax-abatement agreement (Tier 2), phase 1 = 4 buildings up to 530MW (four 25MW halls each); 933MW gas plant permit filed. Opening date and total MW not disclosed by the company.",
+      "power": [
+        {
+          "from": "2025-06",
+          "secured_mw": 530,
+          "energized_mw": 0,
+          "basis": "estimate",
+          "source": "https://theenergymag.com/news/2026-07-31/crusoe-texas-ai-data-center-goodnight"
+        }
+      ],
+      "substation": {},
+      "buildings": [],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2025-06",
+          "event": "착공",
+          "event_en": "Broke ground",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-developing-data-center-campus-in-armstrong-county-texas"
+        },
+        {
+          "date": "2026-01",
+          "event": "캠퍼스용 933MW 가스발전소 인허가 신청(보도)",
+          "event_en": "933MW gas plant permit application filed for the campus (reported)",
+          "source": "https://theenergymag.com/news/2026-09-29/crusoe-google-texas-ai-armstrong"
+        },
+        {
+          "date": "2026-07",
+          "event": "3·4동(각 약 80.5만 sq ft) 인허가 서류 제출 보도, 1단계 최대 530MW(세금감면 계약)",
+          "event_en": "Filings for buildings 3–4 (~805k sq ft each) reported; phase 1 up to 530MW per tax-abatement agreement",
+          "source": "https://theenergymag.com/news/2026-07-31/crusoe-texas-ai-data-center-goodnight"
+        },
+        {
+          "date": "2026-09-28",
+          "event": "Crusoe, Google 용 Armstrong County 캠퍼스 공식 발표(풍력 직접 연결, 비증발식 액체냉각)",
+          "event_en": "Crusoe officially announces the Armstrong County campus for Google (direct wind connection, non-evaporative liquid cooling)",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-developing-data-center-campus-in-armstrong-county-texas"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "확보 전력 530MW: 회사는 캠퍼스 전력 규모를 공개하지 않음. 세금감면 계약에 나온 1단계 최대 소비전력 530MW(Tier 2 보도)와 직접 연결 풍력 531MW 가 비슷해 1단계 규모로 둠. 2단계(3개 동·500MW, 총 1GW+)는 원문 미확인이라 제외 (추정)",
+          "note_en": "530MW secured is our estimate: company has not disclosed campus power; phase-1 max load of 530MW from the tax-abatement agreement (Tier 2) roughly matches the 531MW of directly connected wind. Phase 2 (3 buildings, 500MW, 1GW+ total) unverified, excluded (estimate)",
+          "source": "https://theenergymag.com/news/2026-07-31/crusoe-texas-ai-data-center-goodnight"
+        },
+        {
+          "note": "좌표: 보도상 '클로드(Claude) 10001 Lima Road' — OSM 에서 Lima Road 구간이 여러 개라 특정 불가 → 클로드 시 중심 좌표",
+          "note_en": "Coordinates: reported address '10001 Lima Road, Claude' is ambiguous in OSM (several Lima Road segments) → Claude city centroid",
+          "source": "https://theenergymag.com/news/2026-09-29/crusoe-google-texas-ai-armstrong"
+        }
+      ],
+      "sources": [
+        "https://www.crusoe.ai/resources/newsroom/crusoe-developing-data-center-campus-in-armstrong-county-texas",
+        "https://theenergymag.com/news/2026-07-31/crusoe-texas-ai-data-center-goodnight",
+        "https://theenergymag.com/news/2026-09-29/crusoe-google-texas-ai-armstrong"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "childress-lancium",
+      "name": "Childress Campus (with Lancium)",
+      "name_ko": "칠드레스 캠퍼스 (Lancium 협력)",
+      "country": "US",
+      "admin1": "US-TX",
+      "region": "Texas (Childress County, Childress)",
+      "coord": {
+        "lat": 34.426,
+        "lng": -100.204,
+        "confidence": "medium",
+        "method": "city_centroid",
+        "source": "https://www.crusoe.ai/resources/newsroom/crusoe-and-lancium-announce-1-gigawatt-ai-data-center-campus-in-childress-texas"
+      },
+      "primary": "crusoe",
+      "parties": [
+        {
+          "company": "crusoe",
+          "role": "developer",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-and-lancium-announce-1-gigawatt-ai-data-center-campus-in-childress-texas"
+        },
+        {
+          "company": "crusoe",
+          "role": "operator",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-and-lancium-announce-1-gigawatt-ai-data-center-campus-in-childress-texas"
+        },
+        {
+          "company": "lancium",
+          "role": "owner",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-and-lancium-announce-1-gigawatt-ai-data-center-campus-in-childress-texas"
+        }
+      ],
+      "detail": "lite",
+      "announced": "2026-07",
+      "acres": 270,
+      "grid_operator": "undisclosed (grid-connected; interconnect secured by Lancium)",
+      "cooling": "closed-loop non-evaporative liquid cooling",
+      "summary_ko": "Lancium 소유 270에이커 부지의 1.0GW 캠퍼스(2026-07-15 발표). Lancium 이 토지·계통 연결·전력 운용을, Crusoe 가 데이터센터 설계·건설·운영을 맡는 Abilene 방식. 이름 미공개 '선도적 하이퍼스케일 기술기업' 용, 2026 Q3 착공 목표. Bloomberg 는 Meta 가 Childress·Warrenton 에서 약 1.6GW 를 계약했다고 보도(회사 미확인).",
+      "summary_en": "1.0GW campus on 270 Lancium-owned acres (announced Jul 15, 2026). Lancium owns land, secures the interconnect and orchestrates power; Crusoe designs, builds and operates — the Abilene playbook. For an unnamed 'leading hyperscale technology company'; construction to begin Q3 2026. Bloomberg reported Meta contracted ~1.6GW across Childress and Warrenton (unconfirmed).",
+      "power": [
+        {
+          "from": "2026-07",
+          "secured_mw": 1000,
+          "energized_mw": 0,
+          "basis": "target",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-and-lancium-announce-1-gigawatt-ai-data-center-campus-in-childress-texas"
+        }
+      ],
+      "substation": {},
+      "buildings": [],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2026-06-19",
+          "event": "Bloomberg: Meta, Crusoe 와 Childress TX·Warrenton MO 에서 약 1.6GW 계약 보도(양사 미확인)",
+          "event_en": "Bloomberg: Meta signs ~1.6GW with Crusoe across Childress TX and Warrenton MO (unconfirmed by companies)",
+          "source": "https://thenextweb.com/news/meta-signs-new-ai-computing-deals-with-data-centre-firm-crusoe"
+        },
+        {
+          "date": "2026-07-15",
+          "event": "Crusoe·Lancium, Childress 1.0GW 캠퍼스 발표(270에이커, 2026 Q3 착공 목표)",
+          "event_en": "Crusoe and Lancium announce 1.0GW Childress campus (270 acres, construction from Q3 2026)",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-and-lancium-announce-1-gigawatt-ai-data-center-campus-in-childress-texas"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "좌표: Crusoe·Lancium 은 칠드레스 시명만 공개 → 시 중심 좌표. IREN Childress 사이트도 같은 시 중심 좌표라 3km 경고가 뜨지만 서로 다른 프로젝트(부지 미공개)",
+          "note_en": "Coordinates: only the city name disclosed → Childress city centroid. IREN Childress also uses the city centroid, so a 3km warning appears; they are separate projects (parcel undisclosed)",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoe-and-lancium-announce-1-gigawatt-ai-data-center-campus-in-childress-texas"
+        }
+      ],
+      "sources": [
+        "https://www.crusoe.ai/resources/newsroom/crusoe-and-lancium-announce-1-gigawatt-ai-data-center-campus-in-childress-texas",
+        "https://thenextweb.com/news/meta-signs-new-ai-computing-deals-with-data-centre-firm-crusoe"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "warrenton",
+      "name": "Warrenton Campus",
+      "name_ko": "워런턴 캠퍼스",
+      "country": "US",
+      "admin1": "US-MO",
+      "region": "Missouri (Warren County, Warrenton — west of St. Louis, off I-70)",
+      "coord": {
+        "lat": 38.811,
+        "lng": -91.141,
+        "confidence": "medium",
+        "method": "city_centroid",
+        "source": "https://www.warrencountyrecord.com/stories/aldermen-approve-data-center-site-plan,181278"
+      },
+      "primary": "crusoe",
+      "parties": [
+        {
+          "company": "crusoe",
+          "role": "developer",
+          "source": "https://www.warrencountyrecord.com/stories/aldermen-approve-data-center-site-plan,181278"
+        }
+      ],
+      "detail": "lite",
+      "announced": "2026-01",
+      "acres": 340,
+      "grid_operator": "MISO (Ameren Missouri)",
+      "cooling": "undisclosed",
+      "summary_ko": "세인트루이스 서쪽 워런턴(I-70 인근 22151 NW Service Road) 약 340에이커 캠퍼스. 2026-01-20 시의회가 조건부 사용허가·사이트 계획 승인: 80.5만 sq ft 데이터센터 2개 동, Crusoe 소유 변전소와 Ameren 소유 스위치야드. 2027년 말 첫 가동, 2029년 전체 완공 목표(보도). Crusoe 가 2026-06 밝힌 '미주리 계약 캠퍼스'로 보이며, Bloomberg 는 Meta 용이라고 보도(미확인). MW 는 미공개.",
+      "summary_en": "~340-acre campus at 22151 NW Service Road, Warrenton (west of St. Louis, off I-70). City approved the CUP and site plan on Jan 20, 2026: two 805k sq ft data center buildings, a Crusoe-owned substation and an Ameren-owned switchyard. First operations late 2027, full build-out 2029 (reported). Likely the 'contracted Missouri campus' Crusoe cited in Jun 2026; Bloomberg says for Meta (unconfirmed). MW undisclosed.",
+      "power": [
+        {
+          "from": "2026-01",
+          "secured_mw": 600,
+          "energized_mw": 0,
+          "basis": "estimate",
+          "source": "https://thenextweb.com/news/meta-signs-new-ai-computing-deals-with-data-centre-firm-crusoe"
+        }
+      ],
+      "substation": {},
+      "buildings": [],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2026-01-20",
+          "event": "워런턴 시의회, 조건부 사용허가·사이트 계획 만장일치 승인(80.5만 sq ft 2개 동, 변전소·Ameren 스위치야드)",
+          "event_en": "Warrenton aldermen unanimously approve CUP and site plan (two 805k sq ft buildings, substation, Ameren switchyard)",
+          "source": "https://www.warrencountyrecord.com/stories/aldermen-approve-data-center-site-plan,181278"
+        },
+        {
+          "date": "2026-06-09",
+          "event": "Crusoe, 미주리의 다섯 번째 계약 캠퍼스 언급(지명 미공개)",
+          "event_en": "Crusoe cites a fifth contracted campus in Missouri (location not named)",
+          "source": "https://www.crusoe.ai/resources/newsroom/crusoes-contracted-ai-infrastructure-capacity-approaches-5-gigawatts-across-data-centers-and-cloud"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "확보 전력 600MW 는 추정: 회사·인허가 기록 모두 MW 미공개. (1) Bloomberg 의 Meta 1.6GW(Childress+Warrenton) − Childress 1.0GW ≈ 0.6GW, (2) 데이터센터 목록 사이트의 1동 200MW + 2동 450MW(Tier 3) ≈ 650MW → 낮은 값 600MW 채택",
+          "note_en": "600MW is our estimate (no MW in company or permit records): Bloomberg's Meta 1.6GW (Childress+Warrenton) minus Childress 1.0GW ≈ 0.6GW; tracker sites list bldg 1 200MW + bldg 2 450MW (Tier 3) ≈ 650MW → lower 600MW adopted",
+          "source": "https://www.cleanview.co/data-centers/missouri/4341/crusoe-warrenton---building-2"
+        }
+      ],
+      "sources": [
+        "https://www.warrencountyrecord.com/stories/aldermen-approve-data-center-site-plan,181278",
+        "https://www.datacenterdynamics.com/en/news/crusoe-data-center-could-be-built-west-of-st-louis-missouri/",
+        "https://www.crusoe.ai/resources/newsroom/crusoes-contracted-ai-infrastructure-capacity-approaches-5-gigawatts-across-data-centers-and-cloud"
+      ],
+      "confidence": "low"
+    }
+  ],
+  "reviewed_at": "2026-10-07"
+}
