@@ -593,34 +593,6 @@
       ]
     },
     {
-      "id": "openai",
-      "name": "OpenAI",
-      "name_ko": "오픈AI",
-      "group": "partner",
-      "color": "#a9a49c",
-      "hq_country": "US",
-      "summary_ko": "AI 연구소. Stargate 프로그램 참여사, Abilene 의 최종 사용자.",
-      "summary_en": "AI lab; Stargate member and end user at Abilene.",
-      "metrics": [],
-      "sources": [
-        "https://openai.com/index/announcing-the-stargate-project/"
-      ]
-    },
-    {
-      "id": "softbank",
-      "name": "SoftBank Group",
-      "name_ko": "소프트뱅크",
-      "group": "partner",
-      "color": "#96a0ac",
-      "hq_country": "JP",
-      "summary_ko": "Stargate 프로그램 참여사(자금).",
-      "summary_en": "Stargate member (funding).",
-      "metrics": [],
-      "sources": [
-        "https://openai.com/index/announcing-the-stargate-project/"
-      ]
-    },
-    {
       "id": "lancium",
       "name": "Lancium",
       "name_ko": "랜시움",
@@ -1421,6 +1393,130 @@
         "https://www.navercorp.com/media/pressReleasesDetail?seq=10034355",
         "https://www.navercorp.com/media/pressReleasesDetail?seq=2255",
         "https://www.navercorp.com/media/pressReleasesDetail?seq=31060"
+      ]
+    },
+    {
+      "id": "sb-energy",
+      "name": "SB Energy",
+      "name_ko": "SB에너지",
+      "group": "partner",
+      "color": "#a49e96",
+      "hq_country": "US",
+      "summary_ko": "SoftBank 계열 에너지·데이터센터 개발사. Milam·PORTS-Pike·Cosmos 개발·운영.",
+      "summary_en": "SoftBank-backed energy and data-center developer behind Milam, PORTS-Pike and Cosmos.",
+      "metrics": [],
+      "sources": [
+        "https://sbenergy.com/openai-and-softbank-group-partner-with-sb-energy/"
+      ]
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "name_ko": "엔비디아",
+      "group": "partner",
+      "color": "#9aa3a9",
+      "hq_country": "US",
+      "summary_ko": "GPU 업체. PORTS-Pike 에 투자(financier).",
+      "summary_en": "GPU maker; financier at PORTS-Pike.",
+      "metrics": [],
+      "sources": [
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Guarantees-SB-Energys-PORTS-Pike-Technology-Campus-in-Ohio-to-Exclusively-Host-NVIDIA-AI-Compute/default.aspx"
+      ]
+    },
+    {
+      "id": "softbank",
+      "name": "SoftBank Group",
+      "name_ko": "소프트뱅크",
+      "group": "hyperscaler",
+      "ticker": {
+        "symbol": "9984",
+        "exchange": "TSE"
+      },
+      "color": "#8970c2",
+      "hq_country": "JP",
+      "summary_ko": "도쿄 본사의 투자 지주회사로 OpenAI 의 최대 외부 투자자 중 하나다. 지배 자회사 SB Energy 를 통해 텍사스 Milam County(OpenAI 임차, IT 753MW)·오하이오 PORTS-Pike(OpenAI 임차, IT 8.0GW)·오스틴 Cosmos(소프트뱅크 계열 임차, IT 50MW) 데이터센터 캠퍼스를 개발·소유하고, 오하이오 Lordstown 옛 GM 공장을 Stargate 장비 제조·데이터센터 거점으로 바꾸고 있다. 2026-09 기준 가동 중인 데이터센터 용량은 없다.",
+      "summary_en": "Tokyo-based investment holding company and one of OpenAI's largest outside investors. Through its controlled subsidiary SB Energy it develops and owns data center campuses in Milam County, TX (leased to OpenAI, 753MW IT), PORTS-Pike, OH (leased to OpenAI, 8.0GW IT) and Cosmos in Austin (leased to a SoftBank affiliate, 50MW IT), and is converting the former GM Lordstown plant in Ohio into a Stargate equipment-manufacturing and data center site. No data center capacity was in operation as of Sep 2026.",
+      "metrics": [
+        {
+          "key": "openai_investment_fair_value_usd_bn",
+          "value": 79.6,
+          "unit": "USD bn",
+          "label_ko": "OpenAI 투자 공정가치 (FY2025 말, 누적 투자원가 346억 달러)",
+          "label_en": "Fair value of OpenAI investment (FY2025 year-end; cumulative cost $34.6bn)",
+          "as_of": "2026-03-31",
+          "source": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2025/investor-presentation_q4fy2025_01_en.pdf"
+        },
+        {
+          "key": "us_power_dc_asset_spend_quarter_usd_bn",
+          "value": 6,
+          "unit": "USD bn",
+          "label_ko": "미국 발전·데이터센터 자산 취득 지출 (FY26 1분기, 9,689억 엔)",
+          "label_en": "Spend to acquire US power generation and data center assets (Q1 FY26, ¥968.9bn)",
+          "as_of": "2026-06",
+          "source": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/investor-presentation_q1fy2026_01_en.pdf"
+        },
+        {
+          "key": "sb_energy_dc_contracted_gw_it",
+          "value": 8.8,
+          "unit": "GW-IT",
+          "label_ko": "SB Energy 데이터센터 임대 계약 용량 (건설 중 0.8 + 계약 8.0)",
+          "label_en": "SB Energy data center contracted portfolio (0.8 under construction + 8.0 contracted)",
+          "as_of": "2026-09-21",
+          "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+        },
+        {
+          "key": "sb_energy_backlog_usd_bn",
+          "value": 439,
+          "unit": "USD bn",
+          "label_ko": "SB Energy 수주잔고 (데이터센터 약 4,300억 + 발전 약 100억 달러)",
+          "label_en": "SB Energy backlog (~$430bn data center + ~$10bn power)",
+          "as_of": "2026-09-21",
+          "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+        }
+      ],
+      "sources": [
+        "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2025/investor-presentation_q4fy2025_01_en.pdf",
+        "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/investor-presentation_q1fy2026_01_en.pdf",
+        "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+        "https://group.softbank/en/news/press/20260902",
+        "https://openai.com/index/five-new-stargate-sites/",
+        "https://openai.com/index/announcing-the-stargate-project/"
+      ]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "name_ko": "오픈AI",
+      "group": "hyperscaler",
+      "color": "#e9e9a5",
+      "hq_country": "US",
+      "summary_ko": "샌프란시스코의 AI 연구·서비스 기업(ChatGPT·Codex). 컴퓨팅 대부분을 Oracle·Microsoft·CoreWeave·SB Energy 등 다른 회사 시설에서 조달하고(해당 사이트의 tenant·end_user 로 표시), 직접 설계·개발하는 첫 캠퍼스는 조지아주 Effingham County 의 Project Camellia(3.2GW, 2028~2032 단계 공급)다. 2025년 컴퓨팅 약 1.9GW, 연환산 매출 200억 달러 이상.",
+      "summary_en": "San Francisco AI lab and service provider (ChatGPT, Codex). Most of its compute comes from facilities owned by others such as Oracle, Microsoft, CoreWeave and SB Energy (shown as tenant/end user at those sites); its first self-designed and self-developed campus is Project Camellia in Effingham County, Georgia (3.2GW, phased 2028–2032). Compute of ~1.9GW and $20bn+ ARR in 2025.",
+      "metrics": [
+        {
+          "key": "compute_gw",
+          "value": 1.9,
+          "unit": "GW",
+          "label_ko": "확보 컴퓨팅 용량 (2025년, 2024년 0.6GW → 약 1.9GW)",
+          "label_en": "Compute capacity (2025; up from 0.6GW in 2024)",
+          "as_of": "2025-12",
+          "source": "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/"
+        },
+        {
+          "key": "arr_usd_bn",
+          "value": 20,
+          "unit": "USD bn",
+          "label_ko": "연환산 매출(ARR, 2025년 '200억 달러 이상')",
+          "label_en": "Annualized revenue run-rate (2025, '$20B+')",
+          "as_of": "2025-12",
+          "source": "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/"
+        }
+      ],
+      "sources": [
+        "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/",
+        "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+        "https://openai.com/index/announcing-the-stargate-project/",
+        "https://openai.com/index/five-new-stargate-sites/"
       ]
     }
   ],

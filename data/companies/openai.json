@@ -1,0 +1,117 @@
+{
+  "company_id": "openai",
+  "as_of": "2026-10-07",
+  "sites": [
+    {
+      "id": "camellia-effingham",
+      "name": "Project Camellia (Effingham County, Georgia)",
+      "name_ko": "프로젝트 카멜리아 (조지아주 에핑엄 카운티)",
+      "country": "US",
+      "admin1": "US-GA",
+      "region": "Georgia (Effingham County, Savannah Gateway Industrial Hub near Rincon, along Effingham Parkway)",
+      "coord": {
+        "lat": 32.26,
+        "lng": -81.29,
+        "confidence": "low",
+        "method": "region_centroid",
+        "source": "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/"
+      },
+      "primary": "openai",
+      "parties": [
+        {
+          "company": "openai",
+          "role": "developer",
+          "source": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/"
+        },
+        {
+          "company": "openai",
+          "role": "end_user",
+          "source": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/"
+        }
+      ],
+      "detail": "lite",
+      "announced": "2026-07",
+      "acres": 1400,
+      "grid_operator": "Georgia Power (Southern Company; vertically integrated, non-RTO)",
+      "cooling": "closed-loop water system (recirculating)",
+      "summary_ko": "OpenAI 가 직접 설계·개발하는 첫 데이터센터 캠퍼스. Savannah Gateway Industrial Hub(산업용지) 약 1,400에이커에 4개 동(초기 구상 약 440만 sq ft)을 짓는다. 2026-07-22 발표, 투자 200억 달러(완공 시 300억 달러 이상 보도). Georgia Power 와 3.2GW 공급 계약(2028~2032 단계 공급, 최대 1GW 수요 조정 허용)을 맺었고 2026-08-27 주 공공서비스위원회(PSC) 실무진이 이의 없이 통과시켰다. 기준일에는 지역영향평가(DRI) 등 인허가 단계로 착공 전이다.",
+      "summary_en": "OpenAI's first self-designed and self-developed data center campus: four buildings (initial concept ~4.4M sq ft) on ~1,400 acres of the industrially zoned Savannah Gateway Industrial Hub. Announced 22 Jul 2026 with a $20bn investment (reported $30bn+ at full build-out). Georgia Power will supply 3.2GW in phases from 2028 to 2032 (with up to 1GW of flexible demand); Georgia PSC staff let the contract proceed on 27 Aug 2026. Still in permitting (state DRI review) and not yet under construction as of the as-of date.",
+      "power": [
+        {
+          "from": "2026-07",
+          "secured_mw": 3200,
+          "energized_mw": 0,
+          "basis": "target",
+          "source": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/"
+        },
+        {
+          "from": "2026-08",
+          "secured_mw": 3200,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.cbsnews.com/atlanta/news/georgia-power-gets-clearance-to-serve-openais-massive-ai-data-center-in-effingham-county/"
+        }
+      ],
+      "substation": {},
+      "buildings": [],
+      "deliveries": [
+        {
+          "what": "3.2GW electric service (new generation and grid infrastructure paid by OpenAI), delivered in phases",
+          "from": "Georgia Power",
+          "eta": "2028–2032",
+          "status": "ordered",
+          "source": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-15",
+          "event": "Georgia Power, OpenAI 3.2GW 공급 계약을 PSC 에 제출",
+          "event_en": "Georgia Power files the 3.2GW OpenAI supply contract with the PSC",
+          "source": "https://thecurrentga.org/2026/08/04/state-regulator-reviews-openai-georgia-power-contract/"
+        },
+        {
+          "date": "2026-07-22",
+          "event": "OpenAI·Effingham County, Project Camellia 발표: 4개 동, 투자 200억 달러, Georgia Power 3.2GW(2028~2032). 같은 날 DRI 서식 제출",
+          "event_en": "OpenAI and Effingham County announce Project Camellia: four buildings, $20bn, 3.2GW from Georgia Power (2028–2032); DRI form filed the same day",
+          "source": "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/"
+        },
+        {
+          "date": "2026-08-07",
+          "event": "카운티, 착공 전 DRI 심사·각종 허가·준공 검사 절차 안내",
+          "event_en": "County outlines the DRI review, permits and inspections required before and during construction",
+          "source": "https://www.effinghamcounty.org/m/newsflash/Home/Detail/466"
+        },
+        {
+          "date": "2026-08-27",
+          "event": "PSC 실무진이 이의를 제기하지 않아 Georgia Power–OpenAI 3.2GW 계약 통과(최대 1GW 수요 조정 포함, 공개 표결 없음)",
+          "event_en": "Georgia PSC staff decline to object, letting the 3.2GW Georgia Power–OpenAI contract proceed (incl. up to 1GW flexible demand; no public vote)",
+          "source": "https://www.cbsnews.com/atlanta/news/georgia-power-gets-clearance-to-serve-openais-massive-ai-data-center-in-effingham-county/"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "확정 확보 3,200MW 는 PSC 가 통과시킨 전력 공급 계약 규모(2026-08-27). 실제 공급은 2028~2032 단계적이고 단계별 MW 는 미공개라 통전 단계(energized)는 넣지 않음. 착공은 DRI·카운티 허가 이후(보도상 2027 초)",
+          "note_en": "Firm 3,200MW is the supply contract cleared by the PSC (27 Aug 2026). Delivery is phased 2028–2032 with undisclosed tranche sizes, so no energized steps are entered. Construction follows DRI and county permits (reported early 2027)",
+          "source": "https://www.cbsnews.com/atlanta/news/georgia-power-gets-clearance-to-serve-openais-massive-ai-data-center-in-effingham-county/"
+        },
+        {
+          "note": "좌표는 추정: 'Rincon 외곽 Savannah Gateway Industrial Hub, Effingham Parkway(SR 30~Blue Jay Rd) 양쪽' 보도로 잡은 대략 위치. 공식 필지 좌표 미확인, 위성사진 미사용",
+          "note_en": "Coordinates are approximate, based on reports placing the site in the Savannah Gateway Industrial Hub outside Rincon on both sides of Effingham Parkway (SR 30–Blue Jay Rd); no official parcel coordinates; no satellite tracking",
+          "source": "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/"
+        }
+      ],
+      "sources": [
+        "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+        "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/",
+        "https://thecurrentga.org/2026/07/25/as-effingham-county-data-center-plan-advances-next-step-is-state-evaluation-process/",
+        "https://thecurrentga.org/2026/08/04/state-regulator-reviews-openai-georgia-power-contract/",
+        "https://thecurrentga.org/2026/08/27/psc-boosts-safeguards-in-georgia-powers-massive-contract-with-openai/",
+        "https://www.cbsnews.com/atlanta/news/georgia-power-gets-clearance-to-serve-openais-massive-ai-data-center-in-effingham-county/",
+        "https://www.effinghamcounty.org/m/newsflash/Home/Detail/466"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "reviewed_at": "2026-10-07"
+}

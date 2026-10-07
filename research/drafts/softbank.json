@@ -1,0 +1,1054 @@
+{
+  "company": {
+    "id": "softbank",
+    "name": "SoftBank Group",
+    "name_ko": "소프트뱅크",
+    "group": "hyperscaler",
+    "ticker": {
+      "symbol": "9984",
+      "exchange": "TSE"
+    },
+    "color": "#8970c2",
+    "hq_country": "JP",
+    "summary_ko": "도쿄 본사의 투자 지주회사로 OpenAI 의 최대 외부 투자자 중 하나다. 지배 자회사 SB Energy 를 통해 텍사스 Milam County(OpenAI 임차, IT 753MW)·오하이오 PORTS-Pike(OpenAI 임차, IT 8.0GW)·오스틴 Cosmos(소프트뱅크 계열 임차, IT 50MW) 데이터센터 캠퍼스를 개발·소유하고, 오하이오 Lordstown 옛 GM 공장을 Stargate 장비 제조·데이터센터 거점으로 바꾸고 있다. 2026-09 기준 가동 중인 데이터센터 용량은 없다.",
+    "summary_en": "Tokyo-based investment holding company and one of OpenAI's largest outside investors. Through its controlled subsidiary SB Energy it develops and owns data center campuses in Milam County, TX (leased to OpenAI, 753MW IT), PORTS-Pike, OH (leased to OpenAI, 8.0GW IT) and Cosmos in Austin (leased to a SoftBank affiliate, 50MW IT), and is converting the former GM Lordstown plant in Ohio into a Stargate equipment-manufacturing and data center site. No data center capacity was in operation as of Sep 2026.",
+    "metrics": [
+      {
+        "key": "openai_investment_fair_value_usd_bn",
+        "value": 79.6,
+        "unit": "USD bn",
+        "label_ko": "OpenAI 투자 공정가치 (FY2025 말, 누적 투자원가 346억 달러)",
+        "label_en": "Fair value of OpenAI investment (FY2025 year-end; cumulative cost $34.6bn)",
+        "as_of": "2026-03-31",
+        "source": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2025/investor-presentation_q4fy2025_01_en.pdf"
+      },
+      {
+        "key": "us_power_dc_asset_spend_quarter_usd_bn",
+        "value": 6,
+        "unit": "USD bn",
+        "label_ko": "미국 발전·데이터센터 자산 취득 지출 (FY26 1분기, 9,689억 엔)",
+        "label_en": "Spend to acquire US power generation and data center assets (Q1 FY26, ¥968.9bn)",
+        "as_of": "2026-06",
+        "source": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/investor-presentation_q1fy2026_01_en.pdf"
+      },
+      {
+        "key": "sb_energy_dc_contracted_gw_it",
+        "value": 8.8,
+        "unit": "GW-IT",
+        "label_ko": "SB Energy 데이터센터 임대 계약 용량 (건설 중 0.8 + 계약 8.0)",
+        "label_en": "SB Energy data center contracted portfolio (0.8 under construction + 8.0 contracted)",
+        "as_of": "2026-09-21",
+        "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+      },
+      {
+        "key": "sb_energy_backlog_usd_bn",
+        "value": 439,
+        "unit": "USD bn",
+        "label_ko": "SB Energy 수주잔고 (데이터센터 약 4,300억 + 발전 약 100억 달러)",
+        "label_en": "SB Energy backlog (~$430bn data center + ~$10bn power)",
+        "as_of": "2026-09-21",
+        "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+      }
+    ],
+    "sources": [
+      "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2025/investor-presentation_q4fy2025_01_en.pdf",
+      "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/investor-presentation_q1fy2026_01_en.pdf",
+      "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+      "https://group.softbank/en/news/press/20260902",
+      "https://openai.com/index/five-new-stargate-sites/",
+      "https://openai.com/index/announcing-the-stargate-project/"
+    ]
+  },
+  "file": {
+    "company_id": "softbank",
+    "as_of": "2026-10-07",
+    "sites": [
+      {
+        "id": "milam-county-sb-energy",
+        "name": "Milam County Data Center (SB Energy, Stargate)",
+        "name_ko": "밀럼 카운티 데이터센터 (SB Energy, Stargate)",
+        "country": "US",
+        "admin1": "US-TX",
+        "region": "Texas (northern Milam County, between Buckholts and Rosebud, adjacent to SB Energy's Orion Solar Belt)",
+        "coord": {
+          "lat": 30.94,
+          "lng": -97.06,
+          "confidence": "low",
+          "method": "region_centroid",
+          "source": "https://therealdeal.com/texas/austin/2025/06/10/softbank-groups-sb-energy-plans-3-billion-texas-data-center/"
+        },
+        "primary": "softbank",
+        "parties": [
+          {
+            "company": "softbank",
+            "role": "owner",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "company": "sb-energy",
+            "role": "developer",
+            "source": "https://sbenergy.com/openai-and-softbank-group-partner-with-sb-energy/"
+          },
+          {
+            "company": "sb-energy",
+            "role": "owner",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "company": "sb-energy",
+            "role": "operator",
+            "source": "https://sbenergy.com/openai-and-softbank-group-partner-with-sb-energy/"
+          },
+          {
+            "company": "openai",
+            "role": "tenant",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          }
+        ],
+        "program": "stargate",
+        "detail": "full",
+        "announced": "2025-09",
+        "acres": 595,
+        "grid_operator": "ERCOT — co-located SB Energy solar (Orion 1–3) plus phased 34.5kV/345kV interconnection",
+        "cooling": "closed-loop water cooling (designed to minimize water use)",
+        "summary_ko": "SB Energy 가 개발·소유·운영하고 OpenAI 계열사(Orion DC I)가 15년 임차하는 Stargate 캠퍼스. 2026-01 리스 2건 체결(1동 IT 308MW, 2동 IT 445MW, 동당 약 65만 sq ft). 2026-04 수직 공사 착수(NTP). 1동 첫 인도 2027·최종 2028, 2동 2028 목표. 계통 연계는 4단계로 총 약 660MW(2026-08 ~ 2027-03 목표)이고 인접 자사 태양광(Orion)에서 전력을 공급한다. OpenAI 발표 규모는 1.2GW. 2026-09 기준 가동분 없음.",
+        "summary_en": "Stargate campus developed, owned and operated by SB Energy and leased for 15 years to an OpenAI affiliate (Orion DC I). Two leases signed Jan 2026: Building 1 (308MW IT) and Building 2 (445MW IT), ~650k sq ft each. Vertical construction began Apr 2026 (NTP). Building 1 first delivery 2027 and final 2028; Building 2 in 2028. Grid interconnection comes in four phases totalling ~660MW (Aug 2026–Mar 2027 targets), alongside co-located SB Energy solar (Orion). OpenAI's announced scale is 1.2GW. Nothing in operation as of Sep 2026.",
+        "power": [
+          {
+            "from": "2026-01",
+            "secured_mw": 1200,
+            "energized_mw": 0,
+            "basis": "target",
+            "source": "https://sbenergy.com/openai-and-softbank-group-partner-with-sb-energy/"
+          },
+          {
+            "from": "2026-08",
+            "secured_mw": 660,
+            "energized_mw": 0,
+            "basis": "reported",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "from": "2027-03",
+            "secured_mw": 1200,
+            "energized_mw": 660,
+            "basis": "target",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          }
+        ],
+        "substation": {
+          "voltage": "345kV (Phase 1-A via 34.5kV)"
+        },
+        "buildings": [
+          {
+            "id": "milam-b1",
+            "name": "Building 1",
+            "name_ko": "1동",
+            "it_mw": 308,
+            "mw_basis": "it",
+            "customer": "OpenAI (Orion DC I, LLC)",
+            "progress": 0.45,
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+              "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2026-01",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-04",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2027",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              }
+            ]
+          },
+          {
+            "id": "milam-b2",
+            "name": "Building 2",
+            "name_ko": "2동",
+            "it_mw": 445,
+            "mw_basis": "it",
+            "customer": "OpenAI (Orion DC I, LLC)",
+            "progress": 0.3,
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2026-01",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-04",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2028",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              }
+            ]
+          }
+        ],
+        "deliveries": [
+          {
+            "what": "Grid interconnection Phase 1-A: 200MW from Orion 1 via 34.5kV",
+            "from": "SB Energy (Orion 1 solar)",
+            "eta": "2026-08 (target; completion not yet confirmed)",
+            "status": "in_progress",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "what": "Grid interconnection Phase 1-B: 230MW from Orion 2 via 345kV",
+            "from": "SB Energy (Orion 2 solar)",
+            "eta": "2026-12",
+            "status": "in_progress",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "what": "Grid interconnection Phase 1-C: 230MW from Orion 3 via 345kV; Phase 1-D: 200MW switchover from Orion 1 (total initial campus load ~660MW)",
+            "from": "SB Energy (Orion 1/3 solar)",
+            "eta": "2027-02 / 2027-03",
+            "status": "in_progress",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2025-06",
+            "event": "SB Energy, Orion 태양광 단지 인접 595에이커에 30억 달러 규모 데이터센터 계획(카운티 재투자구역 승인)",
+            "event_en": "SB Energy plans a $3bn data center on 595 acres next to its Orion solar cluster (county reinvestment zone approved)",
+            "source": "https://therealdeal.com/texas/austin/2025/06/10/softbank-groups-sb-energy-plans-3-billion-texas-data-center/"
+          },
+          {
+            "date": "2025-09-23",
+            "event": "OpenAI·SoftBank, Milam County 를 SB Energy 와 개발하는 Stargate 부지로 발표 (Lordstown 과 합쳐 18개월 내 1.5GW)",
+            "event_en": "OpenAI and SoftBank name Milam County a Stargate site to be developed with SB Energy (1.5GW with Lordstown within 18 months)",
+            "source": "https://openai.com/index/five-new-stargate-sites/"
+          },
+          {
+            "date": "2026-01-09",
+            "event": "OpenAI, SB Energy 를 1.2GW 부지 건설·운영사로 선정. OpenAI·SoftBank 각 5억 달러 투자. 1동(IT 308MW)·2동(IT 445MW) 리스 체결",
+            "event_en": "OpenAI picks SB Energy to build and operate the 1.2GW site; OpenAI and SoftBank invest $500m each; leases for Building 1 (308MW IT) and Building 2 (445MW IT) signed",
+            "source": "https://sbenergy.com/openai-and-softbank-group-partner-with-sb-energy/"
+          },
+          {
+            "date": "2026-04",
+            "event": "1·2동 수직 공사 착수(NTP 발급)",
+            "event_en": "Notice to proceed issued for vertical construction of Buildings 1 and 2",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "date": "2026-08-03",
+            "event": "텍사스 주지사가 ERCOT·PUCT 에 대형 데이터센터 부하 재검증 지시 → ERCOT 일부 대형 부하 통전 승인 일시 중단",
+            "event_en": "Texas governor orders ERCOT/PUCT to re-verify large data center loads; ERCOT temporarily pauses some large-load energization approvals",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "date": "2026-09-21",
+            "event": "SB Energy S-1/A: 데이터센터 가동분 없음. 1동 첫 인도 2027·최종 2028, 2동 2028. 계통 연계 Phase 1-A(200MW) 목표는 여전히 '2026-08'",
+            "event_en": "SB Energy S-1/A: no data center capacity in operation; Building 1 first RFS 2027, final 2028; Building 2 2028; Phase 1-A (200MW) still shown as targeted Aug 2026",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "확정 확보 660MW = S-1 의 계통 연계 4단계 합계(초기 캠퍼스 부하). 1,200MW 는 OpenAI·SB Energy 의 발표 규모(target)로 확정값에 넣지 않음. 리스 IT 753MW×1.3 ≈ 979MW 는 초기 연계 660MW 를 넘으므로 나머지는 인접 자사 발전(1.3GW 이상 개발)과 추가 연계로 충당하는 것으로 해석",
+            "note_en": "Firm 660MW = sum of the four interconnection phases in the S-1 (initial campus load). 1,200MW is the announced scale (target) and is not counted as firm. Leased IT of 753MW × 1.3 ≈ 979MW exceeds the 660MW initial interconnection; the gap is presumably met by co-located generation (1.3GW+ developed) and later interconnection",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "note": "1동 진척률 0.45 는 추정: 2026-03 위성사진에 1동 철골·지붕 확인(Epoch), 2026-04 NTP, 첫 인도 2027 목표를 직선 보간",
+            "note_en": "Building 1 progress 0.45 is an estimate: steel and roofing visible on Building 1 in Mar 2026 satellite imagery (Epoch), NTP Apr 2026, first delivery targeted 2027",
+            "source": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
+          },
+          {
+            "note": "2동 진척률 0.3 은 추정: 1동과 같은 2026-04 NTP, 인도 목표는 1년 늦은 2028",
+            "note_en": "Building 2 progress 0.3 is an estimate: same Apr 2026 NTP as Building 1 but delivery targeted a year later (2028)",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "note": "좌표는 추정: 보도상 'Rosebud 외곽, Orion Solar Belt 인접'(Orion 은 Buckholts 소재). 공식 주소·필지 미확인이라 두 마을 사이 Milam 북부로 둠. 위성사진은 쓰지 않음",
+            "note_en": "Coordinates are approximate: reported as outside Rosebud next to the Orion Solar Belt (in Buckholts). No official address or parcel found, so placed in northern Milam between the two towns; no satellite tracking used",
+            "source": "https://www.kxxv.com/news/local-news/in-your-neighborhood/milam-county/american-made-solar-farm-now-commercially-operational-helping-power-google-data-centers-in-milam-county"
+          }
+        ],
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+          "https://www.sec.gov/Archives/edgar/data/2133037/000162828026059639/sbenergy-sx1.htm",
+          "https://sbenergy.com/openai-and-softbank-group-partner-with-sb-energy/",
+          "https://openai.com/index/five-new-stargate-sites/",
+          "https://openai.com/index/stargate-sb-energy-partnership/",
+          "https://therealdeal.com/texas/austin/2025/06/10/softbank-groups-sb-energy-plans-3-billion-texas-data-center/",
+          "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "ports-pike-technology-campus",
+        "name": "PORTS-Pike Technology Campus (SB Energy)",
+        "name_ko": "PORTS-Pike 테크놀로지 캠퍼스 (SB Energy)",
+        "country": "US",
+        "admin1": "US-OH",
+        "region": "Ohio (Pike County, former Portsmouth Gaseous Diffusion Plant near Piketon)",
+        "coord": {
+          "lat": 39.008,
+          "lng": -83,
+          "confidence": "medium",
+          "method": "official_address",
+          "source": "https://en.wikipedia.org/wiki/Portsmouth_Gaseous_Diffusion_Plant"
+        },
+        "primary": "softbank",
+        "parties": [
+          {
+            "company": "softbank",
+            "role": "owner",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "company": "sb-energy",
+            "role": "developer",
+            "source": "https://www.energy.gov/em/articles/partnership-ensures-affordable-energy-powers-ai-future-portsmouth-site"
+          },
+          {
+            "company": "sb-energy",
+            "role": "owner",
+            "source": "https://openai.com/index/openai-joins-ports-pike-project"
+          },
+          {
+            "company": "sb-energy",
+            "role": "operator",
+            "source": "https://openai.com/index/openai-joins-ports-pike-project"
+          },
+          {
+            "company": "openai",
+            "role": "tenant",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "company": "nvidia",
+            "role": "financier",
+            "source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Guarantees-SB-Energys-PORTS-Pike-Technology-Campus-in-Ohio-to-Exclusively-Host-NVIDIA-AI-Compute/default.aspx"
+          }
+        ],
+        "detail": "full",
+        "announced": "2026-03",
+        "acres": null,
+        "grid_operator": "PJM (AEP Ohio) — new 765kV transmission paid by SB Energy, plus planned 9.2GW neighboring gas generation (SoftBank affiliate)",
+        "cooling": "closed-loop, air-cooled (recirculating water after initial fill)",
+        "summary_ko": "미 에너지부(DOE) 포츠머스 옛 우라늄 농축 부지와 인근 사유지에 SB Energy 가 짓는 IT 8.0GW(계통 총부하 약 10GW) 캠퍼스. 2026-03-20 DOE·SB Energy·AEP Ohio 착공 행사(데이터센터 10GW, 신규 가스발전 9.2GW, 765kV 송전 42억 달러). 2026-08-17 OpenAI 계열사와 20년 리스 17건(IT 8.0GW) 체결, NVIDIA 가 15억 달러 투자·1~9동(IT 4.25GW) 잔존가치 보증. 2026-09 기준 공사 미착수, 첫 800MW 2028·전체 2032 목표.",
+        "summary_en": "SB Energy campus of 8.0GW IT (~10GW gross load) on the DOE's former Portsmouth uranium-enrichment site and adjacent private land. Groundbreaking event with DOE and AEP Ohio on 20 Mar 2026 (10GW data center, 9.2GW new gas generation, $4.2bn 765kV transmission). On 17 Aug 2026 an OpenAI affiliate signed 17 twenty-year leases (8.0GW IT); NVIDIA invests $1.5bn and guarantees residual value of Buildings 1–9 (4.25GW IT). Construction not started as of Sep 2026; first 800MW targeted 2028, full campus 2032.",
+        "power": [
+          {
+            "from": "2026-03",
+            "secured_mw": 10000,
+            "energized_mw": 0,
+            "basis": "target",
+            "source": "https://www.energy.gov/em/articles/partnership-ensures-affordable-energy-powers-ai-future-portsmouth-site"
+          },
+          {
+            "from": "2028",
+            "secured_mw": 10000,
+            "energized_mw": 800,
+            "basis": "target",
+            "source": "https://openai.com/index/openai-joins-ports-pike-project"
+          },
+          {
+            "from": "2032",
+            "secured_mw": 10000,
+            "energized_mw": 10000,
+            "basis": "target",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          }
+        ],
+        "substation": {
+          "voltage": "765kV (planned AEP Ohio transmission)"
+        },
+        "buildings": [
+          {
+            "id": "pp-phase1",
+            "name": "Initial phase (Building 1 first phase, ~800MW)",
+            "name_ko": "초기 단계 (1동 1단계, 약 800MW)",
+            "it_mw": 800,
+            "pue": 1.25,
+            "mw_basis": "it",
+            "customer": "OpenAI",
+            "sources": [
+              "https://openai.com/index/openai-joins-ports-pike-project",
+              "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2026-08",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2027-Q1",
+                "basis": "estimate",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2028",
+                "basis": "target",
+                "source": "https://openai.com/index/openai-joins-ports-pike-project"
+              }
+            ]
+          },
+          {
+            "id": "pp-b1-b9-rest",
+            "name": "Buildings 1–9 (remainder of the NVIDIA-guaranteed 4.25GW)",
+            "name_ko": "1~9동 나머지 (NVIDIA 보증 4.25GW 중 초기 단계 제외분)",
+            "it_mw": 3448,
+            "pue": 1.25,
+            "mw_basis": "it",
+            "customer": "OpenAI",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2026-08",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2027-H2",
+                "basis": "estimate",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2031",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              }
+            ]
+          },
+          {
+            "id": "pp-b10-b17",
+            "name": "Buildings 10–17",
+            "name_ko": "10~17동",
+            "it_mw": 3776,
+            "pue": 1.25,
+            "mw_basis": "it",
+            "customer": "OpenAI",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2026-08",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2029",
+                "basis": "estimate",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2032",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              }
+            ]
+          }
+        ],
+        "deliveries": [
+          {
+            "what": "765kV transmission to the site ($4.2bn, paid by SB Energy; Ohio Power Siting Board permitting)",
+            "from": "AEP Ohio",
+            "eta": "2029 (power begins flowing)",
+            "status": "ordered",
+            "source": "https://www.aep.com/news/stories/view/10823/"
+          },
+          {
+            "what": "Neighboring gas-fired generation 9.2GW (not owned by SB Energy; not yet financed, contracted or permitted)",
+            "from": "SoftBank affiliate (non-SB Energy)",
+            "eta": "undisclosed",
+            "status": "ordered",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2026-03-20",
+            "event": "DOE·SB Energy·AEP Ohio, 포츠머스 부지 착공 행사: 데이터센터 10GW, 신규 가스발전 9.2GW, 765kV 송전 42억 달러(SB Energy 부담), 송전 통전 2029",
+            "event_en": "DOE, SB Energy and AEP Ohio hold a groundbreaking at the Portsmouth Site: 10GW data center, 9.2GW new gas generation, $4.2bn 765kV transmission paid by SB Energy, power flowing in 2029",
+            "source": "https://www.energy.gov/em/articles/partnership-ensures-affordable-energy-powers-ai-future-portsmouth-site"
+          },
+          {
+            "date": "2026-08-17",
+            "event": "OpenAI 계열사, SB Energy 와 20년 리스 17건(IT 약 8.0GW) 체결. NVIDIA 15억 달러 투자·1~9동(IT 4.25GW) 잔존가치 보증. 첫 800MW 2028",
+            "event_en": "OpenAI affiliate signs 17 twenty-year leases (~8.0GW IT) with SB Energy; NVIDIA invests $1.5bn and guarantees residual value of Buildings 1–9 (4.25GW IT); first 800MW in 2028",
+            "source": "https://openai.com/index/openai-joins-ports-pike-project"
+          },
+          {
+            "date": "2026-09-21",
+            "event": "SB Energy S-1/A: 공사 '미착수', 첫 인도 2028·최종 2032. 9.2GW 전력 공급 계약은 최종 규제 승인 대기",
+            "event_en": "SB Energy S-1/A: construction 'not started', first RFS 2028 and final 2032; 9.2GW utility service agreements await final regulatory approval",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "확정 확보 0MW: 9.2GW 전력 공급 계약은 최종 규제 승인 전이고 가스발전도 미착수라 reported 단계를 두지 않음. 10,000MW 는 발표 규모(target, S-1 의 '총부하 약 10GW')",
+            "note_en": "Firm 0MW: the 9.2GW utility service agreements await final regulatory approval and the gas plants are not yet started, so no reported step. 10,000MW is the announced scale (target; S-1 '~10 GW of gross power load')",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "note": "건물 pue 1.25 지정: S-1 이 IT 8.0GW 를 총부하 약 10GW 로 밝혀 환산 배수 1.25 를 씀(기본 1.3 이면 10.4GW 로 발표 총부하 초과)",
+            "note_en": "Building pue set to 1.25: the S-1 says 8.0GW IT corresponds to ~10GW gross load (default 1.3 would give 10.4GW, above the stated total)",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "note": "건물 묶음은 S-1 표(1~9동 IT 4,248MW 최종 인도 2031 / 10~17동 IT 3,776MW 2032)를 따르되 1~9동에서 'OpenAI 첫 800MW(2028)'를 초기 단계로 분리. 800MW 가 IT 기준인지는 미확인",
+            "note_en": "Building groups follow the S-1 table (Bldgs 1–9 4,248MW IT, last RFS 2031; Bldgs 10–17 3,776MW IT, 2032), with OpenAI's 'first 800 megawatts (2028)' split out of 1–9. Whether 800MW is IT is unconfirmed",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "note": "착공 시점은 추정: 2026-09 기준 '미착수'. 2028 첫 인도를 위해 초기 단계 2027-Q1, 1~9동 나머지 2027 하반기, 10~17동 2029 착공으로 가정",
+            "note_en": "Construction starts are estimates: 'not started' as of Sep 2026; assumed Q1 2027 for the initial phase (to meet 2028), H2 2027 for the rest of Bldgs 1–9 and 2029 for Bldgs 10–17",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          }
+        ],
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+          "https://openai.com/index/openai-joins-ports-pike-project",
+          "https://www.energy.gov/em/articles/partnership-ensures-affordable-energy-powers-ai-future-portsmouth-site",
+          "https://www.aep.com/news/stories/view/10823/",
+          "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Guarantees-SB-Energys-PORTS-Pike-Technology-Campus-in-Ohio-to-Exclusively-Host-NVIDIA-AI-Compute/default.aspx"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "id": "cosmos-technology-campus",
+        "name": "Cosmos Technology Campus (SB Energy, Austin)",
+        "name_ko": "코스모스 테크놀로지 캠퍼스 (SB Energy, 오스틴)",
+        "country": "US",
+        "admin1": "US-TX",
+        "region": "Texas (Travis County, Austin)",
+        "coord": {
+          "lat": 30.33,
+          "lng": -97.78,
+          "confidence": "low",
+          "method": "county_centroid",
+          "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+        },
+        "primary": "softbank",
+        "parties": [
+          {
+            "company": "softbank",
+            "role": "owner",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "company": "softbank",
+            "role": "tenant",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "company": "sb-energy",
+            "role": "developer",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "company": "sb-energy",
+            "role": "owner",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          }
+        ],
+        "detail": "lite",
+        "announced": "2026-09",
+        "acres": null,
+        "grid_operator": "ERCOT — Austin Energy (substation and transmission upgrades in progress)",
+        "cooling": "undisclosed",
+        "summary_ko": "SB Energy 가 오스틴(Travis County)의 기존 시설을 개조해 짓는 IT 50MW 캠퍼스. 2025-11-07 SoftBank 계열사와 15년 리스(총 임대료 약 25억 달러, SoftBank Group Capital 보증) 체결, 2026-03 수직 공사 착수(NTP), 2026-05 9.99억 달러 선순위 담보채로 조달. 첫 가동 2026 4분기, 전체 인도 2027-05 목표. 용도는 첨단 AI 컴퓨팅 연구·개발. Stargate 프로그램 부지로 발표된 적은 없다.",
+        "summary_en": "50MW-IT campus SB Energy is renovating from an existing facility in Austin (Travis County). 15-year lease with a SoftBank affiliate signed 7 Nov 2025 (~$2.5bn total rent, guaranteed by SoftBank Group Capital); vertical construction NTP Mar 2026; financed with $999m senior secured notes in May 2026. Initial operations targeted Q4 2026, full RFS May 2027. Used for advanced AI compute R&D. Not announced as a Stargate site.",
+        "power": [
+          {
+            "from": "2026-09",
+            "secured_mw": 65,
+            "energized_mw": 0,
+            "basis": "estimate",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "from": "2027-05",
+            "secured_mw": 65,
+            "energized_mw": 65,
+            "basis": "target",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          }
+        ],
+        "substation": {},
+        "buildings": [
+          {
+            "id": "cosmos-main",
+            "name": "Cosmos facility (renovation, phased)",
+            "name_ko": "코스모스 시설 (개조, 단계 인도)",
+            "it_mw": 50,
+            "mw_basis": "it",
+            "customer": "SoftBank Group affiliate",
+            "progress": 0.75,
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+            ],
+            "phases": [
+              {
+                "status": "under_construction",
+                "from": "2026-03",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              },
+              {
+                "status": "commissioning",
+                "from": "2026-Q4",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2027-05",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+              }
+            ]
+          }
+        ],
+        "deliveries": [
+          {
+            "what": "Substation and transmission upgrades for grid connection",
+            "from": "Austin Energy",
+            "eta": "before initial operations (Q4 2026 target)",
+            "status": "in_progress",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2025-11-07",
+            "event": "SB Energy, SoftBank 계열사와 Cosmos 15년 리스 체결 (총 임대료 약 25억 달러)",
+            "event_en": "SB Energy signs a 15-year Cosmos lease with a SoftBank affiliate (~$2.5bn total rent)",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "date": "2026-03",
+            "event": "수직 공사 착수(NTP)",
+            "event_en": "Notice to proceed for vertical construction",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "date": "2026-05",
+            "event": "9.99억 달러 8.875% 선순위 담보채(2031 만기) 발행으로 사업비 조달",
+            "event_en": "Financed with $999m of 8.875% senior secured notes due 2031",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "date": "2026-09-01",
+            "event": "SB Energy S-1 공개로 처음 알려짐: 첫 가동 2026 4분기, 임대료 개시 늦어도 2026-12-11, 전체 인도 2027-05",
+            "event_en": "First disclosed in SB Energy's public S-1: initial operations Q4 2026, rent starts by 11 Dec 2026 at the latest, full RFS May 2027",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026059639/sbenergy-sx1.htm"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "확보 전력 65MW(estimate) = IT 50MW × PUE 1.3. S-1 표에서 계약 부하·계통 연계가 확보(✓)로 표시돼 근거 있는 추정으로 둠. 실제 MW 는 미공개",
+            "note_en": "Secured 65MW (estimate) = 50MW IT × PUE 1.3; the S-1 table marks contracted load and interconnection as secured, so treated as a grounded estimate. Actual MW undisclosed",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "note": "진척률 0.75 는 추정: 기존 건물 개조, 2026-03 NTP 후 2026 4분기 첫 가동 목표를 직선 보간",
+            "note_en": "Progress 0.75 is an estimate: renovation of an existing building, NTP Mar 2026, initial operations targeted Q4 2026",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          },
+          {
+            "note": "좌표는 Travis County 중심(정확한 주소 미공개). S-1 은 'Austin, Texas' 의 시설로만 표기",
+            "note_en": "Coordinates are the Travis County centroid (exact address undisclosed); the S-1 only says a facility in Austin, Texas",
+            "source": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm"
+          }
+        ],
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+          "https://www.sec.gov/Archives/edgar/data/2133037/000162828026059639/sbenergy-sx1.htm"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "sb1",
+      "field": "company.metrics.openai_investment_fair_value_usd_bn",
+      "value": 79.6,
+      "source_url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2025/investor-presentation_q4fy2025_01_en.pdf",
+      "published": "2026-05-13",
+      "source_tier": 1,
+      "source_type": "earnings_call",
+      "quote": "FY2025 Year-End Investments in OpenAI ... Valuation gain: $45.0B ... Cumulative investment cost 34.6 ... Fair value 79.6",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb2",
+      "field": "company.metrics.us_power_dc_asset_spend_quarter_usd_bn",
+      "value": 6,
+      "source_url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/investor-presentation_q1fy2026_01_en.pdf",
+      "published": "2026-08-06",
+      "source_tier": 1,
+      "source_type": "earnings_call",
+      "quote": "Expenditures to acquire assets related to power generation and data centers in the U.S. (-$6.0B)",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb3",
+      "field": "company.metrics.sb_energy_dc_contracted_gw_it",
+      "value": 8.8,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+      "published": "2026-09-21",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "with 8.8 GW-IT in our portfolio, including 0.8 GW-IT of under-construction capacity",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb4",
+      "field": "company.metrics.sb_energy_backlog_usd_bn",
+      "value": 439,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+      "published": "2026-09-21",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "we have approximately $439 billion of backlog, comprising approximately $430 billion of DC segment backlog",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb5",
+      "field": "sites[*].parties.softbank.owner (control of SB Energy)",
+      "value": "SoftBank controls majority voting power of SB Energy",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026059639/sbenergy-sx1.htm",
+      "published": "2026-09-01",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Following this offering, SoftBank will control a majority of the voting power of our outstanding common stock",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb6",
+      "field": "sites[*]: no data center capacity in operation",
+      "value": 0,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+      "published": "2026-09-21",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "No data center capacity is currently in operation. Our first data center projects, the Cosmos Technology Campus and Milam County Data Center, are under construction.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb7",
+      "field": "sites.milam-county-sb-energy.announced / program",
+      "value": "2025-09 (Stargate)",
+      "source_url": "https://openai.com/index/five-new-stargate-sites/",
+      "published": "2025-09-23",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "The second site is located in Milam County, Texas, and will be developed in partnership with SB Energy, a SoftBank Group company",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb8",
+      "field": "sites.milam-county-sb-energy.power[0].secured_mw (target)",
+      "value": 1200,
+      "source_url": "https://sbenergy.com/openai-and-softbank-group-partner-with-sb-energy/",
+      "published": "2026-01-09",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "OpenAI has also selected SB Energy to build and operate its previously-announced 1.2 GW data center site in Milam County.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb9",
+      "field": "sites.milam-county-sb-energy.buildings.it_mw",
+      "value": {
+        "milam-b1": 308,
+        "milam-b2": 445
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026059639/sbenergy-sx1.htm",
+      "published": "2026-09-01",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Building 1 is designed for approximately 308 MW of critical IT capacity and Building 2 is designed for approximately 445 MW of critical IT capacity",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb10",
+      "field": "sites.milam-county-sb-energy.power[1].secured_mw (reported)",
+      "value": 660,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+      "published": "2026-09-21",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Phase 1-A (200 MW from Orion 1 via 34.5kV, targeted August 2026) ... for a total initial campus load of approximately 660 MW.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb11",
+      "field": "sites.milam-county-sb-energy.buildings.phases (NTP, RFS)",
+      "value": "NTP 2026-04; B1 first RFS 2027 / final 2028; B2 2028",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+      "published": "2026-09-21",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Milam County Building 1 ... 308 OpenAI affiliate Vertical construction; NTP issued April 2026 2027 2028",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb12",
+      "field": "sites.milam-county-sb-energy.buildings.phases (first building date conflict)",
+      "value": "TDLR filing: first building by Oct 2026",
+      "source_url": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand",
+      "published": "2026-04-17",
+      "source_tier": 3,
+      "source_type": "news",
+      "quote": "regulatory filings indicating this building will be delivered by October",
+      "verification": "conflict"
+    },
+    {
+      "id": "sb13",
+      "field": "sites.milam-county-sb-energy.acres",
+      "value": 595,
+      "source_url": "https://therealdeal.com/texas/austin/2025/06/10/softbank-groups-sb-energy-plans-3-billion-texas-data-center/",
+      "published": "2025-06-10",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "multiple data center buildings spanning 1.5 million square feet on 595 acres adjacent to its Orion Solar Belt",
+      "verification": "single_source"
+    },
+    {
+      "id": "sb14",
+      "field": "sites.milam-county-sb-energy.grid_operator (ERCOT pause)",
+      "value": "ERCOT paused some large-load energization approvals (Aug 2026)",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+      "published": "2026-09-21",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "ERCOT has subsequently implemented an eligibility verification process and temporarily paused energization approvals for certain large data center loads",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb15",
+      "field": "sites.milam-county-sb-energy (co-located generation)",
+      "value": "1.3GW+ generation developed in Milam County",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026059639/sbenergy-sx1.htm",
+      "published": "2026-09-01",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "we had developed more than 1.3 GW of incremental power generation capacity in Milam County",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb16",
+      "field": "sites.ports-pike-technology-campus.power[0].secured_mw (target)",
+      "value": 10000,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+      "published": "2026-09-21",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "the site is designed to include 8.0 GW-IT of data center capacity, representing 10 GW of gross power load",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb17",
+      "field": "sites.ports-pike-technology-campus.announced",
+      "value": "2026-03-20",
+      "source_url": "https://www.energy.gov/em/articles/partnership-ensures-affordable-energy-powers-ai-future-portsmouth-site",
+      "published": "2026-03",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "SB Energy, a SoftBank Group company, announced a unique public-private partnership to construct the world's largest artificial intelligence (AI) data center",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb18",
+      "field": "sites.ports-pike-technology-campus.parties.openai.tenant",
+      "value": "17 leases, ~8.0GW-IT, 20-year",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026059639/sbenergy-sx1.htm",
+      "published": "2026-09-01",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "resulting in 17 leases covering approximately 8.0 GW-IT of critical IT capacity in the aggregate. Each lease has a 20-year initial term",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb19",
+      "field": "sites.ports-pike-technology-campus.power[1] / buildings.pp-phase1",
+      "value": "first 800MW in 2028",
+      "source_url": "https://openai.com/index/openai-joins-ports-pike-project",
+      "published": "2026-08-17",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "The first 800 megawatts are expected to become available in 2028 largely using existing AEP infrastructure.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb20",
+      "field": "sites.ports-pike-technology-campus: firm power not secured",
+      "value": "9.2GW utility agreements pending approval",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026059639/sbenergy-sx1.htm",
+      "published": "2026-09-01",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Utility service agreements for 9.2 GW capacity are subject to final regulatory approvals.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb21",
+      "field": "sites.ports-pike-technology-campus.buildings (groups, RFS)",
+      "value": {
+        "pp-b1-b9": "4,248MW-IT, last RFS 2031",
+        "pp-b10-b17": "3,776MW-IT, last RFS 2032"
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026059639/sbenergy-sx1.htm",
+      "published": "2026-09-01",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "PORTS-Pike Technology Campus Buildings 1-9 4,248 Pike OH 100% Contracted 2031",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb22",
+      "field": "sites.ports-pike-technology-campus.deliveries (765kV, 2029)",
+      "value": "power begins flowing 2029",
+      "source_url": "https://www.aep.com/news/stories/view/10823/",
+      "published": "2026-03-20",
+      "source_tier": 1,
+      "source_type": "utility_filing",
+      "quote": "power to begin flowing to the site in 2029",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb23",
+      "field": "sites.ports-pike-technology-campus.parties.nvidia.financier",
+      "value": "$1.5bn investment; residual value guaranty for 4.25GW-IT",
+      "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Guarantees-SB-Energys-PORTS-Pike-Technology-Campus-in-Ohio-to-Exclusively-Host-NVIDIA-AI-Compute/default.aspx",
+      "published": "2026-08-17",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "expected to come online in phases beginning in 2028",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb24",
+      "field": "sites.lordstown-stargate.buildings.lordstown-dc.phases[0] (under_construction 2025-09)",
+      "value": "broken ground; operational next year (2026)",
+      "source_url": "https://openai.com/index/five-new-stargate-sites/",
+      "published": "2025-09-23",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "One site is located in Lordstown, Ohio, where SoftBank has broken ground on an advanced data center design which is on track to be operational next year.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb25",
+      "field": "sites.lordstown-stargate.power[0].secured_mw (derived target)",
+      "value": 300,
+      "source_url": "https://openai.com/index/five-new-stargate-sites/",
+      "published": "2025-09-23",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "The other two Stargate sites being announced today can scale to 1.5 gigawatts over the next 18 months.",
+      "verification": "single_source"
+    },
+    {
+      "id": "sb26",
+      "field": "sites.lordstown-stargate.parties.softbank.owner",
+      "value": "SoftBank owns site 100% (Crescent Dune LLC); equipment JV 50:50 with Foxconn",
+      "source_url": "https://www.wfmj.com/story/53011784/update-softbank-foxconn-to-manufacture-ai-data-center-equipment-in-lordstown-in-new-partnership",
+      "published": "2025-08",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "As for the equipment itself and the site, those will be 100% owned by SoftBank.",
+      "verification": "single_source"
+    },
+    {
+      "id": "sb27",
+      "field": "sites.lordstown-stargate (status estimate)",
+      "value": "roofing mostly in place Jul 2026; projected operation Mar 2027",
+      "source_url": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-lordstown",
+      "published": "2026-08",
+      "source_tier": 3,
+      "source_type": "news",
+      "quote": "Active construction; roofing mostly in place",
+      "verification": "single_source"
+    },
+    {
+      "id": "sb28",
+      "field": "sites.cosmos-technology-campus.buildings.cosmos-main.it_mw",
+      "value": 50,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+      "published": "2026-09-21",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "the Cosmos Technology Campus, a facility in Travis County, Texas, with approximately 50 MW of critical IT capacity",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb29",
+      "field": "sites.cosmos-technology-campus.buildings.cosmos-main.phases",
+      "value": "NTP 2026-03; initial ops Q4 2026; full RFS May 2027",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026062846/sbenergy-sx1a2.htm",
+      "published": "2026-09-21",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Vertical construction; NTP issued March 2026 Initial operations expected during 4th quarter of 2026 Full RFS by May 2027",
+      "verification": "confirmed"
+    },
+    {
+      "id": "sb30",
+      "field": "sites.cosmos-technology-campus.parties.softbank.tenant",
+      "value": "15-year lease with SoftBank affiliate dated 2025-11-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026059639/sbenergy-sx1.htm",
+      "published": "2026-09-01",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "We have entered into a lease agreement dated November 7, 2025 with an affiliate of SoftBank as tenant for our Cosmos Technology Campus.",
+      "verification": "confirmed"
+    }
+  ],
+  "open_questions": [
+    "companies.json 에 없는 회사 id(병합 때 group \"partner\" 로 추가 필요): sb-energy(SoftBank 지배 자회사, Milam·PORTS-Pike·Cosmos 개발·소유·운영. 2026-09 Nasdaq 'SBE' 상장 신청 — 상장 후 독립 회사 항목으로 둘지, 지금처럼 softbank primary 아래 parties 로만 둘지 결정 필요), nvidia(PORTS-Pike 15억 달러 투자·잔존가치 보증 → financier).",
+    "PORTS-Pike 와 Cosmos 는 공식 자료(OpenAI·SB Energy S-1·DOE)에서 'Stargate' 로 부르지 않아 program 을 비워 둠. 지시서상 PORTS-Pike 는 Stargate 부지로 분류돼 있으니, Stargate 로 묶을지(브랜드 확인 자료가 있으면) 결정 필요.",
+    "Cosmos(오스틴, IT 50MW)는 SoftBank 계열사가 임차하는 SoftBank 그룹 자체 시설(Stargate 아님)이라 범위 밖일 수 있음 — 남길지 결정 필요. 정확한 주소·기존 건물 정체도 미공개.",
+    "Milam 첫 가동 시점 상충: Epoch 가 인용한 TDLR 신고 '1동 2026-10 인도' vs SB Energy S-1/A(2026-09-21) '1동 첫 인도 2027·최종 2028'. 늦은 쪽(S-1) 채택. ERCOT 가 2026-08 대형 부하 통전 승인을 일시 중단해 Phase 1-A(200MW, 2026-08 목표) 통전 여부가 불확실 — 상장 후 첫 분기 보고서에서 확인.",
+    "Milam 확정 전력 660MW 는 S-1 의 '초기 캠퍼스 부하' 연계 4단계 합계. 리스 IT 753MW(≈ 총 979MW)를 다 받으려면 추가 연계나 자체 발전 직결이 필요한데 그 규모·시점은 미공개.",
+    "Lordstown: 데이터센터 MW·가동 시점 공식 미공개. 300MW(target)는 '두 부지 합계 1.5GW' 에서 Milam 1.2GW 를 뺀 파생값이고, 시설 주 용도는 장비 제조(Foxconn 50:50 합작). Epoch 는 IT 214MW·2027-03 가동을 추정하고 '로즈타운의 향후 데이터센터 금지' 를 언급 — 원문(마을 조례) 확인 필요. 데이터센터가 아니라 공장으로 보고 제외할지도 결정 필요.",
+    "PORTS-Pike: 정확한 건물 위치(DOE 부지 189에이커 + 사유지 수천 에이커)·전체 면적 미공개 → acres null. 9.2GW 가스발전을 짓는 'SB Energy 가 아닌 SoftBank 계열사' 의 법인명 미확인. 첫 800MW 가 IT 기준인지 미확인.",
+    "SB Energy 파이프라인 Borden County(IT 737MW)·Scurry County(IT 900MW)는 계통 연계는 확보했으나 임차인 미정이라 넣지 않음(BRIEF 5-3). 임차 계약이 나오면 추가.",
+    "SoftBank Corp.(일본 통신 자회사)의 일본 AI 데이터센터(사카이·도마코마이 등)와 해외 Stargate(UAE 등) 지분 참여는 이번 범위(미국 SoftBank 주도 Stargate 부지) 밖이라 넣지 않음 — 별도 조사 여부 결정 필요.",
+    "SB Energy IPO 가격 결정·상장 여부(2026-09 하순 목표 보도)는 기준일까지 확인하지 못함."
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "company": {
+    "id": "openai",
+    "name": "OpenAI",
+    "name_ko": "오픈AI",
+    "group": "hyperscaler",
+    "color": "#e9e9a5",
+    "hq_country": "US",
+    "summary_ko": "샌프란시스코의 AI 연구·서비스 기업(ChatGPT·Codex). 컴퓨팅 대부분을 Oracle·Microsoft·CoreWeave·SB Energy 등 다른 회사 시설에서 조달하고(해당 사이트의 tenant·end_user 로 표시), 직접 설계·개발하는 첫 캠퍼스는 조지아주 Effingham County 의 Project Camellia(3.2GW, 2028~2032 단계 공급)다. 2025년 컴퓨팅 약 1.9GW, 연환산 매출 200억 달러 이상.",
+    "summary_en": "San Francisco AI lab and service provider (ChatGPT, Codex). Most of its compute comes from facilities owned by others such as Oracle, Microsoft, CoreWeave and SB Energy (shown as tenant/end user at those sites); its first self-designed and self-developed campus is Project Camellia in Effingham County, Georgia (3.2GW, phased 2028–2032). Compute of ~1.9GW and $20bn+ ARR in 2025.",
+    "metrics": [
+      {
+        "key": "compute_gw",
+        "value": 1.9,
+        "unit": "GW",
+        "label_ko": "확보 컴퓨팅 용량 (2025년, 2024년 0.6GW → 약 1.9GW)",
+        "label_en": "Compute capacity (2025; up from 0.6GW in 2024)",
+        "as_of": "2025-12",
+        "source": "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/"
+      },
+      {
+        "key": "arr_usd_bn",
+        "value": 20,
+        "unit": "USD bn",
+        "label_ko": "연환산 매출(ARR, 2025년 '200억 달러 이상')",
+        "label_en": "Annualized revenue run-rate (2025, '$20B+')",
+        "as_of": "2025-12",
+        "source": "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/"
+      }
+    ],
+    "sources": [
+      "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/",
+      "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+      "https://openai.com/index/announcing-the-stargate-project/",
+      "https://openai.com/index/five-new-stargate-sites/"
+    ]
+  },
+  "file": {
+    "company_id": "openai",
+    "as_of": "2026-10-07",
+    "sites": [
+      {
+        "id": "camellia-effingham",
+        "name": "Project Camellia (Effingham County, Georgia)",
+        "name_ko": "프로젝트 카멜리아 (조지아주 에핑엄 카운티)",
+        "country": "US",
+        "admin1": "US-GA",
+        "region": "Georgia (Effingham County, Savannah Gateway Industrial Hub near Rincon, along Effingham Parkway)",
+        "coord": {
+          "lat": 32.26,
+          "lng": -81.29,
+          "confidence": "low",
+          "method": "region_centroid",
+          "source": "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/"
+        },
+        "primary": "openai",
+        "parties": [
+          { "company": "openai", "role": "developer", "source": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/" },
+          { "company": "openai", "role": "end_user", "source": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/" }
+        ],
+        "detail": "lite",
+        "announced": "2026-07",
+        "acres": 1400,
+        "grid_operator": "Georgia Power (Southern Company; vertically integrated, non-RTO)",
+        "cooling": "closed-loop water system (recirculating)",
+        "summary_ko": "OpenAI 가 직접 설계·개발하는 첫 데이터센터 캠퍼스. Savannah Gateway Industrial Hub(산업용지) 약 1,400에이커에 4개 동(초기 구상 약 440만 sq ft)을 짓는다. 2026-07-22 발표, 투자 200억 달러(완공 시 300억 달러 이상 보도). Georgia Power 와 3.2GW 공급 계약(2028~2032 단계 공급, 최대 1GW 수요 조정 허용)을 맺었고 2026-08-27 주 공공서비스위원회(PSC) 실무진이 이의 없이 통과시켰다. 기준일에는 지역영향평가(DRI) 등 인허가 단계로 착공 전이다.",
+        "summary_en": "OpenAI's first self-designed and self-developed data center campus: four buildings (initial concept ~4.4M sq ft) on ~1,400 acres of the industrially zoned Savannah Gateway Industrial Hub. Announced 22 Jul 2026 with a $20bn investment (reported $30bn+ at full build-out). Georgia Power will supply 3.2GW in phases from 2028 to 2032 (with up to 1GW of flexible demand); Georgia PSC staff let the contract proceed on 27 Aug 2026. Still in permitting (state DRI review) and not yet under construction as of the as-of date.",
+        "power": [
+          {
+            "from": "2026-07",
+            "secured_mw": 3200,
+            "energized_mw": 0,
+            "basis": "target",
+            "source": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/"
+          },
+          {
+            "from": "2026-08",
+            "secured_mw": 3200,
+            "energized_mw": 0,
+            "basis": "reported",
+            "source": "https://www.cbsnews.com/atlanta/news/georgia-power-gets-clearance-to-serve-openais-massive-ai-data-center-in-effingham-county/"
+          }
+        ],
+        "substation": {},
+        "buildings": [],
+        "deliveries": [
+          {
+            "what": "3.2GW electric service (new generation and grid infrastructure paid by OpenAI), delivered in phases",
+            "from": "Georgia Power",
+            "eta": "2028–2032",
+            "status": "ordered",
+            "source": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2026-07-15",
+            "event": "Georgia Power, OpenAI 3.2GW 공급 계약을 PSC 에 제출",
+            "event_en": "Georgia Power files the 3.2GW OpenAI supply contract with the PSC",
+            "source": "https://thecurrentga.org/2026/08/04/state-regulator-reviews-openai-georgia-power-contract/"
+          },
+          {
+            "date": "2026-07-22",
+            "event": "OpenAI·Effingham County, Project Camellia 발표: 4개 동, 투자 200억 달러, Georgia Power 3.2GW(2028~2032). 같은 날 DRI 서식 제출",
+            "event_en": "OpenAI and Effingham County announce Project Camellia: four buildings, $20bn, 3.2GW from Georgia Power (2028–2032); DRI form filed the same day",
+            "source": "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/"
+          },
+          {
+            "date": "2026-08-07",
+            "event": "카운티, 착공 전 DRI 심사·각종 허가·준공 검사 절차 안내",
+            "event_en": "County outlines the DRI review, permits and inspections required before and during construction",
+            "source": "https://www.effinghamcounty.org/m/newsflash/Home/Detail/466"
+          },
+          {
+            "date": "2026-08-27",
+            "event": "PSC 실무진이 이의를 제기하지 않아 Georgia Power–OpenAI 3.2GW 계약 통과(최대 1GW 수요 조정 포함, 공개 표결 없음)",
+            "event_en": "Georgia PSC staff decline to object, letting the 3.2GW Georgia Power–OpenAI contract proceed (incl. up to 1GW flexible demand; no public vote)",
+            "source": "https://www.cbsnews.com/atlanta/news/georgia-power-gets-clearance-to-serve-openais-massive-ai-data-center-in-effingham-county/"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "확정 확보 3,200MW 는 PSC 가 통과시킨 전력 공급 계약 규모(2026-08-27). 실제 공급은 2028~2032 단계적이고 단계별 MW 는 미공개라 통전 단계(energized)는 넣지 않음. 착공은 DRI·카운티 허가 이후(보도상 2027 초)",
+            "note_en": "Firm 3,200MW is the supply contract cleared by the PSC (27 Aug 2026). Delivery is phased 2028–2032 with undisclosed tranche sizes, so no energized steps are entered. Construction follows DRI and county permits (reported early 2027)",
+            "source": "https://www.cbsnews.com/atlanta/news/georgia-power-gets-clearance-to-serve-openais-massive-ai-data-center-in-effingham-county/"
+          },
+          {
+            "note": "좌표는 추정: 'Rincon 외곽 Savannah Gateway Industrial Hub, Effingham Parkway(SR 30~Blue Jay Rd) 양쪽' 보도로 잡은 대략 위치. 공식 필지 좌표 미확인, 위성사진 미사용",
+            "note_en": "Coordinates are approximate, based on reports placing the site in the Savannah Gateway Industrial Hub outside Rincon on both sides of Effingham Parkway (SR 30–Blue Jay Rd); no official parcel coordinates; no satellite tracking",
+            "source": "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/"
+          }
+        ],
+        "sources": [
+          "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+          "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/",
+          "https://thecurrentga.org/2026/07/25/as-effingham-county-data-center-plan-advances-next-step-is-state-evaluation-process/",
+          "https://thecurrentga.org/2026/08/04/state-regulator-reviews-openai-georgia-power-contract/",
+          "https://thecurrentga.org/2026/08/27/psc-boosts-safeguards-in-georgia-powers-massive-contract-with-openai/",
+          "https://www.cbsnews.com/atlanta/news/georgia-power-gets-clearance-to-serve-openais-massive-ai-data-center-in-effingham-county/",
+          "https://www.effinghamcounty.org/m/newsflash/Home/Detail/466"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "oa1",
+      "field": "company.metrics.compute_gw / arr_usd_bn",
+      "value": { "compute_gw": 1.9, "arr_usd_bn": 20 },
+      "source_url": "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/",
+      "published": "2026-01",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "0.2 GW in 2023, 0.6 GW in 2024, and ~1.9 GW in 2025 ... $2B ARR in 2023, $6B in 2024, and $20B+ in 2025.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "oa2",
+      "field": "sites.camellia-effingham.parties.openai.developer",
+      "value": "OpenAI designs and develops",
+      "source_url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+      "published": "2026-07-22",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Project Camellia is a long-term datacenter project that OpenAI is designing and developing in Effingham County, Georgia.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "oa3",
+      "field": "sites.camellia-effingham.power[0].secured_mw (target)",
+      "value": 3200,
+      "source_url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+      "published": "2026-07-22",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "contracting with Georgia Power Company for 3.2 gigawatts of power which will be delivered in phases between 2028 and 2032",
+      "verification": "confirmed"
+    },
+    {
+      "id": "oa4",
+      "field": "sites.camellia-effingham.power[1].secured_mw (reported, PSC clearance)",
+      "value": 3200,
+      "source_url": "https://www.cbsnews.com/atlanta/news/georgia-power-gets-clearance-to-serve-openais-massive-ai-data-center-in-effingham-county/",
+      "published": "2026-08-27",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "Georgia's Public Service Commission staff reviewed the contract and declined to object, allowing it to move forward.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "oa5",
+      "field": "sites.camellia-effingham.power[1] (PSC docket)",
+      "value": "Docket 71526; staff letter signed 2026-08-27",
+      "source_url": "https://thecurrentga.org/2026/08/27/psc-boosts-safeguards-in-georgia-powers-massive-contract-with-openai/",
+      "published": "2026-08-27",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "letter signed by PSC staff and Georgia Power attorneys",
+      "verification": "confirmed"
+    },
+    {
+      "id": "oa6",
+      "field": "sites.camellia-effingham.region / buildings count",
+      "value": "Savannah Gateway Industrial Hub; 4 buildings; $20bn",
+      "source_url": "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/",
+      "published": "2026-07-22",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "Project Camellia will comprise of four buildings at the Savannah Gateway Industrial Hub",
+      "verification": "single_source"
+    },
+    {
+      "id": "oa7",
+      "field": "sites.camellia-effingham.region (official)",
+      "value": "Savannah Gateway Industrial Hub, pre-existing industrial zoning",
+      "source_url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+      "published": "2026-07-22",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "located within the Savannah Gateway Industrial Hub, a pre-existing industrially-zoned warehouse project",
+      "verification": "confirmed"
+    },
+    {
+      "id": "oa8",
+      "field": "sites.camellia-effingham.acres",
+      "value": 1400,
+      "source_url": "https://thecurrentga.org/2026/07/25/as-effingham-county-data-center-plan-advances-next-step-is-state-evaluation-process/",
+      "published": "2026-07-25",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "1,400-acre data center at Savannah Gateway Industrial Hub",
+      "verification": "single_source"
+    },
+    {
+      "id": "oa9",
+      "field": "sites.camellia-effingham.cooling",
+      "value": "closed-loop water system",
+      "source_url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+      "published": "2026-07-22",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "closed-loop water system, which recirculates water rather than continuously withdrawing",
+      "verification": "confirmed"
+    },
+    {
+      "id": "oa10",
+      "field": "sites.camellia-effingham (status: permitting, not under construction)",
+      "value": "must pass county/state reviews before construction",
+      "source_url": "https://www.effinghamcounty.org/m/newsflash/Home/Detail/466",
+      "published": "2026-08-07",
+      "source_tier": 1,
+      "source_type": "gov_permit",
+      "quote": "must proceed through a series of County and state reviews, approvals, permits, and inspections",
+      "verification": "confirmed"
+    },
+    {
+      "id": "oa11",
+      "field": "notes: external capacity — Microsoft Azure commitment",
+      "value": "$250bn incremental Azure",
+      "source_url": "https://openai.com/index/next-chapter-of-microsoft-openai-partnership/",
+      "published": "2025-10-28",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "OpenAI has contracted to purchase an incremental $250B of Azure services",
+      "verification": "confirmed"
+    },
+    {
+      "id": "oa12",
+      "field": "notes: external capacity — PORTS-Pike lease (softbank draft site)",
+      "value": "~8GW-IT",
+      "source_url": "https://openai.com/index/openai-joins-ports-pike-project",
+      "published": "2026-08-17",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "OpenAI has entered into an agreement to secure approximately 8 gigawatts-IT at the PORTS-Pike Technology Campus in Pike County, Ohio",
+      "verification": "confirmed"
+    },
+    {
+      "id": "oa13",
+      "field": "notes: external capacity — Stargate Norway offtake",
+      "value": "230MW initial",
+      "source_url": "https://openai.com/index/introducing-stargate-norway/",
+      "published": "2025-07-31",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "initial offtaker with the option to scale over time",
+      "verification": "single_source"
+    },
+    {
+      "id": "oa14",
+      "field": "notes: external capacity — Stargate UAE",
+      "value": "1GW cluster; 200MW in 2026",
+      "source_url": "https://openai.com/index/introducing-stargate-uae/",
+      "published": "2025-05-22",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "200MW expected to go live in 2026",
+      "verification": "single_source"
+    }
+  ],
+  "open_questions": [
+    "Project Camellia 는 OpenAI 공식 페이지에서 'Stargate' 로 부르지 않아 program 을 비워 둠. Stargate 로 묶을지 결정 필요.",
+    "Camellia 확정 전력 3,200MW: PSC 가 표결 없이 실무진 무이의로 통과시킨 계약(Docket 71526) 기준. 단계별(2028~2032) MW·첫 공급 시점, 1GW 수요 조정 조건의 원문은 PSC 문서로 확인 필요. 계약 기간은 25년(The Current 7/22) vs '4년 납부 후 조기 해지 가능, 15년'(The Current 8/4) 상충.",
+    "Camellia 부지·건물: 1,400에이커(보도) vs 1,441에이커(Area 3 740 + Area 4 701, Tier 3) — 낮은 값 채택. 4개 동 약 440만 sq ft 는 초기 구상(Tier 3)이라 건물(full) 단위로 넣지 않고 lite 로 둠. 착공 '2027 초' 는 Tier 3 만 확인. 'Octans GA LLC' 가 신고상 개발 법인으로 나오는데 OpenAI 와의 관계 확인 필요. 부지 소유(IDA 명의 유지 후 감면 구조인지)도 미확인.",
+    "Camellia 좌표는 low(산업단지 대략 위치). Coastal Regional Commission DRI 문서의 필지 정보로 갱신 필요.",
+    "company.colocations 는 비워 둠: OpenAI 의 외부 용량은 대부분 클라우드 계약(Oracle·Microsoft·CoreWeave·AWS·Google·Cerebras)이거나, 건물 전체 임차라 다른 회사 파일의 사이트(parties tenant/end_user)로 이미 들어 있음(Abilene=crusoe, Oracle 4곳, SB Energy Milam·PORTS-Pike=softbank 초안). 해외 Stargate(UAE·노르웨이 등)를 colocations 로 볼지 결정 필요 — 이번엔 notes 의 외부 조달 표에만 적음.",
+    "softbank 초안과 함께 병합해야 Milam·PORTS-Pike 의 openai tenant 가 연결됨. 신규 회사 id 는 이 초안에는 없음(softbank 초안의 sb-energy·nvidia 참고)."
+  ]
+}
