@@ -1,0 +1,701 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "company": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "name_ko": {
+          "type": "string"
+        },
+        "group": {
+          "type": "string",
+          "enum": [
+            "miner",
+            "neocloud",
+            "hyperscaler",
+            "korea"
+          ]
+        },
+        "ticker": {
+          "type": "object",
+          "properties": {
+            "symbol": {
+              "type": "string"
+            },
+            "exchange": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "symbol",
+            "exchange"
+          ],
+          "additionalProperties": false
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^#[0-9a-f]{6}$"
+        },
+        "hq_country": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "summary_ko": {
+          "type": "string"
+        },
+        "summary_en": {
+          "type": "string"
+        },
+        "metrics": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "label_ko": {
+                "type": "string"
+              },
+              "label_en": {
+                "type": "string"
+              },
+              "as_of": {
+                "type": "string",
+                "pattern": "^\\d{4}(-(Q[1-4]|H[12]|\\d{2}(-\\d{2})?))?$"
+              },
+              "source": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "key",
+              "value",
+              "unit",
+              "label_ko",
+              "label_en",
+              "as_of",
+              "source"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "sources": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "group",
+        "color",
+        "hq_country",
+        "summary_ko",
+        "summary_en",
+        "metrics",
+        "sources"
+      ],
+      "additionalProperties": false
+    },
+    "file": {
+      "type": "object",
+      "properties": {
+        "company_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "as_of": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "reviewed_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "sites": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$"
+              },
+              "name": {
+                "type": "string"
+              },
+              "name_ko": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string",
+                "pattern": "^[A-Z]{2}$"
+              },
+              "admin1": {
+                "type": "string",
+                "pattern": "^[A-Z]{2}-[A-Z0-9]{1,3}$"
+              },
+              "region": {
+                "type": "string"
+              },
+              "coord": {
+                "type": "object",
+                "properties": {
+                  "lat": {
+                    "type": "number",
+                    "minimum": -90,
+                    "maximum": 90
+                  },
+                  "lng": {
+                    "type": "number",
+                    "minimum": -180,
+                    "maximum": 180
+                  },
+                  "confidence": {
+                    "type": "string",
+                    "enum": [
+                      "high",
+                      "medium",
+                      "low"
+                    ]
+                  },
+                  "method": {
+                    "type": "string",
+                    "enum": [
+                      "official_address",
+                      "permit_parcel",
+                      "utility_filing",
+                      "city_centroid",
+                      "county_centroid",
+                      "region_centroid"
+                    ]
+                  },
+                  "source": {
+                    "type": "string",
+                    "format": "uri"
+                  }
+                },
+                "required": [
+                  "lat",
+                  "lng",
+                  "confidence",
+                  "method"
+                ],
+                "additionalProperties": false
+              },
+              "primary": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$"
+              },
+              "parties": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "company": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9-]+$"
+                    },
+                    "role": {
+                      "type": "string",
+                      "enum": [
+                        "developer",
+                        "owner",
+                        "operator",
+                        "tenant",
+                        "end_user",
+                        "financier"
+                      ]
+                    },
+                    "share": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "source": {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  },
+                  "required": [
+                    "company",
+                    "role",
+                    "source"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "program": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$"
+              },
+              "detail": {
+                "type": "string",
+                "enum": [
+                  "full",
+                  "lite"
+                ]
+              },
+              "announced": {
+                "type": "string",
+                "pattern": "^\\d{4}(-(Q[1-4]|H[12]|\\d{2}(-\\d{2})?))?$"
+              },
+              "acres": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "grid_operator": {
+                "type": "string"
+              },
+              "cooling": {
+                "type": "string"
+              },
+              "summary_ko": {
+                "type": "string"
+              },
+              "summary_en": {
+                "type": "string"
+              },
+              "power": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "from": {
+                      "type": "string",
+                      "pattern": "^\\d{4}(-(Q[1-4]|H[12]|\\d{2}(-\\d{2})?))?$"
+                    },
+                    "secured_mw": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "energized_mw": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "basis": {
+                      "type": "string",
+                      "enum": [
+                        "reported",
+                        "target",
+                        "estimate"
+                      ]
+                    },
+                    "source": {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  },
+                  "required": [
+                    "from",
+                    "secured_mw",
+                    "energized_mw",
+                    "basis",
+                    "source"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "substation": {
+                "default": {},
+                "type": "object",
+                "properties": {
+                  "voltage": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "buildings": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9-]+$"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "name_ko": {
+                      "type": "string"
+                    },
+                    "kind": {
+                      "type": "string",
+                      "enum": [
+                        "datahall_liquid",
+                        "datahall_air",
+                        "miner_hall"
+                      ]
+                    },
+                    "it_mw": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "gross_mw": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "mw_basis": {
+                      "type": "string",
+                      "enum": [
+                        "it",
+                        "gross",
+                        "grid"
+                      ]
+                    },
+                    "phases": {
+                      "minItems": 1,
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "status": {
+                            "type": "string",
+                            "enum": [
+                              "operating",
+                              "commissioning",
+                              "under_construction",
+                              "planned",
+                              "decommissioning",
+                              "retired"
+                            ]
+                          },
+                          "from": {
+                            "type": "string",
+                            "pattern": "^\\d{4}(-(Q[1-4]|H[12]|\\d{2}(-\\d{2})?))?$"
+                          },
+                          "basis": {
+                            "type": "string",
+                            "enum": [
+                              "reported",
+                              "target",
+                              "estimate"
+                            ]
+                          },
+                          "source": {
+                            "type": "string",
+                            "format": "uri"
+                          }
+                        },
+                        "required": [
+                          "status",
+                          "from",
+                          "basis",
+                          "source"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "progress": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "replaces": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9-]+$"
+                    },
+                    "customer": {
+                      "type": "string"
+                    },
+                    "gpu": {
+                      "type": "object",
+                      "properties": {
+                        "model": {
+                          "type": "string"
+                        },
+                        "count": {
+                          "type": [
+                            "number",
+                            "null"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "model",
+                        "count"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "sources": {
+                      "minItems": 1,
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "format": "uri"
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "mw_basis",
+                    "phases",
+                    "sources"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "deliveries": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "what": {
+                      "type": "string"
+                    },
+                    "from": {
+                      "type": "string"
+                    },
+                    "eta": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "in_progress",
+                        "ordered",
+                        "done"
+                      ]
+                    },
+                    "source": {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  },
+                  "required": [
+                    "what",
+                    "from",
+                    "eta",
+                    "status",
+                    "source"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "timeline": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "date": {
+                      "type": "string"
+                    },
+                    "event": {
+                      "type": "string"
+                    },
+                    "event_en": {
+                      "type": "string"
+                    },
+                    "source": {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  },
+                  "required": [
+                    "date",
+                    "event",
+                    "source"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "estimates": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "note": {
+                      "type": "string"
+                    },
+                    "note_en": {
+                      "type": "string"
+                    },
+                    "source": {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  },
+                  "required": [
+                    "note",
+                    "source"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "sources": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "country",
+              "region",
+              "coord",
+              "primary",
+              "parties",
+              "detail",
+              "announced",
+              "acres",
+              "grid_operator",
+              "cooling",
+              "summary_ko",
+              "summary_en",
+              "power",
+              "substation",
+              "buildings",
+              "deliveries",
+              "timeline",
+              "estimates",
+              "sources",
+              "confidence"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "company_id",
+        "as_of",
+        "sites"
+      ],
+      "additionalProperties": false
+    },
+    "claims": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "field": {
+            "type": "string"
+          },
+          "value": {},
+          "source_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "published": {
+            "type": "string"
+          },
+          "source_tier": {
+            "anyOf": [
+              {
+                "type": "number",
+                "const": 1
+              },
+              {
+                "type": "number",
+                "const": 2
+              },
+              {
+                "type": "number",
+                "const": 3
+              }
+            ]
+          },
+          "source_type": {
+            "type": "string",
+            "enum": [
+              "sec_filing",
+              "dart",
+              "press_release",
+              "company_site",
+              "earnings_call",
+              "gov_permit",
+              "utility_filing",
+              "news",
+              "job_posting",
+              "social"
+            ]
+          },
+          "quote": {
+            "type": "string",
+            "maxLength": 220
+          },
+          "verification": {
+            "type": "string",
+            "enum": [
+              "confirmed",
+              "single_source",
+              "conflict"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "field",
+          "value",
+          "source_url",
+          "published",
+          "source_tier",
+          "source_type",
+          "quote"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "company",
+    "file",
+    "claims",
+    "open_questions"
+  ],
+  "additionalProperties": false
+}
