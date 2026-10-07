@@ -35,7 +35,7 @@ export const CARDS = {
     { t0: 19.9, t1: 27.8, kind: 'header', title: 'Sweetwater 1, Texas', sub: '1.4GW 변전소 통전 완료 (2026.05)' },
     { t0: 21.0, t1: 24.4, kind: 'caption', tone: 'under_construction', text: '1단계 300MW 건설중 — 2027년 4분기 납품 목표' },
     { t0: 24.4, t1: 27.8, kind: 'caption', tone: 'pending', text: 'Sweetwater 2와 합쳐 2GW 허브 — ERCOT 편입' },
-    { t0: 29.0, t1: DURATION, kind: 'outro', title: '확보 전력 5.6GW', stats: ['계약 ARR $4bn', '수주잔고 $13bn+', '총 GPU ~15만'], url: 'ai-infra-map.vercel.app', note: '비공식 · 공개자료 기반 · 투자 조언 아님 · 2026.10.06 기준' },
+    { t0: 29.0, t1: DURATION, kind: 'outro', title: '확보 전력 5.6GW', stats: ['계약 ARR $4bn', '수주잔고 $13bn+', '총 GPU ~15만'], url: 'ai-infra-map-one.vercel.app', note: '비공식 · 공개자료 기반 · 투자 조언 아님 · 2026.10.06 기준' },
   ],
   en: [
     { t0: 0.6, t1: 6.3, kind: 'title', title: 'AI Infra Map', sub: 'First company: IREN · 9 sites, 5.6GW' },
@@ -46,7 +46,7 @@ export const CARDS = {
     { t0: 19.9, t1: 27.8, kind: 'header', title: 'Sweetwater 1, Texas', sub: '1.4GW substation energized (May 2026)' },
     { t0: 21.0, t1: 24.4, kind: 'caption', tone: 'under_construction', text: 'Phase 1, 300MW under construction — Q4 2027' },
     { t0: 24.4, t1: 27.8, kind: 'caption', tone: 'pending', text: '2GW hub with Sweetwater 2 — in ERCOT Batch Zero' },
-    { t0: 29.0, t1: DURATION, kind: 'outro', title: '5.6GW secured power', stats: ['$4bn contracted ARR', '$13bn+ backlog', '~150k GPUs'], url: 'ai-infra-map.vercel.app', note: 'Unofficial · public sources · not investment advice · as of 2026-10-06' },
+    { t0: 29.0, t1: DURATION, kind: 'outro', title: '5.6GW secured power', stats: ['$4bn contracted ARR', '$13bn+ backlog', '~150k GPUs'], url: 'ai-infra-map-one.vercel.app', note: 'Unofficial · public sources · not investment advice · as of 2026-10-06' },
   ],
 }
 
