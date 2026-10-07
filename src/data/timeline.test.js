@@ -60,8 +60,9 @@ describe('statusAt / phaseMonth', () => {
 describe('실제 데이터 (IREN)', () => {
   const asOf = asOfMonth(infra.as_of)
 
+  const IREN = { companies: new Set(['iren']) } // 다른 회사가 병합돼도 IREN 수치만 비교
   it('기준일 KPI 가 v1(iren-3d) 과 정확히 같음 — 숫자 변화 0', () => {
-    const t = totalsAt(infra, asOf)
+    const t = totalsAt(infra, toMonth('2026-10'), IREN)
     expect(t.secured).toBe(5610)
     expect(t.energized).toBe(2310)
     expect(t.operating).toBe(535)
@@ -73,7 +74,7 @@ describe('실제 데이터 (IREN)', () => {
   })
 
   it('채굴동은 폐쇄 전(가동 단계)에도 AI 가동이 아닌 채굴로 집계', () => {
-    const t = totalsAt(infra, M('2026-09'))
+    const t = totalsAt(infra, M('2026-09'), IREN)
     expect(t.ai).toBe(155)
     expect(t.mining).toBe(380)
   })
@@ -125,8 +126,9 @@ describe('실제 데이터 (IREN)', () => {
     expect(siteMetricsAt(pg, M('2028-06')).ai).toBe(50) // 완전 전환 → 공랭 홀 사라짐
   })
 
-  it('viewInfra: 기준일 화면용 사이트는 9곳, 발표 전 날짜에는 줄어듦', () => {
-    expect(viewInfra(infra, asOf).sites).toHaveLength(9)
-    expect(viewInfra(infra, M('2024-01')).sites.length).toBeLessThan(9)
+  it('viewInfra: 기준일 IREN 사이트는 9곳, 발표 전 날짜에는 줄어듦', () => {
+    const iren = (m) => viewInfra(infra, m).sites.filter((s) => s.primary === 'iren')
+    expect(iren(asOf)).toHaveLength(9)
+    expect(iren(M('2024-01')).length).toBeLessThan(9)
   })
 })

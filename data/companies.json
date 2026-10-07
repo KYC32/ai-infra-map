@@ -57,6 +57,200 @@
         "https://iren.com/data-centers",
         "https://www.sec.gov/Archives/edgar/data/1878848/000114036126007905/ny20064909x3_ex99-1.htm"
       ]
+    },
+    {
+      "id": "coreweave",
+      "name": "CoreWeave",
+      "name_ko": "코어위브",
+      "group": "neocloud",
+      "ticker": {
+        "symbol": "CRWV",
+        "exchange": "NASDAQ"
+      },
+      "color": "#6fb3d9",
+      "hq_country": "US",
+      "summary_ko": "미국 뉴저지 본사의 GPU 클라우드 기업(네오클라우드). 채굴사 캠퍼스 여러 곳에 대형 입주사로 들어가 있다.",
+      "summary_en": "New Jersey-based GPU cloud provider (neocloud), a major tenant at several former mining campuses.",
+      "metrics": [],
+      "sources": [
+        "https://investors.coreweave.com"
+      ]
+    },
+    {
+      "id": "fluidstack",
+      "name": "Fluidstack",
+      "name_ko": "플루이드스택",
+      "group": "neocloud",
+      "color": "#9ad1b0",
+      "hq_country": "GB",
+      "summary_ko": "영국 런던 기반의 비상장 GPU 클라우드 기업. Cipher Barber Lake 의 입주사.",
+      "summary_en": "Private London-based GPU cloud provider; tenant at Cipher's Barber Lake.",
+      "metrics": [],
+      "sources": [
+        "https://www.fluidstack.io"
+      ]
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "name_ko": "구글",
+      "group": "hyperscaler",
+      "ticker": {
+        "symbol": "GOOGL",
+        "exchange": "NASDAQ"
+      },
+      "color": "#f0b86e",
+      "hq_country": "US",
+      "summary_ko": "알파벳 자회사. 일부 AI 데이터센터 임대 계약에 보증인으로 참여한다.",
+      "summary_en": "Alphabet subsidiary; acts as lease backstop on some AI data center contracts.",
+      "metrics": [],
+      "sources": [
+        "https://abc.xyz/investor/"
+      ]
+    },
+    {
+      "id": "aws",
+      "name": "Amazon Web Services",
+      "name_ko": "아마존 웹서비스",
+      "group": "hyperscaler",
+      "ticker": {
+        "symbol": "AMZN",
+        "exchange": "NASDAQ"
+      },
+      "color": "#e8a0a0",
+      "hq_country": "US",
+      "summary_ko": "아마존의 클라우드 사업부. Cipher Black Pearl·Stingray 의 입주사.",
+      "summary_en": "Amazon's cloud division; tenant at Cipher's Black Pearl and Stingray.",
+      "metrics": [],
+      "sources": [
+        "https://ir.aboutamazon.com"
+      ]
+    },
+    {
+      "id": "galaxy",
+      "name": "Galaxy Digital",
+      "name_ko": "갤럭시 디지털",
+      "group": "miner",
+      "ticker": {
+        "symbol": "GLXY",
+        "exchange": "NASDAQ"
+      },
+      "color": "#c3a6e8",
+      "hq_country": "US",
+      "summary_ko": "뉴욕 본사의 디지털자산·데이터센터 기업. 텍사스 Helios 비트코인 채굴장을 AI/HPC 데이터센터로 전환해 CoreWeave에 526MW(IT)를 15년 임대했으며, 텍사스 전역에서 5.7GW 규모의 전력 파이프라인을 추진 중이다.",
+      "summary_en": "New York-based digital asset and data center company. Converted its Helios bitcoin mine in Texas into an AI/HPC campus leasing 526MW of critical IT to CoreWeave for 15 years, with a 5.7GW Texas power pipeline.",
+      "metrics": [
+        {
+          "key": "contracted_critical_it_mw",
+          "value": 526,
+          "unit": "MW",
+          "label_ko": "계약 IT 부하(CoreWeave)",
+          "label_en": "Contracted critical IT (CoreWeave)",
+          "as_of": "2026-08",
+          "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm"
+        },
+        {
+          "key": "delivered_critical_it_mw",
+          "value": 133,
+          "unit": "MW",
+          "label_ko": "인도 완료 IT 부하",
+          "label_en": "Delivered critical IT",
+          "as_of": "2026-06",
+          "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm"
+        },
+        {
+          "key": "approved_power_gw",
+          "value": 1.63,
+          "unit": "GW",
+          "label_ko": "Helios 승인 전력",
+          "label_en": "Helios approved power",
+          "as_of": "2026-01",
+          "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000005/heliosercotapproval_1x15.htm"
+        },
+        {
+          "key": "power_pipeline_gw",
+          "value": 5.7,
+          "unit": "GW",
+          "label_ko": "텍사스 전력 파이프라인(잠재)",
+          "label_en": "Texas power pipeline (potential)",
+          "as_of": "2026-08",
+          "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/exhibit992-q22026overvie.htm"
+        },
+        {
+          "key": "lease_revenue_annual_usd_bn",
+          "value": 1,
+          "unit": "USD bn",
+          "label_ko": "CoreWeave 임대 예상 연매출(평균)",
+          "label_en": "Expected avg. annual CoreWeave lease revenue",
+          "as_of": "2026-07",
+          "source": "https://www.prnewswire.com/news-releases/galaxy-completes-phase-i-of-its-helios-data-center-campus-delivering-133-megawatts-of-critical-it-load-to-coreweave-302818664.html"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm",
+        "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/exhibit992-q22026overvie.htm",
+        "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000005/heliosercotapproval_1x15.htm"
+      ]
+    },
+    {
+      "id": "cipher",
+      "name": "Cipher Digital",
+      "name_ko": "사이퍼 디지털",
+      "group": "miner",
+      "ticker": {
+        "symbol": "CIFR",
+        "exchange": "NASDAQ"
+      },
+      "color": "#e59ac4",
+      "hq_country": "US",
+      "summary_ko": "뉴욕 본사(2026-02 Cipher Mining에서 사명 변경). 비트코인 채굴에서 하이퍼스케일 HPC 데이터센터 임대로 전환해 Fluidstack(Google 보증)·AWS와 서부 텍사스 3개 캠퍼스(총 700MW gross) 장기 임대 계약을 맺었다.",
+      "summary_en": "New York-based (renamed from Cipher Mining in Feb 2026). Pivoted from bitcoin mining to hyperscale HPC leasing, with long-term leases to Fluidstack (Google-backstopped) and AWS across three West Texas campuses (700MW gross).",
+      "metrics": [
+        {
+          "key": "contracted_hpc_gross_mw",
+          "value": 700,
+          "unit": "MW",
+          "label_ko": "계약 HPC 용량(gross)",
+          "label_en": "Contracted HPC capacity (gross)",
+          "as_of": "2026-08",
+          "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm"
+        },
+        {
+          "key": "contracted_revenue_usd_bn",
+          "value": 11.4,
+          "unit": "USD bn",
+          "label_ko": "계약 매출(Barber Lake 연장 전)",
+          "label_en": "Contracted revenue (pre Barber Lake extension)",
+          "as_of": "2026-08",
+          "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm"
+        },
+        {
+          "key": "barber_lake_contracted_revenue_usd_bn",
+          "value": 9,
+          "unit": "USD bn",
+          "label_ko": "Barber Lake 계약 매출(20년, 이상)",
+          "label_en": "Barber Lake contracted revenue (20-yr, over)",
+          "as_of": "2026-09",
+          "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm"
+        },
+        {
+          "key": "portfolio_gw",
+          "value": 5.3,
+          "unit": "GW",
+          "label_ko": "전체 포트폴리오(11개 사이트)",
+          "label_en": "Total portfolio (11 sites)",
+          "as_of": "2026-08",
+          "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm",
+        "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm",
+        "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm"
+      ]
     }
   ],
   "programs": []
