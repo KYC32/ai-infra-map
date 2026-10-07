@@ -1,10 +1,12 @@
 // sites.json 을 불러와 검증하고, 화면에 필요한 파생값(합계 등)을 계산합니다.
-import { SitesFile } from './sitesSchema.js'
-
 export async function loadSites() {
   const res = await fetch('/data/sites.json', { cache: 'no-cache' })
   if (!res.ok) throw new Error(`sites.json 로드 실패: HTTP ${res.status}`)
   const raw = await res.json()
+  // 배포본은 빌드 때(npm run validate) 이미 검증했으므로 그대로 사용 → zod 를 번들에서 뺌
+  if (!import.meta.env.DEV) return raw
+  // 개발 중에는 데이터를 고치다 실수하면 바로 알 수 있게 화면에서도 검증
+  const { SitesFile } = await import('./sitesSchema.js')
   const parsed = SitesFile.safeParse(raw)
   if (!parsed.success) {
     const msg = parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('\n')

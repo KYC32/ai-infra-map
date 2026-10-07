@@ -5,9 +5,9 @@
   "type": "module",
   "description": "AI 데이터센터(채굴→AI, 네오클라우드, 하이퍼스케일러, 한국) 현황을 전략게임풍 3D 지구본으로 보여주는 비공식 지도",
   "scripts": {
-    "dev": "vite --port 5173 --strictPort",
+    "dev": "vite --port 5174 --strictPort",
     "build": "vite build",
-    "preview": "vite preview --port 4174",
+    "preview": "vite preview --port 4175",
     "validate": "node scripts/validate-sites.mjs",
     "geo": "node scripts/build-land-hex.mjs && node scripts/build-borders.mjs",
     "geo:fetch": "node scripts/fetch-natural-earth.mjs",

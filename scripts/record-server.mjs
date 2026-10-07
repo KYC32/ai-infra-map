@@ -22,7 +22,7 @@ import { fileURLToPath } from 'node:url'
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const DIST = path.join(ROOT, 'dist')       // npm run build 결과물
 const VIDEO = path.join(ROOT, 'video')     // 프레임·영상 저장 폴더 (git 제외)
-const PORT = 4180
+const PORT = 4181
 const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 const argv = process.argv.slice(2)
 const MODE = argv.find((a) => !a.startsWith('--')) // x | shorts | all | (없으면 수동)

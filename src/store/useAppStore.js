@@ -1,7 +1,7 @@
 // 앱 전역 상태 (zustand)
 // "스토어가 진실의 원천, 3D 씬과 HTML UI 는 그 투영" 구조입니다.
 import { create } from 'zustand'
-import { STATUS } from '../data/sitesSchema.js'
+import { STATUS } from '../data/status.js'
 
 // URL 해시(#site=childress)로 딥링크된 사이트가 있으면 처음부터 그 사이트를 엽니다.
 function siteFromHash() {

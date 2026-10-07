@@ -2,9 +2,10 @@
 // - 브라우저(loadSites.js)와 검증 스크립트(scripts/validate-sites.mjs)가 같은 스키마를 공유합니다.
 // - 데이터를 손으로 고치다가 오타가 나면 빌드 전에 바로 잡아 줍니다.
 import { z } from 'zod'
+import { STATUS } from './status.js'
 
 // 사이트/건물 상태 — 화면의 색과 애니메이션을 결정하는 핵심 enum
-export const STATUS = ['operating', 'commissioning', 'under_construction', 'planned', 'decommissioning']
+export { STATUS }
 export const StatusEnum = z.enum(STATUS)
 
 // 건물 종류 — 캠퍼스 뷰에서 외형이 달라집니다
