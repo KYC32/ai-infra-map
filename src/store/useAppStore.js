@@ -11,7 +11,7 @@ function siteFromHash() {
 
 export const useAppStore = create((set, get) => ({
   // ----- 데이터 -----
-  data: null,            // sites.json 전체 (loadSites 가 채움)
+  data: null,            // 화면용 데이터 (loadSites → viewInfra 가 채움)
   loadError: null,
 
   // ----- 화면 상태 -----

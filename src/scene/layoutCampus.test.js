@@ -1,9 +1,12 @@
 // layoutCampus 단위 테스트 — 실행: npm test
 import { describe, it, expect } from 'vitest'
-import { readFileSync } from 'node:fs'
+import { buildInfra } from '../../scripts/build-data.mjs'
+import { viewInfra, asOfMonth } from '../data/view.js'
 import { layoutCampus, blocksFor, ghostLotCount, BLOCK_MW } from './layoutCampus.js'
 
-const data = JSON.parse(readFileSync(new URL('../../public/data/sites.json', import.meta.url), 'utf8'))
+// 회사별 원본을 합친 뒤 기준일의 화면용 모양으로 변환 (앱과 같은 경로)
+const raw = buildInfra()
+const data = viewInfra(raw, asOfMonth(raw.as_of))
 const site = (id) => data.sites.find((s) => s.id === id)
 
 // 두 블록의 사각형이 겹치는지 검사하는 도우미

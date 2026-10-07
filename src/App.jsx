@@ -23,7 +23,7 @@ export default function App() {
   const transitioning = useAppStore((s) => s.transitioning)
   const lang = useAppStore((s) => s.lang)
 
-  // 처음 한 번 sites.json 로드
+  // 처음 한 번 infra.json 로드
   useEffect(() => {
     loadSites()
       .then((d) => useAppStore.getState().setData(d))

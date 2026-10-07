@@ -1,48 +1,46 @@
 {
+  "company_id": "iren",
   "as_of": "2026-10-06",
-  "_readme": "이 파일이 화면에 보이는 모든 숫자의 유일한 출처입니다. 수정 후 `npm run validate` 로 검증하고 push 하면 자동 배포됩니다. 모든 수치에는 sources(URL)를 남기고, 추정은 estimates 에 분리합니다.",
-  "company": {
-    "secured_power_mw": 5610,
-    "operational_power_mw": 810,
-    "contracted_arr_usd_bn": 4.0,
-    "operating_arr_usd_bn": 1.0,
-    "backlog_usd_bn": 13,
-    "gpus_total": 150000,
-    "fy26_revenue_usd_m": 707.0,
-    "mining_eh_s": 23.2,
-    "mining_shutdown_by": "2026-12",
-    "next_earnings_est": "2026-12 (추정, 회사 미확정)",
-    "sources": [
-      "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html",
-      "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm",
-      "https://iren.com/data-centers",
-      "https://www.sec.gov/Archives/edgar/data/1878848/000114036126007905/ny20064909x3_ex99-1.htm"
-    ]
-  },
   "sites": [
     {
       "id": "childress",
       "name": "Childress",
       "name_ko": "칠드레스",
       "country": "US",
+      "admin1": "US-TX",
       "region": "Texas",
-      "lat": 34.43,
-      "lng": -100.2,
-      "coord_confidence": "medium",
+      "coord": {
+        "lat": 34.43,
+        "lng": -100.2,
+        "confidence": "medium",
+        "method": "city_centroid"
+      },
+      "primary": "iren",
+      "parties": [
+        {
+          "company": "iren",
+          "role": "owner",
+          "source": "https://iren.com/data-centers/childress"
+        }
+      ],
+      "detail": "full",
+      "announced": "2022",
       "acres": 576,
       "grid_operator": "ERCOT",
-      "grid_mw": 750,
-      "status": "operating",
       "cooling": "air+liquid",
       "summary_ko": "750MW 계통 직결 자사 캠퍼스. 비트코인 채굴은 2026년 말까지 폐쇄하고 Microsoft용 액체냉각 Horizon 1~4(200MW IT)와 NVIDIA용 공랭 Blackwell로 전환 중.",
       "summary_en": "750MW grid-connected freehold campus. Bitcoin mining winds down by end-2026 as the site converts to liquid-cooled Horizon 1-4 (200MW IT) for Microsoft and air-cooled Blackwell for NVIDIA.",
-      "substation": {
-        "mw": 750,
-        "voltage": "345kV",
-        "status": "energized",
-        "dates": {
-          "energized": "2022"
+      "power": [
+        {
+          "from": "2022",
+          "secured_mw": 750,
+          "energized_mw": 750,
+          "basis": "reported",
+          "source": "https://iren.com/data-centers/childress"
         }
+      ],
+      "substation": {
+        "voltage": "345kV"
       },
       "buildings": [
         {
@@ -51,18 +49,34 @@
           "kind": "datahall_liquid",
           "it_mw": 50,
           "gross_mw": 75,
-          "status": "operating",
           "customer": "Microsoft",
           "gpu": {
             "model": "GB300 NVL72",
             "count": null
           },
-          "dates": {
-            "energized": "2025-Q4",
-            "delivered": "2026-08-13"
-          },
           "sources": [
             "https://www.globenewswire.com/news-release/2026/08/13/3344413/0/en/iren-delivers-horizon-1-to-microsoft-and-achieves-nvidia-exemplar-cloud-status-on-gb300-nvl72.html"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2025-02",
+              "basis": "reported",
+              "source": "https://x.com/IREN_Ltd/status/1890039564724850788"
+            },
+            {
+              "status": "commissioning",
+              "from": "2025-Q4",
+              "basis": "reported",
+              "source": "https://www.globenewswire.com/news-release/2026/08/13/3344413/0/en/iren-delivers-horizon-1-to-microsoft-and-achieves-nvidia-exemplar-cloud-status-on-gb300-nvl72.html"
+            },
+            {
+              "status": "operating",
+              "from": "2026-08-13",
+              "basis": "reported",
+              "source": "https://www.globenewswire.com/news-release/2026/08/13/3344413/0/en/iren-delivers-horizon-1-to-microsoft-and-achieves-nvidia-exemplar-cloud-status-on-gb300-nvl72.html"
+            }
           ]
         },
         {
@@ -71,17 +85,40 @@
           "kind": "datahall_liquid",
           "it_mw": 50,
           "gross_mw": 75,
-          "status": "commissioning",
           "customer": "Microsoft",
           "gpu": {
             "model": "GB300 NVL72",
             "count": null
           },
-          "dates": {
-            "target": "2026-Q4"
-          },
           "sources": [
             "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2025-11",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000114036125040072/ef20058139_ex99-1.htm"
+            },
+            {
+              "status": "under_construction",
+              "from": "2025-12",
+              "basis": "reported",
+              "source": "https://x.com/IREN_Ltd/status/2002008709808148832"
+            },
+            {
+              "status": "commissioning",
+              "from": "2026-08",
+              "basis": "reported",
+              "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+            },
+            {
+              "status": "operating",
+              "from": "2026-Q4",
+              "basis": "target",
+              "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+            }
           ]
         },
         {
@@ -90,19 +127,36 @@
           "kind": "datahall_liquid",
           "it_mw": 50,
           "gross_mw": 75,
-          "status": "under_construction",
           "progress": 0.8,
           "customer": "Microsoft",
           "gpu": {
             "model": "GB300 NVL72",
             "count": null
           },
-          "dates": {
-            "target": "2026-Q4"
-          },
           "sources": [
             "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html",
             "https://x.com/FransBakker9812/status/2010714039698313308"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2025-11",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000114036125040072/ef20058139_ex99-1.htm"
+            },
+            {
+              "status": "under_construction",
+              "from": "2025-12",
+              "basis": "reported",
+              "source": "https://x.com/IREN_Ltd/status/2002008709808148832"
+            },
+            {
+              "status": "operating",
+              "from": "2026-Q4",
+              "basis": "target",
+              "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+            }
           ]
         },
         {
@@ -111,18 +165,35 @@
           "kind": "datahall_liquid",
           "it_mw": 50,
           "gross_mw": 75,
-          "status": "under_construction",
           "progress": 0.75,
           "customer": "Microsoft",
           "gpu": {
             "model": "GB300 NVL72",
             "count": null
           },
-          "dates": {
-            "target": "2026-Q4"
-          },
           "sources": [
             "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2025-11",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000114036125040072/ef20058139_ex99-1.htm"
+            },
+            {
+              "status": "under_construction",
+              "from": "2025-12",
+              "basis": "reported",
+              "source": "https://x.com/IREN_Ltd/status/2002008709808148832"
+            },
+            {
+              "status": "operating",
+              "from": "2026-Q4",
+              "basis": "target",
+              "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+            }
           ]
         },
         {
@@ -131,13 +202,24 @@
           "kind": "datahall_liquid",
           "it_mw": 50,
           "gross_mw": 75,
-          "status": "planned",
           "replaces": "miners",
-          "dates": {
-            "target": "2027"
-          },
           "sources": [
             "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000028/irentranscript.htm"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-10",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000028/irentranscript.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2027",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000028/irentranscript.htm"
+            }
           ]
         },
         {
@@ -146,13 +228,24 @@
           "kind": "datahall_liquid",
           "it_mw": 50,
           "gross_mw": 75,
-          "status": "planned",
           "replaces": "miners",
-          "dates": {
-            "target": "2027"
-          },
           "sources": [
             "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000028/irentranscript.htm"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-10",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000028/irentranscript.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2027",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000028/irentranscript.htm"
+            }
           ]
         },
         {
@@ -162,7 +255,6 @@
           "kind": "datahall_air",
           "it_mw": 60,
           "gross_mw": 60,
-          "status": "under_construction",
           "replaces": "miners",
           "progress": 0.3,
           "customer": "NVIDIA",
@@ -170,12 +262,30 @@
             "model": "B300 (air-cooled)",
             "count": null
           },
-          "dates": {
-            "target": "2027-Q1"
-          },
           "sources": [
             "https://www.globenewswire.com/news-release/2026/05/07/3290760/0/en/iren-secures-3-4bn-ai-cloud-contract-with-nvidia.html",
             "https://www.globenewswire.com/news-release/2026/05/26/3301524/0/en/iren-targets-4-4bn-in-arr-with-blackwell-deployment-at-childress.html"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-05",
+              "basis": "reported",
+              "source": "https://www.globenewswire.com/news-release/2026/05/07/3290760/0/en/iren-secures-3-4bn-ai-cloud-contract-with-nvidia.html"
+            },
+            {
+              "status": "under_construction",
+              "from": "2026-08",
+              "basis": "estimate",
+              "source": "https://www.globenewswire.com/news-release/2026/05/07/3290760/0/en/iren-secures-3-4bn-ai-cloud-contract-with-nvidia.html"
+            },
+            {
+              "status": "operating",
+              "from": "2027-Q1",
+              "basis": "target",
+              "source": "https://www.globenewswire.com/news-release/2026/05/07/3290760/0/en/iren-secures-3-4bn-ai-cloud-contract-with-nvidia.html"
+            }
           ]
         },
         {
@@ -185,13 +295,24 @@
           "kind": "datahall_air",
           "it_mw": 150,
           "gross_mw": 190,
-          "status": "planned",
           "replaces": "miners",
-          "dates": {
-            "target": "2027"
-          },
           "sources": [
             "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000028/irentranscript.htm"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-10",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000028/irentranscript.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2027",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000028/irentranscript.htm"
+            }
           ]
         },
         {
@@ -201,12 +322,29 @@
           "kind": "miner_hall",
           "it_mw": 0,
           "gross_mw": 380,
-          "status": "decommissioning",
-          "dates": {
-            "end": "2026-12"
-          },
           "sources": [
             "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "operating",
+              "from": "2022",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
+            },
+            {
+              "status": "decommissioning",
+              "from": "2026-10",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
+            },
+            {
+              "status": "retired",
+              "from": "2026-12",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
+            }
           ]
         }
       ],
@@ -263,6 +401,11 @@
           "note": "채용공고 55건(커미셔닝 매니저·제어/자동화·액체냉각 플랜트 리드) → Horizon 2~4 커미셔닝 피크 진입 (추정)",
           "note_en": "55 job posts (commissioning managers, controls, liquid-cooling leads) suggest Horizon 2-4 commissioning peak (estimate)",
           "source": "https://www.simplyhired.com/search?q=iren&l=Childress%2C+TX"
+        },
+        {
+          "note": "공랭 Blackwell (NVIDIA): 착공 시점은 기준일 진행률(30%)과 목표일로 역산한 추정",
+          "note_en": "Air-cooled Blackwell (NVIDIA): construction start estimated from reported progress and target date",
+          "source": "https://www.globenewswire.com/news-release/2026/05/07/3290760/0/en/iren-secures-3-4bn-ai-cloud-contract-with-nvidia.html"
         }
       ],
       "sources": [
@@ -277,24 +420,47 @@
       "name": "Sweetwater 1",
       "name_ko": "스위트워터 1",
       "country": "US",
+      "admin1": "US-TX",
       "region": "Texas (Fisher County)",
-      "lat": 32.8,
-      "lng": -100.42,
-      "coord_confidence": "low",
+      "coord": {
+        "lat": 32.8,
+        "lng": -100.42,
+        "confidence": "low",
+        "method": "county_centroid"
+      },
+      "primary": "iren",
+      "parties": [
+        {
+          "company": "iren",
+          "role": "owner",
+          "source": "https://iren.com/data-centers/sweetwater"
+        }
+      ],
+      "detail": "full",
+      "announced": "2025-02",
       "acres": 1700,
       "grid_operator": "ERCOT",
-      "grid_mw": 1400,
-      "status": "under_construction",
       "cooling": "air+liquid",
       "summary_ko": "1,400MW 변전소가 2026-05-01 통전 완료. 1단계 300MW(gross, 200MW IT) 액체냉각 데이터센터 건설 중, 2027 Q4 납품 목표. Sweetwater 2와 합쳐 2GW 허브(ERCOT Batch Zero 편입).",
       "summary_en": "1,400MW substation energized 2026-05-01. Phase 1 (300MW gross / 200MW IT liquid-cooled) under construction, delivery target Q4 2027. Forms a 2GW hub with Sweetwater 2 (ERCOT Batch Zero).",
-      "substation": {
-        "mw": 1400,
-        "voltage": "345kV/138kV",
-        "status": "energized",
-        "dates": {
-          "energized": "2026-05-01"
+      "power": [
+        {
+          "from": "2025-02",
+          "secured_mw": 1400,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://iren.com/data-centers/sweetwater"
+        },
+        {
+          "from": "2026-05-01",
+          "secured_mw": 1400,
+          "energized_mw": 1400,
+          "basis": "reported",
+          "source": "https://iren.com/data-centers/sweetwater"
         }
+      ],
+      "substation": {
+        "voltage": "345kV/138kV"
       },
       "buildings": [
         {
@@ -304,13 +470,30 @@
           "kind": "datahall_liquid",
           "it_mw": 200,
           "gross_mw": 300,
-          "status": "under_construction",
           "progress": 0.15,
-          "dates": {
-            "target": "2027-Q4"
-          },
           "sources": [
             "https://www.globenewswire.com/news-release/2026/09/08/3357498/0/en/iren-s-2gw-sweetwater-hub-included-as-base-load-in-ercot-batch-zero.html"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2025-02",
+              "basis": "reported",
+              "source": "https://www.globenewswire.com/news-release/2026/09/08/3357498/0/en/iren-s-2gw-sweetwater-hub-included-as-base-load-in-ercot-batch-zero.html"
+            },
+            {
+              "status": "under_construction",
+              "from": "2026-08",
+              "basis": "estimate",
+              "source": "https://www.globenewswire.com/news-release/2026/09/08/3357498/0/en/iren-s-2gw-sweetwater-hub-included-as-base-load-in-ercot-batch-zero.html"
+            },
+            {
+              "status": "operating",
+              "from": "2027-Q4",
+              "basis": "target",
+              "source": "https://www.globenewswire.com/news-release/2026/09/08/3357498/0/en/iren-s-2gw-sweetwater-hub-included-as-base-load-in-ercot-batch-zero.html"
+            }
           ]
         }
       ],
@@ -346,6 +529,11 @@
           "note": "채용공고 34건(HV 건설 감독·QA/QC·HPC 기계 매니저, 최근 1~2주 집중) → 변전소 통전 후 본공사(전기·기계) 단계 진입 (추정)",
           "note_en": "34 recent job posts (HV construction, QA/QC, HPC mechanical) suggest main electrical/mechanical works have started (estimate)",
           "source": "https://www.simplyhired.com/search?q=iren&l=Sweetwater%2C+TX"
+        },
+        {
+          "note": "1단계: 착공 시점은 기준일 진행률(15%)과 목표일로 역산한 추정",
+          "note_en": "Phase 1: construction start estimated from reported progress and target date",
+          "source": "https://www.globenewswire.com/news-release/2026/09/08/3357498/0/en/iren-s-2gw-sweetwater-hub-included-as-base-load-in-ercot-batch-zero.html"
         }
       ],
       "sources": [
@@ -359,24 +547,47 @@
       "name": "Sweetwater 2",
       "name_ko": "스위트워터 2",
       "country": "US",
+      "admin1": "US-TX",
       "region": "Texas (Fisher County)",
-      "lat": 32.55,
-      "lng": -100.4,
-      "coord_confidence": "low",
+      "coord": {
+        "lat": 32.55,
+        "lng": -100.4,
+        "confidence": "low",
+        "method": "county_centroid"
+      },
+      "primary": "iren",
+      "parties": [
+        {
+          "company": "iren",
+          "role": "owner",
+          "source": "https://iren.com/data-centers/sweetwater"
+        }
+      ],
+      "detail": "lite",
+      "announced": "2025-03",
       "acres": 500,
       "grid_operator": "ERCOT",
-      "grid_mw": 600,
-      "status": "planned",
       "cooling": "air+liquid",
       "summary_ko": "600MW 계통 연결 계약(2025-03). Sweetwater 1과 광케이블 루프로 연결해 2GW 허브 구성. 변전소 통전 목표 2027년 말.",
       "summary_en": "600MW grid connection agreement (Mar 2025). Fibre-looped with Sweetwater 1 to form a 2GW hub. Substation energization targeted late 2027.",
-      "substation": {
-        "mw": 600,
-        "voltage": "345kV",
-        "status": "planned",
-        "dates": {
-          "target": "2027-Q4"
+      "power": [
+        {
+          "from": "2025-03",
+          "secured_mw": 600,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://iren.com/data-centers/sweetwater"
+        },
+        {
+          "from": "2027-Q4",
+          "secured_mw": 600,
+          "energized_mw": 600,
+          "basis": "target",
+          "source": "https://iren.com/data-centers/sweetwater"
         }
+      ],
+      "substation": {
+        "voltage": "345kV"
       },
       "buildings": [],
       "deliveries": [],
@@ -405,24 +616,39 @@
       "name": "Prince George",
       "name_ko": "프린스조지",
       "country": "CA",
+      "admin1": "CA-BC",
       "region": "British Columbia",
-      "lat": 53.86,
-      "lng": -122.76,
-      "coord_confidence": "high",
+      "coord": {
+        "lat": 53.86,
+        "lng": -122.76,
+        "confidence": "high",
+        "method": "official_address"
+      },
+      "primary": "iren",
+      "parties": [
+        {
+          "company": "iren",
+          "role": "owner",
+          "source": "https://iren.com/data-centers/prince-george"
+        }
+      ],
+      "detail": "full",
+      "announced": "2022",
       "acres": 12,
       "grid_operator": "BC Hydro",
-      "grid_mw": 50,
-      "status": "operating",
       "cooling": "air",
       "summary_ko": "50MW 수력 전력 공랭 사이트. 2025-12 채굴을 GPU로 완전 전환, 2026-08 전량 커미셔닝 완료(>23k GPU). 2027년 액체냉각 신규 배치 계획.",
       "summary_en": "50MW hydro-powered air-cooled site. Fully converted from mining to GPUs by Dec 2025, fully commissioned Aug 2026 (>23k GPUs). New liquid-cooled deployment planned for 2027.",
-      "substation": {
-        "mw": 50,
-        "status": "energized",
-        "dates": {
-          "energized": "2022"
+      "power": [
+        {
+          "from": "2022",
+          "secured_mw": 50,
+          "energized_mw": 50,
+          "basis": "reported",
+          "source": "https://iren.com/data-centers/prince-george"
         }
-      },
+      ],
+      "substation": {},
       "buildings": [
         {
           "id": "pg-air",
@@ -431,17 +657,27 @@
           "kind": "datahall_air",
           "it_mw": 50,
           "gross_mw": 50,
-          "status": "operating",
           "gpu": {
             "model": "H200 / B200 / B300 / MI350X (mixed)",
             "count": 23000
           },
-          "dates": {
-            "energized": "2025-12",
-            "delivered": "2026-08"
-          },
           "sources": [
             "https://iren.com/data-centers/prince-george"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "commissioning",
+              "from": "2025-12",
+              "basis": "reported",
+              "source": "https://iren.com/data-centers/prince-george"
+            },
+            {
+              "status": "operating",
+              "from": "2026-08",
+              "basis": "reported",
+              "source": "https://iren.com/data-centers/prince-george"
+            }
           ]
         },
         {
@@ -451,13 +687,24 @@
           "kind": "datahall_liquid",
           "it_mw": 50,
           "gross_mw": 50,
-          "status": "planned",
           "replaces": "pg-air",
-          "dates": {
-            "target": "2027"
-          },
           "sources": [
             "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-10",
+              "basis": "reported",
+              "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+            },
+            {
+              "status": "operating",
+              "from": "2027",
+              "basis": "target",
+              "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+            }
           ]
         }
       ],
@@ -493,24 +740,39 @@
       "name": "Mackenzie",
       "name_ko": "매켄지",
       "country": "CA",
+      "admin1": "CA-BC",
       "region": "British Columbia",
-      "lat": 55.33,
-      "lng": -123.1,
-      "coord_confidence": "high",
+      "coord": {
+        "lat": 55.33,
+        "lng": -123.1,
+        "confidence": "high",
+        "method": "official_address"
+      },
+      "primary": "iren",
+      "parties": [
+        {
+          "company": "iren",
+          "role": "owner",
+          "source": "https://iren.com/data-centers/mackenzie"
+        }
+      ],
+      "detail": "full",
+      "announced": "2022",
       "acres": 11,
       "grid_operator": "BC Hydro",
-      "grid_mw": 80,
-      "status": "operating",
       "cooling": "air",
       "summary_ko": "80MW 수력 공랭 사이트. 2026년 하반기부터 B300(Blackwell Ultra) 설치 진행 중(Blue Owl/PIMCO $2.4bn 장비금융). 2027년 액체냉각 추가 계획.",
       "summary_en": "80MW hydro-powered air-cooled site. B300 (Blackwell Ultra) installation underway from H2 2026 (Blue Owl/PIMCO $2.4bn equipment financing). Liquid-cooled expansion planned for 2027.",
-      "substation": {
-        "mw": 80,
-        "status": "energized",
-        "dates": {
-          "energized": "2022"
+      "power": [
+        {
+          "from": "2022",
+          "secured_mw": 80,
+          "energized_mw": 80,
+          "basis": "reported",
+          "source": "https://iren.com/data-centers/mackenzie"
         }
-      },
+      ],
+      "substation": {},
       "buildings": [
         {
           "id": "mk-air",
@@ -519,16 +781,33 @@
           "kind": "datahall_air",
           "it_mw": 80,
           "gross_mw": 80,
-          "status": "commissioning",
           "gpu": {
             "model": "B300 (Blackwell Ultra)",
             "count": null
           },
-          "dates": {
-            "target": "2026-H2"
-          },
           "sources": [
             "https://www.unite.ai/blue-owl-funds-lead-2-4b-ai-factory-equipment-financing-for-iren/"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2022",
+              "basis": "reported",
+              "source": "https://www.unite.ai/blue-owl-funds-lead-2-4b-ai-factory-equipment-financing-for-iren/"
+            },
+            {
+              "status": "commissioning",
+              "from": "2026-10",
+              "basis": "reported",
+              "source": "https://www.unite.ai/blue-owl-funds-lead-2-4b-ai-factory-equipment-financing-for-iren/"
+            },
+            {
+              "status": "operating",
+              "from": "2026-H2",
+              "basis": "target",
+              "source": "https://www.unite.ai/blue-owl-funds-lead-2-4b-ai-factory-equipment-financing-for-iren/"
+            }
           ]
         },
         {
@@ -538,13 +817,24 @@
           "kind": "datahall_liquid",
           "it_mw": 50,
           "gross_mw": 50,
-          "status": "planned",
           "replaces": "mk-air",
-          "dates": {
-            "target": "2027"
-          },
           "sources": [
             "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-10",
+              "basis": "reported",
+              "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+            },
+            {
+              "status": "operating",
+              "from": "2027",
+              "basis": "target",
+              "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+            }
           ]
         }
       ],
@@ -582,24 +872,40 @@
       "name": "Canal Flats",
       "name_ko": "커낼플랫츠",
       "country": "CA",
+      "admin1": "CA-BC",
       "region": "British Columbia",
-      "lat": 50.15,
-      "lng": -115.81,
-      "coord_confidence": "high",
+      "coord": {
+        "lat": 50.15,
+        "lng": -115.81,
+        "confidence": "high",
+        "method": "official_address"
+      },
+      "primary": "iren",
+      "parties": [
+        {
+          "company": "iren",
+          "role": "owner",
+          "source": "https://iren.com/data-centers/canal-flats"
+        }
+      ],
+      "detail": "full",
+      "announced": "2019",
       "acres": 10,
       "grid_operator": "BC Hydro",
-      "grid_mw": 30,
-      "status": "operating",
       "cooling": "air",
       "summary_ko": "IREN 첫 사이트(2019). 30MW 수력 공랭. 2027년 GB300용 액체냉각 전환 계획.",
       "summary_en": "IREN's first site (2019). 30MW hydro, air-cooled. Conversion to liquid cooling for GB300 planned for 2027.",
-      "substation": {
-        "mw": 30,
-        "voltage": "69kV",
-        "status": "energized",
-        "dates": {
-          "energized": "2019"
+      "power": [
+        {
+          "from": "2019",
+          "secured_mw": 30,
+          "energized_mw": 30,
+          "basis": "reported",
+          "source": "https://iren.com/data-centers/canal-flats"
         }
+      ],
+      "substation": {
+        "voltage": "69kV"
       },
       "buildings": [
         {
@@ -609,12 +915,17 @@
           "kind": "datahall_air",
           "it_mw": 30,
           "gross_mw": 30,
-          "status": "operating",
-          "dates": {
-            "energized": "2019"
-          },
           "sources": [
             "https://iren.com/data-centers/canal-flats"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "operating",
+              "from": "2019",
+              "basis": "reported",
+              "source": "https://iren.com/data-centers/canal-flats"
+            }
           ]
         },
         {
@@ -624,17 +935,28 @@
           "kind": "datahall_liquid",
           "it_mw": 30,
           "gross_mw": 30,
-          "status": "planned",
           "replaces": "cf-air",
           "gpu": {
             "model": "GB300",
             "count": null
           },
-          "dates": {
-            "target": "2027"
-          },
           "sources": [
             "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-10",
+              "basis": "reported",
+              "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+            },
+            {
+              "status": "operating",
+              "from": "2027",
+              "basis": "target",
+              "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+            }
           ]
         }
       ],
@@ -664,24 +986,46 @@
       "name": "Kiowa (Oklahoma)",
       "name_ko": "카이오와 (오클라호마)",
       "country": "US",
+      "admin1": "US-OK",
       "region": "Oklahoma (Pittsburg County)",
-      "lat": 34.7,
-      "lng": -95.9,
-      "coord_confidence": "low",
+      "coord": {
+        "lat": 34.7,
+        "lng": -95.9,
+        "confidence": "low",
+        "method": "county_centroid"
+      },
+      "primary": "iren",
+      "parties": [
+        {
+          "company": "iren",
+          "role": "owner",
+          "source": "https://iren.com/data-centers/oklahoma"
+        }
+      ],
+      "detail": "lite",
+      "announced": "2026-02",
       "acres": 2000,
       "grid_operator": "PSO / SPP",
-      "grid_mw": 1600,
-      "status": "planned",
       "cooling": "closed-loop",
       "summary_ko": "'Project Emerald'. 1.6GW 계통 연결 확보, 2,000에이커. 2027 본공사 착수, 2028 변전소 통전 목표.",
       "summary_en": "'Project Emerald'. 1.6GW grid connection secured on 2,000 acres. Major construction from 2027, substation energization targeted 2028.",
-      "substation": {
-        "mw": 1600,
-        "status": "planned",
-        "dates": {
-          "target": "2028"
+      "power": [
+        {
+          "from": "2026-02",
+          "secured_mw": 1600,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://iren.com/data-centers/oklahoma"
+        },
+        {
+          "from": "2028",
+          "secured_mw": 1600,
+          "energized_mw": 1600,
+          "basis": "target",
+          "source": "https://iren.com/data-centers/oklahoma"
         }
-      },
+      ],
+      "substation": {},
       "buildings": [],
       "deliveries": [],
       "timeline": [
@@ -715,24 +1059,47 @@
       "name": "Bundey (South Australia)",
       "name_ko": "번디 (남호주)",
       "country": "AU",
+      "admin1": "AU-SA",
       "region": "South Australia",
-      "lat": -33.89,
-      "lng": 139.3,
-      "coord_confidence": "medium",
+      "coord": {
+        "lat": -33.89,
+        "lng": 139.3,
+        "confidence": "medium",
+        "method": "city_centroid"
+      },
+      "primary": "iren",
+      "parties": [
+        {
+          "company": "iren",
+          "role": "owner",
+          "source": "https://iren.com/data-centers/bundey"
+        }
+      ],
+      "detail": "lite",
+      "announced": "2026-06",
       "acres": 1300,
       "grid_operator": "ElectraNet",
-      "grid_mw": 800,
-      "status": "planned",
       "cooling": "closed-loop",
       "summary_ko": "첫 호주 캠퍼스. 800MW 송전 접속 계약(2026-06), 2028년부터 단계적 통전.",
       "summary_en": "First Australian campus. 800MW transmission connection agreement (Jun 2026); staged energization from 2028.",
-      "substation": {
-        "mw": 800,
-        "voltage": "330kV",
-        "status": "planned",
-        "dates": {
-          "target": "2028"
+      "power": [
+        {
+          "from": "2026-06",
+          "secured_mw": 800,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://iren.com/data-centers/bundey"
+        },
+        {
+          "from": "2028",
+          "secured_mw": 800,
+          "energized_mw": 800,
+          "basis": "target",
+          "source": "https://iren.com/data-centers/bundey"
         }
+      ],
+      "substation": {
+        "voltage": "330kV"
       },
       "buildings": [],
       "deliveries": [],
@@ -755,24 +1122,46 @@
       "name": "Badajoz (Spain)",
       "name_ko": "바다호스 (스페인)",
       "country": "ES",
+      "admin1": "ES-EX",
       "region": "Extremadura",
-      "lat": 38.88,
-      "lng": -6.97,
-      "coord_confidence": "medium",
+      "coord": {
+        "lat": 38.88,
+        "lng": -6.97,
+        "confidence": "medium",
+        "method": "city_centroid"
+      },
+      "primary": "iren",
+      "parties": [
+        {
+          "company": "iren",
+          "role": "owner",
+          "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
+        }
+      ],
+      "detail": "lite",
+      "announced": "2026-05",
       "acres": null,
       "grid_operator": "REE",
-      "grid_mw": 300,
-      "status": "planned",
       "cooling": "unknown",
       "summary_ko": "Nostrum Group 인수(2026-06 완료)로 확보한 유럽 첫 거점. Badajoz ~300MW 계획, Nostrum 전체 490MW 계통 확보. 2028 가동 목표.",
       "summary_en": "First European foothold via the Nostrum Group acquisition (closed Jun 2026). ~300MW planned at Badajoz; 490MW grid-connected across Nostrum. Operations targeted 2028.",
-      "substation": {
-        "mw": 300,
-        "status": "planned",
-        "dates": {
-          "target": "2028"
+      "power": [
+        {
+          "from": "2026-05",
+          "secured_mw": 300,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
+        },
+        {
+          "from": "2028",
+          "secured_mw": 300,
+          "energized_mw": 300,
+          "basis": "target",
+          "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
         }
-      },
+      ],
+      "substation": {},
       "buildings": [],
       "deliveries": [],
       "timeline": [
@@ -801,5 +1190,6 @@
       ],
       "confidence": "medium"
     }
-  ]
+  ],
+  "reviewed_at": "2026-10-07"
 }

@@ -1,5 +1,5 @@
 // =============================================================
-// layoutCampus.js — 사이트 데이터(sites.json) → 캠퍼스 3D 배치 계산
+// layoutCampus.js — 화면용 사이트(view.js 의 viewSite) → 캠퍼스 3D 배치 계산
 // -------------------------------------------------------------
 // 3D 컴포넌트는 "어디에 무엇을 그릴지" 고민하지 않고 이 함수의 결과만 그립니다.
 // 순수 함수(입력이 같으면 결과도 같음)라서 단위 테스트로 검증할 수 있습니다.
@@ -51,7 +51,7 @@ function plateSideFromAcres(acres) {
 }
 
 /**
- * @param {object} site  sites.json 의 사이트 1개
+ * @param {object} site  viewSite() 가 만든 화면용 사이트 1개
  * @returns {{
  *   side:number, blocks:Array, substation:object, road:object, gate:object,
  *   powerLine:object, trucks:Array, cranes:Array, ghostCount:number

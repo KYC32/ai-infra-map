@@ -6,7 +6,7 @@
 
 > 본 프로젝트는 여기 등장하는 어떤 회사와도 무관한 개인의 비공식 프로젝트입니다. 모든 수치는 공개 자료에서 수집했고 항목마다 출처를 표기했습니다. 투자 조언이 아닙니다.
 
-현재 상태: **M0** — [iren-3d](https://github.com/KYC32/iren-3d) 를 복사한 시작점(IREN 데이터만 포함). 진행 계획은 아래 "로드맵" 참고.
+현재 상태: **M1 완료** — 데이터 모델 v2(회사·참여사·시점 이력)와 시간 함수. 화면은 아직 IREN 데이터만 표시. 진행 계획은 아래 "로드맵" 참고.
 
 ## 로드맵
 
@@ -39,14 +39,30 @@ npm test           # 캠퍼스 배치 로직 단위 테스트
 npm run build      # validate → 빌드 (dist/)
 ```
 
-## 데이터 갱신 방법 (가장 자주 하는 일)
+## 데이터 갱신 방법 (데이터 모델 v2)
 
-1. `public/data/sites.json` 을 수정합니다. 모든 수치에는 `sources`(URL)를 남깁니다.
-   - 건물 상태: `operating` · `commissioning` · `under_construction`(+ `progress` 0~1) · `planned` · `decommissioning`
-   - 기존 건물 전력을 재사용하는 전환(예: 채굴동 → AI 홀)은 `replaces: "<기존 건물 id>"` 로 표시해 이중 계산을 막습니다.
-   - 채용공고처럼 회사 발표가 아닌 추정은 `estimates` 에만 넣습니다.
-2. `npm run validate` 로 검사합니다. 스키마 오류·전력 합계 초과·중복 id 를 잡아 줍니다.
-3. `git commit` → `git push` 하면 Vercel 이 자동으로 다시 배포합니다.
+```
+data/companies.json              회사·프로그램 목록
+data/companies/<회사id>.json      { company_id, as_of, sites: [...] }   ← 회사 1개 = 파일 1개
+public/data/infra.json           npm run data 가 합친 결과 (자동 생성, git 제외)
+```
+
+1. 회사 파일을 수정합니다. 모든 수치에는 `source`(URL)를 남깁니다.
+   - 건물 상태는 **바뀐 시점 목록** `phases` 로 적습니다. 현재 상태는 날짜를 넣어 계산합니다.
+     ```json
+     "phases": [
+       { "status": "under_construction", "from": "2025-12", "basis": "reported", "source": "https://…" },
+       { "status": "operating", "from": "2026-Q4", "basis": "target", "source": "https://…" }
+     ]
+     ```
+     - `basis`: `reported`(발표된 사실) · `target`(회사 목표, 기간의 끝으로 해석) · `estimate`(우리 추정 — `estimates[]` 에 설명 필수)
+     - 날짜 형식: `2026` · `2026-Q4` · `2026-H2` · `2026-08` · `2026-08-13`
+   - 계통 전력은 `power` 이력(`secured_mw` 확보, `energized_mw` 통전)으로 적습니다.
+   - 기존 건물 전력을 재사용하는 전환은 `replaces`. 전환 건물이 시운전·가동에 들어가면 기존 건물 용량을 넘겨받습니다.
+   - 공동 프로젝트는 사이트를 한 번만 적고 `parties`(개발·소유·운영·입주)로 참여사를 표시합니다.
+2. `npm run validate` 로 검사합니다 (스키마, 참조, 날짜 순서, 2024~2028 매달 전력 합계, 좌표 영토, 회사색).
+3. 사이트 좌표를 바꿨다면 `npm run geo` 로 지구본 타일을 다시 만듭니다 (validate 가 알려 줍니다).
+4. `git push` 하면 자동 배포됩니다.
 
 ## 영상 만들기 (X·쇼츠용)
 

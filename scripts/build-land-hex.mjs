@@ -12,6 +12,8 @@
 import { readFileSync, writeFileSync } from 'node:fs'
 import { polygonToCells, cellToLatLng, latLngToCell, greatCircleDistance } from 'h3-js'
 import { feature } from 'topojson-client'
+import { buildInfra } from './build-data.mjs'
+import { createHash } from 'node:crypto'
 
 const RES = 3      // 기본 해상도 (작을수록 큼직한 저폴리 타일)
 const FINE_RES = 4 // 사이트 주변 해상도
@@ -22,7 +24,11 @@ const HOME = new Set(['840', '124', '036', '724'])
 const read = (p) => JSON.parse(readFileSync(new URL(p, import.meta.url), 'utf8'))
 const topo = read('../node_modules/world-atlas/countries-110m.json')
 const countries = feature(topo, topo.objects.countries).features
-const sites = read('../public/data/sites.json').sites
+// 사이트 좌표는 회사별 원본을 합친 결과에서 가져옴
+const infraSites = buildInfra().sites
+const sites = infraSites.map((s) => ({ id: s.id, lat: s.coord.lat, lng: s.coord.lng }))
+// 사이트 좌표 지문: validate 가 "좌표가 바뀌었는데 타일을 안 다시 만들었는지" 확인할 때 사용
+const sitesHash = createHash('sha1').update(JSON.stringify(infraSites.map((s) => [s.id, s.coord.lat, s.coord.lng]))).digest('hex').slice(0, 12)
 
 // 사이트 반경 안인지: 대권 거리(km) 기준
 const FINE_KM = FINE_DEG * 111.2
@@ -104,5 +110,5 @@ for (const [c, v] of cells) {
   if (isFine) fine++
   flat.push(Math.round(lat * 100) / 100, Math.round(lng * 100) / 100, v.home ? 1 : 0, isFine ? 1 : 0)
 }
-writeFileSync(new URL('../public/data/land-hex.json', import.meta.url), JSON.stringify({ res: RES, fineRes: FINE_RES, stride: 4, cells: flat }))
+writeFileSync(new URL('../public/data/land-hex.json', import.meta.url), JSON.stringify({ res: RES, fineRes: FINE_RES, stride: 4, sitesHash, cells: flat }))
 console.log(`✅ land-hex.json — 육각형 ${cells.size.toLocaleString()}개 (사이트 주변 고해상도 ${fine.toLocaleString()}개, 격자 대체: ${fallbacks.join(', ') || '없음'})`)
