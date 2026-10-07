@@ -1,0 +1,1489 @@
+{
+  "company": {
+    "id": "cipher",
+    "name": "Cipher Digital",
+    "name_ko": "사이퍼 디지털",
+    "group": "miner",
+    "ticker": {
+      "symbol": "CIFR",
+      "exchange": "NASDAQ"
+    },
+    "color": "#e59ac4",
+    "hq_country": "US",
+    "summary_ko": "뉴욕 본사(2026-02 Cipher Mining에서 사명 변경). 비트코인 채굴에서 하이퍼스케일 HPC 데이터센터 임대로 전환해 Fluidstack(Google 보증)·AWS와 서부 텍사스 3개 캠퍼스(총 700MW gross) 장기 임대 계약을 맺었다.",
+    "summary_en": "New York-based (renamed from Cipher Mining in Feb 2026). Pivoted from bitcoin mining to hyperscale HPC leasing, with long-term leases to Fluidstack (Google-backstopped) and AWS across three West Texas campuses (700MW gross).",
+    "metrics": [
+      {
+        "key": "contracted_hpc_gross_mw",
+        "value": 700,
+        "unit": "MW",
+        "label_ko": "계약 HPC 용량(gross)",
+        "label_en": "Contracted HPC capacity (gross)",
+        "as_of": "2026-08",
+        "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm"
+      },
+      {
+        "key": "contracted_revenue_usd_bn",
+        "value": 11.4,
+        "unit": "USD bn",
+        "label_ko": "계약 매출(Barber Lake 연장 전)",
+        "label_en": "Contracted revenue (pre Barber Lake extension)",
+        "as_of": "2026-08",
+        "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm"
+      },
+      {
+        "key": "barber_lake_contracted_revenue_usd_bn",
+        "value": 9,
+        "unit": "USD bn",
+        "label_ko": "Barber Lake 계약 매출(20년, 이상)",
+        "label_en": "Barber Lake contracted revenue (20-yr, over)",
+        "as_of": "2026-09",
+        "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm"
+      },
+      {
+        "key": "portfolio_gw",
+        "value": 5.3,
+        "unit": "GW",
+        "label_ko": "전체 포트폴리오(11개 사이트)",
+        "label_en": "Total portfolio (11 sites)",
+        "as_of": "2026-08",
+        "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+      }
+    ],
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm",
+      "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm",
+      "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+      "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+      "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm"
+    ]
+  },
+  "file": {
+    "company_id": "cipher",
+    "as_of": "2026-10-07",
+    "sites": [
+      {
+        "id": "barber-lake",
+        "name": "Barber Lake",
+        "name_ko": "바버 레이크",
+        "country": "US",
+        "admin1": "US-TX",
+        "region": "Texas (Mitchell County, near Colorado City)",
+        "coord": {
+          "lat": 32.388,
+          "lng": -100.865,
+          "confidence": "medium",
+          "method": "city_centroid",
+          "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010325012168/dp234624_ex9901.htm"
+        },
+        "primary": "cipher",
+        "parties": [
+          {
+            "company": "cipher",
+            "role": "developer",
+            "share": 1,
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010325012168/dp234624_ex9901.htm"
+          },
+          {
+            "company": "cipher",
+            "role": "owner",
+            "share": 1,
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm"
+          },
+          {
+            "company": "fluidstack",
+            "role": "tenant",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm"
+          },
+          {
+            "company": "google",
+            "role": "financier",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm"
+          }
+        ],
+        "detail": "full",
+        "announced": "2024-09",
+        "acres": 250,
+        "grid_operator": "ERCOT",
+        "cooling": "liquid",
+        "summary_ko": "콜로라도시티 인근 300MW(계통 승인·변전소 통전) 자사 캠퍼스. Fluidstack이 1단계 168MW IT(244MW gross)+2단계 39MW IT(56MW gross) 전체를 임차하고 Google이 리스 의무 최대 $1.73bn을 보증. 2026-09 계약 개정으로 데이터홀별 인도가 2026 Q4~2027 Q1로 조정됐고, 이후 '선도 AI 랩'이 10년 추가 임차(총 20년, $9bn 이상).",
+        "summary_en": "300MW (interconnection-approved, energized substation) owned campus near Colorado City. Fluidstack leases all of it: Phase I 168MW IT (244MW gross) + Phase II 39MW IT (56MW gross), with Google backstopping up to $1.73bn. A Sept 2026 amendment phases data-hall deliveries over Q4 2026-Q1 2027 and adds a 10-year follow-on lease with a 'leading AI lab' (20 years, >$9bn).",
+        "power": [
+          {
+            "from": "2024-09",
+            "secured_mw": 300,
+            "energized_mw": 300,
+            "basis": "reported",
+            "source": "https://seekingalpha.com/pr/19857490-cipher-mining-announces-the-closing-of-its-acquisition-of-barber-lake-300-mw-data-center-site"
+          }
+        ],
+        "substation": {},
+        "buildings": [
+          {
+            "id": "bl-phase-1",
+            "name": "Phase I",
+            "name_ko": "1단계",
+            "kind": "datahall_liquid",
+            "it_mw": 168,
+            "gross_mw": 244,
+            "mw_basis": "it",
+            "progress": 0.85,
+            "customer": "Fluidstack (Google backstop)",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1819989/000095010325012168/dp234624_ex9901.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-09",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010325012168/dp234624_ex9901.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2025-11",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/ciphermining_businessupd.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2026-Q4",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm"
+              }
+            ]
+          },
+          {
+            "id": "bl-phase-2",
+            "name": "Phase II",
+            "name_ko": "2단계",
+            "kind": "datahall_liquid",
+            "it_mw": 39,
+            "gross_mw": 56,
+            "mw_basis": "it",
+            "progress": 0.6,
+            "customer": "Fluidstack (Google backstop)",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_8k.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-11",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-Q1",
+                "basis": "estimate",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_8k.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2027-Q1",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm"
+              }
+            ]
+          }
+        ],
+        "deliveries": [],
+        "timeline": [
+          {
+            "date": "2024-09-24",
+            "event": "Barber Lake 부지 인수 완료 (250에이커, 통전된 변전소, 300MW 승인)",
+            "event_en": "Barber Lake acquisition closed (250 acres, energized substation, 300MW approvals)",
+            "source": "https://seekingalpha.com/pr/19857490-cipher-mining-announces-the-closing-of-its-acquisition-of-barber-lake-300-mw-data-center-site"
+          },
+          {
+            "date": "2025-09-25",
+            "event": "Fluidstack 10년 HPC 임대 168MW IT(244MW gross), Google $1.4bn 보증·지분 약 5.4% 워런트",
+            "event_en": "Fluidstack 10-yr lease, 168MW IT (244MW gross); Google $1.4bn backstop + ~5.4% warrants",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010325012168/dp234624_ex9901.htm"
+          },
+          {
+            "date": "2025-11-20",
+            "event": "Fluidstack 2단계 39MW IT(56MW gross) 추가, 사이트 300MW 전체 임차. Google 보증 $1.73bn로 확대",
+            "event_en": "Fluidstack adds Phase II 39MW IT (56MW gross), leasing full 300MW; Google backstop raised to $1.73bn",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm"
+          },
+          {
+            "date": "2026-04",
+            "event": "건물 골조 완료(topped out), 기계·전기·네트워크 공사 진행",
+            "event_en": "Building topped out; mechanical, electrical and networking work ongoing",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh991q1fy26_earningsxprvf.htm"
+          },
+          {
+            "date": "2026-08-04",
+            "event": "입주사가 건물 일부 점유·네트워크 랙 설치 시작(beneficial use). 장비 100% 확보",
+            "event_en": "Tenant began beneficial use (partial occupancy, network racks); 100% of equipment secured",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm"
+          },
+          {
+            "date": "2026-09-14",
+            "event": "Cipher·Fluidstack·Anthropic, 콜로라도시티 상수도 보수에 $10m 공동 출연",
+            "event_en": "Cipher, Fluidstack and Anthropic commit $10m to Colorado City water system",
+            "source": "https://www.financialcontent.com/article/gnwcq-2026-9-14-cipher-digital-fluidstack-and-anthropic-commit-10-million-to-repair-and-expand-colorado-citys-water-system"
+          },
+          {
+            "date": "2026-09-25",
+            "event": "임대 20년으로 연장(선도 AI 랩 10년 후속 임차, +$5.2bn). 데이터홀별 인도 2026 Q4~2027 Q1로 조정",
+            "event_en": "Lease extended to 20 years (AI lab 10-yr follow-on, +$5.2bn); data halls to be delivered Q4 2026-Q1 2027",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "1단계 진행률 0.85: 입주사 부분 점유·네트워크 랙 설치, 장비 100% 확보, 첫 데이터홀 2026 Q4 인도 목표 문구로 근사 (추정)",
+            "note_en": "Phase I progress 0.85 approximated from tenant beneficial use, 100% equipment secured and Q4 2026 first-hall target (estimate)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm"
+          },
+          {
+            "note": "2단계 착공 시점(2026 Q1)과 진행률 0.6: 2025-11 계약·자금조달 이후 착공, 당초 2027-01 인도 목표에서 역산 (추정). 2단계 MW 구분 공사 현황은 미공개",
+            "note_en": "Phase II construction start (Q1 2026) and progress 0.6 back-solved from Nov 2025 contract/financing and original Jan 2027 delivery target (estimate)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_8k.htm"
+          },
+          {
+            "note": "2026-09 개정 이후 홀 단위 MW·일정이 미공개라 1단계=2026 Q4, 2단계=2027 Q1 목표로 단순화 (당초 1단계 2026-09-30, 2단계 2027-01-31)",
+            "note_en": "Hall-level MW/schedule after the Sept 2026 amendment is undisclosed; simplified to Phase I = Q4 2026, Phase II = Q1 2027 (originally 2026-09-30 / 2027-01-31)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm"
+          }
+        ],
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1819989/000095010325012168/dp234624_ex9901.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "black-pearl",
+        "name": "Black Pearl",
+        "name_ko": "블랙 펄",
+        "country": "US",
+        "admin1": "US-TX",
+        "region": "Texas (Winkler County, Wink)",
+        "coord": {
+          "lat": 31.751,
+          "lng": -103.16,
+          "confidence": "medium",
+          "method": "city_centroid",
+          "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm"
+        },
+        "primary": "cipher",
+        "parties": [
+          {
+            "company": "cipher",
+            "role": "developer",
+            "share": 1,
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm"
+          },
+          {
+            "company": "cipher",
+            "role": "owner",
+            "share": 1,
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm"
+          },
+          {
+            "company": "aws",
+            "role": "tenant",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm"
+          }
+        ],
+        "detail": "full",
+        "announced": "2025-06",
+        "acres": 75,
+        "grid_operator": "ERCOT (LZ_West, Oncor)",
+        "cooling": "air+liquid",
+        "summary_ko": "윙크의 300MW 통전·ERCOT 승인 자사 부지. 2025-06~2026-02 비트코인 채굴(최대 150MW) 후 AWS 15년 임대(300MW gross / 216MW IT, 약 $5.5bn)로 전환. 1단계는 기존 13.7만 sq ft 건물 개조(데이터홀 3+네트워크홀 1), 2단계는 신축(데이터홀 4+네트워크홀 2). 첫 데이터홀을 2026-08 예정보다 2개월 앞서 인도하고 임대료 개시.",
+        "summary_en": "300MW energized, ERCOT-approved owned site in Wink. Bitcoin mining (up to 150MW) from Jun 2025 to Feb 2026, now converting for a 15-yr AWS lease (300MW gross / 216MW IT, ~$5.5bn). Phase I retrofits the existing 137k sq ft building (3 data halls + network hall 1); Phase II is new-build (data hall 4 + network hall 2). First data hall delivered Aug 2026, two months early, with rent commenced.",
+        "power": [
+          {
+            "from": "2025-06",
+            "secured_mw": 300,
+            "energized_mw": 300,
+            "basis": "reported",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm"
+          }
+        ],
+        "substation": {},
+        "buildings": [
+          {
+            "id": "bp-miners",
+            "name": "Bitcoin mining halls",
+            "name_ko": "비트코인 채굴동",
+            "kind": "miner_hall",
+            "it_mw": 0,
+            "gross_mw": 150,
+            "mw_basis": "gross",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000007/cipherdigital_businessup.htm"
+            ],
+            "phases": [
+              {
+                "status": "operating",
+                "from": "2025-06",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm"
+              },
+              {
+                "status": "retired",
+                "from": "2026-02",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000007/cipherdigital_businessup.htm"
+              }
+            ]
+          },
+          {
+            "id": "bp-dh1",
+            "name": "Data Hall 1",
+            "name_ko": "데이터홀 1",
+            "kind": "datahall_liquid",
+            "it_mw": 35,
+            "mw_basis": "it",
+            "customer": "AWS (Amazon Data Services)",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-11",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-02",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000007/exh991q4fy25_earningsprxvf.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2026-08",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm"
+              }
+            ],
+            "replaces": "bp-miners"
+          },
+          {
+            "id": "bp-nh1",
+            "name": "Network Hall 1",
+            "name_ko": "네트워크홀 1",
+            "kind": "datahall_air",
+            "it_mw": 15,
+            "mw_basis": "it",
+            "customer": "AWS (Amazon Data Services)",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-11",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-02",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000007/exh991q4fy25_earningsprxvf.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2026-08",
+                "basis": "estimate",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm"
+              }
+            ],
+            "replaces": "bp-miners"
+          },
+          {
+            "id": "bp-dh2",
+            "name": "Data Hall 2",
+            "name_ko": "데이터홀 2",
+            "kind": "datahall_liquid",
+            "it_mw": 35,
+            "mw_basis": "it",
+            "customer": "AWS (Amazon Data Services)",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-11",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-02",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000007/exh991q4fy25_earningsprxvf.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2026-10",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm"
+              }
+            ],
+            "progress": 0.85,
+            "replaces": "bp-miners"
+          },
+          {
+            "id": "bp-dh3",
+            "name": "Data Hall 3",
+            "name_ko": "데이터홀 3",
+            "kind": "datahall_liquid",
+            "it_mw": 35,
+            "mw_basis": "it",
+            "customer": "AWS (Amazon Data Services)",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-11",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-02",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000007/exh991q4fy25_earningsprxvf.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2026-11",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm"
+              }
+            ],
+            "progress": 0.75,
+            "replaces": "bp-miners"
+          },
+          {
+            "id": "bp-nh2",
+            "name": "Network Hall 2",
+            "name_ko": "네트워크홀 2",
+            "kind": "datahall_air",
+            "it_mw": 15,
+            "mw_basis": "it",
+            "customer": "AWS (Amazon Data Services)",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh991q1fy26_earningsxprvf.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-11",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-04",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh991q1fy26_earningsxprvf.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2026-12",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm"
+              }
+            ],
+            "progress": 0.45
+          },
+          {
+            "id": "bp-dh4",
+            "name": "Data Hall 4",
+            "name_ko": "데이터홀 4",
+            "kind": "datahall_liquid",
+            "it_mw": 81,
+            "mw_basis": "it",
+            "customer": "AWS (Amazon Data Services)",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh991q1fy26_earningsxprvf.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-11",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-04",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh991q1fy26_earningsxprvf.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2027-02",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm"
+              }
+            ],
+            "progress": 0.35
+          }
+        ],
+        "deliveries": [],
+        "timeline": [
+          {
+            "date": "2025-06",
+            "event": "비트코인 채굴 개시, 2025-09까지 150MW로 확대",
+            "event_en": "Bitcoin mining began; ramped to 150MW by Sep 2025",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm"
+          },
+          {
+            "date": "2025-11-03",
+            "event": "AWS 15년 임대 발표(300MW gross, 약 $5.5bn, 공랭+액체냉각)",
+            "event_en": "15-yr AWS lease announced (300MW gross, ~$5.5bn, air + liquid cooling)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm"
+          },
+          {
+            "date": "2026-02",
+            "event": "채굴 중단·장비 철수 완료, $2.0bn 프로젝트 채권(6.125%) 발행, EPC 착수",
+            "event_en": "Mining ceased and decommissioned; $2.0bn project notes (6.125%) issued; EPC underway",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000007/exh991q4fy25_earningsprxvf.htm"
+          },
+          {
+            "date": "2026-04",
+            "event": "2단계(데이터홀 4·네트워크홀 2) 부지 정리·토목 착수",
+            "event_en": "Phase II (data hall 4, network hall 2) layout and site work began",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh991q1fy26_earningsxprvf.htm"
+          },
+          {
+            "date": "2026-07-24",
+            "event": "임차인 요청으로 임대 개정 — 첫 용량 인도를 2개월 앞당김",
+            "event_en": "Lease amended at tenant request, accelerating first capacity by two months",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+          },
+          {
+            "date": "2026-08",
+            "event": "첫 데이터홀 인도·임대료 개시. 나머지 1단계 홀은 MEP 공사, 2단계는 기초·철골 진행",
+            "event_en": "First data hall delivered, rent commenced; remaining Phase I halls in MEP fit-out, Phase II foundations/steel",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "네트워크홀 1: 당초 데이터홀 1과 같은 날(2026-09-30) 인도 예정이어서 2026-08 함께 인도된 것으로 추정. 공시는 '첫 데이터센터 용량'만 언급",
+            "note_en": "Network Hall 1 assumed delivered with Data Hall 1 in Aug 2026 (both originally due 2026-09-30); disclosures only say 'first data center capacity'",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm"
+          },
+          {
+            "note": "데이터홀 2~4·네트워크홀 2 목표일은 2026-02 채권 설명자료의 랙레디 일정. 2026-07 개정은 '첫 용량'만 앞당겼다고 밝혀 나머지는 유지된 것으로 가정",
+            "note_en": "DH2-4 / NH2 targets are the rack-ready dates in the Feb 2026 bond deck; the July 2026 amendment only accelerated first capacity, so others assumed unchanged",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm"
+          },
+          {
+            "note": "진행률(DH2 0.85, DH3 0.75, NH2 0.45, DH4 0.35): 2026-08 공시 'Phase I 홀 MEP 공사, Phase II 기초·철골·지중 전기' 문구와 목표일로 근사 (추정)",
+            "note_en": "Progress values approximated from Aug 2026 wording (Phase I MEP fit-out; Phase II foundations, steel, underground electrical) and target dates (estimate)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm"
+          },
+          {
+            "note": "홀별 냉각 방식(데이터홀=액체, 네트워크홀=공랭)은 우리 가정. 회사는 사이트 전체에 '공랭+액체냉각'만 공개. 홀별 gross MW도 미공개라 IT MW만 기재",
+            "note_en": "Per-hall cooling (data halls liquid, network halls air) is our assumption; company only says air and liquid site-wide. Per-hall gross MW undisclosed, so IT MW only",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm"
+          }
+        ],
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000007/exh991q4fy25_earningsprxvf.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "stingray",
+        "name": "Stingray",
+        "name_ko": "스팅레이",
+        "country": "US",
+        "admin1": "US-TX",
+        "region": "Texas (Andrews County, Andrews)",
+        "coord": {
+          "lat": 32.319,
+          "lng": -102.546,
+          "confidence": "medium",
+          "method": "city_centroid",
+          "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm"
+        },
+        "primary": "cipher",
+        "parties": [
+          {
+            "company": "cipher",
+            "role": "developer",
+            "share": 1,
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm"
+          },
+          {
+            "company": "aws",
+            "role": "tenant",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm"
+          }
+        ],
+        "detail": "full",
+        "announced": "2025-11",
+        "acres": 250,
+        "grid_operator": "ERCOT",
+        "cooling": "unknown",
+        "summary_ko": "앤드루스의 100MW(ERCOT 승인) 부지. 2026-03 AWS와 두 번째 15년 임대(100MW gross / 70MW IT, 약 $2.0bn) 체결, $810m 프로젝트 채권으로 완공까지 자금 확보. 네트워크홀(10MW IT) 2027-04, 데이터홀(60MW IT) 2027-05 임대료 개시 목표. 변전소 통전 목표 2026 Q4.",
+        "summary_en": "100MW (ERCOT-approved) site in Andrews. Second 15-yr AWS lease signed Mar 2026 (100MW gross / 70MW IT, ~$2.0bn), fully funded by $810m project notes. Rent targets: network hall (10MW IT) Apr 2027, data hall (60MW IT) May 2027. Substation energization targeted Q4 2026.",
+        "power": [
+          {
+            "from": "2025-11",
+            "secured_mw": 100,
+            "energized_mw": 0,
+            "basis": "reported",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/ciphermining_businessupd.htm"
+          },
+          {
+            "from": "2026-Q4",
+            "secured_mw": 100,
+            "energized_mw": 100,
+            "basis": "target",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh992cipherdigital_busi.htm"
+          }
+        ],
+        "substation": {},
+        "buildings": [
+          {
+            "id": "st-network-hall",
+            "name": "Network Hall",
+            "name_ko": "네트워크홀",
+            "kind": "datahall_air",
+            "it_mw": 10,
+            "mw_basis": "it",
+            "progress": 0.25,
+            "customer": "AWS (Amazon Data Services)",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh992cipherdigital_busi.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2026-03",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-05",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh992cipherdigital_busi.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2027-04",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm"
+              }
+            ]
+          },
+          {
+            "id": "st-data-hall",
+            "name": "Data Hall",
+            "name_ko": "데이터홀",
+            "kind": "datahall_liquid",
+            "it_mw": 60,
+            "mw_basis": "it",
+            "progress": 0.2,
+            "customer": "AWS (Amazon Data Services)",
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+              "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh992cipherdigital_busi.htm"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2026-03",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-05",
+                "basis": "reported",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh992cipherdigital_busi.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2027-05",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm"
+              }
+            ]
+          }
+        ],
+        "deliveries": [],
+        "timeline": [
+          {
+            "date": "2025-11-03",
+            "event": "파이프라인 공개: 250에이커, ERCOT 100MW 승인, 2026 통전 예정",
+            "event_en": "Pipeline disclosure: 250 acres, 100MW ERCOT approval, 2026 energization",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/ciphermining_businessupd.htm"
+          },
+          {
+            "date": "2026-03",
+            "event": "투자등급 하이퍼스케일러(AWS)와 세 번째 데이터센터 임대 체결",
+            "event_en": "Third data center lease signed with investment-grade hyperscaler (AWS)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+          },
+          {
+            "date": "2026-05-05",
+            "event": "토목·패드 정지 진행, 변전소 전기공사 착수(2026 Q4 통전 목표)",
+            "event_en": "Earthwork and pad prep underway; substation electrical work begun (Q4 2026 energization target)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh992cipherdigital_busi.htm"
+          },
+          {
+            "date": "2026-06-15",
+            "event": "$810m 프로젝트 채권(6.0%) 발행 — 완공까지 자금 확보. AWS 임차인 공개",
+            "event_en": "$810m project notes (6.0%) closed, funding through completion; AWS named as tenant",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm"
+          },
+          {
+            "date": "2026-08-04",
+            "event": "지중 전기공사 착수, 3분기 기초·철골 시작 예정. 장비 약 75% 확보",
+            "event_en": "Underground electrical begun; foundations and steel to start Q3; ~75% of equipment secured",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "진행률(네트워크홀 0.25, 데이터홀 0.2): 2026-08 기준 토목·지중전기 단계, 3분기 기초·철골 착수 예정 문구로 근사 (추정)",
+            "note_en": "Progress (network hall 0.25, data hall 0.2) approximated from Aug 2026 status: earthwork/underground electrical, foundations and steel starting Q3 (estimate)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm"
+          },
+          {
+            "note": "홀별 냉각 방식(네트워크홀=공랭, 데이터홀=액체)은 우리 가정. 사이트 gross 100MW 중 홀별 gross는 미공개",
+            "note_en": "Per-hall cooling (network air, data hall liquid) is our assumption; per-hall gross MW within the 100MW site is undisclosed",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm"
+          }
+        ],
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh992cipherdigital_busi.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "reveille",
+        "name": "Reveille",
+        "name_ko": "레벨리",
+        "country": "US",
+        "admin1": "US-TX",
+        "region": "Texas (La Salle County, Cotulla)",
+        "coord": {
+          "lat": 28.437,
+          "lng": -99.235,
+          "confidence": "medium",
+          "method": "city_centroid",
+          "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm"
+        },
+        "primary": "cipher",
+        "parties": [
+          {
+            "company": "cipher",
+            "role": "developer",
+            "share": 1,
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm"
+          }
+        ],
+        "detail": "lite",
+        "announced": "2024-10",
+        "acres": 52,
+        "grid_operator": "ERCOT",
+        "cooling": "unknown",
+        "summary_ko": "코툴라의 70MW(ERCOT 승인, 200MW 확장 가능) 부지. 변전소 개발 착수, 2027 Q3 통전 목표. HPC 임대 협상 중(입주사 미정).",
+        "summary_en": "70MW (ERCOT-approved, expandable to 200MW) site in Cotulla. Substation development initiated, Q3 2027 energization target. HPC lease discussions ongoing (no tenant yet).",
+        "power": [
+          {
+            "from": "2024-10",
+            "secured_mw": 70,
+            "energized_mw": 0,
+            "basis": "reported",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998924000026/cifr-20241031xex991.htm"
+          },
+          {
+            "from": "2027-Q3",
+            "secured_mw": 70,
+            "energized_mw": 70,
+            "basis": "target",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm"
+          }
+        ],
+        "substation": {},
+        "buildings": [],
+        "deliveries": [],
+        "timeline": [
+          {
+            "date": "2024-10",
+            "event": "Reveille 부지 인수 완료(70MW 승인, 200MW 확장 가능)",
+            "event_en": "Reveille acquisition closed (70MW approved, expandable to 200MW)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998924000026/cifr-20241031xex991.htm"
+          },
+          {
+            "date": "2026-08-04",
+            "event": "변전소 개발 착수, 2027 Q3 통전 목표, HPC 임대 협상 중",
+            "event_en": "Substation development initiated; Q3 2027 energization target; HPC lease talks",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm"
+          }
+        ],
+        "estimates": [],
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998924000026/cifr-20241031xex991.htm"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "id": "ulysses",
+        "name": "Ulysses",
+        "name_ko": "율리시스",
+        "country": "US",
+        "admin1": "US-OH",
+        "region": "Ohio",
+        "coord": {
+          "lat": 40.29,
+          "lng": -82.79,
+          "confidence": "low",
+          "method": "region_centroid",
+          "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm"
+        },
+        "primary": "cipher",
+        "parties": [
+          {
+            "company": "cipher",
+            "role": "developer",
+            "share": 1,
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm"
+          }
+        ],
+        "detail": "lite",
+        "announced": "2025-12",
+        "acres": 195,
+        "grid_operator": "PJM (AEP Ohio)",
+        "cooling": "unknown",
+        "summary_ko": "오하이오의 200MW 부지(AEP Ohio 용량 확보, PJM 연계 승인). Cipher의 첫 텍사스 외 사이트. 2027 Q4 통전 목표, HPC 임대 협상 중(입주사 미정).",
+        "summary_en": "200MW Ohio site (AEP Ohio capacity secured, PJM interconnection approved); Cipher's first site outside Texas. Q4 2027 energization target; HPC lease discussions ongoing (no tenant yet).",
+        "power": [
+          {
+            "from": "2025-12",
+            "secured_mw": 200,
+            "energized_mw": 0,
+            "basis": "reported",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm"
+          },
+          {
+            "from": "2027-Q4",
+            "secured_mw": 200,
+            "energized_mw": 200,
+            "basis": "target",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm"
+          }
+        ],
+        "substation": {},
+        "buildings": [],
+        "deliveries": [],
+        "timeline": [
+          {
+            "date": "2025-12-23",
+            "event": "오하이오 200MW Ulysses 부지 인수(약 195에이커 토지 옵션)",
+            "event_en": "Acquired 200MW Ulysses site in Ohio (~195 acres of land options)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm"
+          },
+          {
+            "date": "2026-08-04",
+            "event": "변전소 개발 착수, 2027 Q4 통전 목표, HPC 임대 협상 중",
+            "event_en": "Substation development initiated; Q4 2027 energization target; HPC lease talks",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm"
+          }
+        ],
+        "estimates": [],
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000007/cipherdigital_businessup.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm",
+          "https://theenergymag.com/news/2025-12-23/cipher-ohio-hpc-pjm"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "id": "colchis",
+        "name": "Colchis",
+        "name_ko": "콜키스",
+        "country": "US",
+        "admin1": "US-TX",
+        "region": "West Texas (county undisclosed)",
+        "coord": {
+          "lat": 31.8,
+          "lng": -101.3,
+          "confidence": "low",
+          "method": "region_centroid",
+          "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm"
+        },
+        "primary": "cipher",
+        "parties": [
+          {
+            "company": "cipher",
+            "role": "developer",
+            "share": 0.76,
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+          }
+        ],
+        "detail": "lite",
+        "announced": "2025-11",
+        "acres": 620,
+        "grid_operator": "ERCOT (AEP direct connect)",
+        "cooling": "unknown",
+        "summary_ko": "서부 텍사스 1GW 합작 부지(Cipher 지분 76%, 관리 회원). AEP와 1GW 직접연결계약(DCA) 체결, 기존 변전소 인접 620에이커 옵션. ERCOT Batch Zero 조건부 기저부하 지위 — 최종 확정 전이라 확보 전력은 0으로 표시, 2028 통전 목표.",
+        "summary_en": "1GW West Texas JV site (Cipher 76%, managing member). Executed 1GW Direct Connect Agreement with AEP; 620 acres under option next to an existing substation. Conditional base-load status in ERCOT Batch Zero, not yet final, so secured MW shown as 0; 2028 energization target.",
+        "power": [
+          {
+            "from": "2025-11",
+            "secured_mw": 0,
+            "energized_mw": 0,
+            "basis": "reported",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm"
+          },
+          {
+            "from": "2028",
+            "secured_mw": 1000,
+            "energized_mw": 1000,
+            "basis": "target",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm"
+          }
+        ],
+        "substation": {},
+        "buildings": [],
+        "deliveries": [],
+        "timeline": [
+          {
+            "date": "2025-11-03",
+            "event": "Colchis 1GW 합작법인 설립 발표 — AEP 1GW DCA, 620에이커 옵션, 2028 통전 목표",
+            "event_en": "Colchis 1GW JV announced: AEP 1GW DCA, 620-acre option, 2028 energization target",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm"
+          },
+          {
+            "date": "2026-06-30",
+            "event": "추가 출자로 Cipher 지분 76%로 상승",
+            "event_en": "Cipher stake increased to 76% via capital contributions",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+          },
+          {
+            "date": "2026-08-04",
+            "event": "ERCOT에 연구·FEA 제출, Batch Zero 편입 예상",
+            "event_en": "Studies and executed FEA submitted to ERCOT; expected in Batch Zero",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "좌표는 '서부 텍사스' 지역 대표점(임의). 카운티 미공개라 위치 신뢰도 낮음",
+            "note_en": "Coordinates are an arbitrary West Texas regional point; county undisclosed, so low confidence",
+            "source": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm"
+          }
+        ],
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/ciphermining_businessupd.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "c1",
+      "field": "sites[0].power[0]",
+      "value": {
+        "secured_mw": 300,
+        "energized_mw": 300
+      },
+      "source_url": "https://seekingalpha.com/pr/19857490-cipher-mining-announces-the-closing-of-its-acquisition-of-barber-lake-300-mw-data-center-site",
+      "published": "2024-09-24",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "a newly constructed, fully energized, high-to-mid voltage substation"
+    },
+    {
+      "id": "c2",
+      "field": "sites[0].power[0].secured_mw",
+      "value": 300,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+      "published": "2026-02-24",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Cipher Barber Lake has received approvals for 300 MW of interconnection without any restrictions on the load profile"
+    },
+    {
+      "id": "c3",
+      "field": "sites[0].buildings[0].it_mw/gross_mw",
+      "value": {
+        "it_mw": 168,
+        "gross_mw": 244
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000095010325012168/dp234624_ex9901.htm",
+      "published": "2025-09-25",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Cipher will deliver 168 MW of critical IT load, supported by a maximum of 244 MW of gross capacity, at its Barber Lake site"
+    },
+    {
+      "id": "c4",
+      "field": "sites[0].buildings[1].it_mw/gross_mw",
+      "value": {
+        "it_mw": 39,
+        "gross_mw": 56
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm",
+      "published": "2025-11-20",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Cipher will deliver an additional 39 MW of critical IT load, supported by a maximum of 56 MW of additional gross capacity"
+    },
+    {
+      "id": "c5",
+      "field": "sites[0].parties[google]",
+      "value": "financier ($1.73bn backstop)",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm",
+      "published": "2025-11-20",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Google Expands Backstop of Fluidstack's Obligations by Additional $333 Million, Increasing Total Backstop to $1.73 Billion"
+    },
+    {
+      "id": "c6",
+      "field": "sites[0].acres",
+      "value": 250,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+      "published": "2026-02-24",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "The Barber Lake Facility is being constructed on 250 acres of land owned by Cipher Barber Lake",
+      "verification": "conflict"
+    },
+    {
+      "id": "c7",
+      "field": "sites[0].buildings[*].phases(original targets)",
+      "value": {
+        "phase1": "2026-09-30",
+        "phase2": "2027-01-31"
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+      "published": "2026-02-24",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "targeting delivery of Barber Lake Phase I by September 30, 2026, and of Barber Lake Phase II by January 31, 2027",
+      "verification": "conflict"
+    },
+    {
+      "id": "c8",
+      "field": "sites[0].buildings[*].phases(operating target)",
+      "value": "2026-Q4 ~ 2027-Q1",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm",
+      "published": "2026-09-25",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "individual data halls expected to be delivered from the fourth quarter of 2026 through the first quarter of 2027"
+    },
+    {
+      "id": "c9",
+      "field": "sites[0].buildings[0].phases[1]",
+      "value": "under_construction 2025-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/ciphermining_businessupd.htm",
+      "published": "2025-11-03",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Ground has been broken at the site and engineering, procurement, and construction are underway"
+    },
+    {
+      "id": "c10",
+      "field": "sites[0].buildings[0].progress",
+      "value": 0.85,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm",
+      "published": "2026-08-04",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "tenant has commenced beneficial use of the facility, including partial occupancy of the building and deployment of network racks"
+    },
+    {
+      "id": "c11",
+      "field": "sites[0].timeline(lease extension)",
+      "value": "20-year term, >$9bn",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm",
+      "published": "2026-09-25",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "extend the contracted lease duration of its Barber Lake data center in Colorado City, Texas from 10 years to 20 years"
+    },
+    {
+      "id": "c12",
+      "field": "sites[0].cooling",
+      "value": "liquid",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm",
+      "published": "2026-08-04",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "coolant distribution units and first network racks were delivered"
+    },
+    {
+      "id": "c13",
+      "field": "sites[1].power[0]",
+      "value": {
+        "secured_mw": 300,
+        "energized_mw": 300
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm",
+      "published": "2026-02-03",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Immediate power availability: Newly constructed and energized high-to-mid voltage N+1 substation"
+    },
+    {
+      "id": "c14",
+      "field": "sites[1].buildings[1..6].it_mw",
+      "value": 216,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm",
+      "published": "2026-02-03",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Developing Black Pearl (300 Gross MW / 216 MW Critical IT Load), leased to Amazon Data Services, Inc."
+    },
+    {
+      "id": "c15",
+      "field": "sites[1].buildings[1..6].phases(rack-ready targets)",
+      "value": {
+        "dh1": "2026-09-30",
+        "nh1": "2026-09-30",
+        "dh2": "2026-10-31",
+        "dh3": "2026-11-30",
+        "nh2": "2026-12-31",
+        "dh4": "2027-02-28"
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm",
+      "published": "2026-02-03",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "35 IT MW on Sept. 30th, 2026 Data Hall 1 15 IT MW on Sept. 30th, 2026 Network Hall 1"
+    },
+    {
+      "id": "c16",
+      "field": "sites[1].buildings(phase split)",
+      "value": "Phase 1 = DH1-3 + NH1 retrofit; Phase 2 = DH4 + NH2 new-build",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm",
+      "published": "2026-02-03",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Phase 1: Three data halls, one network hall, and O&M building on 137,000 sq. ft already constructed premises"
+    },
+    {
+      "id": "c17",
+      "field": "sites[1].buildings[0].phases[0]",
+      "value": "operating 2025-06, 150MW",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+      "published": "2026-02-24",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "We commenced mining bitcoin at the Black Pearl data center in June 2025 and ramped up to 150 MW of capacity by September 2025"
+    },
+    {
+      "id": "c18",
+      "field": "sites[1].buildings[0].phases[1]",
+      "value": "retired 2026-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000007/cipherdigital_businessup.htm",
+      "published": "2026-02-24",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "BTC mining decommissioning completed in February 2026"
+    },
+    {
+      "id": "c19",
+      "field": "sites[1].buildings[1].phases[2]",
+      "value": "operating 2026-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm",
+      "published": "2026-08-04",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "First data center capacity at Black Pearl delivered in August, with rent commenced"
+    },
+    {
+      "id": "c20",
+      "field": "sites[1].timeline(amendment)",
+      "value": "2026-07-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+      "published": "2026-08-04",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "On July 24, 2026, we amended the HPC lease at the Black Pearl Facility, which accelerated delivery of the first capacity to July 31, 2026."
+    },
+    {
+      "id": "c21",
+      "field": "sites[1].buildings[5..6].phases[1]",
+      "value": "under_construction 2026-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh991q1fy26_earningsxprvf.htm",
+      "published": "2026-05-05",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Layout and site work for Phase II began in April"
+    },
+    {
+      "id": "c22",
+      "field": "sites[1].cooling",
+      "value": "air+liquid",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm",
+      "published": "2025-11-03",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Cipher will deliver 300 MW of capacity in 2026, including both air and liquid cooling to the racks"
+    },
+    {
+      "id": "c23",
+      "field": "sites[1].acres",
+      "value": 75,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+      "published": "2026-02-24",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "The Black Pearl Facility is being constructed on approximately 75 acres of land owned by a wholly-owned Cipher subsidiary near Wink, Texas"
+    },
+    {
+      "id": "c24",
+      "field": "sites[2].buildings[*].it_mw",
+      "value": {
+        "network_hall": 10,
+        "data_hall": 60
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm",
+      "published": "2026-06-08",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "10 IT MW Network Hall Target Rent Commencement Date of April 1, 2027; 60 IT MW Data Hall"
+    },
+    {
+      "id": "c25",
+      "field": "sites[2].parties[aws]/coord",
+      "value": "AWS tenant; Andrews, TX",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm",
+      "published": "2026-06-08",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Purpose-built HPC data center located in Andrews, TX with 70 MW of Critical IT load under contract"
+    },
+    {
+      "id": "c26",
+      "field": "sites[2].power[0].secured_mw",
+      "value": 100,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/ciphermining_businessupd.htm",
+      "published": "2025-11-03",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Approvals for 100 MW of interconnection / agreements necessary to participate in the ERCOT market"
+    },
+    {
+      "id": "c27",
+      "field": "sites[2].power[1]",
+      "value": "energization target 2026-Q4",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh992cipherdigital_busi.htm",
+      "published": "2026-05-05",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Electrical work for substation has commenced, aligning with Q4 2026 target energization timeline",
+      "verification": "conflict"
+    },
+    {
+      "id": "c28",
+      "field": "sites[2].power[1](older guidance)",
+      "value": "energization H1 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+      "published": "2026-02-24",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "The Stingray Site has conditional ERCOT interconnection approval of up to 100 MW. We expect to energize the site in the first half of 2026.",
+      "verification": "conflict"
+    },
+    {
+      "id": "c29",
+      "field": "sites[2].buildings[*].phases[0]",
+      "value": "planned 2026-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+      "published": "2026-08-04",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "In March 2026, the Company, through a wholly owned subsidiary, entered into a data center lease agreement with an investment grade hyperscaler tenant"
+    },
+    {
+      "id": "c30",
+      "field": "sites[2].buildings[*].progress",
+      "value": "earthwork / underground electrical",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm",
+      "published": "2026-08-04",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Stingray data center construction continues to progress on schedule, with earthwork, grading, pad preparation, and underground electrical work all underway"
+    },
+    {
+      "id": "c31",
+      "field": "sites[3].power",
+      "value": {
+        "secured_mw": 70,
+        "energize_target": "2027-Q3"
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm",
+      "published": "2026-08-04",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "ERCOT interconnection approved for 70 gross MW and substation development initiated"
+    },
+    {
+      "id": "c32",
+      "field": "sites[3].acres",
+      "value": 52,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+      "published": "2026-08-04",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "assumed a lease for up to 52 acres of land in LaSalle, Texas, in October 2024",
+      "verification": "conflict"
+    },
+    {
+      "id": "c33",
+      "field": "sites[4].power",
+      "value": {
+        "secured_mw": 200,
+        "energize_target": "2027-Q4"
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+      "published": "2026-02-24",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "In December 2025, we acquired a 200 MW data center site in Ohio, referred to as Ulysses"
+    },
+    {
+      "id": "c34",
+      "field": "sites[4].acres",
+      "value": 195,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+      "published": "2026-02-24",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "we acquired land options to purchase approximately 195 acres of land at the site"
+    },
+    {
+      "id": "c35",
+      "field": "sites[5].power[1]",
+      "value": {
+        "target_mw": 1000,
+        "year": 2028
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm",
+      "published": "2025-11-03",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "The Colchis site includes a fully executed 1-GW Direct Connect Agreement with American Electric Power"
+    },
+    {
+      "id": "c36",
+      "field": "sites[5].parties[cipher].share",
+      "value": 0.76,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+      "published": "2026-08-04",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "the Company made capital contributions to Colchis, which increased the Company's ownership to 76%."
+    },
+    {
+      "id": "c37",
+      "field": "sites[5].power[0].secured_mw",
+      "value": 0,
+      "source_url": "https://investing.com/news/transcripts/cipher-digital-at-kbw-virtual-ai-summit-execution-becomes-the-test-93CH-4935135",
+      "published": "2026-10-06",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "Colchis received conditional base load status in Batch Zero, with final designations expected after an ERCOT audit in December",
+      "verification": "single_source"
+    },
+    {
+      "id": "c38",
+      "field": "company.metrics.contracted_hpc_gross_mw",
+      "value": 700,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+      "published": "2026-08-04",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "We are currently developing 700 MW of HPC data center facilities across three sites for hyperscaler tenants"
+    },
+    {
+      "id": "c39",
+      "field": "company.metrics.portfolio_gw",
+      "value": 5.3,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+      "published": "2026-08-04",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Our data center portfolio consists of approximately 5.3 gigawatts (\"GW\") of capacity across 11 sites"
+    },
+    {
+      "id": "c40",
+      "field": "company.name",
+      "value": "Cipher Digital (renamed 2026-02-20)",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000007/exh991q4fy25_earningsprxvf.htm",
+      "published": "2026-02-24",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Rebranded from Cipher Mining to Cipher Digital, reflecting the Company's pivot from bitcoin mining to HPC data center development"
+    }
+  ],
+  "open_questions": [
+    "companies.json 에 아직 없는 회사 id: fluidstack(Barber Lake 입주사), google(Barber Lake 리스 보증·워런트 → financier), aws(Black Pearl·Stingray 입주사; 계약 주체는 Amazon Data Services, Inc.) — 병합 전에 회사 항목 추가 필요.",
+    "Barber Lake 후속 10년 임차인 '선도 AI 랩(leading AI lab)'의 정체 미공개. 2026-09-14 상수도 기부에 Anthropic 이 공동 참여했지만 Barber Lake 최종 사용자(end_user)라는 공식 확인은 없음 → parties 에 넣지 않음.",
+    "Barber Lake: 2026-09 개정 후 데이터홀별 MW·인도일 미공개. 1단계/2단계 구분이 유지되는지, 2단계 2027-01-31 목표가 바뀌었는지 확인 필요.",
+    "Black Pearl: 2026-08 인도된 '첫 용량'이 데이터홀 1(35MW IT)만인지 네트워크홀 1(15MW IT)도 포함인지 미확인. 2026-07 개정 후 나머지 홀 일정 변경 여부 미확인.",
+    "Black Pearl: 10-K 는 AWS 계약을 2025-11, 10-Q 는 2025-10 으로 기재(서명일 vs 발표일 차이 추정).",
+    "Stingray: 통전 목표가 10-K(2026 상반기) → 2026-Q1·Q2 자료(2026 Q4)로 늦춰짐. 기준일(2026-10-07) 현재 실제 통전 여부 미확인.",
+    "Ulysses: 오하이오 내 정확한 카운티 미공개(일부 트래커는 Morgan County 라고 하나 좌표가 불일치, Tier 3) → 오하이오 중심점(low)으로 표시.",
+    "Colchis: 카운티·합작 상대방 미공개, ERCOT Batch Zero 최종 지정은 2026-12 감사 이후. 확정되면 secured_mw 를 1,000 으로 올릴지 검토.",
+    "홀별 gross MW·냉각 방식(Black Pearl·Stingray) 미공개. GPU/칩 종류(Fluidstack·AWS) 미공개.",
+    "제외한 사이트: Odessa(207MW 채굴, HPC 임대 '협의 중'만 언급), Apollo(900MW 옵션, Batch Zero 제출), McLennan·Mikeska·Milsing(각 500MW, ERCOT 배치 대기), Barber Lake 인접 500MW·Stingray 인접 200MW 확장(2030+). 임대 계약이 생기면 추가."
+  ]
+}
