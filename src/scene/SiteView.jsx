@@ -3,7 +3,8 @@
 // layoutCampus() 가 계산한 좌표를 받아 그리기만 합니다.
 // =============================================================
 import { useMemo } from 'react'
-import { Html, RoundedBox } from '@react-three/drei'
+import { RoundedBox } from '@react-three/drei'
+import Html from './SafeHtml.jsx'
 import { useAppStore, isStatusActive, EMPTY } from '../store/useAppStore.js'
 import { useT, pickName } from '../i18n/useT.js'
 import { styleOf, PENDING_COLOR } from '../data/statusStyle.js'
