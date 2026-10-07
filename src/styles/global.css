@@ -246,7 +246,7 @@ button { font: inherit; cursor: pointer; }
 .rank-row.on { background: #e6eefc; }
 .rank-row.off { opacity: 0.4; }
 .rank-no { font-size: 11px; font-weight: 700; color: var(--text-muted); text-align: center; }
-.rank-name { font-size: 13px; font-weight: 650; display: flex; align-items: baseline; gap: 6px; min-width: 0; }
+.rank-name { font-size: 13px; font-weight: 650; display: flex; align-items: baseline; gap: 6px; min-width: 0; white-space: nowrap; }
 .ticker { font-size: 10.5px; font-weight: 600; color: var(--text-muted); }
 .rank-val { font-size: 12.5px; font-weight: 700; font-variant-numeric: tabular-nums; }
 .rank-bar { grid-column: 2 / 5; display: flex; height: 6px; border-radius: 3px; background: #eef1f8; overflow: hidden; }
@@ -262,6 +262,7 @@ button { font: inherit; cursor: pointer; }
 .coloc a:hover { text-decoration: underline; }
 .coloc-host { color: var(--text-muted); font-size: 10px; max-width: 90px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .coloc-mw { font-variant-numeric: tabular-nums; }
+.coloc-badge { display: inline-flex; align-items: center; gap: 2px; margin-left: 4px; padding: 0 4px; border: 1px dashed var(--text-muted); border-radius: 8px; font-size: 9.5px; color: var(--text-muted); white-space: nowrap; }
 .coloc-note { color: var(--text-muted); font-size: 10px; margin-top: 4px; }
 .legend-companies { display: flex; flex-direction: column; gap: 2px; margin-bottom: 4px; max-height: 160px; overflow-y: auto; }
 /* 모바일 */

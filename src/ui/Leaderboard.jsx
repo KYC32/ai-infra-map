@@ -4,6 +4,7 @@
 // 행을 누르면 그 회사만 강조(필터), 다시 누르면 해제
 // =============================================================
 import { useMemo } from 'react'
+import { Building2 } from 'lucide-react'
 import { useAppStore } from '../store/useAppStore.js'
 import { useT, pickName } from '../i18n/useT.js'
 import { companyRanking } from '../data/timeline.js'
@@ -90,6 +91,10 @@ function Leaderboard() {
                 <span className="rank-name">
                   {pickName(c, lang)}
                   {c.ticker && <span className="ticker">{c.ticker.symbol}</span>}
+                  {/* 코로케이션이 있으면 배지로 알려 줌 → 행을 누르면 아래에 목록이 펼쳐짐 */}
+                  {c.colocations?.length > 0 && (
+                    <span className="coloc-badge" title={`${t.rank.coloc} ${c.colocations.length} — ${t.rank.colocNote}`}><Building2 size={9} />{c.colocations.length}</span>
+                  )}
                 </span>
                 <span className="rank-val">{r.hasEstimate ? '~' : ''}{fmtMw(r[metric])}</span>
                 {/* 가동(AI) · 건설 · 계획 비율 막대 — 길이는 1위 확보 전력 대비 */}
