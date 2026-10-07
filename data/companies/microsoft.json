@@ -1,0 +1,327 @@
+{
+  "company_id": "microsoft",
+  "as_of": "2026-10-07",
+  "sites": [
+    {
+      "id": "fairwater-mount-pleasant",
+      "name": "Fairwater Mount Pleasant (Wisconsin AI campus)",
+      "name_ko": "페어워터 마운트플레전트 (위스콘신 AI 캠퍼스)",
+      "country": "US",
+      "admin1": "US-WI",
+      "region": "Wisconsin (Racine County, Village of Mount Pleasant — former Foxconn TID 5)",
+      "coord": {
+        "lat": 42.676,
+        "lng": -87.903,
+        "confidence": "high",
+        "method": "permit_parcel",
+        "source": "https://www.wisn.com/article/microsoft-wants-to-develop-315-acre-data-center-campus-mount-pleasant/43433304"
+      },
+      "primary": "microsoft",
+      "parties": [
+        {
+          "company": "microsoft",
+          "role": "developer",
+          "source": "https://news.microsoft.com/source/2024/05/08/microsoft-announces-3-3-billion-investment-in-wisconsin-to-spur-artificial-intelligence-innovation-and-economic-growth/"
+        },
+        {
+          "company": "microsoft",
+          "role": "owner",
+          "source": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/"
+        },
+        {
+          "company": "microsoft",
+          "role": "operator",
+          "source": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/"
+        }
+      ],
+      "detail": "full",
+      "announced": "2024-05",
+      "acres": null,
+      "grid_operator": "MISO (We Energies distribution; ATC transmission)",
+      "cooling": "Closed-loop direct liquid cooling for >90% of capacity (water-cooled chiller plant, 172 20-ft fans); remainder outside air",
+      "summary_ko": "Microsoft 가 직접 짓고 소유·운영하는 첫 Fairwater AI 데이터센터(옛 Foxconn 부지). 1단계(315에이커, 3개 동 120만 ft², GB200 NVL72 수십만 개)는 2026-04 장비 가동·시운전, 2026-06-23 완전 가동. 바로 옆 2단계($4bn, \"비슷한 규모\")는 기초·철골 공사 중으로 2028 완공 목표. 2026-01 북쪽에 15개 동(약 900만 ft²·변전소 3곳) 추가 승인. 전력은 We Energies(VLC 요금제 2026-04 승인) — Microsoft 는 1단계 최대 400MW, 몇 년 내 900MW 를 언급했고 WEC 는 2030년까지 2.6GW 수요를 전망.",
+      "summary_en": "Microsoft's first self-built, owned and operated Fairwater AI datacenter on former Foxconn land. Phase 1 (315 acres, three buildings, 1.2M sq ft, hundreds of thousands of GB200 GPUs) brought equipment online in April 2026 and was fully operational on June 23, 2026. Adjacent phase 2 ($4bn, 'similar size and scale') is in foundation/steel work, due 2028. Fifteen more buildings (~9M sq ft, three substations) to the north were approved in Jan 2026. Power from We Energies (VLC tariff approved Apr 2026): Microsoft cited 400MW max for phase 1 and up to 900MW in a few years; WEC forecasts 2.6GW of Microsoft demand by 2030.",
+      "power": [
+        {
+          "from": "2024-05",
+          "secured_mw": 400,
+          "energized_mw": 0,
+          "basis": "estimate",
+          "source": "https://www.fox6now.com/news/microsoft-wisconsin-next-infrastructure-investment-announced"
+        },
+        {
+          "from": "2025-09",
+          "secured_mw": 900,
+          "energized_mw": 0,
+          "basis": "target",
+          "source": "https://www.fox6now.com/news/microsoft-wisconsin-next-infrastructure-investment-announced"
+        },
+        {
+          "from": "2026-04",
+          "secured_mw": 400,
+          "energized_mw": 400,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/783325/000078332526000099/a092026septemberfinal002.htm"
+        },
+        {
+          "from": "2028",
+          "secured_mw": 900,
+          "energized_mw": 900,
+          "basis": "target",
+          "source": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "fw-phase-1",
+          "name": "Phase 1 — Fairwater (3 buildings, 1.2M sq ft)",
+          "name_ko": "1단계 — Fairwater (3개 동, 120만 ft²)",
+          "kind": "datahall_liquid",
+          "gross_mw": 400,
+          "mw_basis": "grid",
+          "customer": "Microsoft in-house (OpenAI, Microsoft AI, Copilot workloads)",
+          "gpu": {
+            "model": "NVIDIA GB200 NVL72",
+            "count": null
+          },
+          "sources": [
+            "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/",
+            "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/",
+            "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/",
+            "https://www.sec.gov/Archives/edgar/data/783325/000078332526000099/a092026septemberfinal002.htm",
+            "https://www.fox6now.com/news/microsoft-wisconsin-next-infrastructure-investment-announced",
+            "https://www.datacenterfrontier.com/hyperscale/article/55317925/inside-microsofts-global-ai-infrastructure-the-fairwater-blueprint-for-distributed-supercomputing"
+          ],
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2024-05",
+              "basis": "reported",
+              "source": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/"
+            },
+            {
+              "status": "commissioning",
+              "from": "2026-04",
+              "basis": "reported",
+              "source": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/"
+            },
+            {
+              "status": "operating",
+              "from": "2026-06-23",
+              "basis": "reported",
+              "source": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/"
+            }
+          ]
+        },
+        {
+          "id": "fw-phase-2",
+          "name": "Phase 2 — second datacenter (adjacent, \"similar size and scale\")",
+          "name_ko": "2단계 — 두 번째 데이터센터 (1단계 바로 옆, \"비슷한 규모\")",
+          "kind": "datahall_liquid",
+          "gross_mw": 500,
+          "mw_basis": "grid",
+          "customer": "Microsoft in-house",
+          "progress": 0.3,
+          "sources": [
+            "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/",
+            "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/",
+            "https://www.fox6now.com/news/microsoft-wisconsin-next-infrastructure-investment-announced",
+            "https://www.datacenterfrontier.com/hyperscale/article/55317925/inside-microsofts-global-ai-infrastructure-the-fairwater-blueprint-for-distributed-supercomputing"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2025-09-18",
+              "basis": "reported",
+              "source": "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/"
+            },
+            {
+              "status": "under_construction",
+              "from": "2025-Q4",
+              "basis": "estimate",
+              "source": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/"
+            },
+            {
+              "status": "operating",
+              "from": "2028",
+              "basis": "target",
+              "source": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/"
+            }
+          ]
+        },
+        {
+          "id": "fw-north-durand",
+          "name": "North expansion — 9 buildings south of Hwy 11 (Durand Ave)",
+          "name_ko": "북쪽 확장 — 11번 도로(Durand Ave) 남쪽 9개 동",
+          "kind": "datahall_liquid",
+          "mw_basis": "grid",
+          "sources": [
+            "https://w.media/microsoft-gains-approval-for-15-new-data-centers-in-wisconsin/",
+            "https://spectrumnews1.com/wi/madison/news/2026/01/27/mount-pleasant--microsoft--data-center-expansion--approval",
+            "https://www.sec.gov/Archives/edgar/data/783325/000078332526000099/a092026septemberfinal002.htm"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-01-26",
+              "basis": "reported",
+              "source": "https://w.media/microsoft-gains-approval-for-15-new-data-centers-in-wisconsin/"
+            }
+          ]
+        },
+        {
+          "id": "fw-north-international",
+          "name": "North expansion — 6 buildings + offices along International Drive",
+          "name_ko": "북쪽 확장 — International Drive 변 6개 동 + 사무동",
+          "kind": "datahall_liquid",
+          "mw_basis": "grid",
+          "sources": [
+            "https://w.media/microsoft-gains-approval-for-15-new-data-centers-in-wisconsin/",
+            "https://spectrumnews1.com/wi/madison/news/2026/01/27/mount-pleasant--microsoft--data-center-expansion--approval",
+            "https://www.sec.gov/Archives/edgar/data/783325/000078332526000099/a092026septemberfinal002.htm"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-01-26",
+              "basis": "reported",
+              "source": "https://w.media/microsoft-gains-approval-for-15-new-data-centers-in-wisconsin/"
+            }
+          ]
+        }
+      ],
+      "deliveries": [
+        {
+          "what": "NVIDIA GB200 NVL72 racks (hundreds of thousands of Blackwell GPUs, phase 1)",
+          "from": "NVIDIA",
+          "eta": "2026-04",
+          "status": "done",
+          "source": "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/"
+        },
+        {
+          "what": "250MW solar project in Portage County, WI (carbon-free matching for the campus)",
+          "from": "National Grid Renewables",
+          "eta": "2026",
+          "status": "in_progress",
+          "source": "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/"
+        },
+        {
+          "what": "Distribution facilities and on-site substation (~$335M)",
+          "from": "We Energies / ATC",
+          "eta": "2026",
+          "status": "done",
+          "source": "https://wpr.org/news/we-energies-spend-335m-microsoft-development-mount-pleasant"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2023-03",
+          "event": "Microsoft, 옛 Foxconn TID 5 부지(Braun Rd 남쪽·KR 북쪽) 315에이커 데이터센터 캠퍼스 계획 제출($1B)",
+          "event_en": "Microsoft proposed a $1B, 315-acre datacenter campus on former Foxconn TID 5 land",
+          "source": "https://www.wisn.com/article/microsoft-wants-to-develop-315-acre-data-center-campus-mount-pleasant/43433304"
+        },
+        {
+          "date": "2024-03",
+          "event": "We Energies, Microsoft 부지 배전설비·변전소에 $335M 투자 계획을 PSC 에 제출",
+          "event_en": "We Energies filed plans to spend $335M on distribution facilities for the Microsoft development",
+          "source": "https://wpr.org/news/we-energies-spend-335m-microsoft-development-mount-pleasant"
+        },
+        {
+          "date": "2024-05-08",
+          "event": "Mount Pleasant 데이터센터 캠퍼스 $3.3bn 투자 공식 발표(2026년 말까지)",
+          "event_en": "Announced $3.3bn investment in the Mount Pleasant datacenter campus through end-2026",
+          "source": "https://news.microsoft.com/source/2024/05/08/microsoft-announces-3-3-billion-investment-in-wisconsin-to-spur-artificial-intelligence-innovation-and-economic-growth/"
+        },
+        {
+          "date": "2025-01",
+          "event": "2단계 초기 공사 일시중지 — 기술 변화 반영해 설계 재검토(1단계는 계속)",
+          "event_en": "Paused early phase-2 construction to re-evaluate scope and design for new technology (phase 1 continued)",
+          "source": "https://wpr.org/economy/microsoft-pauses-construction-on-portions-of-mount-pleasant-project"
+        },
+        {
+          "date": "2025-09-18",
+          "event": "\"Fairwater\" 공개, 2단계 두 번째 데이터센터에 $4bn 추가(3년 내), 250MW 태양광·전력 선납 발표",
+          "event_en": "Unveiled 'Fairwater'; committed another $4bn for a second datacenter within three years; 250MW solar and energy prepayment",
+          "source": "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/"
+        },
+        {
+          "date": "2026-01-26",
+          "event": "마을 의회, 북쪽 2개 부지에 15개 동(약 900만 ft², 변전소 3곳) 추가 만장일치 승인",
+          "event_en": "Village board unanimously approved 15 more buildings (~9M sq ft, three substations) on two sites to the north",
+          "source": "https://w.media/microsoft-gains-approval-for-15-new-data-centers-in-wisconsin/"
+        },
+        {
+          "date": "2026-04",
+          "event": "1단계 장비 가동·시운전 시작(WEC: \"Phase 1 operations commenced in April 2026\")",
+          "event_en": "Phase 1 equipment brought online and startup began (WEC: phase 1 operations commenced April 2026)",
+          "source": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/"
+        },
+        {
+          "date": "2026-04-24",
+          "event": "위스콘신 PSC, We Energies 대형고객(VLC) 데이터센터 요금제 수정 승인(기준 100MW 이상, 비용 100% 부담)",
+          "event_en": "Wisconsin PSC approved a modified We Energies Very Large Customer tariff (100MW+ threshold, full cost recovery)",
+          "source": "https://psc.wi.gov/Documents/PressReleases/04.24.2026PressRelease.PDF"
+        },
+        {
+          "date": "2026-06-23",
+          "event": "1단계 공사 완료·완전 가동 발표. 2단계는 기초·철골·지하설비 공사 중, 2028 완공 예정",
+          "event_en": "Phase 1 construction completed and fully operational; phase 2 in foundation/steel/utility work, due 2028",
+          "source": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/"
+        },
+        {
+          "date": "2026-09-04",
+          "event": "WEC 투자자료: Microsoft 2030년까지 2.6GW 수요 전망, 2,200에이커 이상 매입, 1·2단계 외 15개 동 건설",
+          "event_en": "WEC investor update: 2.6GW Microsoft demand forecast through 2030, 2,200+ acres bought, 15 more buildings beyond phases 1–2",
+          "source": "https://www.sec.gov/Archives/edgar/data/783325/000078332526000099/a092026septemberfinal002.htm"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "확정 확보 = 1단계 400MW. 900MW 는 2단계 발표를 포함한 발표 규모(목표·추정)",
+          "note_en": "Firm = phase-1 400MW; 900MW includes the announced phase 2 (target/estimate)",
+          "source": "https://www.sec.gov/Archives/edgar/data/783325/000078332526000099/a092026septemberfinal002.htm"
+        },
+        {
+          "note": "확보 전력 400MW(2024-05~): 회사가 계통 연결 용량을 공개하지 않음. Microsoft 가 2025-09 기자회견에서 밝힌 \"1단계 최대 전력 400MW\"(Fox6·Data Center Frontier 가 주 인허가 자료 인용)를 발표 시점부터 적용. 2024년 DNR 서류상 신규 변전소는 최소 752MW 규모(WPR, Tier 2).",
+          "note_en": "Secured 400MW from May 2024: no disclosed interconnection figure. Uses the \"400MW maximum for phase 1\" Microsoft cited in Sep 2025 (Fox6; Data Center Frontier citing state filings). A 2024 DNR filing sized the new substation at 752MW+ (WPR, Tier 2).",
+          "source": "https://www.fox6now.com/news/microsoft-wisconsin-next-infrastructure-investment-announced"
+        },
+        {
+          "note": "확보 전력 900MW(2025-09~): Microsoft \"몇 년 내 900MW 필요할 수 있음\"(Fox6), DCF \"전체(1·2단계) 약 900MW 접근\"(주 인허가 자료). We Energies VLC 요금제 승인(2026-04)·WEC 2.6GW 수요 전망으로 공급 의지는 확인되나 계통 연결 계약 MW 는 미공개 → 추정.",
+          "note_en": "Secured 900MW from Sep 2025: Microsoft said needs \"might be 900MW\" in a few years (Fox6); DCF cites state filings at ~900MW full build-out. Utility commitment is evident (VLC tariff Apr 2026; WEC 2.6GW forecast) but the contracted interconnection MW is not public → estimate.",
+          "source": "https://www.datacenterfrontier.com/hyperscale/article/55317925/inside-microsofts-global-ai-infrastructure-the-fairwater-blueprint-for-distributed-supercomputing"
+        },
+        {
+          "note": "통전 400MW(2026-04~): WEC 는 1단계 운영 개시(2026-04)만 공시. 실제 통전 MW 미공개 → 1단계 최대 400MW 로 가정.",
+          "note_en": "Energized 400MW from Apr 2026: WEC discloses only that phase 1 operations began in April 2026; energized MW undisclosed → assumes the 400MW phase-1 maximum.",
+          "source": "https://www.sec.gov/Archives/edgar/data/783325/000078332526000099/a092026septemberfinal002.htm"
+        },
+        {
+          "note": "2단계 500MW(grid) = 900MW(몇 년 내 총수요) − 400MW(1단계). Microsoft 는 \"비슷한 규모\"라고만 밝힘. 착공 2025-Q4 와 진행률 0.3 은 2026-06 \"기초·철골·지하설비 공사 중\", 2028 완공 일정에서 선형 근사.",
+          "note_en": "Phase 2 500MW (grid) = 900MW near-term total − 400MW phase 1; Microsoft only says \"similar size and scale\". Start 2025-Q4 and progress 0.3 are linear approximations from the June 2026 \"foundation, steel erection, underground utilities\" status and 2028 completion.",
+          "source": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/"
+        },
+        {
+          "note": "좌표: 1단계 315에이커 부지 경계(Braun Rd 남쪽·County Hwy KR 북쪽·CP 철도 동쪽·90th St 서쪽, 마을 TID 5 자료를 인용한 WISN)를 OpenStreetMap 도로 좌표(위도 42.669~42.683, 경도 -87.911~-87.895)에 맞춘 중심점. 북쪽 확장 15개 동은 약 3~4km 북쪽(Durand Ave·International Dr)이라 같은 사이트로 묶음.",
+          "note_en": "Coordinates: centroid of the phase-1 parcel bounds (south of Braun Rd, north of County Hwy KR, east of CP rail, west of 90th St, per WISN citing village TID 5 documents) fitted to OpenStreetMap roads. The 15-building north expansion lies ~3–4km north (Durand Ave / International Dr) and is grouped in this site.",
+          "source": "https://www.wisn.com/article/microsoft-wants-to-develop-315-acre-data-center-campus-mount-pleasant/43433304"
+        }
+      ],
+      "sources": [
+        "https://news.microsoft.com/source/2024/05/08/microsoft-announces-3-3-billion-investment-in-wisconsin-to-spur-artificial-intelligence-innovation-and-economic-growth/",
+        "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/",
+        "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/",
+        "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/",
+        "https://www.sec.gov/Archives/edgar/data/783325/000078332526000099/a092026septemberfinal002.htm",
+        "https://psc.wi.gov/Documents/PressReleases/04.24.2026PressRelease.PDF",
+        "https://www.fox6now.com/news/microsoft-wisconsin-next-infrastructure-investment-announced",
+        "https://www.datacenterfrontier.com/hyperscale/article/55317925/inside-microsofts-global-ai-infrastructure-the-fairwater-blueprint-for-distributed-supercomputing",
+        "https://w.media/microsoft-gains-approval-for-15-new-data-centers-in-wisconsin/",
+        "https://www.wisn.com/article/microsoft-wants-to-develop-315-acre-data-center-campus-mount-pleasant/43433304"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "reviewed_at": "2026-10-07"
+}

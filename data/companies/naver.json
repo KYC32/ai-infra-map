@@ -1,0 +1,405 @@
+{
+  "company_id": "naver",
+  "as_of": "2026-10-07",
+  "sites": [
+    {
+      "id": "naver-sejong",
+      "name": "GAK Sejong",
+      "name_ko": "각 세종",
+      "country": "KR",
+      "admin1": "KR-50",
+      "region": "Sejong (Jiphyeon-dong, 4-2 living zone urban high-tech industrial complex)",
+      "coord": {
+        "lat": 36.508,
+        "lng": 127.34,
+        "confidence": "high",
+        "method": "official_address",
+        "source": "https://www.openstreetmap.org/search?query=%EA%B0%81%20%EC%84%B8%EC%A2%85"
+      },
+      "primary": "naver",
+      "parties": [
+        {
+          "company": "naver",
+          "role": "developer",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=30422"
+        },
+        {
+          "company": "naver",
+          "role": "owner",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=2255"
+        },
+        {
+          "company": "naver",
+          "role": "operator",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517"
+        }
+      ],
+      "detail": "lite",
+      "announced": "2021-04",
+      "acres": 72.7,
+      "grid_operator": "KEPCO (한국전력)",
+      "cooling": "NAMU-III outside-air cooling (phase 1); direct liquid cooling planned from phase 2",
+      "summary_ko": "네이버의 두 번째 자체 하이퍼스케일 데이터센터(세종 집현동, 부지 29만4천㎡). 2021-04 기공, 2023-11 개소(전체의 1/6), 설계상 6단계·최대 수전 270MW. 2025-10 현재 수전 47MW, 2·3단계를 2027·2029년 완공해 130MW 이상으로 늘린다고 했다. 2026-06·07 엔비디아·브룩필드와 이곳에 NVIDIA DSX 기반 AI 팩토리(2027 상반기 55MW → 2027년 내 100MW → 2028년 200MW, GPU 약 10만 장)를 짓겠다고 발표. 브룩필드 90억달러 조달은 최종 계약 전.",
+      "summary_en": "NAVER's second owned hyperscale data center (Jiphyeon-dong, Sejong; 294,000 m² site). Groundbreaking Apr 2021, opened Nov 2023 with one-sixth of the campus; designed for six phases and up to 270MW intake. As of Oct 2025 it drew 47MW, with phases 2–3 due 2027 and 2029 to exceed 130MW. In Jun–Jul 2026 NAVER, NVIDIA and Brookfield announced an NVIDIA DSX AI factory here (55MW in H1 2027 → 100MW within 2027 → 200MW by 2028, ~100k GPUs); Brookfield's $9bn financing is not yet final.",
+      "power": [
+        {
+          "from": "2023-11",
+          "secured_mw": 47,
+          "energized_mw": 47,
+          "basis": "estimate",
+          "source": "https://www.hankyung.com/article/2025111034931"
+        },
+        {
+          "from": "2025-10",
+          "secured_mw": 130,
+          "energized_mw": 47,
+          "basis": "target",
+          "source": "https://www.hankyung.com/article/2025111034931"
+        },
+        {
+          "from": "2026-07",
+          "secured_mw": 247,
+          "energized_mw": 47,
+          "basis": "target",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517"
+        },
+        {
+          "from": "2027-06",
+          "secured_mw": 247,
+          "energized_mw": 102,
+          "basis": "target",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034355"
+        },
+        {
+          "from": "2027-12",
+          "secured_mw": 247,
+          "energized_mw": 147,
+          "basis": "target",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034355"
+        },
+        {
+          "from": "2028-12",
+          "secured_mw": 247,
+          "energized_mw": 247,
+          "basis": "target",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "gs-phase1",
+          "name": "Phase 1 — North server hall (opened Nov 2023)",
+          "name_ko": "1단계 — 북관 서버동 (2023-11 개소)",
+          "kind": "datahall_air",
+          "gross_mw": 47,
+          "mw_basis": "grid",
+          "gpu": {
+            "model": "NVIDIA A100 (SuperPOD) and others",
+            "count": null
+          },
+          "sources": [
+            "https://www.navercorp.com/media/pressReleasesDetail?seq=30422",
+            "https://www.navercorp.com/media/pressReleasesDetail?seq=2255",
+            "https://www.hankyung.com/article/2025111034931"
+          ],
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2021-04",
+              "basis": "reported",
+              "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=30422"
+            },
+            {
+              "status": "operating",
+              "from": "2023-11",
+              "basis": "reported",
+              "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=2255"
+            }
+          ]
+        },
+        {
+          "id": "gs-aif-1",
+          "name": "AI factory step 1 (phase-2 expansion, 55MW)",
+          "name_ko": "AI 팩토리 1단계 (2단계 증설, 55MW)",
+          "kind": "datahall_liquid",
+          "gross_mw": 55,
+          "mw_basis": "grid",
+          "progress": 0.4,
+          "gpu": {
+            "model": "NVIDIA Blackwell / Vera Rubin (DSX)",
+            "count": null
+          },
+          "sources": [
+            "https://www.etnews.com/20251028000113",
+            "https://www.etnews.com/20251231000188",
+            "https://www.navercorp.com/media/pressReleasesDetail?seq=10034355"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2025-10",
+              "basis": "reported",
+              "source": "https://www.etnews.com/20251028000113"
+            },
+            {
+              "status": "under_construction",
+              "from": "2026-02",
+              "basis": "estimate",
+              "source": "https://www.etnews.com/20251231000188"
+            },
+            {
+              "status": "operating",
+              "from": "2027-H1",
+              "basis": "target",
+              "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034355"
+            }
+          ]
+        },
+        {
+          "id": "gs-aif-2",
+          "name": "AI factory step 2 (+45MW, to 100MW)",
+          "name_ko": "AI 팩토리 2단계 (+45MW, 누적 100MW)",
+          "kind": "datahall_liquid",
+          "gross_mw": 45,
+          "mw_basis": "grid",
+          "gpu": {
+            "model": "NVIDIA Blackwell / Vera Rubin (DSX)",
+            "count": null
+          },
+          "sources": [
+            "https://www.navercorp.com/media/pressReleasesDetail?seq=10034355",
+            "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-07",
+              "basis": "reported",
+              "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517"
+            },
+            {
+              "status": "operating",
+              "from": "2027-Q4",
+              "basis": "target",
+              "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034355"
+            }
+          ]
+        },
+        {
+          "id": "gs-aif-3",
+          "name": "AI factory step 3 (+100MW, to 200MW)",
+          "name_ko": "AI 팩토리 3단계 (+100MW, 누적 200MW)",
+          "kind": "datahall_liquid",
+          "gross_mw": 100,
+          "mw_basis": "grid",
+          "gpu": {
+            "model": "NVIDIA Vera Rubin / Blackwell (DSX)",
+            "count": null
+          },
+          "sources": [
+            "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517",
+            "https://www.navercorp.com/media/pressReleasesDetail?seq=10034634"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-07",
+              "basis": "reported",
+              "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517"
+            },
+            {
+              "status": "operating",
+              "from": "2028",
+              "basis": "target",
+              "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517"
+            }
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2021-04-22",
+          "event": "각 세종 기공식 (집현동 4-2생활권 도시첨단산단, 시공 현대건설)",
+          "event_en": "GAK Sejong groundbreaking (Jiphyeon-dong high-tech complex; builder Hyundai E&C)",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=30422"
+        },
+        {
+          "date": "2023-11-08",
+          "event": "각 세종 개소: 전체의 1/6 오픈, 설계상 최대 60만 유닛·수전 270MW",
+          "event_en": "GAK Sejong opens with one-sixth of the campus; designed for 600k units and 270MW intake",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=2255"
+        },
+        {
+          "date": "2025-10-27",
+          "event": "2·3단계 연내 착공, 2027·2029년 추가 오픈 계획 발표 (각 단계 40MW 이상)",
+          "event_en": "Plan announced to start phases 2–3 within the year, opening in 2027 and 2029 (each 40MW+)",
+          "source": "https://www.etnews.com/20251028000113"
+        },
+        {
+          "date": "2025-12-31",
+          "event": "보도: 2단계 공사 2026-02 착공 예정, 3단계는 2027년 착공 전망 (준공 목표 유지)",
+          "event_en": "Press: phase 2 works to start Feb 2026, phase 3 in 2027 (completion targets unchanged)",
+          "source": "https://www.etnews.com/20251231000188"
+        },
+        {
+          "date": "2026-06-08",
+          "event": "네이버–엔비디아 GW급 AI 팩토리 협력: 각 세종 거점으로 2027 상반기 55MW, 연내 100MW, 2028년 200MW",
+          "event_en": "NAVER–NVIDIA GW-scale AI factory pact: from GAK Sejong, 55MW in H1 2027, 100MW within 2027, 200MW in 2028",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034355"
+        },
+        {
+          "date": "2026-07-24",
+          "event": "네이버·브룩필드·엔비디아 공동 발표: 각 세종 AI 팩토리 55MW→200MW 확대, 총 100억달러(브룩필드 최대 90억·엔비디아 10억)",
+          "event_en": "NAVER, Brookfield and NVIDIA: GAK Sejong AI factory expanded from 55MW to 200MW; $10bn project (Brookfield up to $9bn, NVIDIA $1bn)",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517"
+        },
+        {
+          "date": "2026-09-03",
+          "event": "이해진 의장·브루스 플랫 회장 회동, 1단계(200MW) 파이낸싱 후속 논의",
+          "event_en": "Chairman Lee and Brookfield's Bruce Flatt meet on phase-1 (200MW) financing",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034634"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "1단계 47MW 는 2025-10~11 보도의 '현재 수전 용량'을 2023-11 개소 시점부터 적용한 추정(회사 발표 '전체의 1/6' 기준이면 약 45MW)",
+          "note_en": "Phase 1 at 47MW applies the 'current intake' reported in Oct–Nov 2025 back to the Nov 2023 opening (company's 'one-sixth of campus' implies ~45MW)",
+          "source": "https://www.hankyung.com/article/2025111034931"
+        },
+        {
+          "note": "확보 전력 단계(130MW→247MW)는 회사 목표를 발표 시점부터 적용한 것. 247MW = 기존 47MW + AI 팩토리 200MW(설계 최대 270MW 이내). 한전 수전 승인 규모는 미공개",
+          "note_en": "Secured steps (130MW→247MW) apply company targets from their announcement dates. 247MW = existing 47MW + 200MW AI factory (within the 270MW design maximum). KEPCO-approved intake undisclosed",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517"
+        },
+        {
+          "note": "AI 팩토리 MW(55/100/200)가 IT 인지 수전 기준인지 미공개 → 낮은 쪽 해석으로 grid 표기. AI 팩토리 1단계 55MW 를 2025-10 발표한 '2단계 증설'(2027 완공)과 같은 공사로 본 것은 추정. 2단계 착공(2026-02)은 '착공 예정' 보도만 있어 estimate",
+          "note_en": "Whether AI factory MW (55/100/200) is IT or grid is undisclosed; shown as grid (lower). Treating the 55MW step as the phase-2 expansion (due 2027) announced in Oct 2025 is our estimate. Phase-2 start (Feb 2026) is based only on a 'scheduled to start' report",
+          "source": "https://www.etnews.com/20251231000188"
+        },
+        {
+          "note": "진행률 0.4: 2026-02 착공(추정) → 2027 상반기 가동 목표, 약 16개월 중 8개월 경과로 근사. 공정률 공개 없음",
+          "note_en": "Progress 0.4 approximated from ~8 of ~16 months between the assumed Feb 2026 start and the H1 2027 target; no published figure",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034355"
+        }
+      ],
+      "sources": [
+        "https://www.navercorp.com/media/pressReleasesDetail?seq=30422",
+        "https://www.navercorp.com/media/pressReleasesDetail?seq=2255",
+        "https://www.navercorp.com/media/pressReleasesDetail?seq=10034355",
+        "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517",
+        "https://www.navercorp.com/media/pressReleasesDetail?seq=10034634",
+        "https://www.hankyung.com/article/2025111034931",
+        "https://www.etnews.com/20251028000113",
+        "https://www.etnews.com/20251231000188",
+        "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202510270910271020102172",
+        "https://www.polinews.co.kr/news/articleView.html?idxno=742477"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "naver-chuncheon",
+      "name": "GAK Chuncheon",
+      "name_ko": "각 춘천",
+      "country": "KR",
+      "admin1": "KR-51",
+      "region": "Gangwon (Chuncheon, Dong-myeon — Gubongsan)",
+      "coord": {
+        "lat": 37.889,
+        "lng": 127.774,
+        "confidence": "high",
+        "method": "official_address",
+        "source": "https://www.openstreetmap.org/search?query=%EA%B0%81%20%EC%B6%98%EC%B2%9C"
+      },
+      "primary": "naver",
+      "parties": [
+        {
+          "company": "naver",
+          "role": "developer",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=31060"
+        },
+        {
+          "company": "naver",
+          "role": "owner",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=31060"
+        },
+        {
+          "company": "naver",
+          "role": "operator",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=31060"
+        }
+      ],
+      "detail": "lite",
+      "announced": "2013-06",
+      "acres": null,
+      "grid_operator": "KEPCO (한국전력)",
+      "cooling": "outside-air cooling (NAMU); immersion-cooling PoC since May 2025",
+      "summary_ko": "네이버의 첫 자체 데이터센터(춘천 구봉산 자락, 연면적 4만6,850㎡, 약 10만 유닛). 2013-06-13 공개 후 무중단 운영. 수전 용량은 약 40MW(각 세종 설계 270MW 의 1/6.75). 2025-05부터 액침 냉각 실증 중. 증설 계획은 발표되지 않음.",
+      "summary_en": "NAVER's first owned data center (on Gubongsan, Chuncheon; 46,850 m² floor area, ~100k units), unveiled 13 Jun 2013 and run without interruption since. Grid intake ~40MW (GAK Sejong's 270MW design is 6.75x). Immersion-cooling PoC since May 2025. No expansion announced.",
+      "power": [
+        {
+          "from": "2013-06",
+          "secured_mw": 40,
+          "energized_mw": 40,
+          "basis": "estimate",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=2255"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "gc-main",
+          "name": "GAK Chuncheon (~40MW)",
+          "name_ko": "각 춘천 (약 40MW)",
+          "kind": "datahall_air",
+          "gross_mw": 40,
+          "mw_basis": "grid",
+          "sources": [
+            "https://www.navercorp.com/media/pressReleasesDetail?seq=31060",
+            "https://www.navercorp.com/media/pressReleasesDetail?seq=2255",
+            "http://www.itdaily.kr/news/articleView.html?idxno=236572"
+          ],
+          "phases": [
+            {
+              "status": "operating",
+              "from": "2013-06",
+              "basis": "reported",
+              "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=31060"
+            }
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2013-06-13",
+          "event": "국내 인터넷 기업 최초 자체 데이터센터 '각 춘천' 공개",
+          "event_en": "GAK Chuncheon unveiled as the first owned data center of a Korean internet company",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=31060"
+        },
+        {
+          "date": "2025-05",
+          "event": "액침 냉각 기술 실증(PoC) 시작",
+          "event_en": "Immersion-cooling proof of concept begins",
+          "source": "https://www.etnews.com/20251028000113"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "40MW 는 회사의 '각 세종 수전 270MW = 각 춘천의 6.75배' 에서 역산한 값(언론도 '각 춘천 수전 40MW' 로 표기). 2013 개소 당시부터 전량 확보·통전으로 둔 것은 추정(단계 증설 여부 미공개)",
+          "note_en": "40MW is derived from the company's 'GAK Sejong 270MW = 6.75x GAK Chuncheon' (press also reports 40MW). Treating it as fully secured and energized from the 2013 opening is an estimate (phasing undisclosed)",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=2255"
+        }
+      ],
+      "sources": [
+        "https://www.navercorp.com/media/pressReleasesDetail?seq=31060",
+        "https://www.navercorp.com/media/pressReleasesDetail?seq=2255",
+        "http://www.itdaily.kr/news/articleView.html?idxno=236572",
+        "https://www.etnews.com/20251028000113"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "reviewed_at": "2026-10-07"
+}

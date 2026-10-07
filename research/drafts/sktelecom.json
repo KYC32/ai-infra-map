@@ -1,0 +1,701 @@
+{
+  "company": {
+    "id": "sktelecom",
+    "name": "SK Telecom",
+    "name_ko": "SK텔레콤",
+    "group": "korea",
+    "ticker": {
+      "symbol": "017670",
+      "exchange": "KRX"
+    },
+    "color": "#dd5fc4",
+    "hq_country": "KR",
+    "summary_ko": "한국 1위 이동통신사로, 자회사 SK브로드밴드(2027년 1분기 'SK호라이즌'으로 분할 예정)를 통해 데이터센터 8곳(합계 약 137MW)을 운영하고 AWS와 울산 미포국가산단에 103MW AI 데이터센터를 짓고 있다. 2026-07 AI DC 개발 전문회사 'SK하이퍼'를 세워 2029년 5GW·2035년 15GW를 목표로 제시했으나, 울산·구로 외 GW급 사업은 부지·일정 미확정.",
+    "summary_en": "Korea's largest mobile carrier. Through subsidiary SK Broadband (DC unit to be spun off as 'SK Horizon' in Q1 2027) it runs eight data centers (~137MW) and is building a 103MW AI data center with AWS in Ulsan's Mipo industrial complex. Its new developer arm 'SK Hyper' (Jul 2026) targets 5GW by 2029 and 15GW by 2035, but beyond Ulsan and Guro no GW-scale site or schedule is fixed.",
+    "metrics": [
+      {
+        "key": "ai_dc_revenue_krw_bn",
+        "value": 136.2,
+        "unit": "KRW bn",
+        "label_ko": "AI DC 분기 매출 (전년 대비 +92.5%)",
+        "label_en": "AI DC quarterly revenue (+92.5% YoY)",
+        "as_of": "2026-Q2",
+        "source": "https://news.sktelecom.com/228980"
+      },
+      {
+        "key": "dc_capacity_target_mw",
+        "value": 318,
+        "unit": "MW",
+        "label_ko": "SK호라이즌 데이터센터 용량 목표 (기존 8곳 + 울산·구로)",
+        "label_en": "SK Horizon DC capacity target (8 existing + Ulsan, Guro)",
+        "as_of": "2026-08",
+        "source": "https://news.sktelecom.com/229987"
+      },
+      {
+        "key": "sk_horizon_fi_investment_krw_tn",
+        "value": 3.08,
+        "unit": "KRW tn",
+        "label_ko": "SK호라이즌 외부 투자 유치 (KKR 29%·IMM 컨소시엄 20%)",
+        "label_en": "External equity raised for SK Horizon (KKR 29%, IMM consortium 20%)",
+        "as_of": "2026-08",
+        "source": "https://news.sktelecom.com/229987"
+      }
+    ],
+    "sources": [
+      "https://news.sktelecom.com/229987",
+      "https://news.sktelecom.com/228290",
+      "https://news.sktelecom.com/228980",
+      "https://news.sktelecom.com/214708"
+    ]
+  },
+  "file": {
+    "company_id": "sktelecom",
+    "as_of": "2026-10-07",
+    "sites": [
+      {
+        "id": "sktelecom-ulsan",
+        "name": "SK AI Data Center Ulsan (with AWS)",
+        "name_ko": "SK AI 데이터센터 울산 (AWS 협력)",
+        "country": "KR",
+        "admin1": "KR-31",
+        "region": "Ulsan (Nam-gu, Hwangseong-dong — Mipo National Industrial Complex)",
+        "coord": {
+          "lat": 35.467,
+          "lng": 129.356,
+          "confidence": "medium",
+          "method": "official_address",
+          "source": "https://www.openstreetmap.org/node/414979525"
+        },
+        "primary": "sktelecom",
+        "parties": [
+          {
+            "company": "sktelecom",
+            "role": "developer",
+            "source": "https://news.sktelecom.com/214708"
+          },
+          {
+            "company": "sktelecom",
+            "role": "owner",
+            "source": "https://www.ekn.kr/web/view.php?key=20260828023027644"
+          },
+          {
+            "company": "sktelecom",
+            "role": "operator",
+            "source": "https://news.sktelecom.com/214708"
+          },
+          {
+            "company": "aws",
+            "role": "tenant",
+            "source": "https://news.sktelecom.com/214708"
+          }
+        ],
+        "detail": "lite",
+        "announced": "2025-06",
+        "acres": 4.9,
+        "grid_operator": "KEPCO (한국전력) + SK Multi-Utility LNG CHP plant (fuel from SK Gas)",
+        "cooling": "hybrid air + liquid cooling (40–100kW per rack)",
+        "summary_ko": "SK그룹과 AWS가 울산 남구 황성동 옛 SK케미칼 유휴부지(미포국가산단)에 짓는 AI 전용 데이터센터. SK브로드밴드가 발주·소유하고 SK에코플랜트가 시공(2025-09-01 착공, A동 준공 2027-05-31 목표). 1단계 41MW 2027-11, 2단계 누적 103MW 2029-02 가동 목표, GPU 약 6만 장 계획. 인접 SK멀티유틸리티 LNG 열병합발전소(연료 SK가스)에서 전력을 공급받는 구조. 1GW 클러스터 확장은 울산시와 MOU 단계(2025-08)로 미반영.",
+        "summary_en": "AI-dedicated data center built by SK Group and AWS on former SK Chemicals land in Hwangseong-dong, Nam-gu, Ulsan (Mipo national industrial complex). SK Broadband owns it and SK ecoplant builds it (construction from 1 Sep 2025; Building A completion targeted 31 May 2027). Targets 41MW by Nov 2027 and 103MW cumulative by Feb 2029, with ~60,000 GPUs planned. Power from the adjacent SK Multi-Utility LNG CHP plant (fuel from SK Gas). A 1GW cluster expansion is only at MOU stage with Ulsan city (Aug 2025) and is not modelled.",
+        "power": [
+          {
+            "from": "2025-06",
+            "secured_mw": 103,
+            "energized_mw": 0,
+            "basis": "estimate",
+            "source": "https://v.daum.net/v/20250620175100640"
+          },
+          {
+            "from": "2027-11",
+            "secured_mw": 103,
+            "energized_mw": 41,
+            "basis": "target",
+            "source": "https://v.daum.net/v/20250620175100640"
+          },
+          {
+            "from": "2029-02",
+            "secured_mw": 103,
+            "energized_mw": 103,
+            "basis": "target",
+            "source": "https://v.daum.net/v/20250620175100640"
+          }
+        ],
+        "substation": {},
+        "buildings": [
+          {
+            "id": "ul-phase1",
+            "name": "Phase 1 — Building A (41MW)",
+            "name_ko": "1단계 — A동 (41MW)",
+            "kind": "datahall_liquid",
+            "gross_mw": 41,
+            "mw_basis": "grid",
+            "progress": 0.55,
+            "customer": "AWS",
+            "sources": [
+              "https://news.sktelecom.com/214708",
+              "https://www.fnnews.com/news/202511171041595230",
+              "https://v.daum.net/v/20250620175100640"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-06",
+                "basis": "reported",
+                "source": "https://v.daum.net/v/20250620175100640"
+              },
+              {
+                "status": "under_construction",
+                "from": "2025-09",
+                "basis": "reported",
+                "source": "https://www.fnnews.com/news/202511171041595230"
+              },
+              {
+                "status": "commissioning",
+                "from": "2027-Q2",
+                "basis": "target",
+                "source": "https://www.fnnews.com/news/202511171041595230"
+              },
+              {
+                "status": "operating",
+                "from": "2027-11",
+                "basis": "target",
+                "source": "https://v.daum.net/v/20250620175100640"
+              }
+            ]
+          },
+          {
+            "id": "ul-phase2",
+            "name": "Phase 2 (+62MW, to 103MW)",
+            "name_ko": "2단계 (+62MW, 누적 103MW)",
+            "kind": "datahall_liquid",
+            "gross_mw": 62,
+            "mw_basis": "grid",
+            "customer": "AWS",
+            "sources": [
+              "https://v.daum.net/v/20250620175100640",
+              "https://www.ekn.kr/web/view.php?key=20260828023027644"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-06",
+                "basis": "reported",
+                "source": "https://v.daum.net/v/20250620175100640"
+              },
+              {
+                "status": "operating",
+                "from": "2029-02",
+                "basis": "target",
+                "source": "https://www.ekn.kr/web/view.php?key=20260828023027644"
+              }
+            ]
+          }
+        ],
+        "deliveries": [],
+        "timeline": [
+          {
+            "date": "2025-04-17",
+            "event": "SK브로드밴드, SK케미칼로부터 울산 남구 황성동 토지·건물 283억원에 인수",
+            "event_en": "SK Broadband bought land and buildings in Hwangseong-dong, Ulsan from SK Chemicals for KRW 28.3bn",
+            "source": "https://newstomato.com/ReadNews.aspx?no=1265971"
+          },
+          {
+            "date": "2025-06-20",
+            "event": "울산 AI 데이터센터 출범식, SK–AWS 건립 계약 (총 7조원, AWS 약 40억달러)",
+            "event_en": "Ulsan AI data center launch event; SK–AWS construction agreement (KRW 7tn total, ~USD 4bn from AWS)",
+            "source": "https://v.daum.net/v/20250620175100640"
+          },
+          {
+            "date": "2025-08-29",
+            "event": "기공식, 울산시와 GW급 AI DC 클러스터 확장 MOU 체결",
+            "event_en": "Groundbreaking ceremony; MOU with Ulsan city to expand toward a GW-scale AI DC cluster",
+            "source": "https://news.sktelecom.com/214708"
+          },
+          {
+            "date": "2025-09-01",
+            "event": "SK에코플랜트 착공 (도급 4,169억원, A동 준공 2027-05-31 목표)",
+            "event_en": "SK ecoplant starts construction (KRW 416.9bn contract; Building A completion targeted 31 May 2027)",
+            "source": "https://www.fnnews.com/news/202511171041595230"
+          },
+          {
+            "date": "2026-07-25",
+            "event": "SKT–Anthropic 국내 GW급 AI DC 협력 MOU, AWS와 울산 기반 협력 확대 (울산 사이트 귀속 여부 미확정)",
+            "event_en": "SKT–Anthropic MOU on GW-scale Korean AI DCs; AWS partnership extended from Ulsan (site attribution not confirmed)",
+            "source": "https://www.etnews.com/20260726000110"
+          },
+          {
+            "date": "2026-08-27",
+            "event": "SK브로드밴드 DC 사업 인적분할해 'SK호라이즌' 신설 발표 (울산 포함, 2027 Q1 분할 목표)",
+            "event_en": "Spin-off of SK Broadband's DC business into 'SK Horizon' announced (includes Ulsan; split targeted Q1 2027)",
+            "source": "https://news.sktelecom.com/229987"
+          },
+          {
+            "date": "2026-09-11",
+            "event": "최태원 회장 '울산 900MW 추가 확장 상당히 진척' 발언 (공식 발표 전)",
+            "event_en": "SK Chairman Chey says a further 900MW Ulsan expansion is well advanced (not yet announced)",
+            "source": "https://www.fnnews.com/news/202609131805554245"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "확보 전력 103MW 는 회사 계획 용량을 2025-06 부터 그대로 적용한 추정. 전력 공급 구조(SK멀티유틸리티 발전소·SK가스 LNG)는 회사 발표지만 계약 MW·한전 수전 규모는 미공개",
+            "note_en": "Secured 103MW applies the planned capacity from Jun 2025 (estimate). The supply arrangement (SK Multi-Utility plant, SK Gas LNG) is company-reported, but contracted MW and KEPCO intake are undisclosed",
+            "source": "https://news.sktelecom.com/214708"
+          },
+          {
+            "note": "41MW/103MW 가 IT 인지 수전(계통) 기준인지 미공개 → 낮은 쪽 해석으로 grid(계통) 기준 표기. 일부 보도는 '103MW 중 AI 장비 100MW' 라고 해 IT 에 가까울 수 있음",
+            "note_en": "Whether 41MW/103MW is IT or grid is undisclosed; shown as grid (lower interpretation). Some reports say '100MW of AI equipment within 103MW', suggesting IT",
+            "source": "https://techblog.comsoc.org/2025/06/16/1073817/"
+          },
+          {
+            "note": "진행률 0.55: 2025-09-01 착공 → A동 준공 목표 2027-05-31(약 21개월) 중 약 13개월 경과로 근사. 공정률 공개 수치 없음. 2단계(62MW) 착공 시점도 미공개라 '계획'으로 둠",
+            "note_en": "Progress 0.55 approximated from ~13 of ~21 months elapsed between the 1 Sep 2025 start and the 31 May 2027 Building A completion target; no published progress figure. Phase 2 start date undisclosed, so kept as planned",
+            "source": "https://www.fnnews.com/news/202511171041595230"
+          },
+          {
+            "note": "부지 면적 상충: SK브로드밴드 매입 19,834㎡(약 4.9에이커) vs 보도 3만6천㎡ vs '2만평 이상' → 낮은 값(매입 필지) 채택",
+            "note_en": "Site area conflict: 19,834 m² purchased (~4.9 acres) vs 36,000 m² vs '20,000+ pyeong' in press; lowest (purchased parcel) used",
+            "source": "https://v.daum.net/v/20250620175100640"
+          }
+        ],
+        "sources": [
+          "https://news.sktelecom.com/214708",
+          "https://news.sktelecom.com/229987",
+          "https://techblog.comsoc.org/2025/06/16/1073817/",
+          "https://v.daum.net/v/20250620175100640",
+          "https://www.fnnews.com/news/202511171041595230",
+          "https://www.ekn.kr/web/view.php?key=20260828023027644",
+          "https://newstomato.com/ReadNews.aspx?no=1265971",
+          "https://www.fnnews.com/news/202609131805554245",
+          "https://www.etnews.com/20260726000110"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "id": "sktelecom-guro",
+        "name": "Guro AI Data Center (Seoul)",
+        "name_ko": "구로 AI 데이터센터 (서울)",
+        "country": "KR",
+        "admin1": "KR-11",
+        "region": "Seoul (Guro-gu)",
+        "coord": {
+          "lat": 37.495,
+          "lng": 126.888,
+          "confidence": "medium",
+          "method": "city_centroid",
+          "source": "https://www.openstreetmap.org/search?query=%EA%B5%AC%EB%A1%9C%EA%B5%AC%2C%20%EC%84%9C%EC%9A%B8"
+        },
+        "primary": "sktelecom",
+        "parties": [
+          {
+            "company": "sktelecom",
+            "role": "developer",
+            "source": "https://news.sktelecom.com/229987"
+          },
+          {
+            "company": "sktelecom",
+            "role": "owner",
+            "source": "https://news.sktelecom.com/229987"
+          }
+        ],
+        "detail": "lite",
+        "announced": "2025-10",
+        "acres": null,
+        "grid_operator": "KEPCO (한국전력)",
+        "cooling": "undisclosed",
+        "summary_ko": "SKT 가 서울 구로구에 추진하는 도심형 AI 데이터센터. 2025-10 실적 발표에서 '서울에서 대규모 전력을 확보할 수 있는 마지막 입지 중 하나'로 설계 착수를 밝혔고, 2026-08 SK호라이즌 분할 발표에서 '건설 중인 신규 AI DC'로 포함됐다. 보도 기준 75MW, 2030년 가동 목표. 정확한 부지·착공 여부는 미공개.",
+        "summary_en": "Urban AI data center SKT is developing in Guro-gu, Seoul. In its Oct 2025 earnings call SKT said design had begun at 'one of the last sites in Seoul able to secure large-scale power'; the Aug 2026 SK Horizon announcement lists it as a new AI DC under development. Reported at 75MW, targeting operation in 2030. Exact parcel and construction start are undisclosed.",
+        "power": [
+          {
+            "from": "2025-10",
+            "secured_mw": 75,
+            "energized_mw": 0,
+            "basis": "estimate",
+            "source": "https://www.viva100.com/article/20251030500576"
+          },
+          {
+            "from": "2030",
+            "secured_mw": 75,
+            "energized_mw": 75,
+            "basis": "target",
+            "source": "https://www.ekn.kr/web/view.php?key=20260828023027644"
+          }
+        ],
+        "substation": {},
+        "buildings": [
+          {
+            "id": "gr-aidc",
+            "name": "Guro AI DC (75MW)",
+            "name_ko": "구로 AI DC (75MW)",
+            "gross_mw": 75,
+            "mw_basis": "grid",
+            "sources": [
+              "https://www.viva100.com/article/20251030500576",
+              "https://www.ekn.kr/web/view.php?key=20260828023027644"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-10",
+                "basis": "reported",
+                "source": "https://www.viva100.com/article/20251030500576"
+              },
+              {
+                "status": "operating",
+                "from": "2030",
+                "basis": "target",
+                "source": "https://www.ekn.kr/web/view.php?key=20260828023027644"
+              }
+            ]
+          }
+        ],
+        "deliveries": [],
+        "timeline": [
+          {
+            "date": "2025-10-30",
+            "event": "3Q25 실적 발표: 서울 구로 AI DC 설계 착수",
+            "event_en": "Q3 2025 earnings call: design started for a Guro, Seoul AI DC",
+            "source": "https://www.viva100.com/article/20251030500576"
+          },
+          {
+            "date": "2026-08-27",
+            "event": "SK호라이즌 분할 발표에 '건설 중인 신규 AI DC' 로 포함",
+            "event_en": "Listed as a new AI DC under development in the SK Horizon spin-off announcement",
+            "source": "https://news.sktelecom.com/229987"
+          },
+          {
+            "date": "2026-08-28",
+            "event": "보도: 구로 AI DC 75MW, 2030년 가동 목표 (분할 공시 인용)",
+            "event_en": "Press: Guro AI DC 75MW, operation targeted for 2030 (citing spin-off filing)",
+            "source": "https://www.ekn.kr/web/view.php?key=20260828023027644"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "75MW 는 언론·증권사 보도(분할 공시 인용) 값이고 SKT 보도자료에는 MW 가 없음. IT/수전 기준 미공개 → grid 표기. 확보 전력 75MW 를 설계 착수 발표 시점(2025-10)부터 적용한 것은 추정(SKT 는 '전력 확보 가능한 입지'라고만 밝힘)",
+            "note_en": "75MW comes from press/analyst reports citing the spin-off filing; SKT's release gives no MW. IT vs grid undisclosed, shown as grid. Applying 75MW as secured from the Oct 2025 design announcement is an estimate (SKT only says power can be secured at the site)",
+            "source": "https://www.ekn.kr/web/view.php?key=20260828023027644"
+          },
+          {
+            "note": "좌표는 구로구 중심(정확한 부지 미공개). SKT 는 '건설 중'이라 표현하나 착공 보도가 없어 '계획' 상태로 둠",
+            "note_en": "Coordinates are the Guro-gu centroid (parcel undisclosed). SKT says 'under development/construction' but no groundbreaking is reported, so kept as planned",
+            "source": "https://news.sktelecom.com/229987"
+          }
+        ],
+        "sources": [
+          "https://news.sktelecom.com/229987",
+          "https://www.viva100.com/article/20251030500576",
+          "https://www.ekn.kr/web/view.php?key=20260828023027644",
+          "https://www.newspim.com/news/view/20251030000552"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "c1",
+      "field": "sites[sktelecom-ulsan].timeline (groundbreaking 2025-08-29), parties",
+      "value": "Groundbreaking 2025-08-29 with AWS and Ulsan city",
+      "source_url": "https://news.sktelecom.com/214708",
+      "published": "2025-08-29",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "SK텔레콤과 SK에코플랜트는 AWS(아마존 웹 서비스), 울산광역시와 함께 … ‘SK AI데이터센터 울산’의 기공식을 개최",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c2",
+      "field": "sites[sktelecom-ulsan].grid_operator",
+      "value": "SK Multi-Utility plant (LNG from SK Gas)",
+      "source_url": "https://news.sktelecom.com/214708",
+      "published": "2025-08-29",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "SK가스에서 LNG 연료를 공급받는 SK멀티유틸리티 발전소에서 한전 대비 낮은 가격으로 안정적인 전력을 공급받을 수",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c3",
+      "field": "sites[sktelecom-ulsan].timeline (GW cluster MOU)",
+      "value": "MOU with Ulsan city to expand to GW-scale cluster",
+      "source_url": "https://news.sktelecom.com/214708",
+      "published": "2025-08-29",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "하이퍼스케일급 AI 데이터센터를 향후 GW급 AI 데이터센터 클러스터로 확장하기 위한 양해각서를 체결",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c4",
+      "field": "sites[sktelecom-ulsan].buildings (41MW 2027-11, 103MW 2029-02)",
+      "value": {
+        "phase1_mw": 41,
+        "phase1_date": "2027-11",
+        "total_mw": 103,
+        "total_date": "2029-02"
+      },
+      "source_url": "https://v.daum.net/v/20250620175100640",
+      "published": "2025-06-20",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "2027년 11월까지 41㎿(메가와트), 2029년 2월까지 103㎿ 규모로 AI 데이터센터를 완공할 계획",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c4b",
+      "field": "sites[sktelecom-ulsan].acres (36,000 m² conflict), 103MW",
+      "value": {
+        "site_m2": 36000,
+        "mw": 103,
+        "gpus": 60000
+      },
+      "source_url": "https://techblog.comsoc.org/2025/06/16/1073817/",
+      "published": "2025-06-16",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "Once completed, the facility, powered by 60,000 graphics processing units, will have a power capacity of 103 megawatts",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c5",
+      "field": "sites[sktelecom-ulsan].buildings (41MW 2027 / 103MW 2029, owner SK Broadband)",
+      "value": "41MW 2027 → 103MW 2029; SK Broadband owns and operates",
+      "source_url": "https://www.ekn.kr/web/view.php?key=20260828023027644",
+      "published": "2026-08-28",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "울산 AI 데이터센터는 2027년 41MW 규모의 1단계 가동을 시작해 2029년 2단계까지 누적 103MW로 확대할 예정",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c6",
+      "field": "sites[sktelecom-ulsan].buildings[ul-phase1].phases (construction 2025-09-01, Building A 2027-05-31)",
+      "value": {
+        "start": "2025-09-01",
+        "building_a_completion": "2027-05-31",
+        "contract_krw_bn": 416.9
+      },
+      "source_url": "https://www.fnnews.com/news/202511171041595230",
+      "published": "2025-11-17",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "울산 AIDC A동의 준공 날짜를 2027년 5월 31일로 잡았다",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c7",
+      "field": "sites[sktelecom-ulsan].buildings[ul-phase1].phases (start 2025-09-01)",
+      "value": "2025-09-01",
+      "source_url": "https://www.viva100.com/article/20251030500576",
+      "published": "2025-10-30",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "9월 1일 착공한 울산 AI 데이터센터(DC)는 계획대로 공사가 진행 중",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c8",
+      "field": "sites[sktelecom-ulsan].acres / region",
+      "value": "19,834 m² SK Chemicals land for ~KRW 28.3bn (vs 36,000 m² in other reports)",
+      "source_url": "https://v.daum.net/v/20250620175100640",
+      "published": "2025-06-20",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "SK케미칼 유휴용지 1만9834㎡(약 6000평)를 약 283억원에 매수",
+      "verification": "conflict"
+    },
+    {
+      "id": "c9",
+      "field": "sites[sktelecom-ulsan].region (Hwangseong-dong)",
+      "value": "Nam-gu Hwangseong-dong land bought 2025-04-17 for KRW 28.3bn",
+      "source_url": "https://newstomato.com/ReadNews.aspx?no=1265971",
+      "published": "2025-05-08",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "SK Chemical on April 17 for 28.3 billion won via SK Broadband",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c10",
+      "field": "company.metrics.dc_capacity_target_mw; sites[sktelecom-guro] (under development)",
+      "value": "318MW incl. 8 existing DCs + Ulsan, Guro under construction",
+      "source_url": "https://news.sktelecom.com/229987",
+      "published": "2026-08-27",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "이미 운영 중인 데이터센터 8개*, 울산, 구로 등 신규 건설 중인 AI DC를 포함해 총 318㎿ 규모",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c11",
+      "field": "company.metrics.sk_horizon_fi_investment_krw_tn",
+      "value": 3.08,
+      "source_url": "https://news.sktelecom.com/229987",
+      "published": "2026-08-27",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "KKR … 및 IMM인베스트먼트-스톤브릿지 컨소시엄 … 으로부터 신설회사에 대한 3조 800억 원 규모의 투자를 유치",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c12",
+      "field": "sites[sktelecom-guro].buildings[gr-aidc] (75MW, 2030)",
+      "value": {
+        "mw": 75,
+        "target": "2030"
+      },
+      "source_url": "https://www.ekn.kr/web/view.php?key=20260828023027644",
+      "published": "2026-08-28",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "구로 AI 데이터센터는 75MW 규모로 2030년 가동을 목표로 하고 있다",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c13",
+      "field": "sites[sktelecom-guro].buildings[gr-aidc] (75MW, analyst)",
+      "value": 75,
+      "source_url": "https://www.hankyung.com/article/2026090925826",
+      "published": "2026-09-09",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "울산 AI 데이터센터(AIDC) 100메가와트(MW), 구로 AIDC 75MW 등 총 318MW를 운영",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c14",
+      "field": "sites[sktelecom-guro].phases[planned] (design started)",
+      "value": "Design started (Q3 2025 call)",
+      "source_url": "https://www.newspim.com/news/view/20251030000552",
+      "published": "2025-10-30",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "Seoul 내에서 대규모 전력 확보가 가능한 마지막 입지 중 하나",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c15",
+      "field": "company.summary (SK Hyper, 5GW 2029, 15GW 2035)",
+      "value": "SK Hyper founded 2026-07-23; 5GW by 2029, 15GW by 2035; Ulsan, Chungcheong, southwest",
+      "source_url": "https://news.sktelecom.com/228290",
+      "published": "2026-07-23",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "울산에 GW급 규모의 AI DC 클러스터를 시작으로 충청권과 서남권에도 추가로 GW급 AI DC를 구축",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c16",
+      "field": "company.metrics.ai_dc_revenue_krw_bn",
+      "value": 136.2,
+      "source_url": "https://news.sktelecom.com/228980",
+      "published": "2026-08-06",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "2분기 AI DC 매출은 … 전년 동기 대비 92.5% 증가한 1362억원",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c17",
+      "field": "open_questions (Stargate Korea southwest MOU)",
+      "value": "SKT–OpenAI MOU for southwest AI DC, 2025-10-01",
+      "source_url": "https://eng.sk.com/news/sk-group-partners-with-openai-to-advance-global-ai-infrastructure",
+      "published": "2025-10-01",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "SK Telecom signed an MOU with OpenAI to collaborate on building the AI Data Center in the southwest region of Korea",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c18",
+      "field": "open_questions (Stargate Korea stalled)",
+      "value": "No tangible progress since MOU; site not finalized (2026-09)",
+      "source_url": "https://kr.ibtimes.com/openai-stargate-korea-project-delays-101561",
+      "published": "2026-09-07",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "no tangible operational progress has occurred since signing the initial memorandum of understanding",
+      "verification": "conflict"
+    },
+    {
+      "id": "c19",
+      "field": "open_questions (Stargate Korea candidate sites: Haenam vs Jangseong)",
+      "value": "Haenam Solaseado favoured (Nov 2025) → Gwangju Cheomdan-3 (Jangseong) favoured (Mar 2026); no final decision reported",
+      "source_url": "https://www.etnews.com/20260304000369",
+      "published": "2026-03-04",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "SK그룹은 오픈AI 전용 인공지능(AI) 데이터센터 입지를 두고 전남 장성 남면 소재 광주 첨단연구개발특구3지구로 가닥을 잡았다",
+      "verification": "conflict"
+    },
+    {
+      "id": "c20",
+      "field": "sites[sktelecom-ulsan].timeline (900MW expansion remark)",
+      "value": "Chey: 900MW expansion well advanced (2026-09-11)",
+      "source_url": "https://www.fnnews.com/news/202609131805554245",
+      "published": "2026-09-13",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "SK 울산 AIDC 900㎿ 확장 상당히 진척",
+      "verification": "single_source"
+    },
+    {
+      "id": "c21",
+      "field": "sites[sktelecom-ulsan].timeline (Anthropic MOU)",
+      "value": "SKT–Anthropic MOU on GW-scale AI DC (2026-07-25)",
+      "source_url": "https://www.etnews.com/20260726000110",
+      "published": "2026-07-26",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "SK텔레콤과 앤트로픽은 국내 기가와트(GW)급 AI 데이터센터(AIDC) 구축 협력을 위한 포괄적 양해각서(MOU)를 체결",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c22",
+      "field": "notes (existing 8 DCs = 137MW; Pangyo 30MW)",
+      "value": {
+        "existing_mw": 137,
+        "pangyo_mw": 30
+      },
+      "source_url": "https://www.ekn.kr/web/view.php?key=20260828023027644",
+      "published": "2026-08-28",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "판교 데이터센터는 30MW 규모로 지난해 SK AX로부터 인수했다. 현재 데이터센터 전체 용량은 137MW다",
+      "verification": "single_source"
+    },
+    {
+      "id": "c23",
+      "field": "notes (Gasan AI DC, MW undisclosed)",
+      "value": "Gasan AI DC (SK Broadband) — H100 via Lambda from Dec 2024, 44kW/rack",
+      "source_url": "https://news.sktelecom.com/206514",
+      "published": "2024-08-21",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "랙 당 전력 밀도를 … 44㎾로 구현",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c24",
+      "field": "open_questions (Stargate Korea: Haenam favoured earlier)",
+      "value": "Haenam Solaseado favoured (Nov 2025)",
+      "source_url": "https://www.greened.kr/news/articleView.html?idxno=332845",
+      "published": "2025-11-05",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "SK-오픈AI 데이터센터 ‘해남 솔라시도’로 가닥",
+      "verification": "conflict"
+    }
+  ],
+  "open_questions": [
+    "Stargate Korea(서남권) — SKT–OpenAI MOU(2025-10-01) 이후 부지 미확정: 해남 솔라시도 유력(2025-11 보도) → 장성 첨단3지구(광주 첨단연구개발특구) 유력(2026-03 전자신문) → '해남·장성 경합, 조만간 결정'(2026-04~08 지역 보도)으로 엇갈림. 2026-09-07 IBTimes 는 'MOU 이후 실질 진전 없음'. 반면 2025-10 일부 보도는 'AWS·OpenAI 와 서남권 AI DC 구축 착수'로 표현(상충). MW·일정·SPC 구조 모두 미공개 → 사이트 미포함. 부지 확정·착공 공시 시 lite(planned)로 추가 필요. 참여사 openai(companies.json 에 partner 로 존재).",
+    "울산 900MW 추가 확장(1GW 클러스터): 2025-08 울산시 MOU, 2026-09-11 최태원 회장 '거의 다 왔다' 발언만 있음. 부지(기존 필지 내/인접 여부)·전력(SK멀티유틸리티·KET 발전소 vs 한전)·고객(AWS·Anthropic·NVIDIA 2GW AI 팩토리 중 무엇) 미확정 → 미포함.",
+    "울산 41/103MW 의 기준(IT vs 수전) 미공개. 일부 보도 '103MW 중 AI 장비 100MW' — IT 라면 총 전력은 약 130MW 이상일 수 있음.",
+    "울산 소유 구조 변화: SK브로드밴드 → SK호라이즌(2027 Q1 분할 목표, SKT 51%·KKR 29%·IMM 컨소시엄 20%). 분할 완료 후 owner 를 SK호라이즌으로 바꿀지, KKR·IMM 을 financier 로 넣을지(새 회사 id 'kkr', 'imm-investment' 필요) 결정 필요.",
+    "울산 참여사 중 parties 역할에 맞지 않아 넣지 않은 SK 계열사: SK에코플랜트(시공), SK가스(LNG 연료), SK멀티유틸리티(발전), SK이노베이션(전력 솔루션, 일부 보도), SK하이닉스(HBM), SK AX, SK케미칼(부지 매도). 필요하면 새 회사 id 'sk-ecoplant', 'sk-gas', 'sk-innovation' 등을 partner 로 추가.",
+    "AWS 15년 독점 사용 계약(IB토마토 보도, Tier2 단독) 및 AWS 투자액(40억달러 vs 51억달러 표기) 확인 필요. Anthropic 이 울산의 '핵심 연산 파트너'라는 보도(블로터)도 있어 end_user 추가 여부 검토.",
+    "구로 AI DC: 정확한 부지(구로동 옛 SK렌터카 부지에서 코람코 컨소시엄이 추진 중인 별도 데이터센터가 있어 혼동 주의), 착공 여부, 75MW 의 기준(IT/수전), 전력계통영향평가 통과 여부 미확인.",
+    "가산 AI DC(SK브로드밴드 가산 IDC 일부, H100·H200·B200 '해인' 클러스터)는 MW 미공개라 사이트로 넣지 않음. 기존 8개 DC(합계 약 137MW, 판교 30MW 포함) 중 AI 용도 비중 미공개.",
+    "SKT–NVIDIA '최대 2GW AI 팩토리'(2026-07) 와 SKT–Anthropic GW급 AI DC MOU 의 부지가 울산 확장분인지 별도 부지(충청·서남권)인지 미공개."
+  ]
+}

@@ -50,8 +50,8 @@ export default {
   rank: {
     tab: 'Ranking',
     sitesTab: 'Sites',
-    metric: { secured: 'Secured', ai: 'AI live', building: 'Building' },
-    note: 'By primary company · ~ includes estimates',
+    metric: { firm: 'Firm', secured: 'Announced', ai: 'AI live', building: 'Building' },
+    note: 'Firm = contracted/approved/energized · Announced = incl. company targets · ~ includes estimates',
     reset: 'Clear filters',
     coloc: 'Colocation',
     colocMore: ' undisclosed',
@@ -62,6 +62,6 @@ export default {
   colorMode: { status: 'Status', company: 'Company' },
   regions: { na: 'N. America', eu: 'Europe', asia: 'Asia' },
   timeline: { play: 'Play', pause: 'Pause', asOf: 'As of', future: 'Company targets', today: 'Back to as-of', label: 'Date' },
-  kpi2: { secured: 'Secured power', energized: 'energized', ai: 'AI live', mining: 'mining', building: 'Building / commissioning', sites: 'Sites', companies: 'companies' },
+  kpi2: { firm: 'Firm power', announced: 'announced', secured: 'Secured power', energized: 'energized', ai: 'AI live', mining: 'mining', building: 'Building / commissioning', sites: 'Sites', companies: 'companies' },
   empty: 'No announced buildings yet — grid power secured only',
 }

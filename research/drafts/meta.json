@@ -1,0 +1,1230 @@
+{
+  "company": {
+    "id": "meta",
+    "name": "Meta Platforms",
+    "name_ko": "메타",
+    "group": "hyperscaler",
+    "ticker": {
+      "symbol": "META",
+      "exchange": "NASDAQ"
+    },
+    "color": "#5f5fdd",
+    "hq_country": "US",
+    "summary_ko": "Facebook·Instagram·WhatsApp 운영사. 'Meta Compute' 로 자체 AI 클러스터를 짓고 있으며, 오하이오 뉴올버니의 Prometheus(1GW+, 2026 가동 목표)와 루이지애나 리치랜드 패리시의 Hyperion(5GW, Blue Owl 80% 합작) 이 대표 캠퍼스다. 엘패소(1GW, BlackRock 80% 합작)·앨버타 스터전(1GW)도 건설 중이며, 2026 설비투자 가이던스는 1,300억~1,450억 달러.",
+    "summary_en": "Parent of Facebook, Instagram and WhatsApp, building its own AI clusters under 'Meta Compute': Prometheus in New Albany, Ohio (1GW+, targeted online in 2026) and Hyperion in Richland Parish, Louisiana (5GW, 80% owned by Blue Owl funds) lead the fleet, with 1GW campuses under construction in El Paso (80% BlackRock JV) and Sturgeon County, Alberta. 2026 capex guidance is $130–145bn.",
+    "metrics": [
+      {
+        "key": "capex_2025_usd_bn",
+        "value": 72.22,
+        "unit": "USD bn",
+        "label_ko": "2025년 설비투자(금융리스 원금 상환 포함)",
+        "label_en": "2025 capital expenditures (incl. finance lease principal)",
+        "as_of": "2025",
+        "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm"
+      },
+      {
+        "key": "capex_guidance_2026_low_usd_bn",
+        "value": 130,
+        "unit": "USD bn",
+        "label_ko": "2026년 설비투자 가이던스 하단 (2026-07 기준 1,300억~1,450억 달러)",
+        "label_en": "2026 capex guidance, low end ($130–145bn range as of Jul 2026)",
+        "as_of": "2026-07",
+        "source": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf"
+      },
+      {
+        "key": "capex_guidance_2026_high_usd_bn",
+        "value": 145,
+        "unit": "USD bn",
+        "label_ko": "2026년 설비투자 가이던스 상단",
+        "label_en": "2026 capex guidance, high end",
+        "as_of": "2026-07",
+        "source": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf"
+      },
+      {
+        "key": "capex_q2_2026_usd_bn",
+        "value": 31.08,
+        "unit": "USD bn",
+        "label_ko": "2026년 2분기 설비투자",
+        "label_en": "Q2 2026 capital expenditures",
+        "as_of": "2026-Q2",
+        "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+      },
+      {
+        "key": "leases_not_commenced_usd_bn",
+        "value": 278.99,
+        "unit": "USD bn",
+        "label_ko": "아직 개시되지 않은 리스 약정(데이터센터·코로케이션 등, 2026~2036 개시)",
+        "label_en": "Leases not yet commenced (data centers, colocations etc., commencing 2026–2036)",
+        "as_of": "2026-06",
+        "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+      },
+      {
+        "key": "noncancelable_commitments_usd_bn",
+        "value": 349.31,
+        "unit": "USD bn",
+        "label_ko": "해지 불가 계약 약정(대부분 외부 클라우드 용량·서버 등)",
+        "label_en": "Non-cancelable contractual commitments (mostly third-party cloud capacity, servers etc.)",
+        "as_of": "2026-06",
+        "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+      }
+    ],
+    "colocations": [
+      {
+        "name": "Sandersville, Georgia (CleanSpark build-to-suit lease)",
+        "name_ko": "샌더스빌, 조지아 (CleanSpark 맞춤형 임차)",
+        "country": "US",
+        "host": "CleanSpark",
+        "mw": 175,
+        "status": "under_construction",
+        "basis": "reported",
+        "note_ko": "임차인은 Meta 자회사 Anviran LLC, Meta 가 임대료 보증. IT 175MW, 20년 기본 임대(약 66억 달러), 1단계 임대 개시 2027 Q4 목표. 건설 상태는 CleanSpark '개발 중' 표현 기준.",
+        "note_en": "Tenant is Meta subsidiary Anviran LLC with Meta guaranteeing rent; 175MW critical IT, 20-year base term (~$6.6bn), phase I rent commencement targeted Q4 2027. Status per CleanSpark's 'developing' wording.",
+        "source": "https://www.sec.gov/Archives/edgar/data/827876/000119312526393758/clsk-ex99_1.htm"
+      },
+      {
+        "name": "Jamnagar, Gujarat (Reliance build-to-suit lease)",
+        "name_ko": "잠나가르, 구자라트 (Reliance 맞춤형 임차)",
+        "country": "IN",
+        "host": "Reliance Industries",
+        "mw": 168,
+        "status": "planned",
+        "basis": "reported",
+        "note_ko": "Meta 의 인도 첫 'AI 지원' 데이터센터. Reliance 가 168MW 를 짓고 Meta 가 임차(확장 옵션). 2026-06 발표.",
+        "note_en": "Meta's first 'AI-enabled' data center in India: Reliance builds 168MW, leased by Meta with options to scale (announced Jun 2026).",
+        "source": "https://about.fb.com/news/2026/06/meta-partners-with-reliance-on-ai-enabled-data-center-in-india/"
+      }
+    ],
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+      "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+      "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf",
+      "https://datacenters.atmeta.com/all-locations/"
+    ]
+  },
+  "file": {
+    "company_id": "meta",
+    "as_of": "2026-10-07",
+    "sites": [
+      {
+        "id": "meta-prometheus",
+        "name": "Prometheus (New Albany Data Center)",
+        "name_ko": "프로메테우스 (뉴올버니 데이터센터)",
+        "country": "US",
+        "admin1": "US-OH",
+        "region": "New Albany International Business Park (Licking County side), Columbus metro, Ohio",
+        "coord": {
+          "lat": 40.081,
+          "lng": -82.809,
+          "confidence": "medium",
+          "method": "city_centroid",
+          "source": "https://datacenters.atmeta.com/asset/new-albany-data-center-info-sheet/"
+        },
+        "primary": "meta",
+        "parties": [
+          {
+            "company": "meta",
+            "role": "owner",
+            "share": 1,
+            "source": "https://datacenters.atmeta.com/asset/new-albany-data-center-info-sheet/"
+          },
+          {
+            "company": "meta",
+            "role": "developer",
+            "share": 1,
+            "source": "https://datacenters.atmeta.com/asset/new-albany-data-center-info-sheet/"
+          },
+          {
+            "company": "meta",
+            "role": "operator",
+            "share": 1,
+            "source": "https://datacenters.atmeta.com/asset/new-albany-data-center-info-sheet/"
+          }
+        ],
+        "detail": "lite",
+        "announced": "2025-07",
+        "acres": null,
+        "grid_operator": "AEP Ohio (PJM) + Williams 'Socrates' behind-the-meter gas plants (2×200MW, Will-Power OH)",
+        "cooling": "not disclosed (rapid-deployment structures reported by press)",
+        "summary_ko": "Meta 의 오하이오 첫 데이터센터(2017 착공, 2020 가동) 캠퍼스를 AI 클러스터 'Prometheus' 로 키운 곳. Meta 는 1GW 이상의 컴퓨트 용량을 공식화했고 2026년 가동이 목표. AEP Ohio 계통 + Williams 가 짓는 현장 가스발전 'Socrates'(200MW×2) 로 전력을 받으며, 1단계 200MW 는 2026 2분기까지 가동, 2단계는 2026 4분기 목표.",
+        "summary_en": "Meta's first Ohio campus (broke ground 2017, online 2020) scaled into the 'Prometheus' AI cluster. Meta states it will deliver over 1GW of compute capacity, targeted online in 2026. Power comes from AEP Ohio plus Williams' behind-the-meter 'Socrates' gas plants (2×200MW): phase one in service by Q2 2026, phase two targeted Q4 2026.",
+        "power": [
+          {
+            "from": "2025-07",
+            "secured_mw": 1000,
+            "energized_mw": 0,
+            "basis": "target",
+            "source": "https://s21.q4cdn.com/399680738/files/doc_financials/2025/q2/META-Q2-2025-Earnings-Call-Transcript.pdf"
+          },
+          {
+            "from": "2026-Q2",
+            "secured_mw": 200,
+            "energized_mw": 200,
+            "basis": "estimate",
+            "source": "https://www.williams.com/2026/08/03/williams-delivers-strong-second-quarter-2026-results-announces-strategic-acquisition-of-momentum-midstream-connecting-haynesville-to-gulf-coast-lng-and-power-demand/"
+          },
+          {
+            "from": "2026-Q4",
+            "secured_mw": 1000,
+            "energized_mw": 1000,
+            "basis": "target",
+            "source": "https://datacenters.atmeta.com/asset/new-albany-data-center-info-sheet/"
+          }
+        ],
+        "substation": {},
+        "buildings": [
+          {
+            "id": "pr-cluster",
+            "name": "Prometheus 1GW+ AI cluster (campus buildings + rapid-deployment structures)",
+            "name_ko": "Prometheus 1GW+ AI 클러스터 (캠퍼스 건물 + 신속 배치 구조물)",
+            "gross_mw": 1000,
+            "mw_basis": "grid",
+            "sources": [
+              "https://datacenters.atmeta.com/asset/new-albany-data-center-info-sheet/",
+              "https://s21.q4cdn.com/399680738/files/doc_financials/2025/q2/META-Q2-2025-Earnings-Call-Transcript.pdf"
+            ],
+            "phases": [
+              {
+                "status": "under_construction",
+                "from": "2025-07",
+                "basis": "reported",
+                "source": "https://s21.q4cdn.com/399680738/files/doc_financials/2025/q2/META-Q2-2025-Earnings-Call-Transcript.pdf"
+              },
+              {
+                "status": "commissioning",
+                "from": "2026-Q2",
+                "basis": "estimate",
+                "source": "https://www.williams.com/2026/08/03/williams-delivers-strong-second-quarter-2026-results-announces-strategic-acquisition-of-momentum-midstream-connecting-haynesville-to-gulf-coast-lng-and-power-demand/"
+              },
+              {
+                "status": "operating",
+                "from": "2026",
+                "basis": "target",
+                "source": "https://s21.q4cdn.com/399680738/files/doc_financials/2025/q2/META-Q2-2025-Earnings-Call-Transcript.pdf"
+              }
+            ]
+          }
+        ],
+        "deliveries": [
+          {
+            "what": "Socrates phase 1 on-site gas generation (200MW, behind-the-meter)",
+            "from": "Williams (Will-Power OH)",
+            "eta": "2026-Q2",
+            "status": "done",
+            "source": "https://www.williams.com/2026/08/03/williams-delivers-strong-second-quarter-2026-results-announces-strategic-acquisition-of-momentum-midstream-connecting-haynesville-to-gulf-coast-lng-and-power-demand/"
+          },
+          {
+            "what": "Socrates phase 2 on-site gas generation (200MW, behind-the-meter)",
+            "from": "Williams (Will-Power OH)",
+            "eta": "2026-Q4",
+            "status": "in_progress",
+            "source": "https://www.williams.com/2026/08/03/williams-delivers-strong-second-quarter-2026-results-announces-strategic-acquisition-of-momentum-midstream-connecting-haynesville-to-gulf-coast-lng-and-power-demand/"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2017",
+            "event": "뉴올버니 데이터센터 착공 (Meta 의 오하이오 첫 데이터센터)",
+            "event_en": "Broke ground on the New Albany Data Center, Meta's first in Ohio",
+            "source": "https://datacenters.atmeta.com/asset/new-albany-data-center-info-sheet/"
+          },
+          {
+            "date": "2025-07-30",
+            "event": "실적콜: 'Prometheus 클러스터 내년 가동, 세계 첫 1GW+ 클러스터'",
+            "event_en": "Earnings call: Prometheus cluster coming online next year as the world's first 1GW+ cluster",
+            "source": "https://s21.q4cdn.com/399680738/files/doc_financials/2025/q2/META-Q2-2025-Earnings-Call-Transcript.pdf"
+          },
+          {
+            "date": "2025",
+            "event": "오하이오 전력부지위원회(OPSB), Meta 계열 Sidecat LLC 전용 200MW 현장 가스발전(Socrates) 승인 (보도)",
+            "event_en": "Ohio Power Siting Board approves 200MW behind-the-meter gas plant (Socrates) for Meta affiliate Sidecat LLC (press)",
+            "source": "https://www.datacenterdynamics.com/en/news/ohio-regulators-approve-construction-of-200mw-gas-power-plant-to-serve-meta-data-center-in-new-albany-ohio/"
+          },
+          {
+            "date": "2026-01",
+            "event": "Vistra·TerraPower·Oklo 와 최대 6.6GW 원전 전력 계약 — Prometheus 전력 지원 포함 (보도)",
+            "event_en": "Nuclear agreements with Vistra, TerraPower and Oklo (up to 6.6GW by 2035), including support for Prometheus (press)",
+            "source": "https://w.media/meta-unveils-new-nuclear-power-partnerships-for-data-centers-and-ai-infrastructure/"
+          },
+          {
+            "date": "2026-Q2",
+            "event": "Williams Socrates 1단계(200MW) 가동, 2단계 2026 4분기 완공 예정",
+            "event_en": "Williams completes Socrates phase one (200MW); phase two on track for Q4 2026",
+            "source": "https://www.williams.com/2026/08/03/williams-delivers-strong-second-quarter-2026-results-announces-strategic-acquisition-of-momentum-midstream-connecting-haynesville-to-gulf-coast-lng-and-power-demand/"
+          },
+          {
+            "date": "2026-09",
+            "event": "Meta 정보시트: 뉴올버니 데이터센터가 Prometheus 를 위해 1GW 이상의 컴퓨트 용량 제공",
+            "event_en": "Meta info sheet: New Albany will deliver over 1GW of compute capacity to house Prometheus",
+            "source": "https://datacenters.atmeta.com/asset/new-albany-data-center-info-sheet/"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "확정 확보 = Socrates 1단계 200MW(통전 추정). 1GW 이상은 Meta 발표 규모(목표)로 따로 표시",
+            "note_en": "Firm = Socrates phase-1 200MW (estimated energized); 1GW+ is Meta's announced scale (target)",
+            "source": "https://www.williams.com/2026/08/03/williams-delivers-strong-second-quarter-2026-results-announces-strategic-acquisition-of-momentum-midstream-connecting-haynesville-to-gulf-coast-lng-and-power-demand/"
+          },
+          {
+            "note": "확보 전력 1,000MW 는 Meta 의 '1GW 이상 컴퓨트 용량' 표현을 그대로 쓴 값. AEP 계통분과 현장 가스(400MW) 비율, 기존 2020~2023년 건물 포함 여부는 미공개.",
+            "note_en": "1,000MW secured mirrors Meta's 'over 1GW of compute capacity'; the split between AEP grid and on-site gas (400MW) and whether pre-AI buildings (2020–2023) are included is undisclosed.",
+            "source": "https://datacenters.atmeta.com/asset/new-albany-data-center-info-sheet/"
+          },
+          {
+            "note": "2026 2분기 통전 200MW·시운전 시작은 추정: Williams 가 Socrates 1단계 200MW 를 '고객에게 공급' 했다고 밝혔으나 Meta 는 Prometheus 가동을 공식 발표하지 않음. 데이터센터 목록 사이트(Tier 3)는 2026년 신축 건물을 '가동 중' 으로 표시.",
+            "note_en": "Energized 200MW and commissioning from Q2 2026 are estimates: Williams says Socrates phase one delivers 200MW to its customer, but Meta has not announced Prometheus online; tracker sites (Tier 3) list 2026 buildings as operational.",
+            "source": "https://www.williams.com/2026/08/03/williams-delivers-strong-second-quarter-2026-results-announces-strategic-acquisition-of-momentum-midstream-connecting-haynesville-to-gulf-coast-lng-and-power-demand/"
+          },
+          {
+            "note": "announced 를 2025-07(Prometheus 공개)로 둠: 캠퍼스 자체는 2017 착공·2020 가동이지만 AI 클러스터 전환이 공식화된 시점부터 지도에 표시. 건물별 MW 가 없어 lite.",
+            "note_en": "announced set to Jul 2025 (Prometheus unveiled); the campus dates from 2017/2020 but is mapped from its AI-cluster announcement. Lite because no per-building MW is public.",
+            "source": "https://s21.q4cdn.com/399680738/files/doc_financials/2025/q2/META-Q2-2025-Earnings-Call-Transcript.pdf"
+          },
+          {
+            "note": "좌표는 뉴올버니 시 중심. 실제 캠퍼스는 Beech Rd·SR-161 인근 Licking County 쪽(보도) — 공식 주소 미확인.",
+            "note_en": "Coordinates are the New Albany city centroid; the campus sits near Beech Rd / SR-161 on the Licking County side (press), official address unverified.",
+            "source": "https://datacenters.atmeta.com/asset/new-albany-data-center-info-sheet/"
+          }
+        ],
+        "sources": [
+          "https://datacenters.atmeta.com/asset/new-albany-data-center-info-sheet/",
+          "https://s21.q4cdn.com/399680738/files/doc_financials/2025/q2/META-Q2-2025-Earnings-Call-Transcript.pdf",
+          "https://www.williams.com/2026/08/03/williams-delivers-strong-second-quarter-2026-results-announces-strategic-acquisition-of-momentum-midstream-connecting-haynesville-to-gulf-coast-lng-and-power-demand/",
+          "https://www.datacenterdynamics.com/en/news/ohio-regulators-approve-construction-of-200mw-gas-power-plant-to-serve-meta-data-center-in-new-albany-ohio/"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "id": "meta-hyperion",
+        "name": "Hyperion (Richland Parish Data Center)",
+        "name_ko": "하이페리온 (리치랜드 패리시 데이터센터)",
+        "country": "US",
+        "admin1": "US-LA",
+        "region": "Richland Parish (Holly Ridge, former Franklin Farm megasite between Rayville and Delhi), northeast Louisiana",
+        "coord": {
+          "lat": 32.477,
+          "lng": -91.632,
+          "confidence": "medium",
+          "method": "city_centroid",
+          "source": "https://en.wikipedia.org/wiki/Hyperion_Data_Center"
+        },
+        "primary": "meta",
+        "parties": [
+          {
+            "company": "meta",
+            "role": "developer",
+            "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm"
+          },
+          {
+            "company": "blue-owl",
+            "role": "owner",
+            "share": 0.8,
+            "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm"
+          },
+          {
+            "company": "meta",
+            "role": "owner",
+            "share": 0.2,
+            "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm"
+          },
+          {
+            "company": "meta",
+            "role": "operator",
+            "source": "https://about.fb.com/news/2025/10/meta-blue-owl-capital-develop-hyperion-data-center/"
+          },
+          {
+            "company": "meta",
+            "role": "tenant",
+            "share": 1,
+            "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+          }
+        ],
+        "detail": "full",
+        "announced": "2024-12",
+        "acres": 2250,
+        "grid_operator": "Entergy Louisiana (MISO)",
+        "cooling": "not disclosed",
+        "summary_ko": "Meta 최대 AI 학습 클러스터 Hyperion 이 들어서는 리치랜드 패리시 캠퍼스(2024-12 발표·착공, 2,250에이커). 2025-10 Blue Owl 펀드 80%·Meta 20% 합작(개발비 약 270억 달러)으로 넘겼고 Meta 가 건설·운영 관리 후 2029년부터 임차. 1단계 약 2GW 는 Entergy 가스복합 3기(2028 말~2029 말)로, 2026-07 5GW·500억 달러+ 로 확대한 2단계는 Entergy 가스복합 7기(5,200MW+, 2026-12 승인 심리 예정)로 전력 공급.",
+        "summary_en": "Richland Parish campus (announced and broke ground Dec 2024, 2,250 acres) housing Hyperion, Meta's largest AI training cluster. Contributed in Oct 2025 to a JV 80% owned by Blue Owl funds (≈$27bn development cost); Meta manages construction and operations and leases the campus from 2029. Phase 1 (~2GW) is served by three Entergy combined-cycle plants (late 2028–end 2029); the Jul 2026 expansion to 5GW ($50bn+) relies on seven more Entergy CCGTs (5,200MW+) pending a Dec 2026 LPSC decision.",
+        "power": [
+          {
+            "from": "2024-12",
+            "secured_mw": 2000,
+            "energized_mw": 0,
+            "basis": "target",
+            "source": "https://datacenterdynamics.com/en/news/meta-announces-4-million-sq-ft-louisiana-data-center-campus"
+          },
+          {
+            "from": "2025-08",
+            "secured_mw": 2000,
+            "energized_mw": 0,
+            "basis": "reported",
+            "source": "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability"
+          },
+          {
+            "from": "2026-07",
+            "secured_mw": 5000,
+            "energized_mw": 0,
+            "basis": "target",
+            "source": "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/"
+          },
+          {
+            "from": "2030",
+            "secured_mw": 5000,
+            "energized_mw": 2000,
+            "basis": "target",
+            "source": "https://techcrunch.com/2025/07/14/mark-zuckerberg-says-meta-is-building-a-5gw-ai-data-center"
+          },
+          {
+            "from": "2032",
+            "secured_mw": 5000,
+            "energized_mw": 5000,
+            "basis": "estimate",
+            "source": "https://en.wikipedia.org/wiki/Hyperion_Data_Center"
+          }
+        ],
+        "substation": {},
+        "buildings": [
+          {
+            "id": "hy-phase1",
+            "name": "Phase 1 (~2GW; Entergy 3 CCGTs, LPSC U-37425)",
+            "name_ko": "1단계 (약 2GW; Entergy 가스복합 3기, LPSC U-37425)",
+            "gross_mw": 2000,
+            "mw_basis": "grid",
+            "progress": 0.3,
+            "sources": [
+              "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm",
+              "https://techcrunch.com/2025/07/14/mark-zuckerberg-says-meta-is-building-a-5gw-ai-data-center",
+              "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability"
+            ],
+            "phases": [
+              {
+                "status": "under_construction",
+                "from": "2024-12",
+                "basis": "reported",
+                "source": "https://datacenters.atmeta.com/all-locations/"
+              },
+              {
+                "status": "commissioning",
+                "from": "2029",
+                "basis": "target",
+                "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm"
+              },
+              {
+                "status": "operating",
+                "from": "2030",
+                "basis": "target",
+                "source": "https://techcrunch.com/2025/07/14/mark-zuckerberg-says-meta-is-building-a-5gw-ai-data-center"
+              }
+            ]
+          },
+          {
+            "id": "hy-phase2",
+            "name": "Phase 2 expansion to 5GW (+3GW; 'Project Evest', LPSC U-37882)",
+            "name_ko": "2단계 5GW 확장 (+3GW; 'Project Evest', LPSC U-37882)",
+            "gross_mw": 3000,
+            "mw_basis": "grid",
+            "sources": [
+              "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/",
+              "https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2026-07",
+                "basis": "reported",
+                "source": "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/"
+              },
+              {
+                "status": "operating",
+                "from": "2032",
+                "basis": "estimate",
+                "source": "https://en.wikipedia.org/wiki/Hyperion_Data_Center"
+              }
+            ]
+          }
+        ],
+        "deliveries": [
+          {
+            "what": "Two Entergy combined-cycle gas plants in Richland Parish (part of 2,262MW, 3-plant package)",
+            "from": "Entergy Louisiana",
+            "eta": "2028-H2",
+            "status": "in_progress",
+            "source": "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability"
+          },
+          {
+            "what": "Entergy combined-cycle gas plant at Waterford site, St. Charles Parish (third plant of package)",
+            "from": "Entergy Louisiana",
+            "eta": "2029-H2",
+            "status": "in_progress",
+            "source": "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2024-12-04",
+            "event": "Meta·루이지애나 주지사, 리치랜드 패리시 100억 달러·400만 sq ft 데이터센터 발표 (2,250에이커 Franklin Farm 메가사이트), 12월 부지 공사 시작",
+            "event_en": "Meta and Louisiana governor announce $10bn, 4M sq ft data center on the 2,250-acre Franklin Farm megasite; site work begins in December",
+            "source": "https://www.knoe.com/2024/12/05/meta-build-10-billion-ai-data-center-richland-parish/"
+          },
+          {
+            "date": "2025-07-30",
+            "event": "실적콜: Hyperion 은 수년에 걸쳐 5GW 까지 확장 가능",
+            "event_en": "Earnings call: Hyperion will be able to scale up to 5GW over several years",
+            "source": "https://s21.q4cdn.com/399680738/files/doc_financials/2025/q2/META-Q2-2025-Earnings-Call-Transcript.pdf"
+          },
+          {
+            "date": "2025-08-20",
+            "event": "루이지애나 공공서비스위원회(LPSC), Entergy 가스복합 3기(2,262MW)·송전 설비 승인 — 리치랜드 2기 2028 말, Waterford 1기 2029 말 가동",
+            "event_en": "LPSC approves three Entergy CCGTs (2,262MW) and transmission: two in Richland Parish by late 2028, one at Waterford by end-2029",
+            "source": "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability"
+          },
+          {
+            "date": "2025-10-21",
+            "event": "Blue Owl 펀드 80%·Meta 20% 합작 설립(개발비 약 270억 달러), Meta 가 건설·자산 관리, 4년+갱신(최대 20년) 리스 2029 개시",
+            "event_en": "JV formed with Blue Owl funds (80%) and Meta (20%), ~$27bn development cost; Meta manages construction/property and leases from 2029 (4-year term, up to 20 years)",
+            "source": "https://about.fb.com/news/2025/10/meta-blue-owl-capital-develop-hyperion-data-center/"
+          },
+          {
+            "date": "2026-03-27",
+            "event": "Entergy–Meta 새 합의: 가스복합 7기(5,200MW+), 500kV 송전 약 240마일, 배터리 3곳, Meta 지원 재생에너지 최대 2,500MW — 2단계(최대 5GW) 용",
+            "event_en": "New Entergy–Meta agreement: seven CCGTs (5,200MW+), ~240 miles of 500kV lines, three battery sites, up to 2,500MW Meta-backed renewables for a phase 2 of up to 5GW",
+            "source": "https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings"
+          },
+          {
+            "date": "2026-07-13",
+            "event": "Meta, 리치랜드 패리시를 5GW·500억 달러 이상으로 확대 발표 (Hyperion 수용, Meta 최대 규모)",
+            "event_en": "Meta expands Richland Parish to 5GW of compute and $50bn+ — home of Hyperion, the largest in its fleet",
+            "source": "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/"
+          },
+          {
+            "date": "2026-12-16",
+            "event": "(예정) LPSC, 2단계 발전설비(Docket U-37882) 심의 일정",
+            "event_en": "(Scheduled) LPSC to consider phase 2 generation (Docket U-37882)",
+            "source": "https://www.ucs.org/about/news/louisiana-regulators-fast-track-7-gas-plant-proposal-meta-data-center"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "1단계 확보 전력 2,000MW: Entergy 승인 발표에 MW 가 없어 언론의 '2GW 데이터센터'(DCD) 와 승인 발전량 2,262MW 중 낮은 값을 사용. 2024-12 단계는 발표 당시 목표로 표시.",
+            "note_en": "Phase 1 secured 2,000MW: Entergy's release gives no load MW, so the lower of press '2GW data center' (DCD) and the approved 2,262MW of generation is used; the Dec 2024 step is shown as a target.",
+            "source": "https://www.datacenterdynamics.com/en/news/entergy-obtains-approval-to-construct-three-gas-facilities-to-serve-metas-2gw-data-center-in-louisiana"
+          },
+          {
+            "note": "2026-07 부터 확보 전력 5,000MW 는 Meta 의 5GW 목표값. 2단계 발전설비(가스복합 7기)는 LPSC 승인 전(2026-12-16 심의 예정)이라 승인되면 reported 로 바꿀 것.",
+            "note_en": "5,000MW secured from Jul 2026 is Meta's 5GW target; phase 2 generation (7 CCGTs) awaits LPSC approval (Dec 16, 2026) — switch to reported once approved.",
+            "source": "https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings"
+          },
+          {
+            "note": "1단계 진행률 0.3: 2024-12 착공 후 22개월, 2029 리스 개시(시운전 목표)까지 약 60개월 중 경과 비율로 근사. 공개 진척률 없음.",
+            "note_en": "Phase 1 progress 0.3 approximated from 22 of ~60 months elapsed between the Dec 2024 start and 2029 lease commencement; no public progress figure.",
+            "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm"
+          },
+          {
+            "note": "2단계 완공 2032 은 추정(백과사전·언론의 '전체 완공 2032년 무렵'). Meta 공식 표현은 '수년에 걸쳐 5GW'.",
+            "note_en": "Phase 2 completion in 2032 is an estimate (encyclopedia/press 'full build-out around 2032'); Meta only says '5GW over several years'.",
+            "source": "https://en.wikipedia.org/wiki/Hyperion_Data_Center"
+          }
+        ],
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm",
+          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+          "https://about.fb.com/news/2025/10/meta-blue-owl-capital-develop-hyperion-data-center/",
+          "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/",
+          "https://datacenters.atmeta.com/asset/richland-parish-data-center-info-sheet/",
+          "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability",
+          "https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "meta-el-paso",
+        "name": "El Paso Data Center",
+        "name_ko": "엘패소 데이터센터",
+        "country": "US",
+        "admin1": "US-TX",
+        "region": "Northeast El Paso (Stan Roberts Sr. Ave area, per press), El Paso County, Texas",
+        "coord": {
+          "lat": 31.848,
+          "lng": -106.43,
+          "confidence": "medium",
+          "method": "city_centroid",
+          "source": "https://datacenters.atmeta.com/2025/10/hello-el-paso/"
+        },
+        "primary": "meta",
+        "parties": [
+          {
+            "company": "meta",
+            "role": "developer",
+            "source": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/"
+          },
+          {
+            "company": "blackrock",
+            "role": "owner",
+            "share": 0.8,
+            "source": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/"
+          },
+          {
+            "company": "meta",
+            "role": "owner",
+            "share": 0.2,
+            "source": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/"
+          },
+          {
+            "company": "meta",
+            "role": "operator",
+            "source": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/"
+          },
+          {
+            "company": "meta",
+            "role": "tenant",
+            "share": 1,
+            "source": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/"
+          }
+        ],
+        "detail": "lite",
+        "announced": "2025-10",
+        "acres": null,
+        "grid_operator": "El Paso Electric (WECC, outside ERCOT) + proposed McCloud on-site gas bridge plant (366MW)",
+        "cooling": "closed-loop liquid cooling",
+        "summary_ko": "2025-10 발표한 Meta 의 텍사스 세 번째 데이터센터(약 120만 sq ft, 'AI 워크로드 최적화'). 2026-03 1GW·100억 달러 이상으로 확대, 2026-07 BlackRock(GIP·HPS) 펀드 80%·Meta 20% 합작(개발비 약 140억 달러)으로 넘기고 Meta 가 건설·운영 관리 후 전체를 임차. 2028년부터 순차 가동 목표. El Paso Electric 이 Meta 전용 모듈형 가스발전 McCloud(366MW, 2027 목표)를 신청.",
+        "summary_en": "Meta's third Texas data center (≈1.2M sq ft, 'optimized for our AI workloads'), announced Oct 2025. Expanded in Mar 2026 to 1GW and $10bn+, then placed in a JV 80% owned by BlackRock funds (with GIP and HPS) and 20% by Meta (≈$14bn development cost) in Jul 2026; Meta manages construction/operations and leases the whole campus, with capacity coming online from 2028. El Paso Electric has proposed the dedicated 366MW McCloud modular gas plant (2027 target).",
+        "power": [
+          {
+            "from": "2025-10",
+            "secured_mw": 440,
+            "energized_mw": 0,
+            "basis": "estimate",
+            "source": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2810465-meta-funds-el-paso-nat-gas-plant-as-interim-power-fix"
+          },
+          {
+            "from": "2026-03",
+            "secured_mw": 1000,
+            "energized_mw": 0,
+            "basis": "target",
+            "source": "https://datacenters.atmeta.com/2026/03/big-things-are-happening-el-paso/"
+          }
+        ],
+        "substation": {},
+        "buildings": [
+          {
+            "id": "ep-phase1",
+            "name": "Phase 1 (initial ~440MW; McCloud bridge gas + EPE)",
+            "name_ko": "1단계 (초기 약 440MW; McCloud 임시 가스발전 + EPE)",
+            "gross_mw": 440,
+            "mw_basis": "grid",
+            "progress": 0.3,
+            "sources": [
+              "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+              "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2810465-meta-funds-el-paso-nat-gas-plant-as-interim-power-fix"
+            ],
+            "phases": [
+              {
+                "status": "under_construction",
+                "from": "2025-Q4",
+                "basis": "reported",
+                "source": "https://datacenters.atmeta.com/2026/03/big-things-are-happening-el-paso/"
+              },
+              {
+                "status": "commissioning",
+                "from": "2028",
+                "basis": "target",
+                "source": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/"
+              }
+            ]
+          },
+          {
+            "id": "ep-phase2",
+            "name": "Phase 2 (expansion to 1GW)",
+            "name_ko": "2단계 (1GW 까지 확장)",
+            "gross_mw": 560,
+            "mw_basis": "grid",
+            "sources": [
+              "https://datacenters.atmeta.com/2026/03/big-things-are-happening-el-paso/",
+              "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2810465-meta-funds-el-paso-nat-gas-plant-as-interim-power-fix"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2026-03",
+                "basis": "reported",
+                "source": "https://datacenters.atmeta.com/2026/03/big-things-are-happening-el-paso/"
+              },
+              {
+                "status": "operating",
+                "from": "2029",
+                "basis": "estimate",
+                "source": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2810465-meta-funds-el-paso-nat-gas-plant-as-interim-power-fix"
+              }
+            ]
+          }
+        ],
+        "deliveries": [
+          {
+            "what": "McCloud Generation — 813 modular gas generators (~366MW), dedicated bridge supply for 5 years (pending Texas PUC approval)",
+            "from": "El Paso Electric (built/operated by Enchanted Rock)",
+            "eta": "2027",
+            "status": "in_progress",
+            "source": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2810465-meta-funds-el-paso-nat-gas-plant-as-interim-power-fix"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2025-10-15",
+            "event": "Meta, 엘패소 데이터센터 발표 — 약 120만 sq ft, AI 워크로드 최적화, 1GW 까지 확장 가능, 15억 달러 이상",
+            "event_en": "Meta announces El Paso: ~1.2M sq ft, optimized for AI workloads, able to scale to 1GW, $1.5bn+",
+            "source": "https://datacenters.atmeta.com/2025/10/hello-el-paso/"
+          },
+          {
+            "date": "2026-01",
+            "event": "El Paso Electric, Meta 전용 모듈형 가스발전 McCloud(366MW, 4.73억 달러) 텍사스 PUC 신청 (보도)",
+            "event_en": "El Paso Electric files with the Texas PUC for the dedicated 366MW McCloud modular gas plant ($473M) (press)",
+            "source": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2810465-meta-funds-el-paso-nat-gas-plant-as-interim-power-fix"
+          },
+          {
+            "date": "2026-03-26",
+            "event": "1GW 확정, 투자 100억 달러 이상으로 확대",
+            "event_en": "Meta confirms growth to 1GW and raises investment to $10bn+",
+            "source": "https://datacenters.atmeta.com/2026/03/big-things-are-happening-el-paso/"
+          },
+          {
+            "date": "2026-07-28",
+            "event": "BlackRock(GIP·HPS) 펀드 80%·Meta 20% 합작 발표, 개발비 약 140억 달러·부채 125억 달러, Meta 임차(4년+연장 4회), 2028년부터 가동 목표",
+            "event_en": "JV with BlackRock funds (80%, incl. GIP and HPS) and Meta (20%): ~$14bn development cost, $12.5bn debt, Meta leases (4-year term + four extensions), capacity online from 2028",
+            "source": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "2025-10 확보 전력 440MW 는 추정: 텍사스 PUC 서류 보도(Argus)에 따르면 Meta 자회사 Wurldwide LLC 가 처음 220MW 를 요청, 2027년 440MW 이상, 2029년 1GW 가능. 회사 공식 수치 아님.",
+            "note_en": "440MW secured from Oct 2025 is an estimate: per Texas PUC filings (Argus), Meta's Wurldwide LLC first requested 220MW, rising to 440MW+ by 2027 and possibly 1GW by 2029; not a company figure.",
+            "source": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2810465-meta-funds-el-paso-nat-gas-plant-as-interim-power-fix"
+          },
+          {
+            "note": "1단계 440MW / 2단계 560MW 분할과 2단계 2029 가동은 위 PUC 보도의 부하 증가 일정으로 나눈 추정. Meta 는 '2028년부터 순차 가동' 만 공개.",
+            "note_en": "The 440/560MW phase split and 2029 phase-2 operation are estimates from the load ramp in the PUC reporting; Meta only says capacity comes online from 2028.",
+            "source": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2810465-meta-funds-el-paso-nat-gas-plant-as-interim-power-fix"
+          },
+          {
+            "note": "1단계 진행률 0.3: 2025 착공 후 현장 인력 2,300명 이상(2026-07, 피크 4,000명), 2028 가동 목표 기준 근사.",
+            "note_en": "Phase 1 progress 0.3 approximated from a 2025 start, 2,300+ workers on site in Jul 2026 (4,000 at peak) and a 2028 online target.",
+            "source": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/"
+          },
+          {
+            "note": "좌표는 엘패소 시 경계의 대략적 중심(도심 31.762,-106.485 는 지도 국경 해상도 때문에 멕시코 쪽으로 판정돼 북동쪽으로 옮김). 보도상 부지는 시 북동부 Stan Roberts Sr. Ave 인근 — 공식 필지 미확인.",
+            "note_en": "Coordinates approximate the El Paso city-limits centroid (downtown 31.762,-106.485 falls on the Mexican side at the map's border resolution, so shifted northeast); press places the site near Stan Roberts Sr. Ave in northeast El Paso (parcel unverified).",
+            "source": "https://hoodline.com/2026/01/meta-s-mega-data-hub-muscles-onto-stan-roberts-avenue/"
+          }
+        ],
+        "sources": [
+          "https://datacenters.atmeta.com/2025/10/hello-el-paso/",
+          "https://datacenters.atmeta.com/2026/03/big-things-are-happening-el-paso/",
+          "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+          "https://datacenters.atmeta.com/asset/el-paso-data-center-info-sheet/"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "id": "meta-sturgeon",
+        "name": "Sturgeon Data Centre",
+        "name_ko": "스터전 데이터센터",
+        "country": "CA",
+        "admin1": "CA-AB",
+        "region": "Sturgeon County (north of Edmonton), Alberta",
+        "coord": {
+          "lat": 53.802,
+          "lng": -113.65,
+          "confidence": "low",
+          "method": "county_centroid",
+          "source": "https://en.wikipedia.org/wiki/Sturgeon_County"
+        },
+        "primary": "meta",
+        "parties": [
+          {
+            "company": "meta",
+            "role": "owner",
+            "share": 1,
+            "source": "https://datacenters.atmeta.com/2026/07/hello-sturgeon-county/"
+          },
+          {
+            "company": "meta",
+            "role": "developer",
+            "share": 1,
+            "source": "https://datacenters.atmeta.com/2026/07/hello-sturgeon-county/"
+          },
+          {
+            "company": "meta",
+            "role": "operator",
+            "share": 1,
+            "source": "https://datacenters.atmeta.com/asset/meta-sturgeon-data-centre-info-sheet/"
+          }
+        ],
+        "detail": "lite",
+        "announced": "2026-07",
+        "acres": null,
+        "grid_operator": "AESO (Alberta grid), AltaLink transmission; Capital Power 250MW supply agreement; Greenlight Electricity Centre (gas) as planning partner",
+        "cooling": "closed-loop liquid cooling with dry cooling (no operational cooling water)",
+        "summary_ko": "Meta 의 캐나다 첫 데이터센터(1GW, 130억 캐나다달러 이상), 2026-07 발표·착공. 시공은 Clark Builders·PCL 합작 Frost Collective. Capital Power 가 10년 이상 250MW 공급 계약을 맺었고 부하는 2028 하반기 가동 예정. Greenlight(가스발전)·AltaLink·AESO 와 전력 계획.",
+        "summary_en": "Meta's first Canadian data center (1GW, CA$13bn+), announced and broke ground in Jul 2026; built by Frost Collective (Clark Builders/PCL JV). Capital Power signed a 10+ year, 250MW energy supply agreement with load expected in service in H2 2028; power planned with Greenlight (gas), AltaLink and AESO.",
+        "power": [
+          {
+            "from": "2026-07",
+            "secured_mw": 250,
+            "energized_mw": 0,
+            "basis": "reported",
+            "source": "https://www.capitalpower.com/?p=8078"
+          },
+          {
+            "from": "2026-07",
+            "secured_mw": 1000,
+            "energized_mw": 0,
+            "basis": "target",
+            "source": "https://datacenters.atmeta.com/2026/07/hello-sturgeon-county/"
+          }
+        ],
+        "substation": {},
+        "buildings": [
+          {
+            "id": "st-campus",
+            "name": "Sturgeon campus (1GW, phased)",
+            "name_ko": "스터전 캠퍼스 (1GW, 단계 건설)",
+            "kind": "datahall_liquid",
+            "gross_mw": 1000,
+            "mw_basis": "grid",
+            "progress": 0.05,
+            "sources": [
+              "https://datacenters.atmeta.com/2026/07/hello-sturgeon-county/",
+              "https://www.capitalpower.com/?p=8078"
+            ],
+            "phases": [
+              {
+                "status": "under_construction",
+                "from": "2026-07",
+                "basis": "reported",
+                "source": "https://datacenters.atmeta.com/all-locations/"
+              },
+              {
+                "status": "commissioning",
+                "from": "2028-H2",
+                "basis": "target",
+                "source": "https://www.capitalpower.com/?p=8078"
+              }
+            ]
+          }
+        ],
+        "deliveries": [
+          {
+            "what": "Energy supply agreement, 250MW capacity and energy (>10 years)",
+            "from": "Capital Power",
+            "eta": "2028-H2",
+            "status": "ordered",
+            "source": "https://www.capitalpower.com/?p=8078"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2026-07-08",
+            "event": "Meta, 앨버타 스터전 카운티 1GW 데이터센터 발표 (130억 캐나다달러 이상, 지역 인프라 약 6천만 캐나다달러)",
+            "event_en": "Meta announces a 1GW data centre in Sturgeon County, Alberta (CA$13bn+, ~CA$60M local infrastructure)",
+            "source": "https://datacenters.atmeta.com/2026/07/hello-sturgeon-county/"
+          },
+          {
+            "date": "2026-07-08",
+            "event": "Capital Power, Meta 와 250MW·10년 이상 에너지 공급 계약 — 부하 2028 하반기 가동 예정",
+            "event_en": "Capital Power signs a 250MW, 10+ year energy supply agreement with Meta; load expected in service H2 2028",
+            "source": "https://www.capitalpower.com/?p=8078"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "확정 확보 = Capital Power 250MW 공급 계약. 1GW 는 Meta 발표 규모(목표)",
+            "note_en": "Firm = 250MW Capital Power supply deal; 1GW is the announced scale (target)",
+            "source": "https://www.capitalpower.com/?p=8078"
+          },
+          {
+            "note": "확보 전력 1,000MW 는 Meta 의 '1GW 데이터센터' 목표값. 확정 계약은 Capital Power 250MW 뿐이며, Greenlight 가스발전(1단계 932MW, 보도)과의 계약 규모는 미공개.",
+            "note_en": "1,000MW secured is Meta's '1GW data centre' target; the only firm contract disclosed is Capital Power's 250MW, and terms with the Greenlight gas plant (932MW first phase, press) are undisclosed.",
+            "source": "https://technews.tw/2026/07/09/meta-canada-1gw-gas-powered/"
+          },
+          {
+            "note": "진행률 0.05: 2026-07 착공(Meta 목록 '2026 break ground'), 2028 하반기 첫 부하 목표 기준 초기 단계로 근사.",
+            "note_en": "Progress 0.05 approximated for an early-stage build started Jul 2026 (Meta list: '2026 break ground') with first load targeted H2 2028.",
+            "source": "https://datacenters.atmeta.com/all-locations/"
+          },
+          {
+            "note": "좌표는 스터전 카운티 행정 중심(모린빌). 부지 위치 미공개.",
+            "note_en": "Coordinates are Sturgeon County's administrative centre (Morinville); the site location is undisclosed.",
+            "source": "https://en.wikipedia.org/wiki/Sturgeon_County"
+          }
+        ],
+        "sources": [
+          "https://datacenters.atmeta.com/2026/07/hello-sturgeon-county/",
+          "https://datacenters.atmeta.com/asset/meta-sturgeon-data-centre-info-sheet/",
+          "https://www.capitalpower.com/?p=8078"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "m1",
+      "field": "sites[meta-hyperion].parties owner shares",
+      "value": {
+        "blue-owl": 0.8,
+        "meta": 0.2
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm",
+      "published": "2025-10-30",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Following the closing, we hold a 20 % membership interest and the Investor holds an 80 % membership interest in the Venture.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m2",
+      "field": "sites[meta-hyperion].buildings[hy-phase1].phases commissioning 2029 (lease commencement)",
+      "value": "2029",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm",
+      "published": "2025-10-30",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "operating lease agreements with the Venture for the use of properties on the data center campus, which will commence in 2029",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m3",
+      "field": "sites[meta-hyperion] Meta roles (developer/operator)",
+      "value": "construction management and property management",
+      "source_url": "https://about.fb.com/news/2025/10/meta-blue-owl-capital-develop-hyperion-data-center/",
+      "published": "2025-10-21",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Meta will provide construction management and property management services for the project",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m4",
+      "field": "sites[meta-hyperion].power[2].secured_mw / buildings[hy-phase2]",
+      "value": 5000,
+      "source_url": "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/",
+      "published": "2026-07-13",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "We're expanding our AI-optimized data center in Richland Parish, Louisiana to 5 GW in compute capacity",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m5",
+      "field": "sites[meta-hyperion] AI cluster",
+      "value": "Hyperion, 5GW",
+      "source_url": "https://datacenters.atmeta.com/asset/richland-parish-data-center-info-sheet/",
+      "published": "2026-09",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "delivering 5 gigawatts of compute capacity to house Hyperion, our largest multi-gigawatt AI cluster",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m6",
+      "field": "sites[meta-hyperion].deliveries Entergy CCGT in-service",
+      "value": {
+        "richland_two_plants": "late 2028",
+        "waterford": "end of 2029"
+      },
+      "source_url": "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability",
+      "published": "2025-08-20",
+      "source_tier": 1,
+      "source_type": "utility_filing",
+      "quote": "expected to come online in late 2028",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m7",
+      "field": "sites[meta-hyperion].power[1].secured_mw (phase 1 load)",
+      "value": 2000,
+      "source_url": "https://www.datacenterdynamics.com/en/news/entergy-obtains-approval-to-construct-three-gas-facilities-to-serve-metas-2gw-data-center-in-louisiana",
+      "published": "2025-08",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "Entergy obtains approval to construct three gas facilities to serve Meta's 2GW data center in Louisiana",
+      "verification": "single_source"
+    },
+    {
+      "id": "m8",
+      "field": "sites[meta-hyperion] phase 2 generation (Entergy agreement)",
+      "value": {
+        "ccgt_count": 7,
+        "mw": 5200,
+        "renewables_mw": 2500
+      },
+      "source_url": "https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings",
+      "published": "2026-03-27",
+      "source_tier": 1,
+      "source_type": "utility_filing",
+      "quote": "Entergy's filing for new energy generation represents one of several factors needed to move an expansion forward.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m9",
+      "field": "sites[meta-hyperion].power[3] 2GW by 2030",
+      "value": {
+        "mw": 2000,
+        "year": 2030
+      },
+      "source_url": "https://techcrunch.com/2025/07/14/mark-zuckerberg-says-meta-is-building-a-5gw-ai-data-center",
+      "published": "2025-07-14",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "Meta plans to bring two gigawatts of data center capacity online by 2030 with Hyperion",
+      "verification": "single_source"
+    },
+    {
+      "id": "m10",
+      "field": "sites[meta-hyperion].acres / announced",
+      "value": {
+        "acres": 2250,
+        "announced": "2024-12-04",
+        "investment_usd_bn": 10
+      },
+      "source_url": "https://www.knoe.com/2024/12/05/meta-build-10-billion-ai-data-center-richland-parish/",
+      "published": "2024-12-05",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "The campus is set on the 2,250 acres former Franklin Farm megasite between the municipalities of Rayville and Delhi",
+      "verification": "single_source"
+    },
+    {
+      "id": "m11",
+      "field": "sites[meta-prometheus].buildings[pr-cluster] 1GW+ / online 2026; Hyperion 5GW",
+      "value": {
+        "prometheus_gw": 1,
+        "online": "2026"
+      },
+      "source_url": "https://s21.q4cdn.com/399680738/files/doc_financials/2025/q2/META-Q2-2025-Earnings-Call-Transcript.pdf",
+      "published": "2025-07-30",
+      "source_tier": 1,
+      "source_type": "earnings_call",
+      "quote": "Our Prometheus cluster is coming online next year and we think it'll be the world's first 1GW+ cluster.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m12",
+      "field": "sites[meta-prometheus].power[0].secured_mw",
+      "value": 1000,
+      "source_url": "https://datacenters.atmeta.com/asset/new-albany-data-center-info-sheet/",
+      "published": "2026-09",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "delivering over 1 gigawatt of compute capacity to house our AI cluster Prometheus",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m13",
+      "field": "sites[meta-prometheus].deliveries Socrates phases",
+      "value": {
+        "phase1_mw": 200,
+        "phase1": "in service by Q2 2026",
+        "phase2": "4Q 2026"
+      },
+      "source_url": "https://www.williams.com/2026/08/03/williams-delivers-strong-second-quarter-2026-results-announces-strategic-acquisition-of-momentum-midstream-connecting-haynesville-to-gulf-coast-lng-and-power-demand/",
+      "published": "2026-08-03",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Successful completion of phase one of Socrates, the company's first Power Innovation project; phase two on track for 4Q 2026 completion",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m14",
+      "field": "sites[meta-prometheus] Socrates customer = Meta affiliate (Sidecat LLC)",
+      "value": "Sidecat LLC",
+      "source_url": "https://www.datacenterdynamics.com/en/news/ohio-regulators-approve-construction-of-200mw-gas-power-plant-to-serve-meta-data-center-in-new-albany-ohio/",
+      "published": "2025",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "Ohio regulators approve construction of 200MW gas power plant to serve Meta data center in New Albany, Ohio",
+      "verification": "single_source"
+    },
+    {
+      "id": "m15",
+      "field": "sites[meta-el-paso] AI-optimized, 1GW scalable",
+      "value": {
+        "sq_ft": 1200000,
+        "scalable_gw": 1
+      },
+      "source_url": "https://datacenters.atmeta.com/2025/10/hello-el-paso/",
+      "published": "2025-10-15",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "This almost 1.2 million-square-foot campus will be optimized for our AI workloads",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m16",
+      "field": "sites[meta-el-paso].power[1].secured_mw",
+      "value": 1000,
+      "source_url": "https://datacenters.atmeta.com/2026/03/big-things-are-happening-el-paso/",
+      "published": "2026-03-26",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "Today, Meta is thrilled to confirm the El Paso Data Center will grow to 1 gigawatt.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m17",
+      "field": "sites[meta-el-paso].parties owner shares",
+      "value": {
+        "blackrock": 0.8,
+        "meta": 0.2
+      },
+      "source_url": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+      "published": "2026-07-28",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Funds managed by BlackRock will own an 80% interest in the venture, while Meta will retain the remaining 20% ownership.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m18",
+      "field": "sites[meta-el-paso].buildings[ep-phase1].phases commissioning 2028",
+      "value": "2028",
+      "source_url": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+      "published": "2026-07-28",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "the venture expects to begin bringing this capacity online in 2028",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m19",
+      "field": "sites[meta-el-paso] JV per 10-Q (closing expected Q3 2026)",
+      "value": {
+        "meta_share": 0.2,
+        "contribution_usd_bn": 2.3
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+      "published": "2026-07-30",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "co-develop a data center campus in El Paso, Texas, through a venture in which we would hold a 20 % membership interest",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m20",
+      "field": "sites[meta-el-paso].deliveries McCloud 366MW / power[0] 440MW",
+      "value": {
+        "mccloud_mw": 366,
+        "load_request_mw": [
+          220,
+          440,
+          1000
+        ]
+      },
+      "source_url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2810465-meta-funds-el-paso-nat-gas-plant-as-interim-power-fix",
+      "published": "2026-01",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "Meta funds El Paso nat gas plant as interim power fix",
+      "verification": "single_source"
+    },
+    {
+      "id": "m21",
+      "field": "sites[meta-sturgeon].power[0].secured_mw",
+      "value": 1000,
+      "source_url": "https://datacenters.atmeta.com/2026/07/hello-sturgeon-county/",
+      "published": "2026-07-08",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "Sturgeon County, Alberta, will be home to our newest 1GW data centre",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m22",
+      "field": "sites[meta-sturgeon].buildings[st-campus].phases commissioning 2028-H2; deliveries Capital Power 250MW",
+      "value": {
+        "esa_mw": 250,
+        "in_service": "2028-H2"
+      },
+      "source_url": "https://www.capitalpower.com/?p=8078",
+      "published": "2026-07-08",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "The load from the project is anticipated to be in service in the back half of 2028.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m23",
+      "field": "company.metrics capex_2025_usd_bn",
+      "value": 72.22,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+      "published": "2026-01",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Capital expenditures, including principal payments on finance leases, were $72.22 billion for the year ended December 31, 2025.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m24",
+      "field": "company.metrics capex_guidance_2026",
+      "value": {
+        "low": 130,
+        "high": 145
+      },
+      "source_url": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf",
+      "published": "2026-07-29",
+      "source_tier": 1,
+      "source_type": "earnings_call",
+      "quote": "We anticipate 2026 capital expenditures, including principal payments on finance leases, to be in the range of $130-145 billion",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m25",
+      "field": "company.metrics leases_not_commenced_usd_bn",
+      "value": 278.99,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+      "published": "2026-07-30",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "These lease obligations were approximately $278.99 billion, consisting of data centers, colocations, and certain network infrastructure",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m26",
+      "field": "company.colocations Sandersville (CleanSpark)",
+      "value": {
+        "it_mw": 175,
+        "rent_start": "2027-Q4",
+        "guarantor": "Meta"
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/827876/000119312526393758/clsk-ex99_1.htm",
+      "published": "2026-09-17",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "a 175 MW critical IT AI data center campus leased to high-investment-grade global technology company",
+      "verification": "confirmed"
+    },
+    {
+      "id": "m27",
+      "field": "company.colocations Jamnagar (Reliance)",
+      "value": {
+        "mw": 168
+      },
+      "source_url": "https://about.fb.com/news/2026/06/meta-partners-with-reliance-on-ai-enabled-data-center-in-india/",
+      "published": "2026-06-09",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Reliance will build a data center with 168 MW capacity, which Meta will lease, with options to scale.",
+      "verification": "confirmed"
+    }
+  ],
+  "open_questions": [
+    "새 회사 id 필요: blackrock (El Paso 합작 80% 소유, GIP·HPS 포함, group \"partner\"). blue-owl 은 이미 등록됨.",
+    "El Paso 합작 종결 여부: 2026-07-28 발표 '수일 내 종결 예정', 10-Q 는 '3분기 종결 예상' — 실제 종결 공시(10-Q 3분기, 2026-10 말) 확인 필요. 미종결이면 소유는 meta 100%.",
+    "Prometheus 가동 여부: Meta 는 '2026년 가동' 목표만 밝혔고 공식 가동 발표 없음. Williams Socrates 1단계 200MW 공급 사실로 시운전(estimate) 처리 — 3분기 실적콜(2026-10 말)에서 확인 필요. AEP 계통 용량·기존 2020~2023 건물 포함 여부·공식 주소도 미확인이라 lite.",
+    "Hyperion 2단계(+3GW)의 착공 시점·LPSC U-37882 결정(2026-12-16 예정)·완공 연도(2032 은 추정) 미확인. 1단계 시운전 2029 는 리스 개시 연도, '2030년 2GW' 는 TechCrunch(Tier 2) 단독.",
+    "Lebanon, Indiana(2026-02 발표, 100억 달러+, 약 400만 sq ft): 규모상 GW급으로 보이나 Meta 가 MW·AI 용도를 공개하지 않아 제외. MW 가 확인되면 추가.",
+    "AI 최적화라고 밝혔지만 MW 미공개라 제외한 자체 캠퍼스: Temple TX(2026-07 가동, '첫 AI 최적화 데이터센터'), Beaver Dam WI, Montgomery AL(증설 포함), Bowling Green OH, Tulsa OK, Rosemount MN, Cheyenne WY, Aiken SC — 지도 기준이 'AI 명시' 면 MW 확인 후 lite 로 추가 검토.",
+    "외부 조달 용량의 지도 반영: crusoe.json 의 childress-lancium·warrenton(Meta 1.6GW, Bloomberg 단독·미확인), hut8.json beacon-point(임차인 비공개, Meta 는 추측), applieddigital 초안 delta-forge-2(Meta 추정 보도) — 확인되면 해당 사이트 parties 에 meta(end_user/tenant) 추가. CoreWeave·Nebius 계약은 공급 사이트 미공개.",
+    "Sturgeon 부지 위치·Greenlight 가스발전 계약 규모 미공개 → 좌표 low(카운티 중심), 확보 전력은 1GW 목표값."
+  ]
+}

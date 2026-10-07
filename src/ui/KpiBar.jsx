@@ -28,7 +28,7 @@ export default function KpiBar() {
   if (view === 'site' && site) {
     const m = siteMetrics(site)
     cards = [
-      { icon: Plug, label: t.panel.grid, value: fmtMw(site.grid_mw), tone: site.substation.status === 'energized' ? 'operating' : 'pending', sub: site.substation.status === 'energized' ? (lang === 'ko' ? '통전 완료' : 'Energized') : `${t.panel.energized} ${site.substation.dates?.target ?? ''}` },
+      { icon: Plug, label: t.kpi2.firm, value: fmtMw(site.firm_mw), tone: site.substation.status === 'energized' ? 'operating' : 'pending', sub: `${t.kpi2.announced} ${fmtMw(site.grid_mw)} · ${site.substation.status === 'energized' ? (lang === 'ko' ? '통전 완료' : 'energized') : `${t.panel.energized} ${site.substation.dates?.target ?? ''}`}` },
       { icon: Zap, label: t.kpi.operating, value: fmtMw(m.operating), tone: 'operating', sub: m.mining ? (lang === 'ko' ? `채굴 ${fmtMw(m.mining)} 포함` : `incl. ${fmtMw(m.mining)} mining`) : null },
       { icon: HardHat, label: t.kpi.building, value: fmtMw(m.building), tone: 'construction' },
       { icon: MapPinned, label: t.kpi.planned, value: fmtMw(m.planned), tone: 'planned' },
@@ -40,7 +40,7 @@ export default function KpiBar() {
       .map((c) => c.id)
     const m = totalsAt(data.raw, data.month, { companies: new Set(ids) })
     cards = [
-      { icon: Plug, label: t.kpi2.secured, value: fmtMw(m.secured, 2), sub: `${t.kpi2.energized} ${fmtMw(m.energized, 2)}` },
+      { icon: Plug, label: t.kpi2.firm, value: fmtMw(m.firm, 2), sub: `${t.kpi2.announced} ${fmtMw(m.secured, 2)} · ${t.kpi2.energized} ${fmtMw(m.energized, 2)}` },
       { icon: Zap, label: t.kpi2.ai, value: fmtMw(m.ai), tone: 'operating', sub: m.mining ? `${t.kpi2.mining} ${fmtMw(m.mining)}` : null },
       { icon: HardHat, label: t.kpi2.building, value: fmtMw(m.building), tone: 'construction' },
       { icon: MapPinned, label: t.kpi2.sites, value: String(m.sites), sub: `${t.kpi2.companies} ${ids.length}` },

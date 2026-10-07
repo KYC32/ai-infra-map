@@ -13,7 +13,7 @@ import { fmtMw } from '../scene/geo.js'
 import SiteList from './SiteList.jsx'
 
 const GROUPS = ['miner', 'neocloud', 'hyperscaler', 'korea']
-const METRICS = ['secured', 'ai', 'building']
+const METRICS = ['firm', 'secured', 'ai', 'building']
 
 export default function LeftPanel() {
   const t = useT()

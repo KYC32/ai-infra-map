@@ -37,8 +37,8 @@ export const useAppStore = create((set, get) => ({
   activeGroups: new Set(),
   // 핀 색 기준: 'status'(가동·건설·계획 상태색) | 'company'(회사색)
   colorMode: initial.color ?? 'status',
-  // 순위표 기준 지표: secured(확보) | ai(AI 가동) | building(건설·시운전)
-  rankMetric: 'secured',
+  // 순위표 기준 지표: firm(확정 확보) | secured(발표 규모) | ai(AI 가동) | building(건설·시운전)
+  rankMetric: 'firm',
   // 왼쪽 패널 탭: 'rank'(회사 순위) | 'sites'(사이트 목록)
   leftTab: 'rank',
   // 모바일: 순위·사이트 패널을 바텀시트로 열었는지

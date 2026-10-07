@@ -5,6 +5,7 @@
 // =============================================================
 import { readFileSync, readdirSync } from 'node:fs'
 import { validateAll } from './lib/validate-core.mjs'
+import { totalsAt, toMonth } from '../src/data/timeline.js'
 
 const DATA = new URL('../data/', import.meta.url)
 const companiesFile = JSON.parse(readFileSync(new URL('companies.json', DATA), 'utf8'))
@@ -21,5 +22,6 @@ if (errors.length) {
   errors.forEach((e) => console.error('  - ' + e))
   process.exit(1)
 }
-const total = infra.sites.reduce((n, s) => n + s.power.at(-1).secured_mw, 0)
-console.log(`✅ 데이터 OK — 회사 ${infra.companies.length}곳, 사이트 ${infra.sites.length}곳, 최종 확보 전력 합계 ${total.toLocaleString()}MW, 기준일 ${infra.as_of}`)
+// 기준일 시점 합계: 확정 확보(계약·승인·통전) / 발표 규모(회사 목표 포함)
+const t = totalsAt(infra, toMonth(infra.as_of.slice(0, 7)))
+console.log(`✅ 데이터 OK — 회사 ${infra.companies.length}곳, 사이트 ${infra.sites.length}곳, 기준일(${infra.as_of}) 확정 확보 ${Math.round(t.firm).toLocaleString()}MW / 발표 규모 ${Math.round(t.secured).toLocaleString()}MW`)

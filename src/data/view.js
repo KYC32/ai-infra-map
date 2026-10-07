@@ -63,7 +63,8 @@ export function viewSite(site, m, groupOf = {}) {
     lat: site.coord.lat,
     lng: site.coord.lng,
     coord_confidence: site.coord.confidence,
-    grid_mw: power.secured,
+    grid_mw: power.secured,   // 발표 규모 (핀 높이·캠퍼스 크기)
+    firm_mw: power.firm,      // 확정 확보 (계약·승인·통전)
     status,
     substation,
     buildings,

@@ -593,34 +593,6 @@
       ]
     },
     {
-      "id": "oracle",
-      "name": "Oracle",
-      "name_ko": "오라클",
-      "group": "hyperscaler",
-      "color": "#e25a63",
-      "hq_country": "US",
-      "summary_ko": "OCI 클라우드 운영사. Stargate Abilene 의 임차인으로 OpenAI 에 용량 공급.",
-      "summary_en": "Runs Oracle Cloud Infrastructure; tenant at Stargate Abilene, supplying capacity to OpenAI.",
-      "metrics": [],
-      "sources": [
-        "https://www.oracle.com/"
-      ]
-    },
-    {
-      "id": "microsoft",
-      "name": "Microsoft",
-      "name_ko": "마이크로소프트",
-      "group": "hyperscaler",
-      "color": "#8ee3eb",
-      "hq_country": "US",
-      "summary_ko": "Azure 운영사. Nebius 바인랜드·Crusoe Abilene 2캠퍼스의 최종 사용자.",
-      "summary_en": "Runs Azure; end user at Nebius Vineland and Crusoe Abilene campus 2.",
-      "metrics": [],
-      "sources": [
-        "https://www.microsoft.com/"
-      ]
-    },
-    {
       "id": "openai",
       "name": "OpenAI",
       "name_ko": "오픈AI",
@@ -946,6 +918,509 @@
           "basis": "reported",
           "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
         }
+      ]
+    },
+    {
+      "id": "vantage-data-centers",
+      "name": "Vantage Data Centers",
+      "name_ko": "밴티지 데이터센터",
+      "group": "partner",
+      "color": "#9da7ae",
+      "hq_country": "US",
+      "summary_ko": "데이터센터 개발사. Oracle Stargate Shackelford·Port Washington 개발·소유.",
+      "summary_en": "Data-center developer; builds and owns Oracle Stargate Shackelford and Port Washington.",
+      "metrics": [],
+      "sources": [
+        "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx"
+      ]
+    },
+    {
+      "id": "related-digital",
+      "name": "Related Digital",
+      "name_ko": "릴레이티드 디지털",
+      "group": "partner",
+      "color": "#aea89f",
+      "hq_country": "US",
+      "summary_ko": "데이터센터 개발사. Oracle Stargate Saline Township 개발.",
+      "summary_en": "Data-center developer behind Oracle Stargate in Saline Township.",
+      "metrics": [],
+      "sources": [
+        "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site"
+      ]
+    },
+    {
+      "id": "blackstone",
+      "name": "Blackstone",
+      "name_ko": "블랙스톤",
+      "group": "partner",
+      "color": "#a2a2ac",
+      "hq_country": "US",
+      "summary_ko": "자산운용사. Saline Township 캠퍼스 지분 투자.",
+      "summary_en": "Asset manager; equity investor in the Saline Township campus.",
+      "metrics": [],
+      "sources": [
+        "https://www.oracle.com/news/announcement/related-digital-oracle-openai-walbridge-and-governor-whitmer-celebrate-construction-of-stargate-campus-in-saline-township-2026-06-01/"
+      ]
+    },
+    {
+      "id": "stack-infrastructure",
+      "name": "STACK Infrastructure",
+      "name_ko": "스택 인프라",
+      "group": "partner",
+      "color": "#97a1aa",
+      "hq_country": "US",
+      "summary_ko": "데이터센터 개발사(Blue Owl 계열). Project Jupiter 개발.",
+      "summary_en": "Data-center developer (Blue Owl affiliate) on Project Jupiter.",
+      "metrics": [],
+      "sources": [
+        "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf"
+      ]
+    },
+    {
+      "id": "borderplex-digital-assets",
+      "name": "BorderPlex Digital Assets",
+      "name_ko": "보더플렉스 디지털 애셋",
+      "group": "partner",
+      "color": "#b1aaa2",
+      "hq_country": "US",
+      "summary_ko": "개발사. Project Jupiter(도냐아나 카운티) 공동 개발.",
+      "summary_en": "Co-developer of Project Jupiter in Doña Ana County.",
+      "metrics": [],
+      "sources": [
+        "https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/"
+      ]
+    },
+    {
+      "id": "blackrock",
+      "name": "BlackRock",
+      "name_ko": "블랙록",
+      "group": "partner",
+      "color": "#a7a29a",
+      "hq_country": "US",
+      "summary_ko": "자산운용사. Meta 엘패소 합작 80% 소유(GIP·HPS 포함).",
+      "summary_en": "Asset manager; 80% owner of the Meta El Paso JV (incl. GIP, HPS).",
+      "metrics": [],
+      "sources": [
+        "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/"
+      ]
+    },
+    {
+      "id": "oracle",
+      "name": "Oracle",
+      "name_ko": "오라클",
+      "group": "hyperscaler",
+      "ticker": {
+        "symbol": "ORCL",
+        "exchange": "NYSE"
+      },
+      "color": "#e25a63",
+      "hq_country": "US",
+      "summary_ko": "텍사스 오스틴 본사의 데이터베이스·클라우드 기업. OCI 로 OpenAI 등에 AI 인프라를 공급하며, Vantage·Related Digital·STACK 같은 개발사가 짓는 Stargate 캠퍼스(Shackelford·Saline Township·Port Washington·Doña Ana)를 장기 임차해 직접 운영한다. 2026-08 말 RPO 6,640억 달러, 분기 IaaS 매출 74억 달러.",
+      "summary_en": "Austin-based database and cloud company. Through OCI it supplies AI infrastructure to OpenAI and others, leasing and operating Stargate campuses built by developers such as Vantage, Related Digital and STACK (Shackelford, Saline Township, Port Washington, Doña Ana). RPO of $664bn and quarterly IaaS revenue of $7.4bn as of Aug 2026.",
+      "metrics": [
+        {
+          "key": "rpo_usd_bn",
+          "value": 664,
+          "unit": "USD bn",
+          "label_ko": "잔여 이행의무(RPO)",
+          "label_en": "Remaining performance obligations (RPO)",
+          "as_of": "2026-08-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+        },
+        {
+          "key": "iaas_revenue_quarter_usd_bn",
+          "value": 7.4,
+          "unit": "USD bn",
+          "label_ko": "클라우드 인프라(IaaS·OCI) 분기 매출 (FY27 1분기, +121%)",
+          "label_en": "Cloud Infrastructure (IaaS/OCI) quarterly revenue (Q1 FY27, +121%)",
+          "as_of": "2026-08",
+          "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm"
+        },
+        {
+          "key": "ai_capacity_delivered_quarter_mw",
+          "value": 850,
+          "unit": "MW",
+          "label_ko": "분기 중 고객에 인도한 신규 데이터센터 용량 (FY27 1분기)",
+          "label_en": "New data center capacity delivered in the quarter (Q1 FY27)",
+          "as_of": "2026-08",
+          "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm"
+        },
+        {
+          "key": "lease_commitments_not_commenced_usd_bn",
+          "value": 288,
+          "unit": "USD bn",
+          "label_ko": "미개시 추가 리스 약정(대부분 데이터센터, FY27 2분기~FY29 개시, 15~19년)",
+          "label_en": "Additional lease commitments not yet commenced (mostly data centers; start Q2 FY27–FY29, 15–19 yr terms)",
+          "as_of": "2026-08-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+        },
+        {
+          "key": "capex_quarter_usd_bn",
+          "value": 28.5,
+          "unit": "USD bn",
+          "label_ko": "분기 설비투자 현금 지출 (FY27 1분기)",
+          "label_en": "Cash capital expenditures in the quarter (Q1 FY27)",
+          "as_of": "2026-08",
+          "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+        },
+        {
+          "key": "partner_secured_capacity_gw",
+          "value": 10,
+          "unit": "GW",
+          "label_ko": "파트너를 통해 확보한 전력·데이터센터 용량(향후 3년 가동, '10GW 초과')",
+          "label_en": "Power and data center capacity secured through partners (online over next 3 years, 'more than 10 GW')",
+          "as_of": "2026-03",
+          "source": "https://www.fool.com/earnings/call-transcripts/2026/03/10/oracle-orcl-q3-2026-earnings-call-transcript/"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+        "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
+        "https://www.oracle.com/data-centers/",
+        "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/",
+        "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+      ]
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "name_ko": "마이크로소프트",
+      "group": "hyperscaler",
+      "ticker": {
+        "symbol": "MSFT",
+        "exchange": "NASDAQ"
+      },
+      "color": "#8ee3eb",
+      "hq_country": "US",
+      "summary_ko": "Azure·Copilot 운영사(워싱턴주 레드먼드). AI 전용 자체 캠퍼스로 위스콘신 Mount Pleasant 의 \"Fairwater\"(1단계 2026-06 완전 가동, 2단계 2028 완공 목표, 북쪽 15개 동 추가 승인)를 짓고 있으며, Fairwater Atlanta(QTS 소유 건물 임차)와 Nebius·IREN·Nscale·Lambda·CoreWeave·Crusoe 등 외부 용량을 함께 확보한다. FY2026 설비투자(현금) $115.9bn, 아직 개시 전인 데이터센터 위주 임대 약정 $329.1bn.",
+      "summary_en": "Redmond-based operator of Azure and Copilot. Its own AI-dedicated campus is \"Fairwater\" in Mount Pleasant, Wisconsin (phase 1 fully operational June 2026, phase 2 due 2028, 15 more buildings approved to the north); it also uses Fairwater Atlanta (QTS-owned buildings, leased) and third-party capacity from Nebius, IREN, Nscale, Lambda, CoreWeave and Crusoe. FY2026 cash capex was $115.9bn, with $329.1bn of mostly datacenter leases not yet commenced.",
+      "metrics": [
+        {
+          "key": "capex_cash_fy2026_usd_bn",
+          "value": 115.9,
+          "unit": "USD bn",
+          "label_ko": "FY2026 설비투자(현금, 유형자산 취득)",
+          "label_en": "FY2026 additions to property & equipment (cash)",
+          "as_of": "2026-06",
+          "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+        },
+        {
+          "key": "leases_not_commenced_usd_bn",
+          "value": 329.1,
+          "unit": "USD bn",
+          "label_ko": "개시 전 임대 약정(주로 데이터센터, FY27~33 개시)",
+          "label_en": "Leases not yet commenced (mostly datacenters, FY27–33)",
+          "as_of": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+        },
+        {
+          "key": "finance_lease_liabilities_usd_bn",
+          "value": 66.6,
+          "unit": "USD bn",
+          "label_ko": "금융리스 부채 합계",
+          "label_en": "Total finance lease liabilities",
+          "as_of": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+        },
+        {
+          "key": "azure_growth_fy2026_pct",
+          "value": 41,
+          "unit": "%",
+          "label_ko": "Azure 및 기타 클라우드 매출 성장률(FY2026)",
+          "label_en": "Azure & other cloud services revenue growth (FY2026)",
+          "as_of": "2026-06",
+          "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+        },
+        {
+          "key": "wisconsin_demand_forecast_gw",
+          "value": 2.6,
+          "unit": "GW",
+          "label_ko": "위스콘신 Microsoft 전력수요 전망(2030년까지, WEC)",
+          "label_en": "Microsoft Wisconsin demand forecast through 2030 (WEC)",
+          "as_of": "2026-09",
+          "source": "https://www.sec.gov/Archives/edgar/data/783325/000078332526000099/a092026septemberfinal002.htm"
+        },
+        {
+          "key": "wisconsin_investment_announced_usd_bn",
+          "value": 20,
+          "unit": "USD bn",
+          "label_ko": "위스콘신 발표 투자액(1·2단계 7.3 + 추가 13, 이상)",
+          "label_en": "Announced Wisconsin investment (7.3 phases 1–2 + 13 additional, 20+)",
+          "as_of": "2026-09",
+          "source": "https://www.sec.gov/Archives/edgar/data/783325/000078332526000099/a092026septemberfinal002.htm"
+        }
+      ],
+      "colocations": [
+        {
+          "name": "Fairwater Atlanta (QTS Fayetteville campus)",
+          "name_ko": "페어워터 애틀랜타 (QTS 페이엣빌 캠퍼스)",
+          "country": "US",
+          "host": "QTS Data Centers (Blackstone)",
+          "mw": null,
+          "status": "operating",
+          "basis": "reported",
+          "note_ko": "Microsoft 두 번째 Fairwater(2025-10 가동, GB200 NVL72, 2층 구조). 부지·건물은 QTS 소유, Microsoft 임차. MW 미공개(제3자 추정 FW1 약 340MW IT).",
+          "note_en": "Microsoft's second Fairwater (live Oct 2025, GB200 NVL72, two-story). Land and buildings owned by QTS and leased to Microsoft. MW undisclosed (third-party est. ~340MW IT for FW1).",
+          "source": "https://www.ajc.com/business/2025/11/microsofts-newest-ai-superfactory-opens-at-sprawling-fayetteville-campus/"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/",
+        "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/",
+        "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/",
+        "https://news.microsoft.com/source/features/ai/from-wisconsin-to-atlanta-microsoft-connects-datacenters-to-build-its-first-ai-superfactory/",
+        "https://www.sec.gov/Archives/edgar/data/783325/000078332526000099/a092026septemberfinal002.htm"
+      ]
+    },
+    {
+      "id": "meta",
+      "name": "Meta Platforms",
+      "name_ko": "메타",
+      "group": "hyperscaler",
+      "ticker": {
+        "symbol": "META",
+        "exchange": "NASDAQ"
+      },
+      "color": "#5f5fdd",
+      "hq_country": "US",
+      "summary_ko": "Facebook·Instagram·WhatsApp 운영사. 'Meta Compute' 로 자체 AI 클러스터를 짓고 있으며, 오하이오 뉴올버니의 Prometheus(1GW+, 2026 가동 목표)와 루이지애나 리치랜드 패리시의 Hyperion(5GW, Blue Owl 80% 합작) 이 대표 캠퍼스다. 엘패소(1GW, BlackRock 80% 합작)·앨버타 스터전(1GW)도 건설 중이며, 2026 설비투자 가이던스는 1,300억~1,450억 달러.",
+      "summary_en": "Parent of Facebook, Instagram and WhatsApp, building its own AI clusters under 'Meta Compute': Prometheus in New Albany, Ohio (1GW+, targeted online in 2026) and Hyperion in Richland Parish, Louisiana (5GW, 80% owned by Blue Owl funds) lead the fleet, with 1GW campuses under construction in El Paso (80% BlackRock JV) and Sturgeon County, Alberta. 2026 capex guidance is $130–145bn.",
+      "metrics": [
+        {
+          "key": "capex_2025_usd_bn",
+          "value": 72.22,
+          "unit": "USD bn",
+          "label_ko": "2025년 설비투자(금융리스 원금 상환 포함)",
+          "label_en": "2025 capital expenditures (incl. finance lease principal)",
+          "as_of": "2025",
+          "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm"
+        },
+        {
+          "key": "capex_guidance_2026_low_usd_bn",
+          "value": 130,
+          "unit": "USD bn",
+          "label_ko": "2026년 설비투자 가이던스 하단 (2026-07 기준 1,300억~1,450억 달러)",
+          "label_en": "2026 capex guidance, low end ($130–145bn range as of Jul 2026)",
+          "as_of": "2026-07",
+          "source": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf"
+        },
+        {
+          "key": "capex_guidance_2026_high_usd_bn",
+          "value": 145,
+          "unit": "USD bn",
+          "label_ko": "2026년 설비투자 가이던스 상단",
+          "label_en": "2026 capex guidance, high end",
+          "as_of": "2026-07",
+          "source": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf"
+        },
+        {
+          "key": "capex_q2_2026_usd_bn",
+          "value": 31.08,
+          "unit": "USD bn",
+          "label_ko": "2026년 2분기 설비투자",
+          "label_en": "Q2 2026 capital expenditures",
+          "as_of": "2026-Q2",
+          "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+        },
+        {
+          "key": "leases_not_commenced_usd_bn",
+          "value": 278.99,
+          "unit": "USD bn",
+          "label_ko": "아직 개시되지 않은 리스 약정(데이터센터·코로케이션 등, 2026~2036 개시)",
+          "label_en": "Leases not yet commenced (data centers, colocations etc., commencing 2026–2036)",
+          "as_of": "2026-06",
+          "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+        },
+        {
+          "key": "noncancelable_commitments_usd_bn",
+          "value": 349.31,
+          "unit": "USD bn",
+          "label_ko": "해지 불가 계약 약정(대부분 외부 클라우드 용량·서버 등)",
+          "label_en": "Non-cancelable contractual commitments (mostly third-party cloud capacity, servers etc.)",
+          "as_of": "2026-06",
+          "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+        }
+      ],
+      "colocations": [
+        {
+          "name": "Sandersville, Georgia (CleanSpark build-to-suit lease)",
+          "name_ko": "샌더스빌, 조지아 (CleanSpark 맞춤형 임차)",
+          "country": "US",
+          "host": "CleanSpark",
+          "mw": 175,
+          "status": "under_construction",
+          "basis": "reported",
+          "note_ko": "임차인은 Meta 자회사 Anviran LLC, Meta 가 임대료 보증. IT 175MW, 20년 기본 임대(약 66억 달러), 1단계 임대 개시 2027 Q4 목표. 건설 상태는 CleanSpark '개발 중' 표현 기준.",
+          "note_en": "Tenant is Meta subsidiary Anviran LLC with Meta guaranteeing rent; 175MW critical IT, 20-year base term (~$6.6bn), phase I rent commencement targeted Q4 2027. Status per CleanSpark's 'developing' wording.",
+          "source": "https://www.sec.gov/Archives/edgar/data/827876/000119312526393758/clsk-ex99_1.htm"
+        },
+        {
+          "name": "Jamnagar, Gujarat (Reliance build-to-suit lease)",
+          "name_ko": "잠나가르, 구자라트 (Reliance 맞춤형 임차)",
+          "country": "IN",
+          "host": "Reliance Industries",
+          "mw": 168,
+          "status": "planned",
+          "basis": "reported",
+          "note_ko": "Meta 의 인도 첫 'AI 지원' 데이터센터. Reliance 가 168MW 를 짓고 Meta 가 임차(확장 옵션). 2026-06 발표.",
+          "note_en": "Meta's first 'AI-enabled' data center in India: Reliance builds 168MW, leased by Meta with options to scale (announced Jun 2026).",
+          "source": "https://about.fb.com/news/2026/06/meta-partners-with-reliance-on-ai-enabled-data-center-in-india/"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+        "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf",
+        "https://datacenters.atmeta.com/all-locations/"
+      ]
+    },
+    {
+      "id": "sktelecom",
+      "name": "SK Telecom",
+      "name_ko": "SK텔레콤",
+      "group": "korea",
+      "ticker": {
+        "symbol": "017670",
+        "exchange": "KRX"
+      },
+      "color": "#dd5fc4",
+      "hq_country": "KR",
+      "summary_ko": "한국 1위 이동통신사로, 자회사 SK브로드밴드(2027년 1분기 'SK호라이즌'으로 분할 예정)를 통해 데이터센터 8곳(합계 약 137MW)을 운영하고 AWS와 울산 미포국가산단에 103MW AI 데이터센터를 짓고 있다. 2026-07 AI DC 개발 전문회사 'SK하이퍼'를 세워 2029년 5GW·2035년 15GW를 목표로 제시했으나, 울산·구로 외 GW급 사업은 부지·일정 미확정.",
+      "summary_en": "Korea's largest mobile carrier. Through subsidiary SK Broadband (DC unit to be spun off as 'SK Horizon' in Q1 2027) it runs eight data centers (~137MW) and is building a 103MW AI data center with AWS in Ulsan's Mipo industrial complex. Its new developer arm 'SK Hyper' (Jul 2026) targets 5GW by 2029 and 15GW by 2035, but beyond Ulsan and Guro no GW-scale site or schedule is fixed.",
+      "metrics": [
+        {
+          "key": "ai_dc_revenue_krw_bn",
+          "value": 136.2,
+          "unit": "KRW bn",
+          "label_ko": "AI DC 분기 매출 (전년 대비 +92.5%)",
+          "label_en": "AI DC quarterly revenue (+92.5% YoY)",
+          "as_of": "2026-Q2",
+          "source": "https://news.sktelecom.com/228980"
+        },
+        {
+          "key": "dc_capacity_target_mw",
+          "value": 318,
+          "unit": "MW",
+          "label_ko": "SK호라이즌 데이터센터 용량 목표 (기존 8곳 + 울산·구로)",
+          "label_en": "SK Horizon DC capacity target (8 existing + Ulsan, Guro)",
+          "as_of": "2026-08",
+          "source": "https://news.sktelecom.com/229987"
+        },
+        {
+          "key": "sk_horizon_fi_investment_krw_tn",
+          "value": 3.08,
+          "unit": "KRW tn",
+          "label_ko": "SK호라이즌 외부 투자 유치 (KKR 29%·IMM 컨소시엄 20%)",
+          "label_en": "External equity raised for SK Horizon (KKR 29%, IMM consortium 20%)",
+          "as_of": "2026-08",
+          "source": "https://news.sktelecom.com/229987"
+        }
+      ],
+      "sources": [
+        "https://news.sktelecom.com/229987",
+        "https://news.sktelecom.com/228290",
+        "https://news.sktelecom.com/228980",
+        "https://news.sktelecom.com/214708"
+      ]
+    },
+    {
+      "id": "naver",
+      "name": "NAVER",
+      "name_ko": "네이버",
+      "group": "korea",
+      "ticker": {
+        "symbol": "035420",
+        "exchange": "KRX"
+      },
+      "color": "#6cdd5f",
+      "hq_country": "KR",
+      "summary_ko": "한국 최대 인터넷 플랫폼 기업. 자체 데이터센터 '각 춘천'(2013, 약 40MW)과 '각 세종'(2023, 현재 수전 47MW·설계 최대 270MW)을 운영하며, 2026-07 엔비디아(10억달러 지분 투자)·브룩필드(최대 90억달러, 최종 계약 전)와 함께 각 세종에 200MW AI 팩토리(2027 상반기 55MW → 2028년 200MW)를 짓겠다고 발표했다. 수도권에서는 LG CNS·다우기술 데이터센터를 장기 임차한다.",
+      "summary_en": "Korea's largest internet platform. It runs its own data centers GAK Chuncheon (2013, ~40MW) and GAK Sejong (2023; 47MW grid intake today, designed for up to 270MW). In Jul 2026 it announced, with NVIDIA ($1bn equity investment) and Brookfield (up to $9bn, final agreement pending), a 200MW AI factory at GAK Sejong (55MW in H1 2027, 200MW by 2028). In the Seoul area it leases space in LG CNS and Daou Technology data centers.",
+      "metrics": [
+        {
+          "key": "ai_factory_phase1_target_mw",
+          "value": 200,
+          "unit": "MW",
+          "label_ko": "각 세종 AI 팩토리 1단계 목표 용량 (2028년, 총 100억달러)",
+          "label_en": "GAK Sejong AI factory phase-1 target capacity (2028, $10bn project)",
+          "as_of": "2026-07",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517"
+        },
+        {
+          "key": "nvidia_investment_usd_bn",
+          "value": 1,
+          "unit": "USD bn",
+          "label_ko": "엔비디아 지분 투자 (제3자배정 유상증자)",
+          "label_en": "NVIDIA equity investment (third-party share placement)",
+          "as_of": "2026-07",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517"
+        },
+        {
+          "key": "sejong_grid_mw",
+          "value": 47,
+          "unit": "MW",
+          "label_ko": "각 세종 현재 수전 용량",
+          "label_en": "GAK Sejong current grid intake",
+          "as_of": "2025-11",
+          "source": "https://www.hankyung.com/article/2025111034931"
+        }
+      ],
+      "colocations": [
+        {
+          "name": "LG CNS Jukjeon Data Center (Yongin)",
+          "name_ko": "LG CNS 죽전 데이터센터 (용인)",
+          "country": "KR",
+          "host": "LG CNS",
+          "mw": null,
+          "status": "operating",
+          "basis": "reported",
+          "note_ko": "네이버클라우드 코로케이션 2025-06~2033-05 (공시 기준 계약 약 1,496억원 이상 추정). 임차 MW 미공개",
+          "note_en": "NAVER Cloud colocation Jun 2025–May 2033 (filing implies ≥ ~KRW 150bn). Leased MW undisclosed",
+          "source": "https://www.techm.kr/news/articleView.html?idxno=155219"
+        },
+        {
+          "name": "LG CNS Samsong Data Center (Goyang)",
+          "name_ko": "LG CNS 삼송 데이터센터 (고양)",
+          "country": "KR",
+          "host": "LG CNS",
+          "mw": null,
+          "status": "operating",
+          "basis": "reported",
+          "note_ko": "시설 수전 80MW(2026-07 준공 보도), 네이버클라우드가 주 임차인. 임대 2026-07~2035-05 약 6,034억원. 임차 MW 미공개",
+          "note_en": "80MW-intake facility (completed per Jul 2026 report) with NAVER Cloud as anchor tenant; lease Jul 2026–May 2035, ~KRW 603bn. Leased MW undisclosed",
+          "source": "http://www.mygoyang.com/news/articleView.html?idxno=89535"
+        },
+        {
+          "name": "Daou Technology Jukjeon Data Center (Yongin)",
+          "name_ko": "다우기술 죽전 데이터센터 (용인)",
+          "country": "KR",
+          "host": "Daou Technology",
+          "mw": null,
+          "status": "under_construction",
+          "basis": "reported",
+          "note_ko": "시설 수전 40MW 건설 중. 코로케이션 2027-06-23~2034-06-22 (약 4,374억원 이상 추정), 'AI 팩토리용 상면 확보' 목적",
+          "note_en": "40MW-intake facility under construction. Colocation 23 Jun 2027–22 Jun 2034 (≥ ~KRW 437bn est.), to secure space for the AI factory business",
+          "source": "https://www.techm.kr/news/articleView.html?idxno=155219"
+        },
+        {
+          "name": "Morocco AI Data Center (Nouaceur, Casablanca)",
+          "name_ko": "모로코 AI 데이터센터 (카사블랑카 누아쇠르)",
+          "country": "MA",
+          "host": "Nexus Core Systems (consortium with NVIDIA, Lloyds Capital)",
+          "mw": 500,
+          "status": "planned",
+          "basis": "target",
+          "note_ko": "네이버클라우드는 플랫폼 운영 주체로 참여. 1단계 40MW(GB200) 2025년 내 구축 목표였으나 실제 가동 미확인, 최대 500MW 단계 확대 계획",
+          "note_en": "NAVER Cloud participates as platform operator. A 40MW GB200 first phase was targeted for 2025 but is unconfirmed; up to 500MW planned in phases",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=32584"
+        }
+      ],
+      "sources": [
+        "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517",
+        "https://www.navercorp.com/media/pressReleasesDetail?seq=10034355",
+        "https://www.navercorp.com/media/pressReleasesDetail?seq=2255",
+        "https://www.navercorp.com/media/pressReleasesDetail?seq=31060"
       ]
     }
   ],

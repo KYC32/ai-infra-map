@@ -8,6 +8,29 @@ const infra = buildInfra()
 const M = (s) => toMonth(s)
 const src = 'https://example.com'
 
+describe('powerAt — 확정 확보 / 발표 규모', () => {
+  // 승인 100MW → 회사가 500MW 로 확대 발표 → 통전 150MW(추정) 순서의 가상 사이트
+  const site = {
+    announced: '2025-01',
+    power: [
+      { from: '2025-01', secured_mw: 100, energized_mw: 0, basis: 'reported', source: src },
+      { from: '2025-06', secured_mw: 500, energized_mw: 0, basis: 'target', source: src },
+      { from: '2026-03', secured_mw: 150, energized_mw: 150, basis: 'estimate', source: src },
+    ],
+  }
+  it('목표(target) 단계는 발표 규모에만 반영', () => {
+    expect(powerAt(site, M('2025-03'))).toEqual({ secured: 100, firm: 100, energized: 0 })
+    // 2025-06 목표는 '기간 끝' 기준이라 같은 달부터 반영
+    expect(powerAt(site, M('2025-08'))).toEqual({ secured: 500, firm: 100, energized: 0 })
+  })
+  it('나중의 확정 단계가 와도 발표 규모는 유지, 확정은 갱신', () => {
+    expect(powerAt(site, M('2026-06'))).toEqual({ secured: 500, firm: 150, energized: 150 })
+  })
+  it('발표 전에는 null', () => {
+    expect(powerAt(site, M('2024-12'))).toBeNull()
+  })
+})
+
 describe('toMonth / monthKey', () => {
   it('여러 날짜 형식을 월 번호로', () => {
     expect(monthKey(M('2026'))).toBe('2026-01')
@@ -104,11 +127,23 @@ describe('실제 데이터 (IREN)', () => {
     }
   })
 
-  it('primary 렌즈 순위 합계 = 전체 합계', () => {
+  it('primary 렌즈 순위 합계 = 전체 합계 (발표·확정 둘 다)', () => {
     for (const m of [M('2025-01'), asOf, M('2028-12')]) {
       const rank = companyRanking(infra, m)
       const t = totalsAt(infra, m)
       expect(rank.reduce((n, r) => n + r.secured, 0)).toBe(t.secured)
+      expect(rank.reduce((n, r) => n + r.firm, 0)).toBe(t.firm)
+    }
+  })
+
+  it('확정 확보 ≤ 발표 규모, 확정 ≥ 통전 (모든 사이트·모든 달)', () => {
+    for (let m = M('2024-01'); m <= M('2028-12'); m += 3) {
+      for (const s of infra.sites) {
+        const p = powerAt(s, m)
+        if (!p) continue
+        expect(p.firm).toBeLessThanOrEqual(p.secured)
+        expect(p.firm).toBeGreaterThanOrEqual(p.energized)
+      }
     }
   })
 

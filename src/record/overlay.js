@@ -225,7 +225,7 @@ export function drawRanking(o, rows, byId, W, H, { title, dateLabel, lang = 'ko'
     o.fillStyle = TEXT
     o.font = `700 ${21 * u}px ${FONT}`
     o.fillText(lang === 'ko' && c.name_ko ? c.name_ko : c.name, x + 82 * u, ry + 22 * u)
-    const val = r.secured >= 1000 ? `${(r.secured / 1000).toFixed(1)} GW` : `${Math.round(r.secured)} MW`
+    const val = r.firm >= 1000 ? `${(r.firm / 1000).toFixed(1)} GW` : `${Math.round(r.firm)} MW`
     o.textAlign = 'right'
     o.fillText(val, x + w - 28 * u, ry + 22 * u)
     o.textAlign = 'left'

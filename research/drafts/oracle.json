@@ -1,0 +1,1321 @@
+{
+  "company": {
+    "id": "oracle",
+    "name": "Oracle",
+    "name_ko": "오라클",
+    "group": "hyperscaler",
+    "ticker": {
+      "symbol": "ORCL",
+      "exchange": "NYSE"
+    },
+    "color": "#e25a63",
+    "hq_country": "US",
+    "summary_ko": "텍사스 오스틴 본사의 데이터베이스·클라우드 기업. OCI 로 OpenAI 등에 AI 인프라를 공급하며, Vantage·Related Digital·STACK 같은 개발사가 짓는 Stargate 캠퍼스(Shackelford·Saline Township·Port Washington·Doña Ana)를 장기 임차해 직접 운영한다. 2026-08 말 RPO 6,640억 달러, 분기 IaaS 매출 74억 달러.",
+    "summary_en": "Austin-based database and cloud company. Through OCI it supplies AI infrastructure to OpenAI and others, leasing and operating Stargate campuses built by developers such as Vantage, Related Digital and STACK (Shackelford, Saline Township, Port Washington, Doña Ana). RPO of $664bn and quarterly IaaS revenue of $7.4bn as of Aug 2026.",
+    "metrics": [
+      {
+        "key": "rpo_usd_bn",
+        "value": 664,
+        "unit": "USD bn",
+        "label_ko": "잔여 이행의무(RPO)",
+        "label_en": "Remaining performance obligations (RPO)",
+        "as_of": "2026-08-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+      },
+      {
+        "key": "iaas_revenue_quarter_usd_bn",
+        "value": 7.4,
+        "unit": "USD bn",
+        "label_ko": "클라우드 인프라(IaaS·OCI) 분기 매출 (FY27 1분기, +121%)",
+        "label_en": "Cloud Infrastructure (IaaS/OCI) quarterly revenue (Q1 FY27, +121%)",
+        "as_of": "2026-08",
+        "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm"
+      },
+      {
+        "key": "ai_capacity_delivered_quarter_mw",
+        "value": 850,
+        "unit": "MW",
+        "label_ko": "분기 중 고객에 인도한 신규 데이터센터 용량 (FY27 1분기)",
+        "label_en": "New data center capacity delivered in the quarter (Q1 FY27)",
+        "as_of": "2026-08",
+        "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm"
+      },
+      {
+        "key": "lease_commitments_not_commenced_usd_bn",
+        "value": 288,
+        "unit": "USD bn",
+        "label_ko": "미개시 추가 리스 약정(대부분 데이터센터, FY27 2분기~FY29 개시, 15~19년)",
+        "label_en": "Additional lease commitments not yet commenced (mostly data centers; start Q2 FY27–FY29, 15–19 yr terms)",
+        "as_of": "2026-08-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+      },
+      {
+        "key": "capex_quarter_usd_bn",
+        "value": 28.5,
+        "unit": "USD bn",
+        "label_ko": "분기 설비투자 현금 지출 (FY27 1분기)",
+        "label_en": "Cash capital expenditures in the quarter (Q1 FY27)",
+        "as_of": "2026-08",
+        "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+      },
+      {
+        "key": "partner_secured_capacity_gw",
+        "value": 10,
+        "unit": "GW",
+        "label_ko": "파트너를 통해 확보한 전력·데이터센터 용량(향후 3년 가동, '10GW 초과')",
+        "label_en": "Power and data center capacity secured through partners (online over next 3 years, 'more than 10 GW')",
+        "as_of": "2026-03",
+        "source": "https://www.fool.com/earnings/call-transcripts/2026/03/10/oracle-orcl-q3-2026-earnings-call-transcript/"
+      }
+    ],
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
+      "https://www.oracle.com/data-centers/",
+      "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/",
+      "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+    ]
+  },
+  "file": {
+    "company_id": "oracle",
+    "as_of": "2026-10-07",
+    "sites": [
+      {
+        "id": "shackelford-frontier",
+        "name": "Shackelford County Campus (Vantage \"Frontier\", Stargate)",
+        "name_ko": "섀클퍼드 카운티 캠퍼스 (Vantage 'Frontier', Stargate)",
+        "country": "US",
+        "admin1": "US-TX",
+        "region": "Texas (Shackelford County, near TX-351 southwest of Albany)",
+        "coord": {
+          "lat": 32.58,
+          "lng": -99.55,
+          "confidence": "low",
+          "method": "region_centroid",
+          "source": "https://www.thealbanynews.net/news?page=5"
+        },
+        "primary": "oracle",
+        "parties": [
+          {
+            "company": "oracle",
+            "role": "tenant",
+            "source": "https://www.oracle.com/data-centers/shackelford-county/"
+          },
+          {
+            "company": "oracle",
+            "role": "operator",
+            "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+          },
+          {
+            "company": "vantage-data-centers",
+            "role": "developer",
+            "source": "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx"
+          },
+          {
+            "company": "vantage-data-centers",
+            "role": "owner",
+            "source": "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx"
+          },
+          {
+            "company": "openai",
+            "role": "end_user",
+            "source": "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf"
+          }
+        ],
+        "program": "stargate",
+        "detail": "full",
+        "announced": "2025-08",
+        "acres": 1200,
+        "grid_operator": "Off-grid — behind-the-meter gas microgrid (VoltaGrid, Jenbacher reciprocating engines); ERCOT region",
+        "cooling": "closed-loop chiller; combined air-cooled + liquid-to-liquid, 250kW+ racks (one-time fill, non-evaporative)",
+        "summary_ko": "Vantage Data Centers 가 1,200에이커에 짓는 10개 동·370만 sq ft·IT 1.4GW 캠퍼스('Frontier', 투자 $25bn 이상). Oracle 이 2025-08 계약해 임차·운영하고 OpenAI Stargate 용량으로 쓴다. 전력은 VoltaGrid 가 운영하는 현장 가스 마이크로그리드(계통 비연결). 2025-12 공식 착공, 첫 동은 Vantage 기준 2026 하반기 인도, Oracle 기준 고객 인도는 2027 상반기 시작. 2026-06 기준 115MW 전력 가동(일정보다 1개월 이상 앞섬).",
+        "summary_en": "Vantage Data Centers' 'Frontier' campus: 10 buildings, 3.7M sq ft, 1.4GW of critical IT on 1,200 acres ($25bn+). Oracle contracted it in Aug 2025 to lease and operate as OpenAI Stargate capacity. Powered by an off-grid, behind-the-meter gas microgrid run by VoltaGrid. Official groundbreaking Dec 2025; Vantage targets first building delivery in H2 2026, Oracle says customer delivery begins H1 2027. 115MW of power was online by Jun 2026, over a month ahead of schedule.",
+        "power": [
+          {
+            "from": "2025-08",
+            "secured_mw": 1820,
+            "energized_mw": 0,
+            "basis": "target",
+            "source": "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx"
+          },
+          {
+            "from": "2026-06",
+            "secured_mw": 115,
+            "energized_mw": 115,
+            "basis": "estimate",
+            "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+          }
+        ],
+        "substation": {},
+        "buildings": [
+          {
+            "id": "frt-b1",
+            "name": "Building 1 (first delivery)",
+            "name_ko": "1동 (첫 인도분)",
+            "kind": "datahall_liquid",
+            "it_mw": 140,
+            "mw_basis": "it",
+            "customer": "Oracle (OCI) for OpenAI",
+            "progress": 0.8,
+            "sources": [
+              "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx",
+              "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf",
+              "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-08",
+                "basis": "reported",
+                "source": "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx"
+              },
+              {
+                "status": "under_construction",
+                "from": "2025-09",
+                "basis": "reported",
+                "source": "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf"
+              },
+              {
+                "status": "commissioning",
+                "from": "2026-12",
+                "basis": "target",
+                "source": "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx"
+              },
+              {
+                "status": "operating",
+                "from": "2027-H1",
+                "basis": "target",
+                "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+              }
+            ]
+          },
+          {
+            "id": "frt-b2-b5",
+            "name": "Buildings 2–5 (phase 1 remainder, 4 buildings)",
+            "name_ko": "2~5동 (1단계 나머지 4개 동)",
+            "kind": "datahall_liquid",
+            "it_mw": 560,
+            "mw_basis": "it",
+            "customer": "Oracle (OCI) for OpenAI",
+            "progress": 0.5,
+            "sources": [
+              "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx",
+              "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-shackelford"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-08",
+                "basis": "reported",
+                "source": "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-01",
+                "basis": "estimate",
+                "source": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-shackelford"
+              },
+              {
+                "status": "operating",
+                "from": "2027-H2",
+                "basis": "estimate",
+                "source": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-shackelford"
+              }
+            ]
+          },
+          {
+            "id": "frt-b6-b10",
+            "name": "Buildings 6–10 (phase 2, 5 buildings)",
+            "name_ko": "6~10동 (2단계 5개 동)",
+            "kind": "datahall_liquid",
+            "it_mw": 700,
+            "mw_basis": "it",
+            "customer": "Oracle (OCI) for OpenAI",
+            "sources": [
+              "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx",
+              "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-shackelford"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-08",
+                "basis": "reported",
+                "source": "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx"
+              },
+              {
+                "status": "under_construction",
+                "from": "2027-H1",
+                "basis": "estimate",
+                "source": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-shackelford"
+              },
+              {
+                "status": "operating",
+                "from": "2028-H2",
+                "basis": "estimate",
+                "source": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-shackelford"
+              }
+            ]
+          }
+        ],
+        "deliveries": [
+          {
+            "what": "Behind-the-meter gas microgrid (VoltaGrid modular Jenbacher engines; part of Oracle–VoltaGrid 2.3GW Texas deal)",
+            "from": "VoltaGrid",
+            "eta": "2026-06 first 115MW online; remainder phased",
+            "status": "in_progress",
+            "source": "https://www.powermag.com/oracle-taps-voltagrid-for-2-3-gw-modular-gas-fleet-to-power-ai-data-centers-across-texas/"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2025-08-19",
+            "event": "Vantage, 1.4GW·$25bn 'Frontier' 캠퍼스 발표 (Oracle 2025-08 계약)",
+            "event_en": "Vantage unveils the 1.4GW, $25bn 'Frontier' campus (Oracle contracted Aug 2025)",
+            "source": "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx"
+          },
+          {
+            "date": "2025-09-23",
+            "event": "OpenAI·Oracle, Stargate 신규 부지로 공식 발표. 이미 공사 시작",
+            "event_en": "Announced by OpenAI and Oracle as a new Stargate site; construction already under way",
+            "source": "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf"
+          },
+          {
+            "date": "2025-10-15",
+            "event": "Oracle–VoltaGrid 텍사스 AI 데이터센터용 2.3GW 가스 발전 계약",
+            "event_en": "Oracle–VoltaGrid deal for 2.3GW of gas generation for Texas AI data centers",
+            "source": "https://www.powermag.com/oracle-taps-voltagrid-for-2-3-gw-modular-gas-fleet-to-power-ai-data-centers-across-texas/"
+          },
+          {
+            "date": "2025-12-15",
+            "event": "공식 착공식",
+            "event_en": "Official groundbreaking ceremony",
+            "source": "https://www.datacenterdynamics.com/en/news/vantage-breaks-ground-on-texas-gigawatt-data-center-campus-for-openai/"
+          },
+          {
+            "date": "2026-06-10",
+            "event": "Oracle: 115MW 전력 가동(일정보다 1개월 이상 앞섬), 고객 인도는 2027 상반기 시작",
+            "event_en": "Oracle: 115MW of power online (1+ month early); customer delivery begins H1 2027",
+            "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+          },
+          {
+            "date": "2026-09-10",
+            "event": "Oracle: '다음 기가와트급 캠퍼스, 순조롭게 진행'. FY27 1분기(~8월)까지 인도분 없음",
+            "event_en": "Oracle: 'next gigawatt-scale campus, progressing well'; nothing delivered through Q1 FY27 (Aug)",
+            "source": "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "확정 확보 = 2026-06 통전 115MW. 1,820MW(IT 1.4GW×1.3)는 발표 규모",
+            "note_en": "Firm = 115MW energized (Jun 2026); 1,820MW (1.4GW IT × 1.3) is the announced scale",
+            "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+          },
+          {
+            "note": "secured_mw 1,820MW 는 Vantage 의 IT 1.4GW × PUE 1.3 으로 환산한 추정치. 현장 마이크로그리드의 실제 확보 규모는 미공개(Cleanview 가 인용한 TCEQ 대기 인허가는 최대 약 2.58GW, Oracle–VoltaGrid 계약은 텍사스 전체 2.3GW). 2026-06 energized 115MW 는 Oracle 발표값.",
+            "note_en": "secured_mw 1,820MW is Vantage's 1.4GW IT × PUE 1.3. Actual on-site microgrid capacity undisclosed (TCEQ air permit cited by Cleanview allows up to ~2.58GW; Oracle–VoltaGrid deal is 2.3GW across Texas). 2026-06 energized 115MW is Oracle's figure.",
+            "source": "https://cleanview.co/reports/behind-the-meter-data-centers/full-report/stargate-frontier"
+          },
+          {
+            "note": "동별 IT MW(140MW)는 1.4GW/10개 동 균등 배분 추정. 2~10동 착공·가동 시점은 Epoch AI 위성 분석(Tier 3: 2026-01 1~5동 철골, 2026-09 1~5동 외장 완료, 2027-08~2028-11 순차 가동)을 근사. 진행률(1동 0.8, 2~5동 0.5)도 같은 분석과 'Vantage 2026 하반기 첫 동 인도' 목표로 근사.",
+            "note_en": "Per-building IT (140MW) assumes 1.4GW split evenly across 10 buildings. Timing for buildings 2–10 approximates Epoch AI satellite analysis (Tier 3: steel on B1–5 Jan 2026, shells roofed Sep 2026, sequential operation Aug 2027–Nov 2028). Progress (B1 0.8, B2–5 0.5) approximated from the same analysis and Vantage's H2 2026 first-building target.",
+            "source": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-shackelford"
+          },
+          {
+            "note": "좌표는 지역 보도('Albany 남서쪽, TX-351·FM 604 부근, Hamby 쪽 서부')를 근거로 한 대략 위치(low). 공식 주소·필지 미확인.",
+            "note_en": "Coordinates are approximate (low), based on local reports placing the site southwest of Albany near TX-351/FM 604 in the county's west. No official address/parcel confirmed.",
+            "source": "https://www.thealbanynews.net/news?page=5"
+          }
+        ],
+        "sources": [
+          "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx",
+          "https://www.oracle.com/data-centers/shackelford-county/",
+          "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf",
+          "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/",
+          "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/",
+          "https://www.datacenterdynamics.com/en/news/vantage-breaks-ground-on-texas-gigawatt-data-center-campus-for-openai/"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "id": "saline-the-barn",
+        "name": "Saline Township Campus (Related Digital \"The Barn\", Stargate Michigan)",
+        "name_ko": "세일린 타운십 캠퍼스 (Related Digital 'The Barn', Stargate 미시간)",
+        "country": "US",
+        "admin1": "US-MI",
+        "region": "Michigan (Washtenaw County, Saline Township — north of Michigan Ave)",
+        "coord": {
+          "lat": 42.166,
+          "lng": -83.855,
+          "confidence": "medium",
+          "method": "city_centroid",
+          "source": "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site"
+        },
+        "primary": "oracle",
+        "parties": [
+          {
+            "company": "oracle",
+            "role": "tenant",
+            "source": "https://www.oracle.com/news/announcement/blog/oracle-is-set-to-power-on-new-data-center-in-michigan-2025-1018/"
+          },
+          {
+            "company": "oracle",
+            "role": "operator",
+            "source": "https://www.oracle.com/news/announcement/blog/oracle-is-set-to-power-on-new-data-center-in-michigan-2025-1018/"
+          },
+          {
+            "company": "related-digital",
+            "role": "developer",
+            "source": "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site"
+          },
+          {
+            "company": "related-digital",
+            "role": "owner",
+            "source": "https://www.oracle.com/news/announcement/related-digital-oracle-openai-walbridge-and-governor-whitmer-celebrate-construction-of-stargate-campus-in-saline-township-2026-06-01/"
+          },
+          {
+            "company": "blackstone",
+            "role": "financier",
+            "source": "https://www.oracle.com/news/announcement/related-digital-oracle-openai-walbridge-and-governor-whitmer-celebrate-construction-of-stargate-campus-in-saline-township-2026-06-01/"
+          },
+          {
+            "company": "openai",
+            "role": "end_user",
+            "source": "https://www.oracle.com/news/announcement/blog/oracle-is-set-to-power-on-new-data-center-in-michigan-2025-1018/"
+          }
+        ],
+        "program": "stargate",
+        "detail": "full",
+        "announced": "2025-10",
+        "acres": 250,
+        "grid_operator": "DTE Electric (MISO) — special contracts, MPSC case U-21990",
+        "cooling": "closed-loop, non-evaporative liquid cooling (one-time fill)",
+        "summary_ko": "Related Digital 이 Oracle 전용으로 짓는 3개 동(각 55만 sq ft, 단층) 캠퍼스. 1,000에이커 이상 부지 중 250에이커 사용. DTE 특별계약(Oracle 자회사 Green Chile Ventures, 1,383MW, 19년)을 2025-12 MPSC 가 조건부 승인했고 1.4GW 배터리 저장도 프로젝트가 부담한다. 2026-06-01 착공식, 자금은 Related·Blackstone 지분과 PIMCO 주도 장기 부채($16bn). Oracle 기준 고객 인도는 2027 하반기 시작, 네트워크 코어는 2026년 말 인도.",
+        "summary_en": "Three single-story 550k sq ft buildings developed by Related Digital exclusively for Oracle, using 250 of 1,000+ acres. MPSC conditionally approved DTE special contracts (Oracle subsidiary Green Chile Ventures, 1,383MW, 19 years) in Dec 2025, with ~1.4GW of battery storage funded by the project. Groundbreaking celebrated Jun 1, 2026; financed by Related and Blackstone equity plus PIMCO-anchored long-term debt (~$16bn). Oracle says customer delivery begins H2 2027; network core by end-2026.",
+        "power": [
+          {
+            "from": "2025-10",
+            "secured_mw": 1383,
+            "energized_mw": 0,
+            "basis": "target",
+            "source": "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site"
+          },
+          {
+            "from": "2025-12",
+            "secured_mw": 1383,
+            "energized_mw": 0,
+            "basis": "reported",
+            "source": "https://www.michigan.gov/mpsc/commission/news-releases/2025/12/18/mpsc-approves-dte-electric-energy-contracts-for-data-center"
+          }
+        ],
+        "substation": {},
+        "buildings": [
+          {
+            "id": "barn-compute-1",
+            "name": "Compute 1",
+            "name_ko": "컴퓨트 1동",
+            "kind": "datahall_liquid",
+            "gross_mw": 461,
+            "mw_basis": "grid",
+            "customer": "Oracle (OCI) for OpenAI",
+            "progress": 0.5,
+            "sources": [
+              "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site",
+              "https://www.oracle.com/news/announcement/blog/one-million-union-craft-hours-building-michigans-future-2026-09-28/",
+              "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-10",
+                "basis": "reported",
+                "source": "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-02",
+                "basis": "estimate",
+                "source": "https://www.oracle.com/news/announcement/blog/oracle-is-set-to-power-on-new-data-center-in-michigan-2025-1018/"
+              },
+              {
+                "status": "commissioning",
+                "from": "2027-Q2",
+                "basis": "estimate",
+                "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+              },
+              {
+                "status": "operating",
+                "from": "2027-H2",
+                "basis": "target",
+                "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+              }
+            ]
+          },
+          {
+            "id": "barn-compute-2",
+            "name": "Compute 2",
+            "name_ko": "컴퓨트 2동",
+            "kind": "datahall_liquid",
+            "gross_mw": 461,
+            "mw_basis": "grid",
+            "customer": "Oracle (OCI) for OpenAI",
+            "progress": 0.2,
+            "sources": [
+              "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site",
+              "https://www.oracle.com/news/announcement/related-digital-oracle-openai-walbridge-and-governor-whitmer-celebrate-construction-of-stargate-campus-in-saline-township-2026-06-01/"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-10",
+                "basis": "reported",
+                "source": "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site"
+              },
+              {
+                "status": "under_construction",
+                "from": "2026-H2",
+                "basis": "estimate",
+                "source": "https://www.oracle.com/news/announcement/related-digital-oracle-openai-walbridge-and-governor-whitmer-celebrate-construction-of-stargate-campus-in-saline-township-2026-06-01/"
+              },
+              {
+                "status": "operating",
+                "from": "2028-H1",
+                "basis": "estimate",
+                "source": "https://www.dbusiness.com/daily-news/delated-digitals-16b-saline-township-data-center-is-walbridges-largest-project-ever/"
+              }
+            ]
+          },
+          {
+            "id": "barn-compute-3",
+            "name": "Compute 3",
+            "name_ko": "컴퓨트 3동",
+            "kind": "datahall_liquid",
+            "gross_mw": 461,
+            "mw_basis": "grid",
+            "customer": "Oracle (OCI) for OpenAI",
+            "sources": [
+              "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site",
+              "https://www.dbusiness.com/daily-news/delated-digitals-16b-saline-township-data-center-is-walbridges-largest-project-ever/"
+            ],
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-10",
+                "basis": "reported",
+                "source": "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site"
+              },
+              {
+                "status": "under_construction",
+                "from": "2027-Q1",
+                "basis": "estimate",
+                "source": "https://www.dbusiness.com/daily-news/delated-digitals-16b-saline-township-data-center-is-walbridges-largest-project-ever/"
+              },
+              {
+                "status": "operating",
+                "from": "2029",
+                "basis": "estimate",
+                "source": "https://www.dbusiness.com/daily-news/delated-digitals-16b-saline-township-data-center-is-walbridges-largest-project-ever/"
+              }
+            ]
+          }
+        ],
+        "deliveries": [
+          {
+            "what": "Network core (campus network backbone)",
+            "from": "Oracle",
+            "eta": "2026-12",
+            "status": "in_progress",
+            "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+          },
+          {
+            "what": "Battery energy storage (~1.4GW, DTE-owned, funded by Green Chile Ventures) + new onsite substation",
+            "from": "DTE Electric",
+            "eta": "undisclosed",
+            "status": "ordered",
+            "source": "https://www.wilx.com/2025/12/18/state-commission-approves-dte-contracts-saline-twp-data-center"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2025-10-15",
+            "event": "타운십·Related Digital 소송 합의(동의 판결)로 재조닝 허용",
+            "event_en": "Consent judgment settles rezoning lawsuit, allowing the project",
+            "source": "https://www.datacenterdynamics.com/en/news/township-in-michigan-settles-lawsuit-allows-data-center-project-to-proceed/"
+          },
+          {
+            "date": "2025-10-30",
+            "event": "OpenAI·Oracle·Related Digital, 1GW 초과 Stargate 미시간 캠퍼스 발표",
+            "event_en": "OpenAI, Oracle and Related Digital announce 1GW+ Stargate Michigan campus",
+            "source": "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site"
+          },
+          {
+            "date": "2025-12-18",
+            "event": "MPSC, DTE 특별계약(1,383MW, Green Chile Ventures) 조건부 승인",
+            "event_en": "MPSC conditionally approves DTE special contracts (1,383MW, Green Chile Ventures)",
+            "source": "https://www.michigan.gov/mpsc/commission/news-releases/2025/12/18/mpsc-approves-dte-electric-energy-contracts-for-data-center"
+          },
+          {
+            "date": "2026-06-01",
+            "event": "착공 기념식(주지사 참석). Related·Blackstone 지분 + PIMCO 주도 부채로 자금 조달",
+            "event_en": "Construction celebration with the governor; financed by Related and Blackstone equity plus PIMCO-anchored debt",
+            "source": "https://www.oracle.com/news/announcement/related-digital-oracle-openai-walbridge-and-governor-whitmer-celebrate-construction-of-stargate-campus-in-saline-township-2026-06-01/"
+          },
+          {
+            "date": "2026-06-10",
+            "event": "Oracle: 고객 인도 2027 하반기 시작, 네트워크 코어 2026년 말 인도",
+            "event_en": "Oracle: customer delivery begins H2 2027; network core by end-2026",
+            "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+          },
+          {
+            "date": "2026-08-07",
+            "event": "주 법무장관, MPSC 승인에 대한 항소 서면 제출(진행 중)",
+            "event_en": "State AG files appeal brief challenging the MPSC approval (pending)",
+            "source": "https://www.michigan.gov/ag/news/press-releases/2026/08/07/ag-nessel-briefs-appeal-over-mpsc-approval-of-dte-saline-data-center-contracts"
+          },
+          {
+            "date": "2026-09-28",
+            "event": "누적 노조 작업 100만 시간, 현장 인력 2,000명 이상",
+            "event_en": "One million union craft hours; 2,000+ tradespeople on site",
+            "source": "https://www.oracle.com/news/announcement/blog/one-million-union-craft-hours-building-michigans-future-2026-09-28/"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "동별 MW 461MW 는 DTE 계약 1,383MW(계통 기준)를 3개 동에 균등 배분한 추정. IT MW 미공개.",
+            "note_en": "461MW per building splits the 1,383MW DTE contract (grid basis) evenly across three buildings; IT MW undisclosed.",
+            "source": "https://www.michigan.gov/mpsc/commission/news-releases/2025/12/18/mpsc-approves-dte-electric-energy-contracts-for-data-center"
+          },
+          {
+            "note": "Compute 1 착공 2026-02 는 'Q1 2026 본격 착공 예정'(Oracle 2025-12 블로그)과 2026-05 무렵 누적 20만 시간 보도를 근거로 한 추정. 시운전 2027-Q2 는 'H2 2027 고객 인도'에서 역산. 진행률 0.5 는 착공 8개월·100만 시간·'Compute 1' 작업 언급으로 근사.",
+            "note_en": "Compute 1 start (2026-02) is inferred from Oracle's 'full construction in Q1 2026' plan and ~200k hours by ~May 2026; commissioning 2027-Q2 back-calculated from H2 2027 customer delivery; progress 0.5 approximated from 8 months of work and 1M craft hours.",
+            "source": "https://www.oracle.com/news/announcement/blog/oracle-is-set-to-power-on-new-data-center-in-michigan-2025-1018/"
+          },
+          {
+            "note": "Compute 2·3 착공·가동 시점은 미공개라 추정(2동 2026 하반기 착공·2028 상반기 가동, 3동 2027-Q1 착공·2029 가동). DBusiness 는 캠퍼스 완공(개장)을 2029 로 보도.",
+            "note_en": "Compute 2/3 timing undisclosed, estimated (B2 start H2 2026, operate H1 2028; B3 start Q1 2027, operate 2029). DBusiness reports full campus opening in 2029.",
+            "source": "https://www.dbusiness.com/daily-news/delated-digitals-16b-saline-township-data-center-is-walbridges-largest-project-ever/"
+          }
+        ],
+        "sources": [
+          "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site",
+          "https://www.michigan.gov/mpsc/commission/news-releases/2025/12/18/mpsc-approves-dte-electric-energy-contracts-for-data-center",
+          "https://www.oracle.com/data-centers/saline-township/",
+          "https://www.oracle.com/news/announcement/related-digital-oracle-openai-walbridge-and-governor-whitmer-celebrate-construction-of-stargate-campus-in-saline-township-2026-06-01/",
+          "https://www.oracle.com/news/announcement/blog/one-million-union-craft-hours-building-michigans-future-2026-09-28/",
+          "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "id": "port-washington-lighthouse",
+        "name": "Port Washington Campus (Vantage \"Lighthouse\", Stargate Wisconsin)",
+        "name_ko": "포트워싱턴 캠퍼스 (Vantage 'Lighthouse', Stargate 위스콘신)",
+        "country": "US",
+        "admin1": "US-WI",
+        "region": "Wisconsin (Ozaukee County, Port Washington — north of the city, ~30 min from Milwaukee)",
+        "coord": {
+          "lat": 43.387,
+          "lng": -87.89,
+          "confidence": "medium",
+          "method": "city_centroid",
+          "source": "https://vantage-dc.com/data-center-locations/north-america/port-washington-wisconsin"
+        },
+        "primary": "oracle",
+        "parties": [
+          {
+            "company": "oracle",
+            "role": "tenant",
+            "source": "https://vantage-dc.com/news/openai-oracle-and-vantage-data-centers-announce-stargate-data-center-site-in-wisconsin/"
+          },
+          {
+            "company": "oracle",
+            "role": "operator",
+            "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+          },
+          {
+            "company": "vantage-data-centers",
+            "role": "developer",
+            "source": "https://vantage-dc.com/data-center-locations/north-america/port-washington-wisconsin"
+          },
+          {
+            "company": "vantage-data-centers",
+            "role": "owner",
+            "source": "https://vantage-dc.com/data-center-locations/north-america/port-washington-wisconsin"
+          },
+          {
+            "company": "openai",
+            "role": "end_user",
+            "source": "https://vantage-dc.com/news/openai-oracle-and-vantage-data-centers-announce-stargate-data-center-site-in-wisconsin/"
+          }
+        ],
+        "program": "stargate",
+        "detail": "lite",
+        "announced": "2025-10",
+        "acres": 672,
+        "grid_operator": "We Energies (MISO) — VLC tariff; ATC Ozaukee County Distribution Interconnection Project (pending)",
+        "cooling": "closed-loop, non-evaporative; combined air-cooled + liquid-to-liquid",
+        "summary_ko": "Vantage 가 672에이커(건물 500에이커)에 짓는 4개 동·250만 sq ft·IT 902MW 캠퍼스('Lighthouse', $15bn). 2025-10 발표된 Stargate '중서부 부지'로 Oracle 이 임차·운영한다. 2025-12 착공, Vantage 완공 목표 2028, Oracle 기준 고객 인도는 2027 하반기 시작. 1단계 계통 수요 1.3GW(장기 최대 3.5GW)를 We Energies 가 공급하나, 이를 위한 ATC 송전·변전 사업($2.5~2.7bn)은 2026-08 PSC 가 신청 완결성 결정을 취소해 2026-09 재신청한 상태.",
+        "summary_en": "Vantage's 'Lighthouse' campus: 4 buildings, 2.5M sq ft, 902MW critical IT on 672 acres (500 developed), $15bn. The Stargate 'Midwest site' announced Oct 2025, leased and operated by Oracle. Construction began Dec 2025; Vantage targets completion in 2028, Oracle says customer delivery begins H2 2027. We Energies is to serve ~1.3GW in phase 1 (up to 3.5GW long term), but the PSC revoked completeness of ATC's $2.5–2.7bn interconnection project in Aug 2026; ATC refiled in Sep 2026.",
+        "power": [
+          {
+            "from": "2025-10",
+            "secured_mw": 1300,
+            "energized_mw": 0,
+            "basis": "target",
+            "source": "https://www.wpr.org/news/atc-reapplies-transmission-project-port-washington-data-center"
+          },
+          {
+            "from": "2028",
+            "secured_mw": 1300,
+            "energized_mw": 1300,
+            "basis": "target",
+            "source": "https://vantage-dc.com/data-center-locations/north-america/port-washington-wisconsin"
+          }
+        ],
+        "substation": {},
+        "buildings": [],
+        "deliveries": [
+          {
+            "what": "ATC Ozaukee County Distribution Interconnection Project (new/rebuilt HV lines, up to 5 substations; $2.48–2.72bn) — refiled after PSC revoked completeness",
+            "from": "American Transmission Co.",
+            "eta": "previously targeted end-2027; new schedule pending PSC review",
+            "status": "in_progress",
+            "source": "https://www.wpr.org/news/atc-reapplies-transmission-project-port-washington-data-center"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2025-10-22",
+            "event": "OpenAI·Oracle·Vantage, Port Washington Stargate 캠퍼스('중서부 부지') 발표. 4개 동·약 1GW, 2028 완공 목표",
+            "event_en": "OpenAI, Oracle and Vantage announce the Port Washington Stargate campus (the 'Midwest site'): 4 buildings, ~1GW, completion 2028",
+            "source": "https://vantage-dc.com/news/openai-oracle-and-vantage-data-centers-announce-stargate-data-center-site-in-wisconsin/"
+          },
+          {
+            "date": "2025-12",
+            "event": "착공(1단계 $8bn)",
+            "event_en": "Construction begins (phase 1, $8bn)",
+            "source": "https://www.datacenterknowledge.com/data-center-construction/vantage-breaks-ground-on-15b-stargate-campus-in-wisconsin"
+          },
+          {
+            "date": "2026-04-24",
+            "event": "PSC, We Energies 대형 고객(VLC) 요금제 승인",
+            "event_en": "PSC approves We Energies' Very Large Customer (VLC) tariff",
+            "source": "https://insightonbusiness.com/we-energies-rate-request-for-data-centers-ok-d/"
+          },
+          {
+            "date": "2026-06-10",
+            "event": "Oracle: 2025-09 계약, 고객 인도 2027 하반기 시작",
+            "event_en": "Oracle: contracted Sep 2025; customer delivery begins H2 2027",
+            "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+          },
+          {
+            "date": "2026-08-06",
+            "event": "PSC, ATC 송전 사업 신청의 '완결성' 결정 취소 → 재신청 필요",
+            "event_en": "PSC revokes completeness of ATC's interconnection application, forcing a refiling",
+            "source": "https://www.wpr.org/news/psc-denies-transmission-project-port-washington-data-center"
+          },
+          {
+            "date": "2026-09-16",
+            "event": "ATC 재신청($2.48~2.72bn), Oracle '완공 의지 변함없음'",
+            "event_en": "ATC refiles ($2.48–2.72bn); Oracle says commitment unchanged",
+            "source": "https://www.oracle.com/news/announcement/blog/a-responsible-path-forward-for-project-lighthouse-2026-09-16/"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "secured_mw 1,300MW 는 We Energies 계획상 1단계 수요(CUB 인용, WPR)로 basis target. ATC 송전 사업 미승인이라 실제 '확보'는 아님. Vantage IT 902MW × 1.3 ≈ 1,173MW 와도 대체로 맞음. 2028 전량 통전은 Vantage 완공 목표를 그대로 옮긴 것.",
+            "note_en": "secured_mw 1,300MW is We Energies' planned phase-1 demand (per CUB via WPR), basis target; not truly secured while ATC's project is unapproved. Roughly consistent with 902MW IT × 1.3 ≈ 1,173MW. Full energization in 2028 mirrors Vantage's completion target.",
+            "source": "https://www.wpr.org/news/atc-reapplies-transmission-project-port-washington-data-center"
+          }
+        ],
+        "sources": [
+          "https://vantage-dc.com/data-center-locations/north-america/port-washington-wisconsin",
+          "https://vantage-dc.com/news/openai-oracle-and-vantage-data-centers-announce-stargate-data-center-site-in-wisconsin/",
+          "https://www.oracle.com/data-centers/port-washington/",
+          "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/",
+          "https://www.wpr.org/news/psc-denies-transmission-project-port-washington-data-center",
+          "https://www.wpr.org/news/atc-reapplies-transmission-project-port-washington-data-center"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "id": "dona-ana-jupiter",
+        "name": "Doña Ana County Campus (Project Jupiter, Stargate New Mexico)",
+        "name_ko": "도냐아나 카운티 캠퍼스 (Project Jupiter, Stargate 뉴멕시코)",
+        "country": "US",
+        "admin1": "US-NM",
+        "region": "New Mexico (Doña Ana County, Santa Teresa — near El Paso / US–Mexico border)",
+        "coord": {
+          "lat": 31.856,
+          "lng": -106.639,
+          "confidence": "medium",
+          "method": "city_centroid",
+          "source": "https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/"
+        },
+        "primary": "oracle",
+        "parties": [
+          {
+            "company": "oracle",
+            "role": "tenant",
+            "source": "https://www.oracle.com/news/announcement/blog/oracle-advances-american-ai-innovation-in-new-mexico-2026-01-23/"
+          },
+          {
+            "company": "oracle",
+            "role": "operator",
+            "source": "https://www.oracle.com/news/announcement/blog/oracle-advances-american-ai-innovation-in-new-mexico-2026-01-23/"
+          },
+          {
+            "company": "stack-infrastructure",
+            "role": "developer",
+            "source": "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf"
+          },
+          {
+            "company": "borderplex-digital-assets",
+            "role": "developer",
+            "source": "https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/"
+          },
+          {
+            "company": "blue-owl",
+            "role": "owner",
+            "source": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/"
+          },
+          {
+            "company": "openai",
+            "role": "end_user",
+            "source": "https://www.oracle.com/news/announcement/blog/oracle-advances-american-ai-innovation-in-new-mexico-2026-01-23/"
+          }
+        ],
+        "program": "stargate",
+        "detail": "lite",
+        "announced": "2025-09",
+        "acres": 818,
+        "grid_operator": "Off-grid — behind-the-meter Bloom fuel-cell microgrid (up to 2.45GW installed); small utility substation only for office/commissioning",
+        "cooling": "closed-loop, non-evaporative liquid cooling (one-time fill)",
+        "summary_ko": "BorderPlex Digital Assets·STACK Infrastructure(Blue Owl 계열)가 Santa Teresa 에 짓는 4개 동+창고 캠퍼스로 Oracle 이 임차·운영(OpenAI 용). 2026-04 전력 설계를 가스터빈에서 Bloom 연료전지(최대 2.45GW 설치, 계통 비연결)로 바꿨다. 데이터센터 건물은 카운티 허가로 건설 중이나, 마이크로그리드 대기 인허가 절차는 주 대법원이 중지했고 가스 공급 파이프라인은 2027-02-01 로 약 6개월 지연. Oracle 은 2026-09-24 개발사에 불가항력 통지를 보냈다(2028 가동 목표 미달 시 지급 유예 목적, 임차 철회 아님).",
+        "summary_en": "Four buildings plus a warehouse in Santa Teresa developed by BorderPlex Digital Assets and STACK Infrastructure (Blue Owl), leased and operated by Oracle for OpenAI. In Apr 2026 the power design switched from gas turbines to an off-grid Bloom fuel-cell microgrid (up to 2.45GW installed). Data center buildings are rising under county permits, but the microgrid air-permit proceeding was stayed by the state Supreme Court and the gas pipeline slipped ~6 months to Feb 1, 2027. On Sep 24, 2026 Oracle sent the developer a force majeure notice (to defer payments if the 2028 target is missed; not an exit).",
+        "power": [
+          {
+            "from": "2025-09",
+            "secured_mw": 1000,
+            "energized_mw": 0,
+            "basis": "target",
+            "source": "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/"
+          },
+          {
+            "from": "2028",
+            "secured_mw": 1000,
+            "energized_mw": 1000,
+            "basis": "target",
+            "source": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/"
+          }
+        ],
+        "substation": {},
+        "buildings": [],
+        "deliveries": [
+          {
+            "what": "Bloom Energy solid-oxide fuel cells (up to 2.45GW installed microgrid, operated by Yucca Growth Infrastructure)",
+            "from": "Bloom Energy",
+            "eta": "pending NMED air permit (proceeding stayed)",
+            "status": "ordered",
+            "source": "https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/"
+          },
+          {
+            "what": "Natural gas lateral pipeline to the microgrid",
+            "from": "Energy Transfer",
+            "eta": "2027-02-01",
+            "status": "in_progress",
+            "source": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2025-09-23",
+            "event": "Stargate 신규 부지로 발표. 카운티가 산업수익채권(IRB, 최대 $165bn) 승인",
+            "event_en": "Announced as a Stargate site; county approves industrial revenue bonds (up to $165bn)",
+            "source": "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf"
+          },
+          {
+            "date": "2026-01-23",
+            "event": "Oracle, 임차인으로서 완공 후 입주·OpenAI 용 AI 인프라 배치 확인",
+            "event_en": "Oracle confirms it is the tenant and will deploy AI infrastructure for OpenAI after completion",
+            "source": "https://www.oracle.com/news/announcement/blog/oracle-advances-american-ai-innovation-in-new-mexico-2026-01-23/"
+          },
+          {
+            "date": "2026-04-27",
+            "event": "전력 설계 변경: 가스터빈·디젤 → Bloom 연료전지 최대 2.45GW 단일 마이크로그리드",
+            "event_en": "Power redesign: gas turbines/diesel replaced by up to 2.45GW Bloom fuel-cell microgrid",
+            "source": "https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/"
+          },
+          {
+            "date": "2026-06-10",
+            "event": "Oracle: 2025-09 계약, 고객 인도 2027 상반기 시작 예정",
+            "event_en": "Oracle: contracted Sep 2025; customer delivery to begin H1 2027",
+            "source": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+          },
+          {
+            "date": "2026-09-14",
+            "event": "Oracle 성명: 주 대법원이 마이크로그리드 대기 인허가 절차 중지, 건물 공사는 카운티 허가로 계속",
+            "event_en": "Oracle statement: state Supreme Court stayed the microgrid air-permit proceeding; building construction continues under county permits",
+            "source": "https://www.oracle.com/news/announcement/project-jupiter-statement-on-construction-permitting-2026-09-14/"
+          },
+          {
+            "date": "2026-09-24",
+            "event": "Oracle, 개발사(Blue Owl 계열 STACK)에 불가항력 통지 — 2028 가동 지연 시 지급 유예 권리 확보",
+            "event_en": "Oracle sends a force majeure notice to developer (Blue Owl's STACK) to defer payments if 2028 opening slips",
+            "source": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/"
+          },
+          {
+            "date": "2026-09-30",
+            "event": "홍수가 현장에 도달했으나 핵심 설비 피해 없음, '계획된 일정 유지'",
+            "event_en": "Floods reached the campus; no critical infrastructure damaged, 'remains on planned schedule'",
+            "source": "https://www.stackinfra.com/about/news-press/news/project-jupiter-statement-on-southern-new-mexico-floods/"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "secured_mw 1,000MW 는 Oracle CEO 의 '이 부지들은 대략 1GW 씩'(2026-09) 발언을 따른 낮은 값(target). 연료전지 설치 용량은 최대 2.45GW 지만 Oracle 은 중복 여유분이라 '전부 필요하지 않다'고 밝힘. Epoch AI(Tier 3)는 2028 말 IT 1,750MW 를 추정 → 확인되면 상향.",
+            "note_en": "secured_mw 1,000MW follows the Oracle CEO's 'around a gigawatt a piece' (Sep 2026), the lower value (target). Installed fuel cells are up to 2.45GW, but Oracle says the project 'doesn't need all of it' (redundancy). Epoch AI (Tier 3) projects 1,750MW IT by end-2028 — raise if confirmed.",
+            "source": "https://www.oracle.com/news/announcement/blog/weve-overhauled-project-jupiters-power-plan-2026-07-01/"
+          },
+          {
+            "note": "좌표는 Santa Teresa 도시 중심. 보도상 캠퍼스는 Santa Teresa 남쪽 약 3.6마일로 핀과 수 km 차이.",
+            "note_en": "Coordinates are the Santa Teresa town centroid; reports place the campus ~3.6 miles south, a few km from the pin.",
+            "source": "https://measuredai.substack.com/p/stargate-site-by-site-status"
+          }
+        ],
+        "sources": [
+          "https://www.oracle.com/data-centers/dona-ana-county/",
+          "https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/",
+          "https://www.oracle.com/news/announcement/project-jupiter-statement-on-construction-permitting-2026-09-14/",
+          "https://www.stackinfra.com/about/news-press/news/project-jupiter-statement-on-southern-new-mexico-floods/",
+          "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/",
+          "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "o1",
+      "field": "company.metrics.rpo_usd_bn",
+      "value": 664,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "published": "2026-09-11",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Remaining performance obligations were $ 664 billion as of August 31, 2026",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o2",
+      "field": "company.metrics.iaas_revenue_quarter_usd_bn",
+      "value": 7.4,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
+      "published": "2026-09-10",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Q1 Cloud Infra (IaaS) Revenue up 121% in USD & up 120% in constant currency to $7.4 billion.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o3",
+      "field": "company.metrics.ai_capacity_delivered_quarter_mw",
+      "value": 850,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
+      "published": "2026-09-10",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "reflecting strong execution in our infrastructure business, with the delivery of 850MW additional datacenter capacity",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o4",
+      "field": "company.metrics.lease_commitments_not_commenced_usd_bn",
+      "value": 288,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "published": "2026-09-11",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "we had $ 288 billion of additional lease commitments, substantially all related to data center arrangements",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o5",
+      "field": "company.metrics.partner_secured_capacity_gw",
+      "value": 10,
+      "source_url": "https://www.fool.com/earnings/call-transcripts/2026/03/10/oracle-orcl-q3-2026-earnings-call-transcript/",
+      "published": "2026-03-10",
+      "source_tier": 1,
+      "source_type": "earnings_call",
+      "quote": "Through our partners, we have secured more than 10 gigawatts of power and data capacity coming online over the next three years.",
+      "verification": "single_source"
+    },
+    {
+      "id": "o6",
+      "field": "sites[0] campus size (IT MW, buildings, acres, sq ft)",
+      "value": {
+        "it_mw": 1400,
+        "buildings": 10,
+        "acres": 1200,
+        "sq_ft": 3700000
+      },
+      "source_url": "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx",
+      "published": "2025-08-19",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "1,200 acre campus 10 data centers 1.4GW of critical IT load 3.7M square feet",
+      "verification": "conflict"
+    },
+    {
+      "id": "o7",
+      "field": "sites[0].buildings[0].phases[2] (first building delivery H2 2026)",
+      "value": "2026-H2",
+      "source_url": "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx",
+      "published": "2025-08-19",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "The first data center is scheduled for delivery in the second half of 2026.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o8",
+      "field": "sites[0].buildings[0].phases[1] construction began; partners Vantage + VoltaGrid; behind-the-meter microgrid",
+      "value": {
+        "under_construction_by": "2025-09-23",
+        "power": "behind-the-meter gas microgrid, Jenbacher engines"
+      },
+      "source_url": "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf",
+      "published": "2025-09-23",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "Construction on the campus has already begun, with the first building scheduled for delivery in the second half of 2026.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o9",
+      "field": "sites[0].power[1].energized_mw + customer delivery H1 2027 (sites[0].buildings[0].phases[3])",
+      "value": {
+        "energized_mw": 115,
+        "contracted": "2025-08",
+        "customer_delivery": "2027-H1"
+      },
+      "source_url": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/",
+      "published": "2026-06-10",
+      "source_tier": 1,
+      "source_type": "earnings_call",
+      "quote": "115 megawatts of power capacity is already available online, more than 1 month ahead of schedule.",
+      "verification": "single_source"
+    },
+    {
+      "id": "o10",
+      "field": "sites[0..3] none delivered through Q1 FY27 (Aug 2026)",
+      "value": "not delivered as of 2026-08-31",
+      "source_url": "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/",
+      "published": "2026-09-10",
+      "source_tier": 1,
+      "source_type": "earnings_call",
+      "quote": "neither Shackleford nor New Mexico or Wisconsin or Michigan were delivered in Q1.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o11",
+      "field": "sites[0].timeline groundbreaking",
+      "value": "2025-12-15",
+      "source_url": "https://www.datacenterdynamics.com/en/news/vantage-breaks-ground-on-texas-gigawatt-data-center-campus-for-openai/",
+      "published": "2025-12-15",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "Vantage breaks ground on Texas gigawatt data center campus for OpenAI",
+      "verification": "single_source"
+    },
+    {
+      "id": "o12",
+      "field": "sites[1] campus (buildings, acres, construction start, exclusive to Oracle)",
+      "value": {
+        "buildings": 3,
+        "sq_ft_each": 550000,
+        "acres": 250,
+        "capacity": ">1GW"
+      },
+      "source_url": "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site",
+      "published": "2025-10-30",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "consists of three 550,000 square-feet single-story buildings",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o13",
+      "field": "sites[1].power[1].secured_mw",
+      "value": 1383,
+      "source_url": "https://www.michigan.gov/mpsc/commission/news-releases/2025/12/18/mpsc-approves-dte-electric-energy-contracts-for-data-center",
+      "published": "2025-12-18",
+      "source_tier": 1,
+      "source_type": "gov_permit",
+      "quote": "the 1,383-megawatt data center in Saline Township that it is unable to recover from Green Chile Ventures LLC, a subsidiary of Oracle Corp.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o14",
+      "field": "sites[1].parties oracle tenant/operator, openai end_user",
+      "value": "Oracle tenant & operator; OpenAI customer",
+      "source_url": "https://www.oracle.com/news/announcement/blog/oracle-is-set-to-power-on-new-data-center-in-michigan-2025-1018/",
+      "published": "2025-12-18",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "As the future tenant, Oracle will operate the data center once it's delivered and provisioned",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o15",
+      "field": "sites[1].parties blackstone financier; related-digital owner",
+      "value": "equity: Related Digital + Blackstone funds; debt anchored by PIMCO",
+      "source_url": "https://www.oracle.com/news/announcement/related-digital-oracle-openai-walbridge-and-governor-whitmer-celebrate-construction-of-stargate-campus-in-saline-township-2026-06-01/",
+      "published": "2026-06-01",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "financing for the project includes equity from Related Digital, funds affiliated with Blackstone, and fixed-rate, long term debt financing",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o16",
+      "field": "sites[1].buildings[0].phases[3] customer delivery H2 2027",
+      "value": "2027-H2",
+      "source_url": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/",
+      "published": "2026-06-10",
+      "source_tier": 1,
+      "source_type": "earnings_call",
+      "quote": "We contracted this in October 2025. Customer delivery begins in the second half of 2027.",
+      "verification": "conflict"
+    },
+    {
+      "id": "o17",
+      "field": "sites[1] first phase go-live (conflicting)",
+      "value": "early 2027",
+      "source_url": "https://michiganpublic.org/economy/2026-06-01/company-leaders-optimistic-responsible-development-of-saline-data-center-will-set-example",
+      "published": "2026-06-01",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "The first part of the project is expected to go live in early 2027.",
+      "verification": "conflict"
+    },
+    {
+      "id": "o18",
+      "field": "sites[1].timeline 1M craft hours; 2,000+ trades",
+      "value": {
+        "craft_hours": 1000000,
+        "workers": 2000
+      },
+      "source_url": "https://www.oracle.com/news/announcement/blog/one-million-union-craft-hours-building-michigans-future-2026-09-28/",
+      "published": "2026-09-28",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "Short is one of more than 2,000 skilled tradespeople currently building The Barn.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o19",
+      "field": "sites[2] campus size (IT MW, buildings, acres, completion)",
+      "value": {
+        "it_mw": 902,
+        "buildings": 4,
+        "acres": 672,
+        "completion": "2028"
+      },
+      "source_url": "https://vantage-dc.com/data-center-locations/north-america/port-washington-wisconsin",
+      "published": "2025-10-22",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "four single-story data centers totaling 902MW across 2.5 million square feet and is scheduled to be completed in 2028",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o20",
+      "field": "sites[2] is the Stargate 'Midwest site'",
+      "value": "Midwest site = Port Washington",
+      "source_url": "https://vantage-dc.com/news/openai-oracle-and-vantage-data-centers-announce-stargate-data-center-site-in-wisconsin/",
+      "published": "2025-10-22",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "is the Midwest site that was recently announced as part of OpenAI's Stargate expansion",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o21",
+      "field": "sites[2].power[0].secured_mw (phase-1 demand)",
+      "value": 1300,
+      "source_url": "https://www.wpr.org/news/atc-reapplies-transmission-project-port-washington-data-center",
+      "published": "2026-09-18",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "expected to need 1,300 megawatts in its first phase and up to 3,500 megawatts in the future",
+      "verification": "single_source"
+    },
+    {
+      "id": "o22",
+      "field": "sites[2].timeline PSC revokes ATC application completeness",
+      "value": "2026-08-06",
+      "source_url": "https://www.wpr.org/news/psc-denies-transmission-project-port-washington-data-center",
+      "published": "2026-08-07",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "The Public Service Commission of Wisconsin unanimously voted on Thursday to revoke a \"completeness\" determination",
+      "verification": "single_source"
+    },
+    {
+      "id": "o23",
+      "field": "sites[2] customer delivery H2 2027",
+      "value": "2027-H2",
+      "source_url": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/",
+      "published": "2026-06-10",
+      "source_tier": 1,
+      "source_type": "earnings_call",
+      "quote": "This was contracted in September 2025, and delivery begins in the second half of calendar year 2027.",
+      "verification": "single_source"
+    },
+    {
+      "id": "o24",
+      "field": "sites[3] power design (Bloom fuel cells up to 2.45GW, replaces turbines)",
+      "value": {
+        "fuel_cell_gw": 2.45
+      },
+      "source_url": "https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/",
+      "published": "2026-04-27",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "the data center will be supported by up to 2.45 GW of installed Bloom fuel cell capacity",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o25",
+      "field": "sites[3].acres + buildings",
+      "value": {
+        "acres": 818,
+        "buildings": 4
+      },
+      "source_url": "https://www.oracle.com/data-centers/dona-ana-county/",
+      "published": "2026-01",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "will include four data center buildings and a warehouse across 818 acres",
+      "verification": "conflict"
+    },
+    {
+      "id": "o26",
+      "field": "sites[3].acres (conflicting) + developers",
+      "value": {
+        "acres": 1400,
+        "developers": [
+          "STACK Infrastructure",
+          "Orion Digital Infrastructure"
+        ]
+      },
+      "source_url": "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf",
+      "published": "2025-09-23",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "The project will feature four buildings on 1,400 acres.",
+      "verification": "conflict"
+    },
+    {
+      "id": "o27",
+      "field": "sites[3].timeline air permit stayed; buildings under county permits",
+      "value": "microgrid air-permit proceeding stayed by NM Supreme Court",
+      "source_url": "https://www.oracle.com/news/announcement/project-jupiter-statement-on-construction-permitting-2026-09-14/",
+      "published": "2026-09-14",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Construction to date has been on the data center campus, which does not require an air quality permit",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o28",
+      "field": "sites[3].timeline force majeure notice; sites[3].power[1] 2028 target",
+      "value": {
+        "date": "2026-09-24",
+        "target": "2028",
+        "pipeline_in_service": "2027-02-01"
+      },
+      "source_url": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
+      "published": "2026-09-24",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "The notice would let Oracle delay payments should the facility miss its 2028 target to come online",
+      "verification": "conflict"
+    },
+    {
+      "id": "o29",
+      "field": "sites[3] customer delivery H1 2027 (conflicting with 2028)",
+      "value": "2027-H1",
+      "source_url": "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/",
+      "published": "2026-06-10",
+      "source_tier": 1,
+      "source_type": "earnings_call",
+      "quote": "we contracted this in September 2025. Customer delivery begins in the first half of calendar year 2027 as well.",
+      "verification": "conflict"
+    },
+    {
+      "id": "o30",
+      "field": "sites[3].power[0].secured_mw (~1GW per site)",
+      "value": 1000,
+      "source_url": "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/",
+      "published": "2026-09-10",
+      "source_tier": 1,
+      "source_type": "earnings_call",
+      "quote": "We talk about these sites kind of as being around a gigawatt a piece.",
+      "verification": "single_source"
+    },
+    {
+      "id": "o31",
+      "field": "sites[3].timeline flood; schedule maintained",
+      "value": "no critical infrastructure damaged",
+      "source_url": "https://www.stackinfra.com/about/news-press/news/project-jupiter-statement-on-southern-new-mexico-floods/",
+      "published": "2026-09-30",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "Flooding also reached the Project Jupiter campus. No critical infrastructure was damaged",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o32",
+      "field": "sites[3].parties oracle tenant; openai end_user",
+      "value": "Oracle tenant, deploying for OpenAI",
+      "source_url": "https://www.oracle.com/news/announcement/blog/oracle-advances-american-ai-innovation-in-new-mexico-2026-01-23/",
+      "published": "2026-01-23",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "Oracle will occupy the campus once construction is complete, deploying the latest AI infrastructure for our customer, OpenAI.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "o33",
+      "field": "company scope — Oracle's five Stargate campuses with OpenAI",
+      "value": [
+        "Abilene",
+        "Shackelford County",
+        "Doña Ana County",
+        "Port Washington",
+        "Saline Township"
+      ],
+      "source_url": "https://www.oracle.com/news/announcement/blog/oracle-ai-infrastructure-in-2026-and-our-commitment-to-local-communities-2026-01-26/",
+      "published": "2026-01-26",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "we have AI infrastructure projects underway in partnership with OpenAI at two campuses in Texas and sites in New Mexico, Wisconsin, and Michigan",
+      "verification": "confirmed"
+    }
+  ],
+  "open_questions": [
+    "companies.json 에 없는 회사 id(병합 때 group \"partner\" 로 추가 필요): vantage-data-centers(Shackelford·Port Washington 개발·소유, DigitalBridge·Silver Lake 계열), related-digital(Saline Township 개발·소유, Related Companies 계열), stack-infrastructure(Doña Ana 개발, Blue Owl 계열), borderplex-digital-assets(Doña Ana 개발·부지), blackstone(Saline 지분 투자). 이번 초안에서는 voltagrid·bloom-energy·pimco·walbridge 등 장비·시공·부채 참여사는 parties 에 넣지 않았다(역할 enum 에 supplier 없음).",
+    "SoftBank 주도 Stargate 부지(Lordstown OH, Milam County TX — SB Energy 1.2GW, PORTS-Pike OH — OpenAI 약 8GW-IT)를 softbank 사이트로 별도 초안을 만들지 여부. 현재 softbank 는 group partner 라 사이트를 가질 수 없음 → 만든다면 group 변경 또는 sb-energy 회사 신설 필요. 요약은 notes.md.",
+    "Shackelford 일정 해석: Vantage '첫 동 2026 하반기 인도'(Oracle 에 건물 인도)와 Oracle '고객 인도 2027 상반기 시작'(OpenAI 에 용량 인도)을 단계별로 나눠 1동 시운전 2026-12·가동 2027-H1 로 넣음. 실제 1동 인도 시점은 Oracle FY27 2분기(2026-12 발표)에서 확인 필요.",
+    "Shackelford 현장 마이크로그리드 규모(secured_mw) 미공개 — 1,820MW 는 IT×1.3 추정. TCEQ 대기 인허가 원문(최대 ~2.58GW, Cleanview 인용)과 정확한 부지 위치(TX-351·FM 604 부근)를 TCEQ·TDLR 원문으로 확인 필요.",
+    "Doña Ana 가동 시점 상충: Oracle(2026-06) '고객 인도 2027 상반기 시작' vs 불가항력 통지 보도(2026-09) '2028 가동 목표'. 대기 인허가(주 대법원 중지)·파이프라인(2027-02-01) 상황상 2027 상반기 인도는 불확실. Oracle FY27 2분기 발표에서 재확인.",
+    "Doña Ana MW: '약 1GW'(Oracle CEO) vs 연료전지 설치 최대 2.45GW vs Epoch 추정 IT 1,750MW(2028 말). 1,000MW(target)로 넣었으나 공식 IT·계통 MW 공개 시 수정 필요. 면적도 818에이커(Oracle 현재 페이지) vs 1,400에이커(2025-09 팩트시트·다수 보도) 상충.",
+    "Doña Ana 당사자 구조: 데이터센터 건물 소유·운영사('별도 회사'), 마이크로그리드 운영사 Yucca Growth Infrastructure, 2025-09 팩트시트의 'Orion Digital Infrastructure' 의 관계가 불명확. blue-owl 은 STACK 모회사로 owner 표기(TechCrunch: 불가항력 통지 수신자 'Blue Owl'), 지분 구조 확인 필요.",
+    "Port Washington: ATC 송전 사업 재신청(2026-09) 이후 PSC 결정 시점·준공 일정 미확정 → Oracle '2027 하반기 인도' 와 Vantage '2028 완공' 이 지연될 가능성. 2026-06 Oracle 의 PSC 상대 소송(VLC 신용·담보 요건) 결과도 확인 필요.",
+    "Saline Township: 동별 MW·IT MW 미공개(DTE 계약 1,383MW 를 3등분). 'early 2027 첫 가동'(Michigan Public) vs Oracle 'H2 2027 고객 인도' 상충 → 늦은 쪽 채택. 주 법무장관의 MPSC 승인 항소(진행 중) 결과에 따라 전력 조건 변동 가능.",
+    "Abilene 인근 추가 600MW 확장(2025-09 발표)은 2026-03 Bloomberg 보도로 철회된 것으로 알려져 사이트로 넣지 않음(crusoe 초안 노트와 동일). Oracle 의 공식 철회 발표는 미확인.",
+    "OpenAI 자체 개발 Project Camellia(조지아 Effingham County, 3.2GW)는 Oracle·SoftBank 부지가 아니어서 제외 — openai 사이트 초안 필요 여부(현재 openai 는 partner)."
+  ]
+}

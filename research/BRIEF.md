@@ -19,6 +19,9 @@
    - 같은 시점에 건물 gross 합계가 secured_mw 의 105% 를 넘으면 안 된다.
 5. **공동 프로젝트·입주사**: 시설은 한 번만 적고 `parties`(developer / owner / operator / tenant / end_user / financier)로 표시. `primary` 는 핀 색·순위가 귀속될 회사(보통 developer 또는 owner).
    - 예: 채굴사 캠퍼스에 CoreWeave 가 입주 → primary=채굴사, parties 에 coreweave(tenant). (아직 companies.json 에 없는 회사 id 를 쓰면 open_questions 에 적는다)
+5-1. **primary 예외**: 지도 범위 밖의 도매 개발사(Vantage·Related·STACK 등)가 짓고 한 회사가 단독 운영·임차하는 캠퍼스는 그 운영사를 primary 로 (예: Oracle 운영 Stargate 부지). 지도 범위 안 회사(crusoe 등)가 개발한 곳은 그 회사가 primary.
+5-2. **코로케이션·외부 조달**: 다른 회사 시설의 일부를 빌려 쓰는 곳은 sites 가 아니라 `company.colocations[]`(name, country, host, mw|null, status, basis, source)에 적는다 → 지도·순위 합계 미포함, 순위표에 병기. 하이퍼스케일러의 네오클라우드 계약은 해당 사이트 parties 의 end_user 로만(중복 사이트 금지).
+5-3. **실제 가동 확인이 안 되는 대형 발표**는 사용자 결정에 따라 확인된 가동분만 반영하고, 나머지는 estimates[] 에 "확인되면 추가" 로 적는다 (예: Nebius 바인랜드).
 6. **좌표**: coord.confidence — high(공식 주소·인허가 필지, 소수 3자리) / medium(도시 중심) / low(카운티·지역 중심). method 를 정확히 적는다. **위성사진으로 비공개 시설 위치를 추적하지 않는다.**
 7. **detail**: 건물·단계 단위 데이터가 충분하면 full, 아니면 lite (buildings 를 비워도 됨 — 화면이 MW·일정으로 자동 생성).
 8. 회사 항목: id(소문자-하이픈), group(miner/neocloud/hyperscaler/korea), ticker, color(파스텔 #rrggbb — 기존 회사색·상태색 #2ea88a #3fbf96 #e8825a #9aa6bd #b9bfcc 과 다르게), hq_country, summary_ko/en(1~2문장), metrics(선택, 출처 포함).

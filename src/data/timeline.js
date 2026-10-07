@@ -118,14 +118,26 @@ export function effectiveBuildingsAt(site, m) {
 
 // ---------- 사이트 ----------
 // 날짜 m 의 계통 전력 { secured: 확보, energized: 통전 } — 발표 전이면 null
+// 전력은 두 가지로 나눠 셉니다 (사용자 결정 2026-10-07: "확정·발표 나눠 보기")
+//   firm    = 확정 확보: 계약·승인 등 발표된 사실(reported)이나 근거 있는 추정(estimate) 단계의 값
+//   secured = 발표 규모: 회사가 밝힌 목표(target)까지 포함한 값 (firm 보다 작아지지 않음)
+// 예) Meta Hyperion: 확정 2,000MW(전력회사 승인) / 발표 5,000MW(확대 계획)
 export function powerAt(site, m) {
   if (toMonth(site.announced) > m) return null
-  let cur = null
+  let cur = null, firmStep = null, targetStep = null
   for (const p of site.power) {
-    if (toMonth(p.from, p.basis === 'target' ? 'end' : 'start') <= m) cur = p
-    else break
+    const isTarget = p.basis === 'target'
+    if (toMonth(p.from, isTarget ? 'end' : 'start') > m) break
+    cur = p
+    if (isTarget) targetStep = p
+    else firmStep = p
   }
-  return cur ? { secured: cur.secured_mw, energized: cur.energized_mw } : { secured: 0, energized: 0 }
+  if (!cur) return { secured: 0, firm: 0, energized: 0 }
+  const energized = cur.energized_mw
+  // 통전된 만큼은 당연히 확보된 것 → firm 은 통전량 이상
+  const firm = Math.max(firmStep?.secured_mw ?? 0, energized)
+  const secured = Math.max(firm, targetStep?.secured_mw ?? 0, cur.secured_mw)
+  return { secured, firm, energized }
 }
 
 // 사이트 대표 상태: 존재하는 건물 중 가장 앞선 상태. 건물이 없으면 'planned', 발표 전이면 null
@@ -143,7 +155,7 @@ export function siteStatusAt(site, m) {
 // TODO(학습 포인트): 시운전(commissioning)을 '가동'으로 볼지 '건설'로 볼지 직접 정해 보세요.
 export function siteMetricsAt(site, m) {
   const power = powerAt(site, m)
-  const empty = { secured: 0, energized: 0, operating: 0, ai: 0, mining: 0, building: 0, planned: 0, gpus: 0, hasEstimate: false }
+  const empty = { secured: 0, firm: 0, energized: 0, operating: 0, ai: 0, mining: 0, building: 0, planned: 0, gpus: 0, hasEstimate: false }
   if (!power) return empty
   let ai = 0, mining = 0, building = 0, gpus = 0, hasEstimate = false
   for (const { building: b, status: st, mw, estimated } of effectiveBuildingsAt(site, m)) {
@@ -161,6 +173,7 @@ export function siteMetricsAt(site, m) {
   const buildingClamped = Math.max(0, Math.min(building, secured - operating))
   return {
     secured,
+    firm: power.firm,
     energized: power.energized,
     operating,
     ai,
@@ -175,14 +188,14 @@ export function siteMetricsAt(site, m) {
 // ---------- 회사 순위 ----------
 // lens 'primary': 사이트를 대표 회사 한 곳에만 셈 → 전체 합과 일치
 // lens 'tenant' : 입주사(tenant·end_user)에게도 셈 → 회사 간 중복 계산 있음
-export function companyRanking(data, m, { lens = 'primary', metric = 'secured', companies = null, groups = null } = {}) {
+export function companyRanking(data, m, { lens = 'primary', metric = 'firm', companies = null, groups = null } = {}) {
   const groupOf = Object.fromEntries(data.companies.map((c) => [c.id, c.group]))
   const rows = new Map()
   const add = (cid, mt) => {
     if (companies && !companies.has(cid)) return
     if (groups && !groups.has(groupOf[cid])) return
-    const r = rows.get(cid) ?? { companyId: cid, secured: 0, energized: 0, operating: 0, ai: 0, building: 0, planned: 0, sites: 0, hasEstimate: false }
-    for (const k of ['secured', 'energized', 'operating', 'ai', 'building', 'planned']) r[k] += mt[k]
+    const r = rows.get(cid) ?? { companyId: cid, secured: 0, firm: 0, energized: 0, operating: 0, ai: 0, building: 0, planned: 0, sites: 0, hasEstimate: false }
+    for (const k of ['secured', 'firm', 'energized', 'operating', 'ai', 'building', 'planned']) r[k] += mt[k]
     r.sites += 1
     r.hasEstimate ||= mt.hasEstimate
     rows.set(cid, r)
@@ -204,7 +217,7 @@ export function companyRanking(data, m, { lens = 'primary', metric = 'secured', 
 
 // 전체 합계 (필터 적용 가능)
 export function totalsAt(data, m, { companies = null } = {}) {
-  const t = { secured: 0, energized: 0, operating: 0, ai: 0, mining: 0, building: 0, planned: 0, gpus: 0, sites: 0 }
+  const t = { secured: 0, firm: 0, energized: 0, operating: 0, ai: 0, mining: 0, building: 0, planned: 0, gpus: 0, sites: 0 }
   for (const site of data.sites) {
     if (companies && !companies.has(site.primary)) continue
     if (!powerAt(site, m)) continue

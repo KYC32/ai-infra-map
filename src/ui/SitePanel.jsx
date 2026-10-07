@@ -27,7 +27,8 @@ export default function SitePanel() {
       <p className="sp-summary">{lang === 'ko' ? site.summary_ko : site.summary_en}</p>
 
       <dl className="sp-specs">
-        <div><dt>{t.panel.grid}</dt><dd>{fmtMw(site.grid_mw)}</dd></div>
+        {/* 확정 확보 / 발표 규모 (둘이 같으면 하나만) */}
+        <div><dt>{t.kpi2.firm}</dt><dd>{fmtMw(site.firm_mw)}{site.grid_mw > site.firm_mw ? ` · ${t.kpi2.announced} ${fmtMw(site.grid_mw)}` : ''}</dd></div>
         <div><dt>{t.panel.acres}</dt><dd>{site.acres ? `${site.acres.toLocaleString()} ${t.units.acres}` : '–'}</dd></div>
         <div><dt>{t.panel.cooling}</dt><dd>{site.cooling}</dd></div>
         <div><dt>{t.panel.substation}</dt><dd>{site.substation.voltage ? `${site.substation.voltage} · ` : ''}{site.substation.status === 'energized' ? `${t.panel.energized} ${site.substation.dates?.energized ?? ''}` : `${t.panel.target} ${site.substation.dates?.target ?? ''}`}</dd></div>
