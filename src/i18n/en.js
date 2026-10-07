@@ -1,6 +1,7 @@
 // English UI strings. Keys must match ko.js exactly.
 export default {
   appTitle: 'AI Infra Map',
+  subtitle: 'Who has secured how many GW',
   asOf: 'As of',
   back: 'Back to globe',
   langToggle: '한',
@@ -46,5 +47,16 @@ export default {
   hintGlobe: 'Click a pin to enter a site · drag to rotate',
   hintSite: 'Drag to rotate · wheel to zoom · hover buildings',
   loading: 'Loading data…',
+  rank: {
+    tab: 'Ranking',
+    sitesTab: 'Sites',
+    metric: { secured: 'Secured', ai: 'AI live', building: 'Building' },
+    note: 'By primary company · ~ includes estimates',
+    reset: 'Clear filters',
+  },
+  groups: { miner: 'Miner→AI', neocloud: 'Neocloud', hyperscaler: 'Hyperscaler', korea: 'Korea' },
+  colorMode: { status: 'Status', company: 'Company' },
+  regions: { na: 'N. America', eu: 'Europe', asia: 'Asia' },
+  kpi2: { secured: 'Secured power', energized: 'energized', ai: 'AI live', mining: 'mining', building: 'Building / commissioning', sites: 'Sites', companies: 'companies' },
   empty: 'No announced buildings yet — grid power secured only',
 }

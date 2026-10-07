@@ -27,7 +27,7 @@ export default function TopBar() {
             {view === 'site' && site ? pickName(site, lang) : t.appTitle}
           </div>
           <div className="subtitle">
-            {view === 'site' && site ? `${site.region} · ${site.grid_operator}` : 'NASDAQ: IREN'}
+            {view === 'site' && site ? `${site.region} · ${site.grid_operator}` : t.subtitle}
             {data && <> · {t.asOf} {data.as_of}</>}
           </div>
         </div>

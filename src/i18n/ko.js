@@ -1,6 +1,7 @@
 // 한국어 UI 문자열 사전. 키 이름은 en.js 와 반드시 같아야 합니다.
 export default {
   appTitle: 'AI 인프라 지도',
+  subtitle: '누가 몇 GW 를 확보했나',
   asOf: '기준일',
   back: '지구본으로',
   langToggle: 'EN',
@@ -46,5 +47,16 @@ export default {
   hintGlobe: '핀을 클릭하면 사이트로 들어갑니다 · 드래그로 회전',
   hintSite: '드래그로 회전 · 휠로 줌 · 건물에 마우스를 올려 보세요',
   loading: '데이터 불러오는 중…',
+  rank: {
+    tab: '회사 순위',
+    sitesTab: '사이트',
+    metric: { secured: '확보', ai: 'AI 가동', building: '건설' },
+    note: '대표 회사 기준 · ~ 는 추정 포함',
+    reset: '필터 해제',
+  },
+  groups: { miner: '채굴→AI', neocloud: '네오클라우드', hyperscaler: '하이퍼스케일러', korea: '한국' },
+  colorMode: { status: '상태색', company: '회사색' },
+  regions: { na: '북미', eu: '유럽', asia: '아시아' },
+  kpi2: { secured: '확보 전력', energized: '통전', ai: 'AI 가동', mining: '채굴', building: '건설·시운전', sites: '사이트', companies: '회사' },
   empty: '발표된 건물 없음 — 계통 전력만 확보',
 }

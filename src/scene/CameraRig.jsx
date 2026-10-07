@@ -150,7 +150,14 @@ export default function CameraRig() {
       applyLimits(c, 'globe')
     }
 
-    const run = pending.type === 'site' ? toSite(pending.id) : toGlobe()
+    async function toRegion(lat, lng) {
+      const p = latLngToVec3(lat, lng, GLOBE_HOME.alt)
+      c.smoothTime = 0.5
+      lastInteract.current = performance.now() // 이동 직후 자동 회전이 바로 시작되지 않게
+      await settle(c.setLookAt(p.x, p.y, p.z, 0, 0, 0, true), 1300)
+    }
+
+    const run = pending.type === 'site' ? toSite(pending.id) : pending.type === 'region' ? toRegion(pending.lat, pending.lng) : toGlobe()
     run.finally(() => { if (!cancelled) useAppStore.getState().clearPending() })
     return () => { cancelled = true }
   }, [pending])

@@ -10,7 +10,7 @@ import Scene from './scene/Scene.jsx'
 import TopBar from './ui/TopBar.jsx'
 import KpiBar from './ui/KpiBar.jsx'
 import Legend from './ui/Legend.jsx'
-import SiteList from './ui/SiteList.jsx'
+import LeftPanel from './ui/Leaderboard.jsx'
 import SitePanel from './ui/SitePanel.jsx'
 import Footer from './ui/Footer.jsx'
 import { RECORD } from './record/recordMode.js'
@@ -67,7 +67,7 @@ export default function App() {
         <TopBar />
         {data && <KpiBar />}
         <div className="middle">
-          {data && view === 'globe' && <SiteList />}
+          {data && view === 'globe' && <LeftPanel />}
           <div className="spacer" />
           {data && view === 'site' && <SitePanel />}
         </div>

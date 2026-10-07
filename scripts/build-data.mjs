@@ -9,7 +9,8 @@
 import { readFileSync, readdirSync, writeFileSync, mkdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 
-const DATA = new URL('../data/', import.meta.url)
+// DATA_DIR=data-fake 처럼 지정하면 다른 폴더의 데이터로 빌드 (성능 시험용 가짜 데이터 등)
+const DATA = new URL(`../${process.env.DATA_DIR ?? 'data'}/`, import.meta.url)
 
 export function buildInfra() {
   const { companies, programs = [] } = JSON.parse(readFileSync(new URL('companies.json', DATA), 'utf8'))

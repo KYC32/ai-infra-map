@@ -1,6 +1,6 @@
 // 지구본 화면 왼쪽의 사이트 목록 (핀이 겹쳐도 여기서 바로 선택 가능)
 import { ChevronRight } from 'lucide-react'
-import { useAppStore, isStatusActive } from '../store/useAppStore.js'
+import { useAppStore, isSiteActive } from '../store/useAppStore.js'
 import { useT, pickName } from '../i18n/useT.js'
 import { styleOf } from '../data/statusStyle.js'
 import { fmtMw } from '../scene/geo.js'
@@ -14,16 +14,16 @@ export default function SiteList() {
   const hoverId = useAppStore((s) => s.hoverId)
   const setHover = useAppStore((s) => s.setHover)
   const requestSite = useAppStore((s) => s.requestSite)
-  const active = useAppStore((s) => s.activeStatuses)
+  const state = useAppStore()
 
   return (
-    <nav className="site-list panel">
+    <nav className="site-list">
       {sites.map((s) => {
         const st = styleOf(s.status)
         return (
           <button
             key={s.id}
-            className={`site-row${hoverId === s.id ? ' is-hover' : ''}${isStatusActive(active, s.status) ? '' : ' off'}`}
+            className={`site-row${hoverId === s.id ? ' is-hover' : ''}${isSiteActive(state, s) ? '' : ' off'}`}
             onMouseEnter={() => setHover(s.id)}
             onMouseLeave={() => setHover(null)}
             onClick={() => requestSite(s.id)}
