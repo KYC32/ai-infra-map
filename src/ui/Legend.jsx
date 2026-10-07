@@ -1,4 +1,5 @@
 // 상태 범례 = 필터 토글. 클릭하면 그 상태만 강조, 다시 클릭하면 해제
+import { useMemo } from 'react'
 import { useAppStore } from '../store/useAppStore.js'
 import { useT } from '../i18n/useT.js'
 import { STATUS_ORDER, styleOf, PENDING_COLOR } from '../data/statusStyle.js'
@@ -18,7 +19,13 @@ export default function Legend() {
   const colorMode = useAppStore((s) => s.colorMode)
   const setColorMode = useAppStore((s) => s.setColorMode)
   // 회사색 범례: 지도에 핀이 있는(대표 사이트가 있는) 회사만
-  const companies = useAppStore((s) => (s.data?.companies ?? []).filter((c) => s.data.raw.sites.some((x) => x.primary === c.id)))
+  // 주의: 셀렉터 안에서 filter 하면 매번 새 배열이 나와 zustand 가 "값이 바뀌었다"고 보고 무한 리렌더
+  //       → 원본 data 만 구독하고, 거르는 계산은 useMemo 로 (data 가 바뀔 때만 다시 계산)
+  const data = useAppStore((s) => s.data)
+  const companies = useMemo(
+    () => (data?.companies ?? []).filter((c) => data.raw.sites.some((x) => x.primary === c.id)),
+    [data],
+  )
   const view = useAppStore((s) => s.view)
   const requestRegion = useAppStore((s) => s.requestRegion)
   return (

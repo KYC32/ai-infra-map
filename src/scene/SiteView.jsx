@@ -4,7 +4,7 @@
 // =============================================================
 import { useMemo } from 'react'
 import { Html, RoundedBox } from '@react-three/drei'
-import { useAppStore, isStatusActive } from '../store/useAppStore.js'
+import { useAppStore, isStatusActive, EMPTY } from '../store/useAppStore.js'
 import { useT, pickName } from '../i18n/useT.js'
 import { styleOf, PENDING_COLOR } from '../data/statusStyle.js'
 import { layoutCampus, campusStateAt } from './layoutCampus.js'
@@ -20,7 +20,7 @@ export default function SiteView({ site }) {
   const activeStatuses = useAppStore((s) => s.activeStatuses)
 
   const month = useAppStore((s) => s.month)
-  const companies = useAppStore((s) => s.data?.companies ?? [])
+  const companies = useAppStore((s) => s.data?.companies ?? EMPTY)
   // 고정 배치는 사이트가 바뀔 때만, 상태는 날짜가 바뀔 때마다 계산
   const group = companies.find((c) => c.id === site.primary)?.group
   const defaultKind = group === 'hyperscaler' ? 'datahall_liquid' : 'datahall_air'

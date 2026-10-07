@@ -1,6 +1,6 @@
 // 지구본 화면 왼쪽의 사이트 목록 (핀이 겹쳐도 여기서 바로 선택 가능)
 import { ChevronRight } from 'lucide-react'
-import { useAppStore, isSiteActive } from '../store/useAppStore.js'
+import { useAppStore, isSiteActive, EMPTY } from '../store/useAppStore.js'
 import { useT, pickName } from '../i18n/useT.js'
 import { styleOf } from '../data/statusStyle.js'
 import { fmtMw } from '../scene/geo.js'
@@ -10,7 +10,7 @@ const FLAG = { US: 'US', CA: 'CA', AU: 'AU', ES: 'ES' }
 export default function SiteList() {
   const t = useT()
   const lang = useAppStore((s) => s.lang)
-  const sites = useAppStore((s) => s.data?.sites ?? [])
+  const sites = useAppStore((s) => s.data?.sites ?? EMPTY)
   const hoverId = useAppStore((s) => s.hoverId)
   const setHover = useAppStore((s) => s.setHover)
   const requestSite = useAppStore((s) => s.requestSite)

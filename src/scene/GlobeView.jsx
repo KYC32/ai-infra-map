@@ -10,7 +10,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { Html, Line } from '@react-three/drei'
 import { BackSide, AdditiveBlending, BufferGeometry, Color, Float32BufferAttribute, Object3D, Vector3 } from 'three'
-import { useAppStore } from '../store/useAppStore.js'
+import { useAppStore, EMPTY } from '../store/useAppStore.js'
 import { GLOBE_RADIUS, latLngToVec3 } from './geo.js'
 import { PinsInstanced, PinLabels } from './Pins.jsx'
 import { CITIES } from './cities.js'
@@ -20,7 +20,7 @@ const LAND = '#fffaf0'       // 아이보리 육지
 const HOME_LAND = '#8fd6b8'  // 사이트가 있는 나라: 민트 (scripts/build-land-hex.mjs 가 데이터에서 자동 계산)
 
 export default function GlobeView({ visible }) {
-  const sites = useAppStore((s) => s.data?.sites ?? [])
+  const sites = useAppStore((s) => s.data?.sites ?? EMPTY)
 
   return (
     <group visible={visible}>

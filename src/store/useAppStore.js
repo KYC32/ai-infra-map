@@ -123,6 +123,9 @@ export const useAppStore = create((set, get) => ({
   toggleSheet: () => set({ sheetOpen: !get().sheetOpen }),
 }))
 
+// 셀렉터 기본값용 빈 배열 — `?? []` 를 쓰면 매번 새 배열이 생겨 무한 리렌더가 날 수 있어 항상 같은 배열을 씀
+export const EMPTY = Object.freeze([])
+
 // 선택된 사이트 객체를 편하게 꺼내는 셀렉터
 export const selectSelectedSite = (s) =>
   s.data?.sites.find((x) => x.id === s.selectedSiteId) ?? null

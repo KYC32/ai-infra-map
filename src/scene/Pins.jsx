@@ -9,7 +9,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 import { Color, CylinderGeometry, Object3D, Quaternion, RingGeometry, SphereGeometry, Vector3 } from 'three'
-import { useAppStore, isSiteActive } from '../store/useAppStore.js'
+import { useAppStore, isSiteActive, EMPTY } from '../store/useAppStore.js'
 import { styleOf } from '../data/statusStyle.js'
 import { latLngToVec3, spreadPins, labelRanks, pinHeight, fmtMw } from './geo.js'
 import { pickName } from '../i18n/useT.js'
@@ -42,7 +42,7 @@ export function PinsInstanced({ sites }) {
   const barRef = useRef(), capRef = useRef(), ringRef = useRef()
   const setHover = useAppStore((s) => s.setHover)
   const requestSite = useAppStore((s) => s.requestSite)
-  const companies = useAppStore((s) => s.data?.companies ?? [])
+  const companies = useAppStore((s) => s.data?.companies ?? EMPTY)
   const companyColor = useMemo(() => Object.fromEntries(companies.map((c) => [c.id, c.color])), [companies])
 
   // 사이트별 고정 정보: 지표 위치·방향 (가까운 핀은 화면용으로 살짝 벌림)
@@ -173,7 +173,7 @@ function PinLabel({ site, pos, members, expanded }) {
   const setHover = useAppStore((s) => s.setHover)
   const requestSite = useAppStore((s) => s.requestSite)
   const colorMode = useAppStore((s) => s.colorMode)
-  const companies = useAppStore((s) => s.data?.companies ?? [])
+  const companies = useAppStore((s) => s.data?.companies ?? EMPTY)
   const companyColor = useMemo(() => Object.fromEntries(companies.map((c) => [c.id, c.color])), [companies])
   const ref = useRef()
   const { position, normal } = useMemo(() => {
