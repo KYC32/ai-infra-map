@@ -1,0 +1,376 @@
+{
+  "company_id": "hut8",
+  "as_of": "2026-10-07",
+  "sites": [
+    {
+      "id": "river-bend",
+      "name": "River Bend",
+      "name_ko": "리버 벤드",
+      "country": "US",
+      "admin1": "US-LA",
+      "region": "Louisiana (West Feliciana Parish, St. Francisville)",
+      "coord": {
+        "lat": 30.78,
+        "lng": -91.377,
+        "confidence": "medium",
+        "method": "city_centroid",
+        "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm"
+      },
+      "primary": "hut8",
+      "parties": [
+        {
+          "company": "hut8",
+          "role": "developer",
+          "share": 1,
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465925122052/hut-20251217xex99d1.htm"
+        },
+        {
+          "company": "hut8",
+          "role": "owner",
+          "share": 1,
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926019392/hut-20251231x10k.htm"
+        },
+        {
+          "company": "fluidstack",
+          "role": "tenant",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465925122052/hut-20251217xex99d1.htm"
+        },
+        {
+          "company": "anthropic",
+          "role": "end_user",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926019393/hut-20260225xex99d1.htm"
+        },
+        {
+          "company": "google",
+          "role": "financier",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465925122052/hut-20251217xex99d1.htm"
+        }
+      ],
+      "detail": "full",
+      "announced": "2025-11",
+      "acres": 627,
+      "grid_operator": "MISO (Entergy Louisiana)",
+      "cooling": "undisclosed (AI-optimized design co-developed with Vertiv)",
+      "summary_ko": "세인트프랜시스빌 인근 627에이커 자사 부지(추가 2,361에이커 옵션). Entergy Louisiana에서 초기 330MW 전력을 확보했고 Fluidstack에 245MW IT를 15년 NNN 임대($7.0bn, Google이 임대료 보증). Anthropic·Fluidstack 파트너십의 첫 사이트로, 첫 데이터홀 2027 Q2 인도 후 2027년 중 나머지 홀 순차 가동 목표. Fluidstack은 전력 증설 시 최대 1,000MW IT 추가 우선협상권(ROFO) 보유.",
+      "summary_en": "627-acre owned site near St. Francisville (plus 2,361 acres under option). Initial 330MW secured from Entergy Louisiana; 245MW IT leased to Fluidstack for 15 years NNN ($7.0bn, Google backstop). First site of the Anthropic-Fluidstack partnership: first data hall targeted Q2 2027, remaining halls through 2027. Fluidstack holds a ROFO on up to 1,000MW more IT if power expands.",
+      "power": [
+        {
+          "from": "2025-12",
+          "secured_mw": 330,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465925122052/hut-20251217xex99d1.htm"
+        },
+        {
+          "from": "2027-Q1",
+          "secured_mw": 330,
+          "energized_mw": 330,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+        }
+      ],
+      "substation": {
+        "voltage": "230 kV"
+      },
+      "buildings": [
+        {
+          "id": "rb-phase-1",
+          "name": "Phase I data center (245MW IT)",
+          "name_ko": "1단계 데이터센터 (245MW IT)",
+          "kind": "datahall_liquid",
+          "it_mw": 245,
+          "gross_mw": 330,
+          "mw_basis": "it",
+          "progress": 0.5,
+          "customer": "Fluidstack (end user Anthropic; Google backstop)",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1964789/000110465925122052/hut-20251217xex99d1.htm",
+            "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm",
+            "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2025-12",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465925122052/hut-20251217xex99d1.htm"
+            },
+            {
+              "status": "under_construction",
+              "from": "2025-12",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465925122052/hut-20251217xex99d1.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2027-Q2",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+            }
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2025-02",
+          "event": "웨스트 펠리시아나 패리시 토지 592에이커 매입($18.1m)",
+          "event_en": "Purchased 592 acres in West Feliciana Parish ($18.1m)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926019392/hut-20251231x10k.htm"
+        },
+        {
+          "date": "2025-12-17",
+          "event": "Fluidstack과 245MW IT 15년 임대($7.0bn, Google 보증) 체결, Anthropic·Fluidstack 파트너십 발표. Entergy에서 초기 330MW 확보, 건설중 단계로 전환",
+          "event_en": "15-yr, 245MW IT lease with Fluidstack ($7.0bn, Google backstop); Anthropic-Fluidstack partnership; 330MW secured from Entergy; moved to under construction",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465925122052/hut-20251217xex99d1.htm"
+        },
+        {
+          "date": "2025-12",
+          "event": "인접 35에이커 추가 매입(총 627에이커)",
+          "event_en": "Purchased an additional 35 acres (627 acres total)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926019392/hut-20251231x10k.htm"
+        },
+        {
+          "date": "2026-04-30",
+          "event": "River Bend 프로젝트 투자등급 채권 $3.25bn(6.192%, 2042년 만기, 비소구) 발행 완료",
+          "event_en": "Closed $3.25bn investment-grade project notes (6.192%, due 2042, non-recourse)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926049810/tm2612880d1_ex99-1.htm"
+        },
+        {
+          "date": "2026-08-04",
+          "event": "2분기 중 수직 공사(구조물) 착수, 캠퍼스 변전소 공사 지속, 장납기 장비 첫 입고. 첫 데이터홀 2027 Q2 인도 목표 재확인",
+          "event_en": "Q2: vertical construction began, substation work continued, first long-lead equipment received; Q2 2027 first-hall target reaffirmed",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "진행률 0.5: 2025-12 착공, 2026 Q2 수직 공사 시작·변전소 공사·장납기 장비 입고, 첫 홀 2027 Q2 목표(약 16개월 공정 중 10개월 경과)로 근사 (추정)",
+          "note_en": "Progress 0.5 approximated from Dec 2025 start, Q2 2026 vertical construction/substation/long-lead deliveries and Q2 2027 first-hall target (~10 of ~16 months elapsed) (estimate)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+        },
+        {
+          "note": "통전 2027 Q1·330MW 일괄: 2025-12 자료는 '2026-07-01 330MW 사용 가능'이라 했으나 2026-06 말 기준 변전소가 공사 중이어서, 첫 홀 커미셔닝(2027 Q2) 직전으로 추정. 실제로는 홀별 단계 통전일 가능성",
+          "note_en": "Energization 2027-Q1 at 330MW is our estimate: Dec 2025 deck said '330 MW available July 1, 2026' but the substation was still under construction at end-June 2026; placed just before first-hall commissioning (Q2 2027). Likely phased in practice",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465925122052/hut-20251217xex99d2.htm"
+        },
+        {
+          "note": "데이터홀 수·홀별 MW 미공개 → 245MW IT 를 한 건물로 표기하고 가동 시점은 첫 홀(2027 Q2)로 둠. 회사는 나머지 홀을 2027년 중(약 60일 간격, Tier 2) 순차 가동한다고 밝힘. 냉각 방식은 미공개라 datahall_liquid 는 우리 가정",
+          "note_en": "Hall count/MW undisclosed: 245MW IT modeled as one building with operating date = first hall (Q2 2027); remaining halls through 2027 (~every 60 days per Tier 2). Liquid cooling kind is our assumption",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926019392/hut-20251231x10k.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465925122052/hut-20251217xex99d1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465925122052/hut-20251217xex99d2.htm",
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465926019392/hut-20251231x10k.htm",
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465926049810/tm2612880d1_ex99-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm",
+        "https://www.entergy.com/news/hut-8-selects-entergy-southeast-louisiana-for-10-billion-artificial-intelligence-data-center"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "beacon-point",
+      "name": "Beacon Point",
+      "name_ko": "비컨 포인트",
+      "country": "US",
+      "admin1": "US-TX",
+      "region": "Texas (Nueces County, Corpus Christi area)",
+      "coord": {
+        "lat": 27.73,
+        "lng": -97.58,
+        "confidence": "low",
+        "method": "county_centroid",
+        "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926070744/tm2616926d1_ex99-1.htm"
+      },
+      "primary": "hut8",
+      "parties": [
+        {
+          "company": "hut8",
+          "role": "developer",
+          "share": 1,
+          "source": "https://www.prnewswire.com/news-releases/hut-8-commercializes-first-phase-of-1-gw-beacon-point-ai-data-center-campus-with-15-year-352-mw-it-lease-with-base-term-contract-value-of-9-8-billion-302763484.html"
+        },
+        {
+          "company": "hut8",
+          "role": "owner",
+          "share": 1,
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926019392/hut-20251231x10k.htm"
+        }
+      ],
+      "detail": "full",
+      "announced": "2026-05",
+      "acres": 521,
+      "grid_operator": "ERCOT (AEP Texas)",
+      "cooling": "closed-loop liquid (NVIDIA DSX reference design)",
+      "summary_ko": "뉴에이시스 카운티(코퍼스크리스티 인근) 521에이커 자사 부지. AEP Texas와 1,000MW 계통연결 계약. 비공개 고신용(AA- 이상) 테넌트가 1단계 352MW IT(데이터홀 6개, 2026-05)와 2단계 352MW IT(2026-07)를 각각 15년 임대(총 704MW IT, $19.6bn). NVIDIA DSX 설계, 첫 통전 2027 Q1·1단계 첫 홀 2027 Q3·2단계 첫 홀 2028 Q2 목표.",
+      "summary_en": "521-acre owned site in Nueces County near Corpus Christi with a 1,000MW AEP Texas interconnection agreement. An undisclosed AA-or-better tenant leases Phase 1 (352MW IT, six data halls, May 2026) and Phase 2 (352MW IT, Jul 2026) for 15 years each (704MW IT, $19.6bn). NVIDIA DSX design; first energization Q1 2027, Phase 1 first hall Q3 2027, Phase 2 first hall Q2 2028.",
+      "power": [
+        {
+          "from": "2026-05",
+          "secured_mw": 1000,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.prnewswire.com/news-releases/hut-8-commercializes-first-phase-of-1-gw-beacon-point-ai-data-center-campus-with-15-year-352-mw-it-lease-with-base-term-contract-value-of-9-8-billion-302763484.html"
+        },
+        {
+          "from": "2027-Q1",
+          "secured_mw": 1000,
+          "energized_mw": 500,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "bp-phase-1",
+          "name": "Phase 1 (6 data halls, 352MW IT)",
+          "name_ko": "1단계 (데이터홀 6개, 352MW IT)",
+          "kind": "datahall_liquid",
+          "it_mw": 352,
+          "gross_mw": 500,
+          "mw_basis": "it",
+          "progress": 0.2,
+          "customer": "Undisclosed high-investment-grade tech company (AA- or higher)",
+          "sources": [
+            "https://www.prnewswire.com/news-releases/hut-8-commercializes-first-phase-of-1-gw-beacon-point-ai-data-center-campus-with-15-year-352-mw-it-lease-with-base-term-contract-value-of-9-8-billion-302763484.html",
+            "https://www.sec.gov/Archives/edgar/data/1964789/000110465926070744/tm2616926d1_ex99-1.htm",
+            "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm",
+            "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-05",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926055894/hut-20260506xex99d1.htm"
+            },
+            {
+              "status": "under_construction",
+              "from": "2026-06",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2027-Q3",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+            }
+          ]
+        },
+        {
+          "id": "bp-phase-2",
+          "name": "Phase 2 (352MW IT)",
+          "name_ko": "2단계 (352MW IT)",
+          "kind": "datahall_liquid",
+          "it_mw": 352,
+          "gross_mw": 500,
+          "mw_basis": "it",
+          "progress": 0.05,
+          "customer": "Undisclosed high-investment-grade tech company (same as Phase 1)",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1964789/000110465926084862/tm2620835d1_ex99-1.htm",
+            "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm",
+            "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-07",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926084862/tm2620835d1_ex99-1.htm"
+            },
+            {
+              "status": "under_construction",
+              "from": "2026-07",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2028-Q2",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926084862/tm2620835d1_ex99-1.htm"
+            }
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2025-12",
+          "event": "뉴에이시스 카운티 토지 총 524에이커 매입(2025-11~12, $17.5m). 10-K 에는 'Site 02 (Texas, 1,000MW, 개발 단계)'로만 표기",
+          "event_en": "Purchased 524 acres in Nueces County (Nov-Dec 2025, $17.5m); 10-K lists it only as 'Site 02 (Texas, 1,000MW, development)'",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926019392/hut-20251231x10k.htm"
+        },
+        {
+          "date": "2026-Q1",
+          "event": "AEP와 전력 용량 계약, ERCOT 연계 절차 진행, CIAC 납부, 캠퍼스 변전소 착공",
+          "event_en": "Contracted utility capacity with AEP, advanced ERCOT interconnection, funded CIAC, began substation construction",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926055894/hut-20260506xex99d1.htm"
+        },
+        {
+          "date": "2026-05-06",
+          "event": "1단계 15년 352MW IT 임대($9.8bn) 발표. 당초 224MW IT 설계를 NVIDIA DSX 로 재설계해 352MW 로 확대. AEP Texas 와 1,000MW 계통연결 계약 체결",
+          "event_en": "Phase 1 15-yr 352MW IT lease ($9.8bn); redesigned from 224MW to 352MW IT on NVIDIA DSX; 1,000MW interconnection agreement with AEP Texas executed",
+          "source": "https://www.prnewswire.com/news-releases/hut-8-commercializes-first-phase-of-1-gw-beacon-point-ai-data-center-campus-with-15-year-352-mw-it-lease-with-base-term-contract-value-of-9-8-billion-302763484.html"
+        },
+        {
+          "date": "2026-06-09",
+          "event": "1단계 프로젝트 채권 $4.25bn(6.129%, Baa2, 2042년 만기, 비소구) 발행 완료",
+          "event_en": "Closed $4.25bn Phase 1 project notes (6.129%, Baa2, due 2042, non-recourse)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926070744/tm2616926d1_ex99-1.htm"
+        },
+        {
+          "date": "2026-07-20",
+          "event": "같은 테넌트와 2단계 15년 352MW IT 임대($9.8bn) — 캠퍼스 1GW 전량 계약(704MW IT). 부지 정지 진행, 장납기 장비 조달 완료",
+          "event_en": "Phase 2 15-yr 352MW IT lease with the same tenant ($9.8bn); campus fully contracted (704MW IT); site prep underway, long-lead equipment procured",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926084862/tm2620835d1_ex99-1.htm"
+        },
+        {
+          "date": "2026-09",
+          "event": "ERCOT Batch Zero 에서 조건부 'Base Load' 지정(회사 발표, 언론 보도 기준). 주지사 감사·분기 안정성 평가 통과가 남음",
+          "event_en": "Conditional 'Base Load' designation in ERCOT Batch Zero (per company statement as reported); Governor's audit and stability assessment still pending",
+          "source": "https://w.media/iren-granted-conditional-base-load-status-for-2-gw-texas-campus/"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "1단계 착공월 2026-06: 2분기 중 '건설 착수(Commenced the buildout)' 문구와 2026-06-09 채권 발행 완료로 근사. 진행률 0.2 는 2026-06 착공 → 2027 Q3 첫 홀 목표(약 15개월 중 4개월) 기준 (추정)",
+          "note_en": "Phase 1 construction month (Jun 2026) approximated from 'commenced the buildout' in Q2 and the Jun 9 bond closing; progress 0.2 from ~4 of ~15 months to the Q3 2027 first-hall target (estimate)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+        },
+        {
+          "note": "2단계 진행률 0.05: 부지 정지·장납기 장비 조달 단계(2026-07)만 공개, 2028 Q2 첫 홀 목표 (추정)",
+          "note_en": "Phase 2 progress 0.05: only site preparation and long-lead procurement disclosed (Jul 2026); first hall Q2 2028 (estimate)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926084862/tm2620835d1_ex99-1.htm"
+        },
+        {
+          "note": "2027 Q1 통전 500MW: 회사는 '첫 통전 2027 Q1'만 밝힘. 통전량은 1단계 유틸리티 용량(약 500MW)으로 가정 (추정)",
+          "note_en": "Energized 500MW in Q1 2027: company only states 'initial energization Q1 2027'; amount assumed = Phase 1 utility capacity (~500MW) (estimate)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+        },
+        {
+          "note": "단계별 gross 500MW 는 '약 500MW 유틸리티 용량' 공시값. 냉각은 홈페이지의 폐쇄형 수냉 루프 설명과 NVIDIA DSX 설계를 근거로 datahall_liquid 로 가정",
+          "note_en": "Gross 500MW per phase = disclosed '~500 MW utility capacity'; datahall_liquid assumed from the closed-loop water design on the site page and NVIDIA DSX architecture",
+          "source": "https://www.hut8.com/data-centers/beacon-point"
+        }
+      ],
+      "sources": [
+        "https://www.prnewswire.com/news-releases/hut-8-commercializes-first-phase-of-1-gw-beacon-point-ai-data-center-campus-with-15-year-352-mw-it-lease-with-base-term-contract-value-of-9-8-billion-302763484.html",
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465926055894/hut-20260506xex99d1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465926070744/tm2616926d1_ex99-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465926084862/tm2620835d1_ex99-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm",
+        "https://www.hut8.com/data-centers/beacon-point"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "reviewed_at": "2026-10-07"
+}

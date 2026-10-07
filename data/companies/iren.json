@@ -637,8 +637,8 @@
       "acres": 12,
       "grid_operator": "BC Hydro",
       "cooling": "air",
-      "summary_ko": "50MW 수력 전력 공랭 사이트. 2025-12 채굴을 GPU로 완전 전환, 2026-08 전량 커미셔닝 완료(>23k GPU). 2027년 액체냉각 신규 배치 계획.",
-      "summary_en": "50MW hydro-powered air-cooled site. Fully converted from mining to GPUs by Dec 2025, fully commissioned Aug 2026 (>23k GPUs). New liquid-cooled deployment planned for 2027.",
+      "summary_ko": "50MW 수력 공랭 사이트. 2022-09부터 비트코인 채굴, 2024-02부터 소규모 H100 AI 클라우드 병행. 2025-07 채굴기 철수 시작, 2025-12 해시레이트 전량을 GPU로 대체. 2026-05 공랭 GPU(>23k) 전량 인도. 2027년 액체냉각 신규 배치 계획.",
+      "summary_en": "50MW hydro-powered air-cooled site. Bitcoin mining from Sep 2022, with a small H100 AI cloud pilot from Feb 2024. Miner removal began Jul 2025 and all hashrate was displaced by GPUs by Dec 2025. All air-cooled GPUs (>23k) delivered by May 2026. New liquid-cooled deployment planned for 2027.",
       "power": [
         {
           "from": "2022",
@@ -662,7 +662,9 @@
             "count": 23000
           },
           "sources": [
-            "https://iren.com/data-centers/prince-george"
+            "https://iren.com/data-centers/prince-george",
+            "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm",
+            "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
           ],
           "mw_basis": "gross",
           "phases": [
@@ -670,13 +672,13 @@
               "status": "commissioning",
               "from": "2025-12",
               "basis": "reported",
-              "source": "https://iren.com/data-centers/prince-george"
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm"
             },
             {
               "status": "operating",
               "from": "2026-08",
-              "basis": "reported",
-              "source": "https://iren.com/data-centers/prince-george"
+              "basis": "estimate",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
             }
           ]
         },
@@ -706,15 +708,104 @@
               "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
             }
           ]
+        },
+        {
+          "id": "pg-hopper-pilot",
+          "name": "Hopper GPU pilot (H100/H200)",
+          "name_ko": "초기 GPU 파일럿 (H100/H200)",
+          "kind": "datahall_air",
+          "gross_mw": 2,
+          "replaces": "pg-miners",
+          "gpu": {
+            "model": "H100 / H200",
+            "count": 816
+          },
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1878848/000162828024038677/iren-20240630.htm",
+            "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "operating",
+              "from": "2024-02",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000162828024038677/iren-20240630.htm"
+            },
+            {
+              "status": "retired",
+              "from": "2025-12",
+              "basis": "estimate",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm"
+            }
+          ]
+        },
+        {
+          "id": "pg-miners",
+          "name": "Bitcoin mining halls",
+          "name_ko": "비트코인 채굴동",
+          "kind": "miner_hall",
+          "it_mw": 0,
+          "gross_mw": 50,
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm",
+            "https://www.sec.gov/Archives/edgar/data/1878848/000114036125024747/ef20051566_ex99-1.htm",
+            "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "operating",
+              "from": "2022-09",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm"
+            },
+            {
+              "status": "decommissioning",
+              "from": "2025-07",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000114036125024747/ef20051566_ex99-1.htm"
+            },
+            {
+              "status": "retired",
+              "from": "2025-12",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm"
+            }
+          ]
         }
       ],
       "deliveries": [],
       "timeline": [
         {
+          "date": "2022-09",
+          "event": "비트코인 채굴 가동 개시",
+          "event_en": "Bitcoin mining operations begin",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm"
+        },
+        {
+          "date": "2024-02",
+          "event": "Poolside 와 H100 GPU 클라우드 계약 — 첫 AI 클라우드 고객",
+          "event_en": "H100 GPU cloud agreement with Poolside — first AI cloud customer",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000162828024038677/iren-20240630.htm"
+        },
+        {
+          "date": "2024-07-31",
+          "event": "H100 816개 가동 (채굴과 병행)",
+          "event_en": "816 H100 GPUs in service (alongside mining)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000162828024038677/iren-20240630.htm"
+        },
+        {
+          "date": "2025-07-03",
+          "event": "Blackwell 2.4k 주문, 채굴기를 다른 사이트로 옮기며 GPU 설치 시작",
+          "event_en": "2.4k Blackwell order; mining hardware displaced to other sites as GPUs are installed",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000114036125024747/ef20051566_ex99-1.htm"
+        },
+        {
           "date": "2025-12",
-          "event": "채굴 → GPU 전환 완료",
-          "event_en": "Mining replaced by GPUs",
-          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000014/a991irenreportsq2fy26res.htm"
+          "event": "해시레이트 전량을 GPU 로 대체 (채굴 종료)",
+          "event_en": "All hashrate displaced by GPUs (mining ends)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm"
         },
         {
           "date": "2026-02-05",
@@ -723,15 +814,40 @@
           "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000014/a991irenreportsq2fy26res.htm"
         },
         {
+          "date": "2026-05-11",
+          "event": "공랭 GPU 전량 인도, 가동 또는 시운전 중",
+          "event_en": "All air-cooled GPUs delivered; operating or commissioning",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
+        },
+        {
           "date": "2026-08-27",
-          "event": "공랭 GPU 전량 커미셔닝 완료, 2027 액체냉각 배치 계획",
-          "event_en": "Air-cooled GPUs fully commissioned; 2027 liquid-cooled plan",
+          "event": "2027 액체냉각 신규 배치 계획 발표",
+          "event_en": "2027 liquid-cooled deployment planned",
           "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
         }
       ],
-      "estimates": [],
+      "estimates": [
+        {
+          "note": "초기 GPU 파일럿 2MW: H100 816개 × 1.93kW(IREN 이 쓰는 GPU당 전력, 부대설비 포함) × PUE 1.1 ≈ 1.7MW 로 계산. 2025-06엔 1.9k개(≈4MW)로 늘었지만 2024 기준값으로 고정 (추정)",
+          "note_en": "Hopper pilot 2MW: 816 H100 × 1.93kW per GPU (IREN reference incl. ancillary) × PUE 1.1 ≈ 1.7MW; grew to ~1.9k GPUs (~4MW) by Jun 2025 (estimate)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000114036125024747/ef20051566_ex99-1.htm"
+        },
+        {
+          "note": "초기 GPU 파일럿 retired 2025-12: GPU 는 계속 돌지만 2025-12 부터 공랭 GPU 홀(50MW)에 포함해 셈 — 중복 계산 방지용 (추정)",
+          "note_en": "Hopper pilot retired Dec 2025: GPUs keep running but are counted inside the 50MW GPU halls from then on, to avoid double counting (estimate)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm"
+        },
+        {
+          "note": "공랭 GPU 홀 가동 2026-08: 2026-05 녹취는 \"가동 또는 시운전 중\"까지만 확인. 전량 가동 월은 Tier 1 에서 확인 못함 (추정)",
+          "note_en": "GPU halls operating from Aug 2026: May 2026 call only confirms \"operating or commissioning\"; full-operation month not found in Tier 1 (estimate)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
+        }
+      ],
       "sources": [
-        "https://iren.com/data-centers/prince-george"
+        "https://iren.com/data-centers/prince-george",
+        "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
       ],
       "confidence": "high"
     },
@@ -761,8 +877,8 @@
       "acres": 11,
       "grid_operator": "BC Hydro",
       "cooling": "air",
-      "summary_ko": "80MW 수력 공랭 사이트. 2026년 하반기부터 B300(Blackwell Ultra) 설치 진행 중(Blue Owl/PIMCO $2.4bn 장비금융). 2027년 액체냉각 추가 계획.",
-      "summary_en": "80MW hydro-powered air-cooled site. B300 (Blackwell Ultra) installation underway from H2 2026 (Blue Owl/PIMCO $2.4bn equipment financing). Liquid-cooled expansion planned for 2027.",
+      "summary_ko": "80MW 수력 공랭 사이트. 2022-04부터 비트코인 채굴, 2025 Q4 GPU 개조 시작(5.2→4.4 EH/s), 2026-05까지 채굴을 걷어내고 80MW를 GPU용으로 준비. 2026 하반기 B300(Blackwell Ultra) 설치, 2026-12-31까지 단계 인도(Blue Owl/PIMCO $2.4bn 장비금융). 2027년 액체냉각 추가 계획.",
+      "summary_en": "80MW hydro-powered air-cooled site. Bitcoin mining from Apr 2022; GPU retrofits began Q4 2025 (5.2→4.4 EH/s) and all 80MW was prepared for GPUs by May 2026. B300 (Blackwell Ultra) installation from H2 2026 with staged delivery through Dec 31, 2026 (Blue Owl/PIMCO $2.4bn equipment financing). Liquid-cooled expansion planned for 2027.",
       "power": [
         {
           "from": "2022",
@@ -786,27 +902,30 @@
             "count": null
           },
           "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm",
+            "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm",
+            "https://www.sec.gov/Archives/edgar/data/1878848/000114036126007905/ny20064909x3_ex99-1.htm",
             "https://www.unite.ai/blue-owl-funds-lead-2-4b-ai-factory-equipment-financing-for-iren/"
           ],
           "mw_basis": "gross",
           "phases": [
             {
-              "status": "planned",
-              "from": "2022",
-              "basis": "reported",
-              "source": "https://www.unite.ai/blue-owl-funds-lead-2-4b-ai-factory-equipment-financing-for-iren/"
+              "status": "under_construction",
+              "from": "2026-05",
+              "basis": "estimate",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
             },
             {
               "status": "commissioning",
               "from": "2026-10",
-              "basis": "reported",
-              "source": "https://www.unite.ai/blue-owl-funds-lead-2-4b-ai-factory-equipment-financing-for-iren/"
+              "basis": "estimate",
+              "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
             },
             {
               "status": "operating",
-              "from": "2026-H2",
+              "from": "2026-Q4",
               "basis": "target",
-              "source": "https://www.unite.ai/blue-owl-funds-lead-2-4b-ai-factory-equipment-financing-for-iren/"
+              "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
             }
           ]
         },
@@ -836,6 +955,40 @@
               "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
             }
           ]
+        },
+        {
+          "id": "mk-miners",
+          "name": "Bitcoin mining halls",
+          "name_ko": "비트코인 채굴동",
+          "kind": "miner_hall",
+          "it_mw": 0,
+          "gross_mw": 80,
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm",
+            "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm",
+            "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "operating",
+              "from": "2022-04",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm"
+            },
+            {
+              "status": "decommissioning",
+              "from": "2025-Q4",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm"
+            },
+            {
+              "status": "retired",
+              "from": "2026-05",
+              "basis": "estimate",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
+            }
+          ]
         }
       ],
       "deliveries": [
@@ -849,10 +1002,28 @@
       ],
       "timeline": [
         {
+          "date": "2022-04",
+          "event": "비트코인 채굴 가동 개시",
+          "event_en": "Bitcoin mining operations begin",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm"
+        },
+        {
+          "date": "2025-12-31",
+          "event": "GPU 개조로 해시레이트 5.2 → 4.4 EH/s 감소 (채굴 축소 시작)",
+          "event_en": "Hashrate down from 5.2 to 4.4 EH/s on GPU retrofits (mining wind-down begins)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm"
+        },
+        {
           "date": "2026-03-04",
           "event": "B300 5만+대 주문, Mackenzie·Childress 공랭 배치 발표",
           "event_en": "50,000+ B300 order; Mackenzie & Childress air-cooled deployment",
           "source": "https://www.sec.gov/Archives/edgar/data/1878848/000114036126007905/ny20064909x3_ex99-1.htm"
+        },
+        {
+          "date": "2026-05-11",
+          "event": "80MW 전체를 GPU 설치용으로 준비 완료, 2026 하반기 설치 시작 예정",
+          "event_en": "All 80MW prepared for GPU installations commencing H2 2026",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
         },
         {
           "date": "2026-08-28",
@@ -861,9 +1032,29 @@
           "source": "https://www.unite.ai/blue-owl-funds-lead-2-4b-ai-factory-equipment-financing-for-iren/"
         }
       ],
-      "estimates": [],
+      "estimates": [
+        {
+          "note": "채굴동 retired 2026-05: 2026-05-11 녹취에서 80MW 가 이미 GPU 설치용으로 준비됐다고 밝혀 그 전에 채굴이 끝난 것으로 봄. 정확한 종료 월은 미공개 (추정)",
+          "note_en": "Mining retired by May 2026: the May 11, 2026 call says all 80MW was already prepared for GPUs; exact end month not disclosed (estimate)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
+        },
+        {
+          "note": "공랭 B300 홀 건설중 2026-05: 채굴 철수 후 GPU 설치 준비(랙·전기 개조) 기간으로 간주 (추정)",
+          "note_en": "B300 halls under construction from May 2026: treated as GPU fit-out after miner removal (estimate)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
+        },
+        {
+          "note": "공랭 B300 홀 시운전 2026-10: 10-K 의 \"2026-12-31까지 단계 인도\"와 \"2026 하반기 설치 시작\" 발언으로 추정. Tier 1 에서 시운전 개시를 직접 확인하지 못함 (추정)",
+          "note_en": "Commissioning from Oct 2026: inferred from staged delivery through Dec 31, 2026 (10-K) and H2 2026 installation start; not directly confirmed in Tier 1 (estimate)",
+          "source": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
+        }
+      ],
       "sources": [
-        "https://iren.com/data-centers/mackenzie"
+        "https://iren.com/data-centers/mackenzie",
+        "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm",
+        "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
       ],
       "confidence": "high"
     },
@@ -893,8 +1084,8 @@
       "acres": 10,
       "grid_operator": "BC Hydro",
       "cooling": "air",
-      "summary_ko": "IREN 첫 사이트(2019). 30MW 수력 공랭. 2027년 GB300용 액체냉각 전환 계획.",
-      "summary_en": "IREN's first site (2019). 30MW hydro, air-cooled. Conversion to liquid cooling for GB300 planned for 2027.",
+      "summary_ko": "IREN 첫 사이트(2019 가동, 2020-01 PodTech 로부터 인수). 30MW 수력 공랭. 비트코인 채굴(1.6 EH/s)은 2026-09까지 가동 후 채굴기 매각 예정. 30MW 공랭 AI 개조와 GB300 액체냉각 배치는 2027년 계획.",
+      "summary_en": "IREN's first site (operating since 2019; acquired from PodTech in Jan 2020). 30MW hydro, air-cooled. Bitcoin mining (1.6 EH/s) expected to run through Sep 2026 before the miners are sold. Retrofit of all 30MW for AI and GB300 liquid cooling planned for 2027.",
       "power": [
         {
           "from": "2019",
@@ -910,21 +1101,29 @@
       "buildings": [
         {
           "id": "cf-air",
-          "name": "Air-cooled halls",
-          "name_ko": "공랭 홀",
+          "name": "Air-cooled AI retrofit",
+          "name_ko": "공랭 AI 개조 홀",
           "kind": "datahall_air",
           "it_mw": 30,
           "gross_mw": 30,
           "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm",
+            "https://www.sec.gov/Archives/edgar/data/1878848/000114036126007905/ny20064909x3_ex99-1.htm",
             "https://iren.com/data-centers/canal-flats"
           ],
           "mw_basis": "gross",
           "phases": [
             {
+              "status": "planned",
+              "from": "2026-10",
+              "basis": "estimate",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
+            },
+            {
               "status": "operating",
-              "from": "2019",
-              "basis": "reported",
-              "source": "https://iren.com/data-centers/canal-flats"
+              "from": "2027",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
             }
           ]
         },
@@ -958,6 +1157,33 @@
               "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
             }
           ]
+        },
+        {
+          "id": "cf-miners",
+          "name": "Bitcoin mining halls",
+          "name_ko": "비트코인 채굴동",
+          "kind": "miner_hall",
+          "it_mw": 0,
+          "gross_mw": 30,
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm",
+            "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm"
+          ],
+          "mw_basis": "gross",
+          "phases": [
+            {
+              "status": "operating",
+              "from": "2019",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm"
+            },
+            {
+              "status": "retired",
+              "from": "2026-10",
+              "basis": "estimate",
+              "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm"
+            }
+          ]
         }
       ],
       "deliveries": [],
@@ -969,15 +1195,53 @@
           "source": "https://iren.com/data-centers/canal-flats"
         },
         {
+          "date": "2020-01",
+          "event": "PodTech Innovation 으로부터 사이트 인수",
+          "event_en": "Site acquired from PodTech Innovation",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm"
+        },
+        {
+          "date": "2025-12-31",
+          "event": "S21 Pro 채굴기 내용연수 단축: 2026-09까지 가동 후 매각 예정",
+          "event_en": "S21 Pro miners to run through Sep 2026, then be sold",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm"
+        },
+        {
+          "date": "2026-03-04",
+          "event": "기존 데이터센터로 향후 추가 GPU 수용 가능하다고 언급",
+          "event_en": "Existing data center cited as capacity for additional GPUs over time",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000114036126007905/ny20064909x3_ex99-1.htm"
+        },
+        {
+          "date": "2026-05-11",
+          "event": "30MW 공랭 전체를 AI 용으로 개조 계획 (2027 확장)",
+          "event_en": "Plan to retrofit all 30MW of air-cooled capacity for AI (2027 expansion)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
+        },
+        {
           "date": "2026-08-27",
           "event": "2027 액체냉각(GB300) 전환 계획",
           "event_en": "2027 liquid-cooled (GB300) conversion plan",
           "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
         }
       ],
-      "estimates": [],
+      "estimates": [
+        {
+          "note": "채굴동 retired 2026-10: 10-Q(2025-12) 의 \"2026-09까지 가동 후 매각\" 계획을 그대로 적용. 실제 철수·매각 완료는 확인 못함 (추정)",
+          "note_en": "Mining retired from Oct 2026: applies the 10-Q plan to run miners through Sep 2026 then sell; actual removal not confirmed (estimate)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm"
+        },
+        {
+          "note": "공랭 AI 개조 planned 2026-10: 계획은 2026-05 발표됐지만 같은 30MW 를 채굴과 시기만 달리 쓰므로 채굴 종료 이후로 배치 (추정)",
+          "note_en": "AI retrofit shown as planned from Oct 2026: announced May 2026 but placed after mining ends because it reuses the same 30MW (estimate)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
+        }
+      ],
       "sources": [
-        "https://iren.com/data-centers/canal-flats"
+        "https://iren.com/data-centers/canal-flats",
+        "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
       ],
       "confidence": "high"
     },

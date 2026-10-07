@@ -54,7 +54,7 @@ export default {
     note: 'By primary company · ~ includes estimates',
     reset: 'Clear filters',
   },
-  groups: { miner: 'Miner→AI', neocloud: 'Neocloud', hyperscaler: 'Hyperscaler', korea: 'Korea' },
+  groups: { miner: 'Miner→AI', neocloud: 'Neocloud', hyperscaler: 'Hyperscaler', korea: 'Korea', partner: 'Partner' },
   colorMode: { status: 'Status', company: 'Company' },
   regions: { na: 'N. America', eu: 'Europe', asia: 'Asia' },
   timeline: { play: 'Play', pause: 'Pause', asOf: 'As of', future: 'Company targets', today: 'Back to as-of', label: 'Date' },

@@ -17,7 +17,8 @@ export default function Legend() {
   const clear = useAppStore((s) => s.clearStatuses)
   const colorMode = useAppStore((s) => s.colorMode)
   const setColorMode = useAppStore((s) => s.setColorMode)
-  const companies = useAppStore((s) => s.data?.companies ?? [])
+  // 회사색 범례: 지도에 핀이 있는(대표 사이트가 있는) 회사만
+  const companies = useAppStore((s) => (s.data?.companies ?? []).filter((c) => s.data.raw.sites.some((x) => x.primary === c.id)))
   const view = useAppStore((s) => s.view)
   const requestRegion = useAppStore((s) => s.requestRegion)
   return (

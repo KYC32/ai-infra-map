@@ -61,22 +61,23 @@ describe('실제 데이터 (IREN)', () => {
   const asOf = asOfMonth(infra.as_of)
 
   const IREN = { companies: new Set(['iren']) } // 다른 회사가 병합돼도 IREN 수치만 비교
-  it('기준일 KPI 가 v1(iren-3d) 과 정확히 같음 — 숫자 변화 0', () => {
+  // 2026-10-07 IREN BC 3곳 채굴 이력 보정(사용자 승인) 반영: 커낼플랫츠는 2026-10 기준 AI 홀이 아직 계획 단계
+  it('기준일 IREN KPI (iren-3d 대비 BC 보정 반영: AI 155→125MW)', () => {
     const t = totalsAt(infra, toMonth('2026-10'), IREN)
     expect(t.secured).toBe(5610)
     expect(t.energized).toBe(2310)
-    expect(t.operating).toBe(535)
-    expect(t.ai).toBe(155)
+    expect(t.operating).toBe(505)
+    expect(t.ai).toBe(125)
     expect(t.mining).toBe(380)
     expect(t.building).toBe(665)
-    expect(t.planned).toBe(4410)
+    expect(t.planned).toBe(4440)
     expect(t.gpus).toBe(23000)
   })
 
   it('채굴동은 폐쇄 전(가동 단계)에도 AI 가동이 아닌 채굴로 집계', () => {
     const t = totalsAt(infra, M('2026-09'), IREN)
-    expect(t.ai).toBe(155)
-    expect(t.mining).toBe(380)
+    expect(t.ai).toBe(125)
+    expect(t.mining).toBe(410) // Childress 380 + 커낼플랫츠 30 (채굴 종료 2026-10)
   })
 
   it('기준일 사이트 상태가 원본 설명과 일치', () => {

@@ -54,7 +54,7 @@ export default {
     note: '대표 회사 기준 · ~ 는 추정 포함',
     reset: '필터 해제',
   },
-  groups: { miner: '채굴→AI', neocloud: '네오클라우드', hyperscaler: '하이퍼스케일러', korea: '한국' },
+  groups: { miner: '채굴→AI', neocloud: '네오클라우드', hyperscaler: '하이퍼스케일러', korea: '한국', partner: '참여사' },
   colorMode: { status: '상태색', company: '회사색' },
   regions: { na: '북미', eu: '유럽', asia: '아시아' },
   timeline: { play: '재생', pause: '정지', asOf: '기준일', future: '회사 발표 목표 기준', today: '기준일로', label: '날짜' },

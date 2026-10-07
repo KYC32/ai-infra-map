@@ -34,7 +34,8 @@ export const Company = z.object({
   id: Id,
   name: z.string(),
   name_ko: z.string().optional(),
-  group: z.enum(['miner', 'neocloud', 'hyperscaler', 'korea']),
+  // partner = 자기 사이트 없이 참여사로만 등장 (AI 랩·칩 회사·개발사·금융사) → 순위·그룹 칩에서 제외
+  group: z.enum(['miner', 'neocloud', 'hyperscaler', 'korea', 'partner']),
   ticker: z.object({ symbol: z.string(), exchange: z.string() }).strict().optional(), // 비상장은 생략
   color: Hex,               // 회사색 모드의 핀 색 (파스텔, 상태색과 겹치지 않게)
   hq_country: Iso2,
@@ -72,7 +73,8 @@ export const Building = z.object({
   name_ko: z.string().optional(),
   kind: z.enum(['datahall_liquid', 'datahall_air', 'miner_hall']).optional(), // 없으면 회사 그룹 기본값
   it_mw: z.number().nonnegative().optional(),     // GPU 등 IT 장비 전력
-  gross_mw: z.number().nonnegative().optional(),  // 냉각 포함 총 전력 (없으면 IT×1.3 추정)
+  gross_mw: z.number().nonnegative().optional(),  // 냉각 포함 총 전력 (없으면 IT×PUE 추정)
+  pue: z.number().min(1).max(2).optional(),       // IT→총 전력 환산 배수 (없으면 1.3). 지정하면 estimates[] 에 근거 필수
   mw_basis: z.enum(['it', 'gross', 'grid']),      // 회사가 어떤 기준으로 발표했는지
   phases: z.array(Phase).min(1),                  // ← 상태의 진실 (현재 상태는 계산)
   progress: z.number().min(0).max(1).optional(),  // 기준일(as_of) 시점 건설 진행률

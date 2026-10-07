@@ -87,7 +87,7 @@ export function progressAt(building, m, asOfM) {
 // 건물의 총 전력(MW). gross 가 없고 IT 만 있으면 PUE 로 환산 (estimated 표시)
 export function grossOf(building) {
   if (building.gross_mw != null) return { mw: building.gross_mw, estimated: false }
-  if (building.it_mw != null) return { mw: building.it_mw * PUE_DEFAULT, estimated: true }
+  if (building.it_mw != null) return { mw: building.it_mw * (building.pue ?? PUE_DEFAULT), estimated: true }
   return { mw: 0, estimated: false }
 }
 

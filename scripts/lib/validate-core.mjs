@@ -9,7 +9,7 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs'
 import { feature } from 'topojson-client'
 import { CompaniesFile, CompanySitesFile } from '../../src/data/schema.js'
-import { toMonth, phaseMonth, statusAt, grossOf, powerAt } from '../../src/data/timeline.js'
+import { toMonth, phaseMonth, statusAt, grossOf, powerAt, effectiveBuildingsAt } from '../../src/data/timeline.js'
 import { STATUS_STYLE } from '../../src/data/statusStyle.js'
 import { ISO2_TO_NUM } from '../iso.mjs'
 import { createHash } from 'node:crypto'
@@ -96,6 +96,11 @@ for (const s of infra.sites) {
       if (st && st !== 'retired') sum += grossOf(b).mw
     }
     if (sum > power.secured * 1.05) { err(`${s.id}: ${Math.floor(m / 12)}-${(m % 12) + 1} 건물 합계 ${Math.round(sum)}MW > 확보 전력 ${power.secured}MW`); break }
+    // 실제로 전력을 쓰는 건물(가동·시운전·폐쇄중)만, 전환으로 넘겨받은 용량까지 반영한 그 달 합계
+    const drawing = effectiveBuildingsAt(s, m)
+      .filter((e) => ['operating', 'commissioning', 'decommissioning'].includes(e.status))
+      .reduce((n, e) => n + e.mw, 0)
+    if (drawing > power.secured * 1.05) { err(`${s.id}: ${Math.floor(m / 12)}-${(m % 12) + 1} 실제 사용 전력 ${Math.round(drawing)}MW > 확보 전력 ${power.secured}MW (IT 만 공개된 건물은 PUE 확인)`); break }
   }
 }
 

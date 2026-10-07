@@ -1,0 +1,1309 @@
+{
+  "company_id": "corescientific",
+  "as_of": "2026-10-07",
+  "sites": [
+    {
+      "id": "denton",
+      "name": "Denton (CoreWeave)",
+      "name_ko": "덴턴 (CoreWeave)",
+      "country": "US",
+      "admin1": "US-TX",
+      "region": "Texas (Denton County, Denton)",
+      "coord": {
+        "lat": 33.219,
+        "lng": -97.191,
+        "confidence": "medium",
+        "method": "official_address",
+        "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+      },
+      "primary": "corescientific",
+      "parties": [
+        {
+          "company": "corescientific",
+          "role": "developer",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "company": "corescientific",
+          "role": "operator",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "company": "coreweave",
+          "role": "tenant",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        }
+      ],
+      "detail": "full",
+      "announced": "2024-Q3",
+      "acres": 64,
+      "grid_operator": "ERCOT (Denton Municipal Electric)",
+      "cooling": "undisclosed",
+      "summary_ko": "덴턴시 소유 부지(64에이커, 임차)의 채굴장을 CoreWeave 전용 HPC 캠퍼스로 전환. 건물 8동(A~H), 262MW(IT). D~G동 132MW가 2026-03 과금, 2026-07 약 260MW 과금으로 사실상 완공. ERCOT: 기존 297MW Base Load 승인 + 추가 74MW.",
+      "summary_en": "Former mining site on 64 City-of-Denton-owned acres (ground lease) converted into an HPC campus for CoreWeave: eight buildings (A–H), 262MW IT. Buildings D–G (132MW) billing by Mar 2026; ~260MW billing and substantially complete by Jul 2026. ERCOT: existing 297MW approved as Base Load, plus 74MW additional.",
+      "power": [
+        {
+          "from": "2024-Q3",
+          "secured_mw": 371,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000023/core-20260910.htm"
+        },
+        {
+          "from": "2026-03",
+          "secured_mw": 371,
+          "energized_mw": 198,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "from": "2026-07",
+          "secured_mw": 371,
+          "energized_mw": 297,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000023/core-20260910.htm"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "bldg-d-g",
+          "name": "Buildings D–G",
+          "name_ko": "D~G동",
+          "it_mw": 132,
+          "mw_basis": "it",
+          "customer": "CoreWeave",
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2024-Q3",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+            },
+            {
+              "status": "commissioning",
+              "from": "2025-Q2",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828025046272/core-20250930.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2026-03",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+            }
+          ],
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000162828025046272/core-20250930.htm"
+          ]
+        },
+        {
+          "id": "bldg-a-c-h",
+          "name": "Buildings A–C and H",
+          "name_ko": "A~C·H동",
+          "it_mw": 130,
+          "mw_basis": "it",
+          "customer": "CoreWeave",
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2024-Q3",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2026-07",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+            }
+          ],
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm",
+            "https://investors.corescientific.com/news-events/press-releases/detail/110/core-scientific-and-coreweave-announce-1-2-billion-expansion-at-denton-tx-site"
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2024-06-04",
+          "event": "CoreWeave와 약 200MW 12년 계약(복수 사이트, 사이트명 미공개)",
+          "event_en": "12-year contracts with CoreWeave for ~200MW across multiple sites (sites not named)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828024026483/corzcoreweavehpc.htm"
+        },
+        {
+          "date": "2024-Q3",
+          "event": "T5 Construction 주도로 덴턴 HPC 캠퍼스 착공",
+          "event_en": "Construction of the Denton HPC campus begins (T5 Construction)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "date": "2025-02-26",
+          "event": "CoreWeave 70MW 추가 계약 → 덴턴 IT 약 260MW, CoreWeave 전체 약 590MW(6개 사이트)",
+          "event_en": "CoreWeave adds 70MW at Denton → ~260MW IT; ~590MW total across six sites",
+          "source": "https://investors.corescientific.com/news-events/press-releases/detail/110/core-scientific-and-coreweave-announce-1-2-billion-expansion-at-denton-tx-site"
+        },
+        {
+          "date": "2025-Q2",
+          "event": "첫 데이터홀 완공(2·3분기), 코로케이션 매출 발생",
+          "event_en": "First data halls completed (Q2–Q3 2025), colocation revenue begins",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828025046272/core-20250930.htm"
+        },
+        {
+          "date": "2026-03",
+          "event": "D~G동 132MW 가동·과금(완성도 50%)",
+          "event_en": "Buildings D–G (132MW) operating and billing (50% complete)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "date": "2026-07",
+          "event": "약 260MW 과금, 사실상 완공",
+          "event_en": "~260MW billing; substantially complete",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+        },
+        {
+          "date": "2026-09-10",
+          "event": "ERCOT: 기존 297MW Base Load(Pathway a) 조건부 승인, 추가 74MW는 2025 RTP 반영(Batch Zero 비대상)",
+          "event_en": "ERCOT: existing 297MW conditionally approved as Base Load (Pathway a); additional 74MW validated in 2025 RTP",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000023/core-20260910.htm"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "2026-03 통전 198MW는 추정: 과금 132MW(IT) × 설계 PUE 1.5. 2026-07 이후는 ERCOT 공시의 기존 통전 부하 297MW(추가 74MW는 통전 예정)",
+          "note_en": "Energized 198MW in Mar 2026 is estimated as 132MW IT billing × design PUE 1.5; from Jul 2026 we use the 297MW existing energized load disclosed to ERCOT (74MW more to be energized)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "note": "확보 전력은 ERCOT 기준 371MW(297+74)를 채택. 덴턴시 전력계약(DME)은 약 394MW로 더 큼 — 규칙에 따라 낮은 값",
+          "note_en": "Secured power uses ERCOT figures (297+74=371MW); the DME power contract cites ~394MW — lower value adopted",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000023/core-20260910.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000023/core-20260910.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828025046272/core-20250930.htm",
+        "https://investors.corescientific.com/news-events/press-releases/detail/110/core-scientific-and-coreweave-announce-1-2-billion-expansion-at-denton-tx-site",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "dalton",
+      "name": "Dalton campuses (Dalton 1 · 4 · Phase 3)",
+      "name_ko": "돌턴 캠퍼스 (돌턴 1·4·3단계)",
+      "country": "US",
+      "admin1": "US-GA",
+      "region": "Georgia (Whitfield County, Dalton)",
+      "coord": {
+        "lat": 34.714,
+        "lng": -84.952,
+        "confidence": "medium",
+        "method": "official_address",
+        "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+      },
+      "primary": "corescientific",
+      "parties": [
+        {
+          "company": "corescientific",
+          "role": "owner",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "company": "corescientific",
+          "role": "developer",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "company": "coreweave",
+          "role": "tenant",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "company": "amd",
+          "role": "financier",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+        }
+      ],
+      "detail": "full",
+      "announced": "2025-02",
+      "acres": 172,
+      "grid_operator": "Dalton Utilities (SERC)",
+      "cooling": "undisclosed",
+      "summary_ko": "돌턴 1(채굴장 전환, 30MW IT)과 돌턴 4(그린필드, 데이터홀 3개, 145MW IT)를 CoreWeave에 임대. 돌턴 1은 2026년 상반기 인도, 돌턴 4는 2027년 초 완공 목표. 3단계(약 120MW IT)는 네오클라우드(AMD 신용보강)와 15년 계약, 2027년 하반기 첫 인도 목표.",
+      "summary_en": "Dalton 1 (mining conversion, 30MW IT) and Dalton 4 (greenfield, three data halls, 145MW IT) leased to CoreWeave; Dalton 1 delivered in H1 2026, Dalton 4 targeted for early 2027. Phase 3 (~120MW IT) leased for 15 years to a neocloud with AMD credit support, first delivery targeted for H2 2027.",
+      "power": [
+        {
+          "from": "2025-02",
+          "secured_mw": 195,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828025008302/core-20241231.htm"
+        },
+        {
+          "from": "2025-12",
+          "secured_mw": 270,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "from": "2026-Q2",
+          "secured_mw": 270,
+          "energized_mw": 50,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026031246/q1fy26earningsdeck.htm"
+        },
+        {
+          "from": "2026-07-27",
+          "secured_mw": 450,
+          "energized_mw": 50,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "dalton-1",
+          "name": "Dalton 1 (mining conversion)",
+          "name_ko": "돌턴 1 (채굴장 전환)",
+          "it_mw": 30,
+          "gross_mw": 50,
+          "mw_basis": "it",
+          "customer": "CoreWeave",
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2025-H2",
+              "basis": "estimate",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2026-Q2",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026031246/q1fy26earningsdeck.htm"
+            }
+          ],
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000162828026031246/q1fy26earningsdeck.htm"
+          ]
+        },
+        {
+          "id": "dalton-4",
+          "name": "Dalton 4 (greenfield, 3 data halls)",
+          "name_ko": "돌턴 4 (그린필드, 데이터홀 3개)",
+          "it_mw": 145,
+          "gross_mw": 220,
+          "mw_basis": "it",
+          "progress": 0.7,
+          "customer": "CoreWeave",
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2025-12",
+              "basis": "estimate",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013214/q4fy25earningsdeckvfinal.htm"
+            },
+            {
+              "status": "commissioning",
+              "from": "2026-H2",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2027-Q1",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+            }
+          ],
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000162828026031246/q1fy26earningsdeck.htm"
+          ]
+        },
+        {
+          "id": "dalton-phase-3",
+          "name": "Dalton Phase 3 (neocloud, AMD credit support)",
+          "name_ko": "돌턴 3단계 (네오클라우드, AMD 신용보강)",
+          "it_mw": 120,
+          "mw_basis": "it",
+          "customer": "Neocloud (undisclosed)",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-07-27",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+            },
+            {
+              "status": "commissioning",
+              "from": "2027-H2",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2028",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+            }
+          ],
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2025-02-26",
+          "event": "CoreWeave 계약 6개 사이트(돌턴 1·4 포함) 약 590MW 확정",
+          "event_en": "CoreWeave portfolio reaches ~590MW across six sites (incl. Dalton 1 and 4)",
+          "source": "https://investors.corescientific.com/news-events/press-releases/detail/110/core-scientific-and-coreweave-announce-1-2-billion-expansion-at-denton-tx-site"
+        },
+        {
+          "date": "2025-12",
+          "event": "돌턴 유틸리티, 외부 전력 공급 첫 계약 체결(돌턴 1·4 합계 270MW 접근)",
+          "event_en": "Dalton Utilities finalizes first outside-provider power agreement (270MW available to Dalton 1 and 4)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "date": "2026-Q2",
+          "event": "돌턴 1(30MW) CoreWeave 인도",
+          "event_en": "Dalton 1 (30MW) delivered to CoreWeave",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026031246/q1fy26earningsdeck.htm"
+        },
+        {
+          "date": "2026-07-27",
+          "event": "돌턴 3단계 약 120MW, 네오클라우드와 15년 임대(AMD 신용보강)",
+          "event_en": "Dalton Phase 3 (~120MW) leased for 15 years to a neocloud with AMD credit support",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "돌턴 1 착공 시점(2025-H2)은 추정: 공시는 \"공사 진행 중, 2026년 상반기 완공\"만 밝힘",
+          "note_en": "Dalton 1 construction start (2025-H2) is estimated; filings only say work commenced with H1 2026 completion",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "note": "돌턴 4 착공(2025-12)은 추정: 그린필드 145MW, 2026-03 \"AI 팩토리 5곳 착공\" 문구와 2025-12 외부 전력 계약 시점에서 역산",
+          "note_en": "Dalton 4 construction start (2025-12) is estimated from the Mar 2026 \"broke ground on 5 AI factories\" statement and the Dec 2025 outside-power agreement",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013214/q4fy25earningsdeckvfinal.htm"
+        },
+        {
+          "note": "돌턴 4 진행률 0.7은 추정: 2026-H2 첫 인도·2027년 초 완공 목표, 2026-07 기준 과금은 돌턴 1의 30MW뿐",
+          "note_en": "Dalton 4 progress 0.7 is estimated: first delivery H2 2026, completion early 2027; only Dalton 1 (30MW) billing as of Jul 2026",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+        },
+        {
+          "note": "2026-07-27 확보 450MW는 추정: 3단계 임대가 \"확보된 계통 전력\" 기반(2분기 자료 각주)이고, 돌턴 유틸리티가 최대 450MW 확보를 약속함",
+          "note_en": "Secured 450MW from 2026-07-27 is estimated: Phase 3 lease is on secured grid power (Q2 deck footnote) and Dalton Utilities committed to up to 450MW",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "note": "통전 50MW는 추정: 인도 완료된 돌턴 1의 계통 용량 50MW를 통전으로 간주",
+          "note_en": "Energized 50MW is estimated as Dalton 1 grid capacity once delivered",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828026031246/q1fy26earningsdeck.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828025008302/core-20241231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "marble",
+      "name": "Marble (CoreWeave)",
+      "name_ko": "마블 (CoreWeave)",
+      "country": "US",
+      "admin1": "US-NC",
+      "region": "North Carolina (Cherokee County, Marble)",
+      "coord": {
+        "lat": 35.185,
+        "lng": -83.914,
+        "confidence": "high",
+        "method": "official_address",
+        "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+      },
+      "primary": "corescientific",
+      "parties": [
+        {
+          "company": "corescientific",
+          "role": "owner",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "company": "corescientific",
+          "role": "developer",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "company": "coreweave",
+          "role": "tenant",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        }
+      ],
+      "detail": "full",
+      "announced": "2025-02",
+      "acres": 73,
+      "grid_operator": "Duke Energy Carolinas / Murphy EPB (TVA)",
+      "cooling": "undisclosed",
+      "summary_ko": "자가 소유 73에이커 채굴장을 전환한 65MW(IT) CoreWeave 데이터센터(건물 1동, 컴퓨트홀 2·네트워크홀 2). 2025년 3분기 첫 용량, 2026년 5월 전량 인도. 계통 117MW(Duke 82 + Murphy 35).",
+      "summary_en": "Owned 73-acre mining site converted into a 65MW IT CoreWeave data center (one building, two compute and two network halls). First capacity Q3 2025, fully handed over by May 2026. 117MW grid (Duke 82 + Murphy 35).",
+      "power": [
+        {
+          "from": "2025-02",
+          "secured_mw": 103,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828025008302/core-20241231.htm"
+        },
+        {
+          "from": "2025-12",
+          "secured_mw": 117,
+          "energized_mw": 56,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+        },
+        {
+          "from": "2026-05",
+          "secured_mw": 117,
+          "energized_mw": 98,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026031246/q1fy26earningsdeck.htm"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "marble-dc",
+          "name": "Marble data center (2 compute + 2 network halls)",
+          "name_ko": "마블 데이터센터 (컴퓨트홀 2·네트워크홀 2)",
+          "it_mw": 65,
+          "mw_basis": "it",
+          "customer": "CoreWeave",
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2025-02",
+              "basis": "estimate",
+              "source": "https://investors.corescientific.com/news-events/press-releases/detail/110/core-scientific-and-coreweave-announce-1-2-billion-expansion-at-denton-tx-site"
+            },
+            {
+              "status": "commissioning",
+              "from": "2025-Q3",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828025046272/core-20250930.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2026-05",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026031246/q1fy26earningsdeck.htm"
+            }
+          ],
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000162828025046272/core-20250930.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000162828026031246/q1fy26earningsdeck.htm"
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2025-Q3",
+          "event": "첫 용량 인도·과금 시작",
+          "event_en": "Initial capacity delivered, billing begins",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828025046272/core-20250930.htm"
+        },
+        {
+          "date": "2026-03",
+          "event": "37MW 가동·과금(완성도 57%)",
+          "event_en": "37MW operating and billing (57% complete)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "date": "2026-05",
+          "event": "65MW 전량 CoreWeave 인도",
+          "event_en": "All 65MW handed over to CoreWeave",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026031246/q1fy26earningsdeck.htm"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "착공 시점 미공개 → 6개 사이트 포트폴리오가 확정된 2025-02로 둠(실제로는 2024년 하반기일 가능성)",
+          "note_en": "Construction start undisclosed; set to Feb 2025 when the six-site portfolio was confirmed (may have started in H2 2024)",
+          "source": "https://investors.corescientific.com/news-events/press-releases/detail/110/core-scientific-and-coreweave-announce-1-2-billion-expansion-at-denton-tx-site"
+        },
+        {
+          "note": "통전은 추정: 2025-12 = 37MW(IT) × PUE 1.5 ≈ 56MW, 2026-05 = 65MW × 1.5 ≈ 98MW",
+          "note_en": "Energized is estimated: Dec 2025 = 37MW IT × PUE 1.5 ≈ 56MW; May 2026 = 65MW × 1.5 ≈ 98MW",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828025046272/core-20250930.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828026031246/q1fy26earningsdeck.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828025008302/core-20241231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "muskogee",
+      "name": "Muskogee (CoreWeave · AMD)",
+      "name_ko": "머스코기 (CoreWeave·AMD)",
+      "country": "US",
+      "admin1": "US-OK",
+      "region": "Oklahoma (Muskogee County, Muskogee)",
+      "coord": {
+        "lat": 35.697,
+        "lng": -95.385,
+        "confidence": "high",
+        "method": "official_address",
+        "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+      },
+      "primary": "corescientific",
+      "parties": [
+        {
+          "company": "corescientific",
+          "role": "owner",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "company": "corescientific",
+          "role": "developer",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "company": "coreweave",
+          "role": "tenant",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "company": "amd",
+          "role": "tenant",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+        }
+      ],
+      "detail": "full",
+      "announced": "2025-02",
+      "acres": 104,
+      "grid_operator": "OG&E (SPP)",
+      "cooling": "undisclosed",
+      "summary_ko": "CoreWeave용 70MW(IT) 건물이 2026년 중반 가동. 2026-05 착공한 두 번째 82MW 건물은 AMD가 임대(2027년 하반기 첫 인도). 2026-08 인접 Polaris DS(40에이커, 가동 중 440MW) 인수로 확보 전력 540MW, 계통+BTM 1.5GW 확장 계획.",
+      "summary_en": "70MW IT CoreWeave building in service by mid-2026. A second ~82MW building (construction began by May 2026) is leased to AMD, first delivery H2 2027. Acquisition of adjacent Polaris DS (40 acres, 440MW in service) in Aug 2026 lifts secured power to 540MW; 1.5GW grid+BTM plan.",
+      "power": [
+        {
+          "from": "2025-02",
+          "secured_mw": 100,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828025008302/core-20241231.htm"
+        },
+        {
+          "from": "2026-05",
+          "secured_mw": 540,
+          "energized_mw": 0,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026030918/exhibit991polarispressre.htm"
+        },
+        {
+          "from": "2026-07",
+          "secured_mw": 540,
+          "energized_mw": 100,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+        },
+        {
+          "from": "2026-08-14",
+          "secured_mw": 540,
+          "energized_mw": 100,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000018/polarisclosingvf20260814.htm"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "cw-building",
+          "name": "Building 1 (CoreWeave, 2 compute + 1 network hall)",
+          "name_ko": "1동 (CoreWeave, 컴퓨트홀 2·네트워크홀 1)",
+          "it_mw": 70,
+          "gross_mw": 100,
+          "mw_basis": "it",
+          "customer": "CoreWeave",
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2025-Q1",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2026-07",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+            }
+          ],
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+          ]
+        },
+        {
+          "id": "amd-building-2",
+          "name": "Building 2 (AMD)",
+          "name_ko": "2동 (AMD)",
+          "it_mw": 82,
+          "mw_basis": "it",
+          "progress": 0.25,
+          "customer": "AMD",
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2026-05",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026030918/exhibit991polarispressre.htm"
+            },
+            {
+              "status": "commissioning",
+              "from": "2027-Q4",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026030918/exhibit991polarispressre.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2028",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+            }
+          ],
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1839341/000162828026030918/exhibit991polarispressre.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000018/polarisclosingvf20260814.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2025-Q1",
+          "event": "CoreWeave 70MW 건물 착공(Evans General Contractors)",
+          "event_en": "Construction of 70MW CoreWeave building begins (Evans General Contractors)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "date": "2026-05-06",
+          "event": "Polaris DS 인수 합의(440MW), 두 번째 82.5MW 건물 착공, 1.5GW 확장 계획 발표",
+          "event_en": "Agreement to acquire Polaris DS (440MW); second 82.5MW building under construction; 1.5GW expansion plan",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026030918/exhibit991polarispressre.htm"
+        },
+        {
+          "date": "2026-07",
+          "event": "CoreWeave 70MW 전량 과금",
+          "event_en": "All 70MW billing to CoreWeave",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+        },
+        {
+          "date": "2026-07-27",
+          "event": "AMD와 2동 약 82MW 15년 임대",
+          "event_en": "15-year lease with AMD for ~82MW (Building 2)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+        },
+        {
+          "date": "2026-08-14",
+          "event": "Polaris DS 인수 종결(약 4억4400만달러), 가동 중 계통 440MW 확보",
+          "event_en": "Polaris DS acquisition closed (~$444m), securing ~440MW in-service grid power",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000018/polarisclosingvf20260814.htm"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "2026-05 확보 540MW는 추정: Polaris 인수 합의(2026-05-05) 시점부터 회사가 리스 가능 전력에 포함. 인수 종결은 2026-08-14",
+          "note_en": "Secured 540MW from May 2026 is estimated: the company counted Polaris power from the merger agreement (2026-05-05); closing was 2026-08-14",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026030918/exhibit991polarispressre.htm"
+        },
+        {
+          "note": "통전 100MW는 추정: 70MW(IT) 건물 완공 시 OG&E 계약 100MW 통전으로 간주. Polaris의 가동 중 440MW는 AI 부하가 아니라 제외",
+          "note_en": "Energized 100MW is estimated as the 100MW OG&E contract once the 70MW IT building is complete; Polaris 440MW in-service load excluded as non-AI",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "note": "2동 진행률 0.25는 추정: 2026-05 이전 착공, 2027년 4분기 첫 인도 목표에서 선형 근사",
+          "note_en": "Building 2 progress 0.25 is estimated: construction began by May 2026, first delivery targeted Q4 2027",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026030918/exhibit991polarispressre.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828026030918/exhibit991polarispressre.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000018/polarisclosingvf20260814.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "austin",
+      "name": "Austin (CoreWeave)",
+      "name_ko": "오스틴 (CoreWeave)",
+      "country": "US",
+      "admin1": "US-TX",
+      "region": "Texas (Travis County, Austin)",
+      "coord": {
+        "lat": 30.267,
+        "lng": -97.67,
+        "confidence": "high",
+        "method": "official_address",
+        "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+      },
+      "primary": "corescientific",
+      "parties": [
+        {
+          "company": "corescientific",
+          "role": "operator",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "company": "coreweave",
+          "role": "tenant",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        }
+      ],
+      "detail": "full",
+      "announced": "2024-02",
+      "acres": 38,
+      "grid_operator": "ERCOT (Austin Energy)",
+      "cooling": "undisclosed",
+      "summary_ko": "임차 건물(데이터홀 2개) 16.5MW(IT) — CoreWeave 첫 계약 사이트. 2024년 2분기 가동, 7년 계약.",
+      "summary_en": "Leased single building (two data halls), 16.5MW IT — the first CoreWeave site. In service since Q2 2024 under a 7-year license.",
+      "power": [
+        {
+          "from": "2024-02",
+          "secured_mw": 20,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        },
+        {
+          "from": "2024-Q2",
+          "secured_mw": 20,
+          "energized_mw": 20,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "austin-dc",
+          "name": "Austin data center (2 data halls)",
+          "name_ko": "오스틴 데이터센터 (데이터홀 2개)",
+          "it_mw": 16.5,
+          "gross_mw": 20,
+          "mw_basis": "it",
+          "customer": "CoreWeave",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2024-02",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2024-Q2",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+            }
+          ],
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2024-02",
+          "event": "CoreWeave와 16MW 장기 계약(첫 HPC 계약)",
+          "event_en": "Long-term 16MW contract with CoreWeave (first HPC deal)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+        },
+        {
+          "date": "2024-Q2",
+          "event": "라이선스 개시, CoreWeave 기본료 지급 시작",
+          "event_en": "License commencement; CoreWeave base fees begin",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "통전 20MW는 추정: 완공된 사이트의 계통 용량 20MW를 통전으로 간주",
+          "note_en": "Energized 20MW is estimated as the 20MW grid capacity of the completed site",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "pecos",
+      "name": "Pecos (AMD)",
+      "name_ko": "페코스 (AMD)",
+      "country": "US",
+      "admin1": "US-TX",
+      "region": "Texas (Reeves County, Pecos)",
+      "coord": {
+        "lat": 31.423,
+        "lng": -103.493,
+        "confidence": "medium",
+        "method": "city_centroid",
+        "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026027645/exhibit991-pecosexpansio.htm"
+      },
+      "primary": "corescientific",
+      "parties": [
+        {
+          "company": "corescientific",
+          "role": "developer",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026027645/exhibit991-pecosexpansio.htm"
+        },
+        {
+          "company": "corescientific",
+          "role": "operator",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026027645/exhibit991-pecosexpansio.htm"
+        },
+        {
+          "company": "amd",
+          "role": "tenant",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+        }
+      ],
+      "detail": "full",
+      "announced": "2025-10",
+      "acres": 200,
+      "grid_operator": "ERCOT (Texas-New Mexico Power)",
+      "cooling": "undisclosed",
+      "summary_ko": "300MW(gross) 비트코인 채굴 캠퍼스를 AI 데이터센터로 전환 중. 2026-07 AMD와 약 185MW(IT) 15년 임대, 2027년 상반기 첫 인도 목표. 추가 300MW는 ERCOT Batch Zero \"Studied Load\"로 조건부 승인(최종 배분 대기). 계통+BTM 1.5GW 확장 계획.",
+      "summary_en": "300MW gross bitcoin mining campus being converted to AI. ~185MW IT leased to AMD for 15 years (Jul 2026), first delivery targeted H1 2027. An additional 300MW is conditionally approved as ERCOT Batch Zero \"Studied Load\" (final allocation pending); 1.5GW grid+BTM plan.",
+      "power": [
+        {
+          "from": "2025-10",
+          "secured_mw": 300,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "mining-halls",
+          "name": "Bitcoin mining halls",
+          "name_ko": "비트코인 채굴동",
+          "kind": "miner_hall",
+          "gross_mw": 300,
+          "mw_basis": "grid",
+          "phases": [
+            {
+              "status": "operating",
+              "from": "2023-11",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+            }
+          ],
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1839341/000162828026027645/exhibit991-pecosexpansio.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+          ]
+        },
+        {
+          "id": "amd-phase-1",
+          "name": "AMD Phase 1 (first data halls)",
+          "name_ko": "AMD 1단계 (첫 데이터홀)",
+          "it_mw": 185,
+          "mw_basis": "it",
+          "progress": 0.3,
+          "replaces": "mining-halls",
+          "customer": "AMD",
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2026-Q1",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026027645/exhibit991-pecosexpansio.htm"
+            },
+            {
+              "status": "commissioning",
+              "from": "2027-H1",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2028",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+            }
+          ],
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1839341/000162828026027645/exhibit991-pecosexpansio.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2025-10-30",
+          "event": "투자자 자료에서 \"미래 코로케이션 사이트\"(약 200MW 과금 가능)로 공개",
+          "event_en": "Listed as a \"Future Colocation Site\" (~200MW billable) in investor deck",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000114036125039864/ef20057996_ex99-1.htm"
+        },
+        {
+          "date": "2026-Q1",
+          "event": "채굴 캠퍼스의 AI 데이터센터 전환 공사 착수",
+          "event_en": "Conversion of the mining campus into an AI data center begins",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026027645/exhibit991-pecosexpansio.htm"
+        },
+        {
+          "date": "2026-04-27",
+          "event": "첫 데이터홀 기초 완료·프리캐스트 벽체 반입, 추가 300MW 전력 계약·200에이커 확보, 1.5GW 확장 계획",
+          "event_en": "First data hall footings set, precast walls arriving; incremental 300MW contracted and 200+ acres secured; 1.5GW plan",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026027645/exhibit991-pecosexpansio.htm"
+        },
+        {
+          "date": "2026-07-27",
+          "event": "AMD와 약 185MW(IT) 15년 임대",
+          "event_en": "15-year lease with AMD for ~185MW IT",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+        },
+        {
+          "date": "2026-09-10",
+          "event": "ERCOT Batch Zero: 기존 300MW Base Load(Pathway b), 추가 300MW Studied Load 조건부 승인",
+          "event_en": "ERCOT Batch Zero: existing 300MW Base Load (Pathway b); additional 300MW conditionally approved as Studied Load",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000023/core-20260910.htm"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "AMD 1단계 진행률 0.3은 추정: 2026-04 기초 완료·수직 공사 착수, 2027년 상반기 첫 인도 목표로 근사",
+          "note_en": "AMD Phase 1 progress 0.3 is estimated: footings set in Apr 2026 with vertical construction starting; first delivery H1 2027",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026027645/exhibit991-pecosexpansio.htm"
+        },
+        {
+          "note": "AMD 1단계 전량 가동(2028)은 \"530MW 전량 2028년 말까지 인도\" 문구를 적용한 것으로 사이트별 일정은 미공개. 채굴동은 AMD 홀 가동분만큼 전력을 넘기는 것으로 모델링(채굴 종료 시점 미공개)",
+          "note_en": "Full operation (2028) applies the \"full 530MW delivered by end of 2028\" statement; site-level date undisclosed. Mining halls modeled as ceding power to AMD halls (mining end date undisclosed)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828026027645/exhibit991-pecosexpansio.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000023/core-20260910.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000114036125039864/ef20057996_ex99-1.htm"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "hunt-county",
+      "name": "Hunt County (AMD)",
+      "name_ko": "헌트 카운티 (AMD)",
+      "country": "US",
+      "admin1": "US-TX",
+      "region": "Texas (Hunt County, Dallas–Fort Worth area)",
+      "coord": {
+        "lat": 33.124,
+        "lng": -96.086,
+        "confidence": "low",
+        "method": "county_centroid",
+        "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+      },
+      "primary": "corescientific",
+      "parties": [
+        {
+          "company": "corescientific",
+          "role": "owner",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+        },
+        {
+          "company": "corescientific",
+          "role": "developer",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+        },
+        {
+          "company": "amd",
+          "role": "tenant",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+        }
+      ],
+      "detail": "full",
+      "announced": "2026-03",
+      "acres": 265,
+      "grid_operator": "ERCOT",
+      "cooling": "undisclosed",
+      "summary_ko": "2026-05 약 2억3300만달러에 인수한 그린필드 부지(약 265에이커, 계통 430MW, ERCOT 램프 승인). AMD와 약 110MW(IT) 15년 임대, 2028년 상반기 첫 인도 목표. 2026-09 착공, 2027 통전 시작 → 2029 전량.",
+      "summary_en": "Greenfield site acquired May 2026 for ~$233m (~265 acres, 430MW grid with ERCOT-approved ramp). ~110MW IT leased to AMD for 15 years, first delivery targeted H1 2028. Construction commenced by Sep 2026; energization from 2027, full power by 2029.",
+      "power": [
+        {
+          "from": "2026-03",
+          "secured_mw": 0,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013214/q42025corescientificinc-ea.htm"
+        },
+        {
+          "from": "2026-05-05",
+          "secured_mw": 430,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+        },
+        {
+          "from": "2029",
+          "secured_mw": 430,
+          "energized_mw": 430,
+          "basis": "target",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013214/q4fy25earningsdeckvfinal.htm"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "amd-phase-1",
+          "name": "AMD Phase 1",
+          "name_ko": "AMD 1단계",
+          "it_mw": 110,
+          "mw_basis": "it",
+          "progress": 0.05,
+          "customer": "AMD",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-07-27",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+            },
+            {
+              "status": "under_construction",
+              "from": "2026-09",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000023/core-20260910.htm"
+            },
+            {
+              "status": "commissioning",
+              "from": "2028-H1",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2028",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+            }
+          ],
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000023/core-20260910.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2026-03-02",
+          "event": "헌트 카운티 진출 합의 발표(430MW gross, ERCOT 램프 승인)",
+          "event_en": "Agreement to expand into Hunt County announced (430MW gross, ERCOT ramp approved)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013214/q42025corescientificinc-ea.htm"
+        },
+        {
+          "date": "2026-05-05",
+          "event": "부지 인수 종결(약 2억3300만달러)·전력공급계약 체결",
+          "event_en": "Land acquisition closed (~$233m) with electric service agreement",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+        },
+        {
+          "date": "2026-07-27",
+          "event": "AMD와 약 110MW(IT) 15년 임대",
+          "event_en": "15-year lease with AMD for ~110MW IT",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+        },
+        {
+          "date": "2026-09-10",
+          "event": "ERCOT Batch Zero: 431MW \"Advancing Large Load\"(Pathway e) 조건부 승인, 장납기 장비 발주·착공",
+          "event_en": "ERCOT Batch Zero: 431MW conditionally approved as Advancing Large Load (Pathway e); long-lead equipment ordered, construction commenced",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000023/core-20260910.htm"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "진행률 0.05는 추정: 2026-09 착공 공시, 2028년 상반기 첫 인도 목표",
+          "note_en": "Progress 0.05 is estimated: construction commenced per Sep 2026 filing, first delivery H1 2028",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000023/core-20260910.htm"
+        },
+        {
+          "note": "좌표는 헌트 카운티 중심점(임의). 공시에 시·주소 없음",
+          "note_en": "Coordinates are the Hunt County centroid; no city or address disclosed",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000023/core-20260910.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013214/q4fy25earningsdeckvfinal.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013214/q42025corescientificinc-ea.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "auburn",
+      "name": "Auburn (neocloud)",
+      "name_ko": "오번 (네오클라우드)",
+      "country": "US",
+      "admin1": "US-AL",
+      "region": "Alabama (Lee County, Auburn)",
+      "coord": {
+        "lat": 32.61,
+        "lng": -85.481,
+        "confidence": "medium",
+        "method": "city_centroid",
+        "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+      },
+      "primary": "corescientific",
+      "parties": [
+        {
+          "company": "corescientific",
+          "role": "developer",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+        },
+        {
+          "company": "corescientific",
+          "role": "operator",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+        },
+        {
+          "company": "amd",
+          "role": "financier",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+        }
+      ],
+      "detail": "full",
+      "announced": "2025-10",
+      "acres": null,
+      "grid_operator": "Alabama Power (Southern Company)",
+      "cooling": "undisclosed",
+      "summary_ko": "임차 부지, 계통 50MW. 2026-07 이름 미공개 네오클라우드와 약 32MW(IT) 15년 임대(AMD 신용보강), 2027년 상반기 첫 인도 목표.",
+      "summary_en": "Leased site with 50MW grid. ~32MW IT leased for 15 years to an undisclosed neocloud with AMD credit support (Jul 2026); first delivery targeted H1 2027.",
+      "power": [
+        {
+          "from": "2025-10",
+          "secured_mw": 50,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "neocloud-hall",
+          "name": "Neocloud lease (AMD credit support)",
+          "name_ko": "네오클라우드 임대 (AMD 신용보강)",
+          "it_mw": 32,
+          "mw_basis": "it",
+          "customer": "Neocloud (undisclosed)",
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-07-27",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+            },
+            {
+              "status": "commissioning",
+              "from": "2027-H1",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2028",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+            }
+          ],
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm",
+            "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2025-10-30",
+          "event": "투자자 자료에서 \"코로케이션 가능\" 사이트(약 30MW)로 공개",
+          "event_en": "Listed as \"Available for Colocation\" (~30MW) in investor deck",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000114036125039864/ef20057996_ex99-1.htm"
+        },
+        {
+          "date": "2026-07-27",
+          "event": "네오클라우드와 약 32MW 15년 임대(AMD 신용보강)",
+          "event_en": "15-year lease with a neocloud for ~32MW (AMD credit support)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "전량 가동(2028)은 \"530MW 전량 2028년 말까지 인도\" 문구 적용, 착공 여부·시점 미공개",
+          "note_en": "Full operation (2028) applies the \"full 530MW by end of 2028\" statement; construction status undisclosed",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000114036125039864/ef20057996_ex99-1.htm"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "reviewed_at": "2026-10-07"
+}

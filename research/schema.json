@@ -21,7 +21,8 @@
             "miner",
             "neocloud",
             "hyperscaler",
-            "korea"
+            "korea",
+            "partner"
           ]
         },
         "ticker": {
@@ -366,6 +367,11 @@
                     "gross_mw": {
                       "type": "number",
                       "minimum": 0
+                    },
+                    "pue": {
+                      "type": "number",
+                      "minimum": 1,
+                      "maximum": 2
                     },
                     "mw_basis": {
                       "type": "string",

@@ -22,5 +22,7 @@
 6. **좌표**: coord.confidence — high(공식 주소·인허가 필지, 소수 3자리) / medium(도시 중심) / low(카운티·지역 중심). method 를 정확히 적는다. **위성사진으로 비공개 시설 위치를 추적하지 않는다.**
 7. **detail**: 건물·단계 단위 데이터가 충분하면 full, 아니면 lite (buildings 를 비워도 됨 — 화면이 MW·일정으로 자동 생성).
 8. 회사 항목: id(소문자-하이픈), group(miner/neocloud/hyperscaler/korea), ticker, color(파스텔 #rrggbb — 기존 회사색·상태색 #2ea88a #3fbf96 #e8825a #9aa6bd #b9bfcc 과 다르게), hq_country, summary_ko/en(1~2문장), metrics(선택, 출처 포함).
+8-1. **참여만 하는 회사**(AI 랩·칩 회사·개발사·금융사 등 자기 사이트가 없는 회사)는 parties 에 쓰고, 회사 항목이 없으면 open_questions 에 적는다 — 병합 때 group "partner" 로 추가한다.
+8-2. **IT 만 공개된 건물**은 화면에서 PUE 1.3 으로 총 전력을 환산한다. 그러면 계통 전력을 넘는 경우(예: 500MW 계통에 IT 438MW)에는 건물에 `pue`(1~2)를 지정하고 estimates[] 에 근거를 적는다. 검증은 "그 달 실제로 전력을 쓰는 건물(가동·시운전·폐쇄중) 합계 ≤ 확보 전력×1.05" 도 검사한다.
 9. 모르는 값은 지어내지 말고 생략하거나 open_questions 에 적는다. 상충하면 낮은 값을 채택하고 notes.md 에 양쪽을 적는다.
 10. 작업이 끝나면 `node scripts/check-draft.mjs <회사id>` 를 실행해 오류가 없게 고친다.

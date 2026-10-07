@@ -1,82 +1,6 @@
 {
   "companies": [
     {
-      "id": "iren",
-      "name": "IREN",
-      "name_ko": "아이렌",
-      "group": "miner",
-      "ticker": {
-        "symbol": "IREN",
-        "exchange": "NASDAQ"
-      },
-      "color": "#7f9cf5",
-      "hq_country": "AU",
-      "summary_ko": "호주 시드니 본사. 비트코인 채굴에서 AI 클라우드로 전환 중이며 Microsoft·NVIDIA 등과 GPU 클라우드 계약을 맺었다.",
-      "summary_en": "Sydney-based. Transitioning from bitcoin mining to AI cloud with GPU contracts from Microsoft, NVIDIA and others.",
-      "metrics": [
-        {
-          "key": "contracted_arr_usd_bn",
-          "value": 4,
-          "unit": "USD bn",
-          "label_ko": "계약 ARR",
-          "label_en": "Contracted ARR",
-          "as_of": "2026-08",
-          "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
-        },
-        {
-          "key": "operating_arr_usd_bn",
-          "value": 1,
-          "unit": "USD bn",
-          "label_ko": "운영 ARR",
-          "label_en": "Operating ARR",
-          "as_of": "2026-08",
-          "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
-        },
-        {
-          "key": "backlog_usd_bn",
-          "value": 13,
-          "unit": "USD bn",
-          "label_ko": "수주잔고",
-          "label_en": "Backlog",
-          "as_of": "2026-10",
-          "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
-        },
-        {
-          "key": "gpus_total",
-          "value": 150000,
-          "unit": "GPU",
-          "label_ko": "총 GPU(설치+주문)",
-          "label_en": "GPUs (installed + ordered)",
-          "as_of": "2026-03",
-          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000114036126007905/ny20064909x3_ex99-1.htm"
-        }
-      ],
-      "sources": [
-        "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html",
-        "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm",
-        "https://iren.com/data-centers",
-        "https://www.sec.gov/Archives/edgar/data/1878848/000114036126007905/ny20064909x3_ex99-1.htm"
-      ]
-    },
-    {
-      "id": "coreweave",
-      "name": "CoreWeave",
-      "name_ko": "코어위브",
-      "group": "neocloud",
-      "ticker": {
-        "symbol": "CRWV",
-        "exchange": "NASDAQ"
-      },
-      "color": "#6fb3d9",
-      "hq_country": "US",
-      "summary_ko": "미국 뉴저지 본사의 GPU 클라우드 기업(네오클라우드). 채굴사 캠퍼스 여러 곳에 대형 입주사로 들어가 있다.",
-      "summary_en": "New Jersey-based GPU cloud provider (neocloud), a major tenant at several former mining campuses.",
-      "metrics": [],
-      "sources": [
-        "https://investors.coreweave.com"
-      ]
-    },
-    {
       "id": "fluidstack",
       "name": "Fluidstack",
       "name_ko": "플루이드스택",
@@ -250,6 +174,422 @@
         "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
         "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
         "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm"
+      ]
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "name_ko": "앤트로픽",
+      "group": "partner",
+      "color": "#a8a29e",
+      "hq_country": "US",
+      "summary_ko": "미국 AI 연구 기업(Claude 개발사). 일부 데이터센터의 최종 사용자·장기 임차인.",
+      "summary_en": "US AI lab (maker of Claude); end user / long-term tenant at some data centers.",
+      "metrics": [],
+      "sources": [
+        "https://www.anthropic.com"
+      ]
+    },
+    {
+      "id": "amd",
+      "name": "AMD",
+      "name_ko": "AMD",
+      "group": "partner",
+      "color": "#8d99ae",
+      "hq_country": "US",
+      "summary_ko": "미국 반도체 기업. Core Scientific 일부 사이트의 직접 임차인 또는 신용보강 제공자.",
+      "summary_en": "US chipmaker; direct tenant or credit support at some Core Scientific sites.",
+      "metrics": [],
+      "sources": [
+        "https://ir.amd.com"
+      ],
+      "ticker": {
+        "symbol": "AMD",
+        "exchange": "NASDAQ"
+      }
+    },
+    {
+      "id": "core42",
+      "name": "Core42",
+      "name_ko": "코어42",
+      "group": "partner",
+      "color": "#a3a3b8",
+      "hq_country": "AE",
+      "summary_ko": "UAE G42 계열 AI 클라우드 기업. TeraWulf Lake Mariner 의 임차인.",
+      "summary_en": "UAE G42-affiliated AI cloud company; tenant at TeraWulf Lake Mariner.",
+      "metrics": [],
+      "sources": [
+        "https://www.core42.ai"
+      ]
+    },
+    {
+      "id": "chirisa-technology-parks",
+      "name": "Chirisa Technology Parks",
+      "name_ko": "치리사 테크놀로지 파크",
+      "group": "partner",
+      "color": "#b0a8a0",
+      "hq_country": "US",
+      "summary_ko": "미국 데이터센터 개발사. CoreWeave Lancaster·Richmond 캠퍼스 개발에 참여.",
+      "summary_en": "US data center developer; co-developer of CoreWeave's Lancaster and Richmond campuses.",
+      "metrics": [],
+      "sources": [
+        "https://www.chirisa.com"
+      ]
+    },
+    {
+      "id": "machine-investment-group",
+      "name": "Machine Investment Group",
+      "name_ko": "머신 인베스트먼트 그룹",
+      "group": "partner",
+      "color": "#9e9e9e",
+      "hq_country": "US",
+      "summary_ko": "미국 디지털 인프라 개발·투자사. CoreWeave Lancaster 공동 개발.",
+      "summary_en": "US digital infrastructure developer/investor; co-developer of CoreWeave Lancaster.",
+      "metrics": [],
+      "sources": [
+        "https://www.coreweave.com/news"
+      ]
+    },
+    {
+      "id": "blue-owl",
+      "name": "Blue Owl Capital",
+      "name_ko": "블루아울 캐피털",
+      "group": "partner",
+      "color": "#8fa3b8",
+      "hq_country": "US",
+      "summary_ko": "미국 대체투자 운용사. AI 데이터센터 개발·장비 금융 제공.",
+      "summary_en": "US alternative asset manager; finances AI data center development and equipment.",
+      "metrics": [],
+      "sources": [
+        "https://ir.blueowl.com"
+      ],
+      "ticker": {
+        "symbol": "OWL",
+        "exchange": "NYSE"
+      }
+    },
+    {
+      "id": "iren",
+      "name": "IREN",
+      "name_ko": "아이렌",
+      "group": "miner",
+      "ticker": {
+        "symbol": "IREN",
+        "exchange": "NASDAQ"
+      },
+      "color": "#7f9cf5",
+      "hq_country": "AU",
+      "summary_ko": "호주 시드니 본사. 비트코인 채굴에서 AI 클라우드로 전환 중이며 Microsoft·NVIDIA 등과 GPU 클라우드 계약을 맺었다.",
+      "summary_en": "Sydney-based. Transitioning from bitcoin mining to AI cloud with GPU contracts from Microsoft, NVIDIA and others.",
+      "metrics": [
+        {
+          "key": "contracted_arr_usd_bn",
+          "value": 4,
+          "unit": "USD bn",
+          "label_ko": "계약 ARR",
+          "label_en": "Contracted ARR",
+          "as_of": "2026-08",
+          "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+        },
+        {
+          "key": "operating_arr_usd_bn",
+          "value": 1,
+          "unit": "USD bn",
+          "label_ko": "운영 ARR",
+          "label_en": "Operating ARR",
+          "as_of": "2026-08",
+          "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+        },
+        {
+          "key": "backlog_usd_bn",
+          "value": 13,
+          "unit": "USD bn",
+          "label_ko": "수주잔고",
+          "label_en": "Backlog",
+          "as_of": "2026-10",
+          "source": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+        },
+        {
+          "key": "gpus_total",
+          "value": 150000,
+          "unit": "GPU",
+          "label_ko": "총 GPU(설치+주문)",
+          "label_en": "GPUs (installed + ordered)",
+          "as_of": "2026-03",
+          "source": "https://www.sec.gov/Archives/edgar/data/1878848/000114036126007905/ny20064909x3_ex99-1.htm"
+        }
+      ],
+      "sources": [
+        "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html",
+        "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm",
+        "https://iren.com/data-centers",
+        "https://www.sec.gov/Archives/edgar/data/1878848/000114036126007905/ny20064909x3_ex99-1.htm"
+      ]
+    },
+    {
+      "id": "coreweave",
+      "name": "CoreWeave",
+      "name_ko": "코어위브",
+      "group": "neocloud",
+      "ticker": {
+        "symbol": "CRWV",
+        "exchange": "NASDAQ"
+      },
+      "color": "#6fb3d9",
+      "hq_country": "US",
+      "summary_ko": "뉴저지 리빙스턴 본사의 AI 전용 GPU 클라우드 기업(네오클라우드). 2026년 6월 말 활성 전력 1.5GW·계약 전력 약 3.7GW·수주잔고 약 1,040억 달러이며, 데이터센터는 대부분 채굴사·개발사 캠퍼스에 임차 입주하고 뉴저지 Kenilworth(지분 35% JV)에서 첫 자체 개발을 진행 중이다.",
+      "summary_en": "Livingston, NJ-based AI GPU cloud (neocloud) with 1.5GW active power, ~3.7GW contracted power and ~$104bn revenue backlog at end-June 2026. It mostly leases capacity at miner and developer campuses, and is developing its first own facility in Kenilworth, NJ via a 35%-owned JV.",
+      "metrics": [
+        {
+          "key": "revenue_backlog_usd_bn",
+          "value": 104,
+          "unit": "USD bn",
+          "label_ko": "수주잔고(Revenue backlog)",
+          "label_en": "Revenue backlog",
+          "as_of": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm"
+        },
+        {
+          "key": "active_power_gw",
+          "value": 1.5,
+          "unit": "GW",
+          "label_ko": "활성 전력",
+          "label_en": "Active power",
+          "as_of": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm"
+        },
+        {
+          "key": "contracted_power_gw",
+          "value": 3.7,
+          "unit": "GW",
+          "label_ko": "계약 전력",
+          "label_en": "Total contracted power",
+          "as_of": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm"
+        },
+        {
+          "key": "active_data_centers",
+          "value": 51,
+          "unit": "sites",
+          "label_ko": "가동 데이터센터 수",
+          "label_en": "Active data centers",
+          "as_of": "2026-08-11",
+          "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm"
+        },
+        {
+          "key": "revenue_q2_2026_usd_bn",
+          "value": 2.575,
+          "unit": "USD bn",
+          "label_ko": "2026년 2분기 매출",
+          "label_en": "Q2 2026 revenue",
+          "as_of": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm",
+        "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm",
+        "https://investors.coreweave.com"
+      ]
+    },
+    {
+      "id": "hut8",
+      "name": "Hut 8 Corp.",
+      "name_ko": "헛 에이트",
+      "group": "miner",
+      "ticker": {
+        "symbol": "HUT",
+        "exchange": "NASDAQ"
+      },
+      "color": "#d8cc6a",
+      "hq_country": "US",
+      "summary_ko": "마이애미 본사의 에너지 인프라 플랫폼(채굴은 자회사 American Bitcoin이 담당). 전력 선확보 모델로 루이지애나 River Bend(Fluidstack·Anthropic, Google 보증 245MW IT)와 텍사스 Beacon Point(익명 AA- 이상 테넌트 704MW IT) 두 AI 캠퍼스를 개발 중이며, 계약 IT 용량 949MW·기본 계약가치 약 $26.6bn.",
+      "summary_en": "Miami-based energy infrastructure platform (bitcoin mining sits in majority-owned American Bitcoin). Using a power-first model it is building two AI campuses: River Bend, LA (245MW IT for Fluidstack/Anthropic, Google-backstopped) and Beacon Point, TX (704MW IT for an undisclosed AA-or-better tenant): 949MW IT contracted, ~$26.6bn base-term value.",
+      "metrics": [
+        {
+          "key": "contracted_ai_it_mw",
+          "value": 949,
+          "unit": "MW",
+          "label_ko": "계약 AI IT 용량",
+          "label_en": "Contracted AI IT capacity",
+          "as_of": "2026-07",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+        },
+        {
+          "key": "contracted_base_term_value_usd_bn",
+          "value": 26.6,
+          "unit": "USD bn",
+          "label_ko": "기본 임대기간 계약가치 합계",
+          "label_en": "Aggregate base-term contract value",
+          "as_of": "2026-07",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+        },
+        {
+          "key": "energy_capacity_under_construction_mw",
+          "value": 1330,
+          "unit": "MW",
+          "label_ko": "건설중 전력 용량(River Bend 330 + Beacon Point 1,000)",
+          "label_en": "Energy capacity under construction (River Bend 330 + Beacon Point 1,000)",
+          "as_of": "2026-08",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+        },
+        {
+          "key": "development_pipeline_mw",
+          "value": 8660,
+          "unit": "MW",
+          "label_ko": "개발 파이프라인 전체",
+          "label_en": "Total development pipeline",
+          "as_of": "2026-06",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+        },
+        {
+          "key": "ig_project_financing_usd_bn",
+          "value": 7.5,
+          "unit": "USD bn",
+          "label_ko": "투자등급 프로젝트 파이낸싱(River Bend 3.25 + Beacon Point 4.25)",
+          "label_en": "Investment-grade project financing (River Bend 3.25 + Beacon Point 4.25)",
+          "as_of": "2026-06",
+          "source": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm",
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465926019392/hut-20251231x10k.htm",
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465925122052/hut-20251217xex99d1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1964789/000110465926084862/tm2620835d1_ex99-1.htm"
+      ]
+    },
+    {
+      "id": "corescientific",
+      "name": "Core Scientific",
+      "name_ko": "코어 사이언티픽",
+      "group": "miner",
+      "ticker": {
+        "symbol": "CORZ",
+        "exchange": "NASDAQ"
+      },
+      "color": "#d4a373",
+      "hq_country": "US",
+      "summary_ko": "비트코인 채굴사에서 AI용 고밀도 코로케이션(HDC) 사업자로 전환한 미국 기업. CoreWeave와 5개 사이트 약 590MW(IT) 12년 계약, 2026년 7월 AMD·네오클라우드와 약 530MW 15년 계약을 맺었다. 2025년 7월 CoreWeave의 약 90억달러 전액 주식 인수 합의는 2025-10-30 주주총회 부결로 무산돼 독립 상장사로 남았다.",
+      "summary_en": "US bitcoin miner turned high-density colocation (HDC) provider for AI. Leases ~590MW of critical IT to CoreWeave across five sites (12-year terms) and signed ~530MW of 15-year leases with AMD and a neocloud in July 2026. CoreWeave's ~$9bn all-stock takeover agreed in July 2025 failed the Oct 30, 2025 shareholder vote and was terminated; the company remains independent.",
+      "metrics": [
+        {
+          "key": "leased_customer_power_mw",
+          "value": 1100,
+          "unit": "MW",
+          "label_ko": "계약 고객 전력(IT, CoreWeave+AMD+네오클라우드)",
+          "label_en": "Leased customer power (IT, all customers)",
+          "as_of": "2026-07",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q22026corescientificinc-ea.htm"
+        },
+        {
+          "key": "billing_mw",
+          "value": 437,
+          "unit": "MW",
+          "label_ko": "과금 중인 용량(7월 중순)",
+          "label_en": "Billing capacity (mid-July)",
+          "as_of": "2026-07",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q22026corescientificinc-ea.htm"
+        },
+        {
+          "key": "contracted_revenue_usd_bn",
+          "value": 24,
+          "unit": "USD bn",
+          "label_ko": "잠재 계약 매출",
+          "label_en": "Potential contracted revenue",
+          "as_of": "2026-07",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q22026corescientificinc-ea.htm"
+        },
+        {
+          "key": "gross_utility_power_mw",
+          "value": 2115,
+          "unit": "MW",
+          "label_ko": "총 계통 전력 계약(gross)",
+          "label_en": "Gross utility power capacity",
+          "as_of": "2026-06",
+          "source": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q22026corescientificinc-ea.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q2fy26earningsdeck728am.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000114036125039808/ef20057995_ex99-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1839341/000119312525155925/d52423dex991.htm"
+      ]
+    },
+    {
+      "id": "terawulf",
+      "name": "TeraWulf",
+      "name_ko": "테라울프",
+      "group": "miner",
+      "ticker": {
+        "symbol": "WULF",
+        "exchange": "NASDAQ"
+      },
+      "color": "#7cc6c6",
+      "hq_country": "US",
+      "summary_ko": "메릴랜드 이스턴 본사. 뉴욕 Lake Mariner 비트코인 채굴장을 AI/HPC 임대 캠퍼스로 전환해 Core42·Fluidstack(Google 보증)에 438MW(IT)를 임대 중이며, 켄터키 Justified 캠퍼스에서 Anthropic과 401MW(IT) 20년 임대 계약을 맺었다.",
+      "summary_en": "Easton, Maryland-based. Converting its Lake Mariner (NY) bitcoin mine into an AI/HPC leasing campus with 438MW of critical IT leased to Core42 and Fluidstack (Google-backstopped), plus a 20-year, 401MW (IT) Anthropic lease at its Justified campus in Kentucky.",
+      "metrics": [
+        {
+          "key": "hpc_online_critical_it_mw",
+          "value": 102,
+          "unit": "MW",
+          "label_ko": "가동 중 HPC 용량(IT, 매출 발생)",
+          "label_en": "Revenue-generating HPC capacity (critical IT)",
+          "as_of": "2026-07",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+        },
+        {
+          "key": "lake_mariner_contracted_it_mw",
+          "value": 438,
+          "unit": "MW",
+          "label_ko": "Lake Mariner 계약 용량(IT)",
+          "label_en": "Lake Mariner contracted capacity (critical IT)",
+          "as_of": "2026-08",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+        },
+        {
+          "key": "justified_contracted_revenue_usd_bn",
+          "value": 19,
+          "unit": "USD bn",
+          "label_ko": "Justified(Anthropic) 계약 매출(20년)",
+          "label_en": "Justified (Anthropic) contracted revenue (20-yr)",
+          "as_of": "2026-07",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_8k.htm"
+        },
+        {
+          "key": "hpc_lease_revenue_q_usd_m",
+          "value": 31.9,
+          "unit": "USD m",
+          "label_ko": "HPC 임대 매출(분기)",
+          "label_en": "HPC lease revenue (quarter)",
+          "as_of": "2026-Q2",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+        },
+        {
+          "key": "cash_usd_bn",
+          "value": 3,
+          "unit": "USD bn",
+          "label_ko": "현금·제한부 현금",
+          "label_en": "Cash and restricted cash",
+          "as_of": "2026-06",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_8k.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000162828026064757/wulf-20261001.htm"
       ]
     }
   ],

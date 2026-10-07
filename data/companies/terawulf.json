@@ -1,0 +1,936 @@
+{
+  "company_id": "terawulf",
+  "as_of": "2026-10-07",
+  "sites": [
+    {
+      "id": "lake-mariner",
+      "name": "Lake Mariner Data Campus",
+      "name_ko": "레이크 마리너 데이터 캠퍼스",
+      "country": "US",
+      "admin1": "US-NY",
+      "region": "New York (Niagara County, Barker)",
+      "coord": {
+        "lat": 43.329,
+        "lng": -78.554,
+        "confidence": "medium",
+        "method": "city_centroid",
+        "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+      },
+      "primary": "terawulf",
+      "parties": [
+        {
+          "company": "terawulf",
+          "role": "developer",
+          "share": 1,
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+        },
+        {
+          "company": "terawulf",
+          "role": "operator",
+          "share": 1,
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+        },
+        {
+          "company": "core42",
+          "role": "tenant",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+        },
+        {
+          "company": "fluidstack",
+          "role": "tenant",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925078084/tm2523008d2_8k.htm"
+        },
+        {
+          "company": "google",
+          "role": "financier",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925079463/tm2523651d3_ex99-1.htm"
+        }
+      ],
+      "detail": "full",
+      "announced": "2022-03",
+      "acres": 157,
+      "grid_operator": "NYISO (Zone A, NYPA 90MW)",
+      "cooling": "liquid",
+      "summary_ko": "바커의 옛 석탄발전소 부지(157에이커 임차)에서 2022-03 비트코인 채굴 시작, 지금은 AI/HPC 임대로 전환 중. 근시일 gross 약 500MW(NYISO 추가 승인 시 750MW). Core42 60MW(IT, WULF Den·CB-1·CB-2) 가동, Fluidstack(Google 보증) CB-3 42MW 2026-07 인도, CB-4 168MW 2026 하반기·CB-5 168MW 2027 초 단계 인도 목표. 채굴은 245MW(2025말)→145MW(2026-03)로 축소.",
+      "summary_en": "Former coal-plant site in Barker (157 leased acres); bitcoin mining since Mar 2022, now converting to AI/HPC leasing. ~500MW gross near term (750MW with further NYISO approvals). Core42 60MW IT (WULF Den, CB-1, CB-2) operating; Fluidstack (Google backstop) CB-3 42MW delivered Jul 2026, CB-4 168MW phased H2 2026, CB-5 168MW from early 2027. Mining cut from 245MW (end-2025) to 145MW (Mar 2026).",
+      "power": [
+        {
+          "from": "2022-03",
+          "secured_mw": 500,
+          "energized_mw": 10,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000155837023005301/wulf-20221231x10k.htm"
+        },
+        {
+          "from": "2022-Q3",
+          "secured_mw": 500,
+          "energized_mw": 60,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000155837023005301/wulf-20221231x10k.htm"
+        },
+        {
+          "from": "2023-12",
+          "secured_mw": 500,
+          "energized_mw": 160,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330124000072/wulf-20231231.htm"
+        },
+        {
+          "from": "2024-12",
+          "secured_mw": 500,
+          "energized_mw": 195,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330125000018/wulf-20241231.htm"
+        },
+        {
+          "from": "2025-12",
+          "secured_mw": 500,
+          "energized_mw": 268,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+        },
+        {
+          "from": "2026-03",
+          "secured_mw": 500,
+          "energized_mw": 223,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000092/wulf-20260331.htm"
+        },
+        {
+          "from": "2026-07",
+          "secured_mw": 500,
+          "energized_mw": 278,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "lm-mining-remaining",
+          "name": "Bitcoin mining halls (3 buildings, remaining)",
+          "name_ko": "비트코인 채굴동 (잔여 3개동)",
+          "kind": "miner_hall",
+          "it_mw": 0,
+          "gross_mw": 145,
+          "mw_basis": "gross",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330125000018/wulf-20241231.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000092/wulf-20260331.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+          ],
+          "phases": [
+            {
+              "status": "operating",
+              "from": "2022-03",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330125000018/wulf-20241231.htm"
+            },
+            {
+              "status": "retired",
+              "from": "2027-Q1",
+              "basis": "estimate",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+            }
+          ]
+        },
+        {
+          "id": "lm-mining-repurposed",
+          "name": "Bitcoin mining halls (2 buildings, repurposed)",
+          "name_ko": "비트코인 채굴동 (전환된 2개동)",
+          "kind": "miner_hall",
+          "it_mw": 0,
+          "gross_mw": 100,
+          "mw_basis": "gross",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330125000018/wulf-20241231.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000092/wulf-20260331.htm"
+          ],
+          "phases": [
+            {
+              "status": "operating",
+              "from": "2024",
+              "basis": "estimate",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330125000018/wulf-20241231.htm"
+            },
+            {
+              "status": "retired",
+              "from": "2026-Q1",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000092/wulf-20260331.htm"
+            }
+          ]
+        },
+        {
+          "id": "lm-wulf-den",
+          "name": "WULF Den",
+          "name_ko": "WULF 덴",
+          "kind": "datahall_liquid",
+          "it_mw": 2,
+          "mw_basis": "it",
+          "customer": "Core42",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000026/a_wulfearningsrelease2026-.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+          ],
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2024",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2025-07",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+            }
+          ],
+          "pue": 1.14
+        },
+        {
+          "id": "lm-cb1",
+          "name": "CB-1",
+          "name_ko": "CB-1",
+          "kind": "datahall_liquid",
+          "it_mw": 16,
+          "mw_basis": "it",
+          "customer": "Core42",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000026/a_wulfearningsrelease2026-.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+          ],
+          "phases": [
+            {
+              "status": "under_construction",
+              "from": "2024",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2025-08",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+            }
+          ],
+          "pue": 1.14
+        },
+        {
+          "id": "lm-cb2",
+          "name": "CB-2 (CB-2A/2B)",
+          "name_ko": "CB-2 (2A/2B)",
+          "kind": "datahall_liquid",
+          "it_mw": 42,
+          "mw_basis": "it",
+          "customer": "Core42",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000026/a_wulfearningsrelease2026-.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2024-12",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330125000018/wulf-20241231.htm"
+            },
+            {
+              "status": "under_construction",
+              "from": "2025",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+            },
+            {
+              "status": "commissioning",
+              "from": "2026-02",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000026/a_wulfearningsrelease2026-.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2026-03",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm"
+            }
+          ],
+          "pue": 1.14
+        },
+        {
+          "id": "lm-cb3",
+          "name": "CB-3",
+          "name_ko": "CB-3",
+          "kind": "datahall_liquid",
+          "it_mw": 42,
+          "mw_basis": "it",
+          "customer": "Fluidstack (Google backstop)",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1083301/000110465925078084/tm2523008d2_8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000026/a_wulfearningsrelease2026-.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2025-08",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925078084/tm2523008d2_8k.htm"
+            },
+            {
+              "status": "under_construction",
+              "from": "2025-Q4",
+              "basis": "estimate",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+            },
+            {
+              "status": "commissioning",
+              "from": "2026-05",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2026-07",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+            }
+          ],
+          "pue": 1.14
+        },
+        {
+          "id": "lm-cb4",
+          "name": "CB-4",
+          "name_ko": "CB-4",
+          "kind": "datahall_liquid",
+          "it_mw": 168,
+          "mw_basis": "it",
+          "customer": "Fluidstack (Google backstop)",
+          "replaces": "lm-mining-repurposed",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1083301/000110465925078084/tm2523008d2_8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000026/a_wulfearningsrelease2026-.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm",
+            "https://www.fool.com/earnings/call-transcripts/2026/08/12/terawulf-wulf-q2-2026-earnings-call-transcript/"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2025-08",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925078084/tm2523008d2_8k.htm"
+            },
+            {
+              "status": "under_construction",
+              "from": "2025-Q4",
+              "basis": "estimate",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+            },
+            {
+              "status": "commissioning",
+              "from": "2026-08",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2026-Q4",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+            }
+          ],
+          "pue": 1.14
+        },
+        {
+          "id": "lm-cb5",
+          "name": "CB-5",
+          "name_ko": "CB-5",
+          "kind": "datahall_liquid",
+          "it_mw": 168,
+          "mw_basis": "it",
+          "customer": "Fluidstack (Google backstop)",
+          "replaces": "lm-mining-remaining",
+          "progress": 0.7,
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1083301/000110465925079463/tm2523651d3_ex99-1.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000026/a_wulfearningsrelease2026-.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/terawulfq22026investorpr.htm",
+            "https://www.fool.com/earnings/call-transcripts/2026/08/12/terawulf-wulf-q2-2026-earnings-call-transcript/"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2025-08",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925079463/tm2523651d3_ex99-1.htm"
+            },
+            {
+              "status": "under_construction",
+              "from": "2026-Q1",
+              "basis": "estimate",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000026/a_wulfearningsrelease2026-.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2027-Q1",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+            }
+          ],
+          "pue": 1.14
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2022-03",
+          "event": "Lake Mariner 비트코인 채굴 시작 (옛 석탄발전소 터빈 데크 10MW)",
+          "event_en": "Bitcoin mining begins at Lake Mariner (10MW on former coal plant turbine deck)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000155837023005301/wulf-20221231x10k.htm"
+        },
+        {
+          "date": "2022-Q3",
+          "event": "첫 전용 채굴동(Building 1, 약 50MW) 통전",
+          "event_en": "First dedicated mining building (Building 1, ~50MW) energized",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000155837023005301/wulf-20221231x10k.htm"
+        },
+        {
+          "date": "2024-12-23",
+          "event": "Core42(G42 계열)와 HPC 임대 계약 — 당초 72.5MW 발표, 이후 60MW(IT)로 기재",
+          "event_en": "HPC leases signed with Core42 (G42) — initially 72.5MW, later reported as 60MW critical IT",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330125000018/wulf-20241231.htm"
+        },
+        {
+          "date": "2025-07",
+          "event": "Core42 첫 임대 2건 개시(2025-07·08) — WULF Den·CB-1 18MW(IT)",
+          "event_en": "First two Core42 leases commence (Jul/Aug 2025) — WULF Den + CB-1, 18MW IT",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+        },
+        {
+          "date": "2025-08-14",
+          "event": "Fluidstack 10년 임대(CB-3·CB-4, 200MW+ IT), Google 리스 보증·워런트",
+          "event_en": "Fluidstack 10-yr leases (CB-3, CB-4; 200MW+ IT); Google backstop and warrants",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925078084/tm2523008d2_8k.htm"
+        },
+        {
+          "date": "2025-08-18",
+          "event": "Fluidstack CB-5(160MW IT) 추가, Google 보증 총 약 $3.2bn·지분 약 14%(프로포마)",
+          "event_en": "Fluidstack adds CB-5 (160MW IT); Google backstop ~$3.2bn total, ~14% pro forma stake",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925079463/tm2523651d3_ex99-1.htm"
+        },
+        {
+          "date": "2026-02-26",
+          "event": "CB-4·CB-5 IT 용량 162→168MW로 상향, CB-2A 가동",
+          "event_en": "CB-4/CB-5 critical IT raised from 162MW to 168MW each; CB-2A operational",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000026/a_wulfearningsrelease2026-.htm"
+        },
+        {
+          "date": "2026-03",
+          "event": "Core42 60MW 전량 가동. 채굴동 2개 전환·중단 → 채굴 145MW",
+          "event_en": "All 60MW for Core42 operating; two miner buildings repurposed, mining down to 145MW",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000092/wulf-20260331.htm"
+        },
+        {
+          "date": "2026-07",
+          "event": "CB-3 인도 완료 → 매출 발생 IT 102MW, Google 신용보강 $600m 발효",
+          "event_en": "CB-3 fully delivered → 102MW IT revenue-generating; $600m of Google credit support effective",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+        },
+        {
+          "date": "2026-08-05",
+          "event": "CB-4 첫 데이터홀 커미셔닝 진입(9월 말 통전 목표), CB-5 2027 초 단계 인도 목표",
+          "event_en": "First CB-4 data hall in commissioning (energization targeted late Sept); CB-5 phased delivery from early 2027",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "energized_mw(2025-12·2026-03·2026-07)는 채굴 MW(보고치) + HPC IT MW×1.3 으로 환산한 추정치 (245+18×1.3≈268, 145+60×1.3≈223, 145+102×1.3≈278)",
+          "note_en": "energized_mw for Dec 2025 / Mar 2026 / Jul 2026 = reported mining MW + HPC IT MW × 1.3 (estimate)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+        },
+        {
+          "note": "잔여 채굴동 145MW 의 퇴역 시점 2027-Q1 은 추정: 근시일 gross 약 500MW 안에 HPC 438MW(IT)를 수용하려면 CB-5 통전 시 채굴 전력 재배분이 필요하다고 봄. 회사는 '경제성이 있고 HPC 와 충돌하지 않는 한' 채굴 지속 방침",
+          "note_en": "Retirement of remaining 145MW mining in Q1 2027 is an estimate: fitting 438MW IT within ~500MW gross implies reallocating mining power when CB-5 energizes; company says mining continues only where it does not conflict with HPC",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+        },
+        {
+          "note": "전환된 채굴동 2개(약 100MW)는 245MW(2025말)−145MW(2026-03)로 계산. 가동 시작 2024 는 추정(2024말 195MW, 2025 상반기 +50MW)",
+          "note_en": "Repurposed two miner buildings (~100MW) derived as 245MW (end-2025) − 145MW (Mar 2026); 2024 start is an estimate (195MW end-2024, +50MW H1 2025)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330125000018/wulf-20241231.htm"
+        },
+        {
+          "note": "채굴동은 2개 묶음으로 단순화: 잔여 3개동(145MW)을 2022-03 부터 가동으로 표시했지만 실제 램프업은 10MW(2022-03)→60MW(2022 Q3)→160MW(2023말)→195MW(2024말)→245MW(2025) — 실제 통전 추이는 power[] 이력에 반영",
+          "note_en": "Mining halls simplified into two groups; actual ramp 10MW (Mar 2022) → 60MW (Q3 2022) → 160MW (end-2023) → 195MW (end-2024) → 245MW (2025) is captured in power[]",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330124000072/wulf-20231231.htm"
+        },
+        {
+          "note": "CB-4 는 전환된 채굴동 전력을, CB-5 는 잔여 채굴동 전력을 넘겨받는 것으로 표시(replaces) — 실제 전력 배분 방식은 미공개",
+          "note_en": "CB-4 shown as replacing the repurposed mining halls and CB-5 the remaining halls (replaces) — actual power allocation undisclosed",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+        },
+        {
+          "note": "CB-3·CB-4 착공 2025-Q4, CB-5 착공 2026-Q1 은 추정(10-K: Fluidstack 공사 2025년 착수, 2026-02 자료에서 CB-5 통전 대기). CB-5 진행률 0.7 은 첫 데이터홀 2027-01 초 통전 목표에서 역산한 근사치",
+          "note_en": "CB-3/CB-4 construction start Q4 2025 and CB-5 start Q1 2026 are estimates; CB-5 progress 0.7 back-solved from first-hall energization targeted for early Jan 2027",
+          "source": "https://www.fool.com/earnings/call-transcripts/2026/08/12/terawulf-wulf-q2-2026-earnings-call-transcript/"
+        },
+        {
+          "note": "WULF Den·CB-1 가동월(2025-07·08)은 10-K 의 'Core42 임대 2건 2025-07·08 개시'와 2025말 18MW(=2+16) 를 짝지은 해석",
+          "note_en": "WULF Den / CB-1 operating months (Jul/Aug 2025) mapped from 10-K \"two Core42 leases commenced July and August 2025\" and 18MW (=2+16) at end-2025",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+        },
+        {
+          "note": "HPC 건물 PUE 1.14 는 추정: 계통 500MW 안에서 IT 합계 438MW 를 운영하려면 PUE 약 1.14 이하가 필요해 그 값을 가정함. NYISO 승인으로 750MW 가 되면 재확인",
+          "note_en": "PUE 1.14 for HPC buildings is an estimate: fitting 438MW IT within the 500MW grid allocation requires PUE ≈1.14 or lower. Revisit if NYISO approves 750MW.",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000155837023005301/wulf-20221231x10k.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1083301/000155837023005301/wulf-20221231x10k.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330124000072/wulf-20231231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330125000018/wulf-20241231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000026/a_wulfearningsrelease2026-.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000092/wulf-20260331.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/terawulfq22026investorpr.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000110465925078084/tm2523008d2_8k.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000110465925079463/tm2523651d3_ex99-1.htm",
+        "https://www.fool.com/earnings/call-transcripts/2026/08/12/terawulf-wulf-q2-2026-earnings-call-transcript/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "abernathy",
+      "name": "Abernathy HPC Campus",
+      "name_ko": "애버내시 HPC 캠퍼스",
+      "country": "US",
+      "admin1": "US-TX",
+      "region": "Texas (Hale County, Abernathy)",
+      "coord": {
+        "lat": 33.832,
+        "lng": -101.843,
+        "confidence": "medium",
+        "method": "city_centroid",
+        "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-3.htm"
+      },
+      "primary": "fluidstack",
+      "parties": [
+        {
+          "company": "fluidstack",
+          "role": "developer",
+          "source": "https://investors.terawulf.com/news-events/press-releases/detail/142"
+        },
+        {
+          "company": "fluidstack",
+          "role": "owner",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_8k.htm"
+        },
+        {
+          "company": "fluidstack",
+          "role": "tenant",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+        },
+        {
+          "company": "google",
+          "role": "financier",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm"
+        },
+        {
+          "company": "terawulf",
+          "role": "developer",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm"
+        }
+      ],
+      "detail": "full",
+      "announced": "2025-10",
+      "acres": 120,
+      "grid_operator": "SPP (Xcel Energy SPS)",
+      "cooling": "liquid",
+      "summary_ko": "애버내시의 168MW(IT)/240MW(gross) AI 캠퍼스. 2025-10 TeraWulf(50.1%)·Fluidstack(49.9%) 합작으로 출범, Fluidstack 계열사가 25년 임차(약 $9.5bn), Google이 $1.3bn 보증. 2026-07 TeraWulf가 지분 50.1% 전부를 Fluidstack 주도 투자자 그룹에 약 $530m에 매각(2027-04까지 분할 수령). 2026 Q4 인도 목표.",
+      "summary_en": "168MW IT / 240MW gross AI campus in Abernathy. Formed Oct 2025 as a TeraWulf (50.1%) / Fluidstack (49.9%) JV with a 25-yr Fluidstack lease (~$9.5bn) and $1.3bn Google backstop. In Jul 2026 TeraWulf sold its entire 50.1% to a Fluidstack-led group for ~$530m (paid in installments through Apr 2027). Delivery targeted Q4 2026.",
+      "power": [
+        {
+          "from": "2025-10",
+          "secured_mw": 240,
+          "energized_mw": 0,
+          "basis": "estimate",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm"
+        }
+      ],
+      "substation": {
+        "voltage": "345 kV"
+      },
+      "buildings": [
+        {
+          "id": "abn-phase-1",
+          "name": "Phase 1",
+          "name_ko": "1단계",
+          "kind": "datahall_liquid",
+          "it_mw": 168,
+          "gross_mw": 240,
+          "mw_basis": "it",
+          "customer": "Fluidstack (Google backstop)",
+          "progress": 0.7,
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2025-10",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm"
+            },
+            {
+              "status": "under_construction",
+              "from": "2026-02",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2026-Q4",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm"
+            }
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2025-10-28",
+          "event": "TeraWulf·Fluidstack 합작 발표: 168MW IT(240MW gross), 25년 약 $9.5bn, Google $1.3bn 보증",
+          "event_en": "TeraWulf-Fluidstack JV announced: 168MW IT (240MW gross), 25-yr ~$9.5bn, $1.3bn Google backstop",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm"
+        },
+        {
+          "date": "2025-12",
+          "event": "합작 자회사가 $1.3bn 선순위 담보채 발행",
+          "event_en": "JV subsidiary issues $1.3bn senior secured notes",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000026/a_wulfearningsrelease2026-.htm"
+        },
+        {
+          "date": "2026-05-08",
+          "event": "공사 진행 중, 인도 목표 2026 Q4",
+          "event_en": "Construction progressing; delivery targeted Q4 2026",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm"
+        },
+        {
+          "date": "2026-07-06",
+          "event": "TeraWulf, 지분 50.1% 전부를 Fluidstack 주도 그룹에 약 $530m 매각 ($250m·$150m·$130m 분할, 2027-04까지)",
+          "event_en": "TeraWulf sells entire 50.1% to Fluidstack-led group for ~$530m ($250m/$150m/$130m installments through Apr 2027)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_8k.htm"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "secured_mw 240 은 설계 gross 240MW 와 345kV 연계(투자자 자료)를 근거로 한 추정. 실제 계통 승인 MW 는 미공개",
+          "note_en": "secured_mw 240 estimated from 240MW gross design and 345kV interconnection; approved interconnection MW undisclosed",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-3.htm"
+        },
+        {
+          "note": "진행률 0.7: 'construction progressing, Q4 2026 인도 목표'(2026-05) 문구로 근사. 매각 후 TeraWulf 공시가 끊겨 최신 공정 미확인",
+          "note_en": "Progress 0.7 approximated from \"construction progressing\", Q4 2026 delivery target (May 2026); no TeraWulf updates after the sale",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_8k.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-3.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_8k.htm",
+        "https://investors.terawulf.com/news-events/press-releases/detail/142",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "justified",
+      "name": "Justified Data Campus (Hawesville)",
+      "name_ko": "저스티파이드 데이터 캠퍼스 (호스빌)",
+      "country": "US",
+      "admin1": "US-KY",
+      "region": "Kentucky (Hancock County, Hawesville)",
+      "coord": {
+        "lat": 37.9,
+        "lng": -86.755,
+        "confidence": "medium",
+        "method": "city_centroid",
+        "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000023/wulf-20260202.htm"
+      },
+      "primary": "terawulf",
+      "parties": [
+        {
+          "company": "terawulf",
+          "role": "developer",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000023/wulf-20260202.htm"
+        },
+        {
+          "company": "terawulf",
+          "role": "owner",
+          "share": 0.932,
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000023/wulf-20260202.htm"
+        },
+        {
+          "company": "anthropic",
+          "role": "tenant",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_8k.htm"
+        }
+      ],
+      "detail": "lite",
+      "announced": "2026-02",
+      "acres": 250,
+      "grid_operator": "MISO (Big Rivers / Kenergy)",
+      "cooling": "undisclosed",
+      "summary_ko": "옛 Century Aluminum 호스빌 제련소 부지(250+ 에이커, 통전 변전소). 2026-02 인수, gross 약 480MW(2026-08 KY PSC가 482MW 전력공급계약 승인). 2026-07 Anthropic과 401MW(IT) 20년 임대(약 $19bn) — 2027 하반기 첫 인도, 2028 초 전량 목표.",
+      "summary_en": "Former Century Aluminum Hawesville smelter site (250+ acres, energized substation). Acquired Feb 2026; ~480MW gross (482MW service agreement approved by KY PSC in Aug 2026). 20-year, 401MW (IT) Anthropic lease (~$19bn) signed Jul 2026 — initial delivery H2 2027, full by early 2028.",
+      "power": [
+        {
+          "from": "2026-02",
+          "secured_mw": 480,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm"
+        },
+        {
+          "from": "2026-08",
+          "secured_mw": 482,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://investors.terawulf.com/news-events/press-releases/detail/145"
+        }
+      ],
+      "substation": {},
+      "buildings": [
+        {
+          "id": "jd-anthropic",
+          "name": "Anthropic lease (401MW IT)",
+          "name_ko": "Anthropic 임대동 (IT 401MW)",
+          "it_mw": 401,
+          "gross_mw": 480,
+          "mw_basis": "it",
+          "customer": "Anthropic",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-07",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_8k.htm"
+            },
+            {
+              "status": "commissioning",
+              "from": "2027-H2",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2028-H1",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "deliveries": [],
+      "timeline": [
+        {
+          "date": "2026-02-02",
+          "event": "호스빌 옛 산업부지 인수 완료(250+ 에이커). 매도인은 개발법인 지분 6.8% 보유",
+          "event_en": "Hawesville former industrial site acquired (250+ acres); seller holds 6.8% of development entity",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000023/wulf-20260202.htm"
+        },
+        {
+          "date": "2026-07-06",
+          "event": "Anthropic과 401MW(IT) 20년 임대(약 $19bn, 5년×2 연장 시 최대 약 $33bn)",
+          "event_en": "Anthropic 20-yr lease for 401MW IT (~$19bn; up to ~$33bn with two 5-yr extensions)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_8k.htm"
+        },
+        {
+          "date": "2026-08-24",
+          "event": "켄터키 PSC, Big Rivers·Kenergy 와의 482MW 전력공급계약(RESA) 승인",
+          "event_en": "Kentucky PSC approves 482MW retail electric service agreement with Big Rivers/Kenergy",
+          "source": "https://investors.terawulf.com/news-events/press-releases/detail/145"
+        }
+      ],
+      "estimates": [
+        {
+          "note": "건물 gross 480MW 는 캠퍼스 gross 전력(약 480MW)을 그대로 적용 — 단계별 MW 미공개. 착공 여부(2026 착공 예정) 미확인이라 under_construction 단계 생략",
+          "note_en": "Building gross 480MW taken from campus gross power (~480MW); phase split undisclosed. Construction start (expected 2026) unconfirmed, so no under_construction phase",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000110465926043250/tm2611661-3_424b5.htm"
+        }
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000023/wulf-20260202.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000110465926043250/tm2611661-3_424b5.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_8k.htm",
+        "https://investors.terawulf.com/news-events/press-releases/detail/142",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm",
+        "https://investors.terawulf.com/news-events/press-releases/detail/145"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "muskie",
+      "name": "Muskie Data Campus",
+      "name_ko": "머스키 데이터 캠퍼스",
+      "country": "US",
+      "admin1": "US-KY",
+      "region": "Kentucky (EastPark Industrial Park, near Grayson)",
+      "coord": {
+        "lat": 38.332,
+        "lng": -82.948,
+        "confidence": "medium",
+        "method": "city_centroid",
+        "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+      },
+      "primary": "terawulf",
+      "parties": [
+        {
+          "company": "terawulf",
+          "role": "developer",
+          "share": 1,
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000109/wulf-20260522.htm"
+        },
+        {
+          "company": "terawulf",
+          "role": "owner",
+          "share": 1,
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026064757/wulf-20261001.htm"
+        }
+      ],
+      "detail": "lite",
+      "announced": "2026-05",
+      "acres": 285,
+      "grid_operator": "PJM (Kentucky Power / AEP)",
+      "cooling": "undisclosed",
+      "summary_ko": "동부 켄터키 EastPark 산업단지 내 약 285에이커 부지를 2026-05 인수. Kentucky Power가 765kV 송전망에 연결되는 345kV 변전소 건설 중. 2026-10 전력 계약 500MW→1GW 확대: 1단계 500MW 2028 램프업, 2단계 500MW 2029(2030에서 앞당김). 입주사 미정, 최대 2GW 검토.",
+      "summary_en": "~285-acre site in eastern Kentucky's EastPark Industrial Park, acquired May 2026. Kentucky Power is building a 345kV substation tied to the 765kV grid. Oct 2026 amendment lifts contracted power from 500MW to 1GW: first 500MW ramps in 2028, second 500MW pulled forward to 2029 (from 2030). No tenant yet; up to 2GW under evaluation.",
+      "power": [
+        {
+          "from": "2026-05",
+          "secured_mw": 500,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000109/wulf-20260522.htm"
+        },
+        {
+          "from": "2026-10",
+          "secured_mw": 1000,
+          "energized_mw": 0,
+          "basis": "reported",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026064757/wulf-20261001.htm"
+        }
+      ],
+      "substation": {
+        "voltage": "345 kV (765 kV 송전망 연결)"
+      },
+      "buildings": [
+        {
+          "id": "mu-phase-1",
+          "name": "Phase 1 power block (500MW)",
+          "name_ko": "1단계 전력 블록 (500MW)",
+          "gross_mw": 500,
+          "mw_basis": "grid",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000109/wulf-20260522.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000162828026064757/wulf-20261001.htm",
+            "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-05",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000109/wulf-20260522.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2028-H2",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000109/wulf-20260522.htm"
+            }
+          ]
+        },
+        {
+          "id": "mu-phase-2",
+          "name": "Phase 2 power block (500MW)",
+          "name_ko": "2단계 전력 블록 (500MW)",
+          "gross_mw": 500,
+          "mw_basis": "grid",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1083301/000162828026064757/wulf-20261001.htm"
+          ],
+          "phases": [
+            {
+              "status": "planned",
+              "from": "2026-10",
+              "basis": "reported",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026064757/wulf-20261001.htm"
+            },
+            {
+              "status": "operating",
+              "from": "2029",
+              "basis": "target",
+              "source": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026064757/wulf-20261001.htm"
+            }
+          ]
+        }
+      ],
+      "deliveries": [
+        {
+          "what": "345kV 변전소 (765kV 송전망 연결)",
+          "from": "Kentucky Power (AEP)",
+          "eta": "2028-H2",
+          "status": "in_progress",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000109/wulf-20260522.htm"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-05-22",
+          "event": "Industrial Equity Partners 로부터 Muskie 부지 인수 완료(약 285에이커), 전력 계약 동시 체결",
+          "event_en": "Muskie site acquired from Industrial Equity Partners (~285 acres); power agreements executed concurrently",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000109/wulf-20260522.htm"
+        },
+        {
+          "date": "2026-10-01",
+          "event": "Kentucky Power 와 계약 개정: 계약 전력 500MW→1GW, 2단계 2030→2029 (KY PSC 승인 조건)",
+          "event_en": "Amended Kentucky Power agreements: contracted power 500MW→1GW, phase 2 moved 2030→2029 (subject to KY PSC)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026064757/wulf-20261001.htm"
+        }
+      ],
+      "estimates": [],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000109/wulf-20260522.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000162828026064757/wulf-20261001.htm",
+        "https://investors.terawulf.com/news-events/press-releases/detail/146",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/terawulfq22026investorpr.htm"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "reviewed_at": "2026-10-07"
+}

@@ -1,0 +1,672 @@
+{
+  "company": {
+    "id": "coreweave",
+    "name": "CoreWeave",
+    "name_ko": "코어위브",
+    "group": "neocloud",
+    "ticker": {
+      "symbol": "CRWV",
+      "exchange": "NASDAQ"
+    },
+    "color": "#6fb3d9",
+    "hq_country": "US",
+    "summary_ko": "뉴저지 리빙스턴 본사의 AI 전용 GPU 클라우드 기업(네오클라우드). 2026년 6월 말 활성 전력 1.5GW·계약 전력 약 3.7GW·수주잔고 약 1,040억 달러이며, 데이터센터는 대부분 채굴사·개발사 캠퍼스에 임차 입주하고 뉴저지 Kenilworth(지분 35% JV)에서 첫 자체 개발을 진행 중이다.",
+    "summary_en": "Livingston, NJ-based AI GPU cloud (neocloud) with 1.5GW active power, ~3.7GW contracted power and ~$104bn revenue backlog at end-June 2026. It mostly leases capacity at miner and developer campuses, and is developing its first own facility in Kenilworth, NJ via a 35%-owned JV.",
+    "metrics": [
+      {
+        "key": "revenue_backlog_usd_bn",
+        "value": 104,
+        "unit": "USD bn",
+        "label_ko": "수주잔고(Revenue backlog)",
+        "label_en": "Revenue backlog",
+        "as_of": "2026-06-30",
+        "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm"
+      },
+      {
+        "key": "active_power_gw",
+        "value": 1.5,
+        "unit": "GW",
+        "label_ko": "활성 전력",
+        "label_en": "Active power",
+        "as_of": "2026-06-30",
+        "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm"
+      },
+      {
+        "key": "contracted_power_gw",
+        "value": 3.7,
+        "unit": "GW",
+        "label_ko": "계약 전력",
+        "label_en": "Total contracted power",
+        "as_of": "2026-06-30",
+        "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm"
+      },
+      {
+        "key": "active_data_centers",
+        "value": 51,
+        "unit": "sites",
+        "label_ko": "가동 데이터센터 수",
+        "label_en": "Active data centers",
+        "as_of": "2026-08-11",
+        "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm"
+      },
+      {
+        "key": "revenue_q2_2026_usd_bn",
+        "value": 2.575,
+        "unit": "USD bn",
+        "label_ko": "2026년 2분기 매출",
+        "label_en": "Q2 2026 revenue",
+        "as_of": "2026-06-30",
+        "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm"
+      }
+    ],
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm",
+      "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+      "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm",
+      "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm",
+      "https://investors.coreweave.com"
+    ]
+  },
+  "file": {
+    "company_id": "coreweave",
+    "as_of": "2026-10-07",
+    "sites": [
+      {
+        "id": "coreweave-kenilworth",
+        "name": "Kenilworth NEST 11",
+        "name_ko": "케닐워스 NEST 11",
+        "country": "US",
+        "admin1": "US-NJ",
+        "region": "New Jersey (Kenilworth, Union County)",
+        "coord": {
+          "lat": 40.679,
+          "lng": -74.272,
+          "confidence": "high",
+          "method": "official_address",
+          "source": "https://www.coreweave.com/ai-data-center-development/kenilworth-new-jersey"
+        },
+        "primary": "coreweave",
+        "parties": [
+          {
+            "company": "coreweave",
+            "role": "developer",
+            "source": "https://www.coreweave.com/ai-data-center-development/kenilworth-new-jersey"
+          },
+          {
+            "company": "coreweave",
+            "role": "operator",
+            "source": "https://www.coreweave.com/ai-data-center-development/kenilworth-new-jersey"
+          },
+          {
+            "company": "coreweave",
+            "role": "owner",
+            "share": 0.35,
+            "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+          },
+          {
+            "company": "coreweave",
+            "role": "tenant",
+            "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+          }
+        ],
+        "detail": "full",
+        "announced": "2024-10",
+        "acres": null,
+        "grid_operator": "PJM (PSE&G)",
+        "cooling": "closed-loop",
+        "summary_ko": "옛 머크(Merck) 본사 NEST 캠퍼스의 1982년 연구동(11동)을 AI 데이터센터로 전환하는 CoreWeave 첫 자체 개발 프로젝트. 회사 공식 페이지 기준 계획 부하 40MW, 투자 약 18억 달러, 새 변전소 비용(약 1.5억 달러)을 CoreWeave가 부담. 소유는 CoreWeave 35%·관계사 개발사 65% JV이며 CoreWeave가 건설관리를 맡고 완공 후 15년 임차. 2025년 9월 착공, 2027년 초 가동 목표.",
+        "summary_en": "CoreWeave's first self-developed project: converting the 1982 Building 11 at the former Merck NEST campus into an AI data center. Company site cites a planned 40MW load, ~$1.8bn investment and a CoreWeave-funded new substation (~$150M). Owned by a JV (CoreWeave 35%, related-party developer 65%); CoreWeave manages construction and will lease it for 15 years. Construction began Sep 2025, targeting early 2027.",
+        "power": [
+          {
+            "from": "2024-10",
+            "secured_mw": 40,
+            "energized_mw": 0,
+            "basis": "estimate",
+            "source": "https://www.coreweave.com/ai-data-center-development/kenilworth-new-jersey"
+          },
+          {
+            "from": "2027-Q1",
+            "secured_mw": 40,
+            "energized_mw": 40,
+            "basis": "target",
+            "source": "https://re-nj.com/coreweave-begins-1-8-billion-data-center-project-in-kenilworth-landing-first-award-under-new-eda-tax-credit-program/"
+          }
+        ],
+        "substation": {},
+        "buildings": [
+          {
+            "id": "nest-11",
+            "name": "NEST 11 (2000 Galloping Hill Rd)",
+            "name_ko": "NEST 11동",
+            "gross_mw": 40,
+            "mw_basis": "gross",
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2024-10",
+                "basis": "reported",
+                "source": "https://www.roi-nj.com/2024/10/24/tech/coreweave-to-take-280k-sf-space-at-the-nest-in-kenilworth-invest-1-2-billion-at-facility/"
+              },
+              {
+                "status": "under_construction",
+                "from": "2025-09",
+                "basis": "reported",
+                "source": "https://re-nj.com/coreweave-begins-1-8-billion-data-center-project-in-kenilworth-landing-first-award-under-new-eda-tax-credit-program/"
+              },
+              {
+                "status": "operating",
+                "from": "2027-Q1",
+                "basis": "target",
+                "source": "https://re-nj.com/coreweave-begins-1-8-billion-data-center-project-in-kenilworth-landing-first-award-under-new-eda-tax-credit-program/"
+              }
+            ],
+            "progress": 0.6,
+            "sources": [
+              "https://www.coreweave.com/ai-data-center-development/kenilworth-new-jersey",
+              "https://re-nj.com/coreweave-begins-1-8-billion-data-center-project-in-kenilworth-landing-first-award-under-new-eda-tax-credit-program/",
+              "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+            ]
+          }
+        ],
+        "deliveries": [],
+        "timeline": [
+          {
+            "date": "2024-10-24",
+            "event": "NEST 11동(약 28만 sq ft) 전체 장기 임차 계약, 데이터센터 전환에 12억 달러 투자 발표",
+            "event_en": "Long-term lease of all of NEST Building 11 (~280k sq ft); $1.2bn conversion plan announced",
+            "source": "https://www.roi-nj.com/2024/10/24/tech/coreweave-to-take-280k-sf-space-at-the-nest-in-kenilworth-invest-1-2-billion-at-facility/"
+          },
+          {
+            "date": "2025-06",
+            "event": "개발사와 JV 설립(CoreWeave 지분 15%로 시작), 완공 후 개시되는 15년 선임대차·개발관리 계약 체결",
+            "event_en": "JV formed with a developer (CoreWeave initially 15%); forward-starting 15-year lease and development management agreement signed",
+            "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+          },
+          {
+            "date": "2025-08",
+            "event": "NEST 11동과 인접 27에이커를 3억 2,200만 달러에 인수 (언론은 CoreWeave 인수로 보도, 공시상 JV 구조)",
+            "event_en": "Building 11 plus adjacent 27 acres acquired for $322M (reported as CoreWeave purchase; filings indicate JV structure)",
+            "source": "https://www.datacenterdynamics.com/en/news/coreweave-acquires-nest-data-center-for-322m-at-life-sciences-campus-in-new-jersey/"
+          },
+          {
+            "date": "2025-09",
+            "event": "착공 (NJEDA 자료 인용 보도: 9월 중순)",
+            "event_en": "Construction began in mid-September (per NJEDA, as reported)",
+            "source": "https://re-nj.com/coreweave-begins-1-8-billion-data-center-project-in-kenilworth-landing-first-award-under-new-eda-tax-credit-program/"
+          },
+          {
+            "date": "2025-11-12",
+            "event": "NJEDA, Next NJ Program–AI 첫 세액공제 2억 5,000만 달러 승인 (Kenilworth)",
+            "event_en": "NJEDA approves first Next NJ Program–AI tax credit award of $250M (Kenilworth)",
+            "source": "https://www.njeda.gov/wp-content/uploads/2026/08/NextNJAI-1.pdf"
+          },
+          {
+            "date": "2025-11",
+            "event": "JV와 별도 필지 토지임차(향후 개발 가능 부지) 체결",
+            "event_en": "Ground lease signed with the JV for a separate parcel for potential future development",
+            "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+          },
+          {
+            "date": "2026-06-30",
+            "event": "CoreWeave의 JV 지분 35%로 확대 (10-Q)",
+            "event_en": "CoreWeave's JV ownership reaches 35% (10-Q)",
+            "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "진행률 0.6 추정: 2025-09 착공 → 2027년 초 가동 목표(약 17개월) 중 기준일까지 약 13개월 경과. 선형이면 0.75지만 시운전·장비 설치 기간을 감안해 보수적으로 0.6.",
+            "note_en": "Progress 0.6 estimated: ~13 of ~17 months elapsed between Sep 2025 start and early-2027 target; linear would be 0.75, discounted for fit-out/commissioning.",
+            "source": "https://re-nj.com/coreweave-begins-1-8-billion-data-center-project-in-kenilworth-landing-first-award-under-new-eda-tax-credit-program/"
+          },
+          {
+            "note": "확보 전력 40MW는 추정: 회사가 밝힌 계획 부하 40MW + 캠퍼스 기존 50MW 변전소, CoreWeave가 새 변전소 비용 부담. 실제 계통 연결 계약 용량·시점은 미공시.",
+            "note_en": "Secured 40MW is an estimate: company-stated 40MW planned load plus the campus's existing 50MW substation and a CoreWeave-funded new substation; actual interconnection capacity/date undisclosed.",
+            "source": "https://www.coreweave.com/ai-data-center-development/kenilworth-new-jersey"
+          }
+        ],
+        "sources": [
+          "https://www.coreweave.com/ai-data-center-development/kenilworth-new-jersey",
+          "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm",
+          "https://www.njeda.gov/wp-content/uploads/2026/08/NextNJAI-1.pdf",
+          "https://re-nj.com/coreweave-begins-1-8-billion-data-center-project-in-kenilworth-landing-first-award-under-new-eda-tax-credit-program/",
+          "https://www.roi-nj.com/2024/10/24/tech/coreweave-to-take-280k-sf-space-at-the-nest-in-kenilworth-invest-1-2-billion-at-facility/",
+          "https://www.datacenterdynamics.com/en/news/coreweave-acquires-nest-data-center-for-322m-at-life-sciences-campus-in-new-jersey/"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "id": "coreweave-lancaster",
+        "name": "CoreWeave Lancaster",
+        "name_ko": "코어위브 랭커스터",
+        "country": "US",
+        "admin1": "US-PA",
+        "region": "Pennsylvania (Lancaster)",
+        "coord": {
+          "lat": 40.049,
+          "lng": -76.256,
+          "confidence": "high",
+          "method": "official_address",
+          "source": "https://www.witf.org/2025/09/01/data-center-site-in-lancaster-county-changes-hands-for-75m-as-developers-add-partner/"
+        },
+        "primary": "coreweave",
+        "parties": [
+          {
+            "company": "coreweave",
+            "role": "tenant",
+            "source": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Multi-Billion-Dollar-Commitment-to-AI-Infrastructure-in-Pennsylvania/default.aspx"
+          },
+          {
+            "company": "coreweave",
+            "role": "financier",
+            "source": "https://www.prnewswire.com/news-releases/blue-owl-and-chirisa-technology-parks-close-4-billion-joint-venture-partnership-including-machine-investment-group-for-lancaster-campus-302537279.html"
+          },
+          {
+            "company": "chirisa-technology-parks",
+            "role": "developer",
+            "source": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Multi-Billion-Dollar-Commitment-to-AI-Infrastructure-in-Pennsylvania/default.aspx"
+          },
+          {
+            "company": "machine-investment-group",
+            "role": "developer",
+            "source": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Multi-Billion-Dollar-Commitment-to-AI-Infrastructure-in-Pennsylvania/default.aspx"
+          },
+          {
+            "company": "blue-owl",
+            "role": "financier",
+            "source": "https://www.prnewswire.com/news-releases/blue-owl-and-chirisa-technology-parks-close-4-billion-joint-venture-partnership-including-machine-investment-group-for-lancaster-campus-302537279.html"
+          }
+        ],
+        "detail": "lite",
+        "announced": "2025-07",
+        "acres": 144,
+        "grid_operator": "PJM (PPL Electric Utilities)",
+        "cooling": "undisclosed",
+        "summary_ko": "랭커스터 시내 옛 LSC 인쇄공장 2곳(216 Greenfield Rd, 1375 Harrisburg Pike, 합계 144에이커)을 AI 데이터센터로 전환. CoreWeave가 장비에 최대 60억 달러 투입·캠퍼스에 투자하고 단독 임차하며, 개발은 Chirisa Technology Parks·Machine Investment Group, 자금은 Blue Owl JV(40억 달러). 초기 100MW, 최대 300MW 확장 가능. 1단계 Greenfield Rd는 2027년 여름 가동 예정, Harrisburg Pike는 일정 미정.",
+        "summary_en": "Conversion of two former LSC printing plants in Lancaster city (216 Greenfield Rd and 1375 Harrisburg Pike, 144 acres combined). CoreWeave commits up to $6bn to equip it, has invested in the campus and will be sole tenant; developed by Chirisa Technology Parks and Machine Investment Group with $4bn Blue Owl JV funding. Initial 100MW, expandable to 300MW. Phase 1 (Greenfield Rd) expected summer 2027; Harrisburg Pike has no timeline.",
+        "power": [
+          {
+            "from": "2025-07",
+            "secured_mw": 100,
+            "energized_mw": 0,
+            "basis": "estimate",
+            "source": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Multi-Billion-Dollar-Commitment-to-AI-Infrastructure-in-Pennsylvania/default.aspx"
+          },
+          {
+            "from": "2027-Q3",
+            "secured_mw": 100,
+            "energized_mw": 100,
+            "basis": "target",
+            "source": "https://www.witf.org/2025/09/01/data-center-site-in-lancaster-county-changes-hands-for-75m-as-developers-add-partner/"
+          }
+        ],
+        "substation": {},
+        "buildings": [
+          {
+            "id": "greenfield-rd",
+            "name": "Phase 1 — 216 Greenfield Rd",
+            "name_ko": "1단계 — 그린필드 로드",
+            "gross_mw": 100,
+            "mw_basis": "gross",
+            "phases": [
+              {
+                "status": "planned",
+                "from": "2025-07",
+                "basis": "reported",
+                "source": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Multi-Billion-Dollar-Commitment-to-AI-Infrastructure-in-Pennsylvania/default.aspx"
+              },
+              {
+                "status": "under_construction",
+                "from": "2025-Q4",
+                "basis": "estimate",
+                "source": "https://epoch.ai/data/ai-data-centers/directory/coreweave-lancaster-greenfield-site"
+              },
+              {
+                "status": "operating",
+                "from": "2027-Q3",
+                "basis": "target",
+                "source": "https://www.witf.org/2025/09/01/data-center-site-in-lancaster-county-changes-hands-for-75m-as-developers-add-partner/"
+              }
+            ],
+            "progress": 0.5,
+            "sources": [
+              "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Multi-Billion-Dollar-Commitment-to-AI-Infrastructure-in-Pennsylvania/default.aspx",
+              "https://www.witf.org/2025/09/01/data-center-site-in-lancaster-county-changes-hands-for-75m-as-developers-add-partner/",
+              "https://epoch.ai/data/ai-data-centers/directory/coreweave-lancaster-greenfield-site"
+            ]
+          }
+        ],
+        "deliveries": [],
+        "timeline": [
+          {
+            "date": "2025-02",
+            "event": "Machine Investment Group, 옛 LSC 인쇄공장 2곳(Greenfield Rd·Harrisburg Pike)을 합계 1억 3,000만 달러에 매입",
+            "event_en": "Machine Investment Group buys the two former LSC printing plants for $130M combined",
+            "source": "https://www.witf.org/2025/09/01/data-center-site-in-lancaster-county-changes-hands-for-75m-as-developers-add-partner/"
+          },
+          {
+            "date": "2025-07-15",
+            "event": "CoreWeave, 랭커스터 데이터센터에 최대 60억 달러 투입 발표 — 초기 100MW, 최대 300MW",
+            "event_en": "CoreWeave announces up to $6bn for a Lancaster data center — initial 100MW, expandable to 300MW",
+            "source": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Multi-Billion-Dollar-Commitment-to-AI-Infrastructure-in-Pennsylvania/default.aspx"
+          },
+          {
+            "date": "2025-08-25",
+            "event": "Blue Owl·CTP·MIG, 랭커스터 개발용 40억 달러 JV 종결. CoreWeave는 캠퍼스에 투자하고 임차 예정, PPL 계통 보강에 약 2억 달러",
+            "event_en": "Blue Owl, CTP and MIG close $4bn JV for Lancaster; CoreWeave has invested and will lease; ~$200M for PPL grid upgrades",
+            "source": "https://www.prnewswire.com/news-releases/blue-owl-and-chirisa-technology-parks-close-4-billion-joint-venture-partnership-including-machine-investment-group-for-lancaster-campus-302537279.html"
+          },
+          {
+            "date": "2025-09-01",
+            "event": "Greenfield Rd 부지 7,500만 달러에 LPE 01 Propco LLC(Blue Owl 시카고 사무소 주소)로 이전, 2027년 여름 가동 예정 보도",
+            "event_en": "Greenfield Rd parcel transferred for $75M to LPE 01 Propco LLC (Blue Owl Chicago address); summer 2027 operation reported",
+            "source": "https://www.witf.org/2025/09/01/data-center-site-in-lancaster-county-changes-hands-for-75m-as-developers-add-partner/"
+          }
+        ],
+        "estimates": [
+          {
+            "note": "착공 시점 2025-Q4는 추정: 공식 착공 발표 없음. 2025-09 보도에서 'Greenfield Rd 전환 중', Epoch AI 위성 분석(2026-07)에서 냉각설비 설치 진행 — Tier 3.",
+            "note_en": "Construction start 2025-Q4 is an estimate: no official groundbreaking; Sep 2025 reporting says conversion underway, Epoch AI imagery (Jul 2026) shows cooling installation ongoing (Tier 3).",
+            "source": "https://epoch.ai/data/ai-data-centers/directory/coreweave-lancaster-greenfield-site"
+          },
+          {
+            "note": "진행률 0.5 추정: 2025-Q4 착공 추정 → 2027년 여름 가동(약 21개월) 중 약 12개월 경과, 2026-07 냉각설비 설치 단계(Epoch AI).",
+            "note_en": "Progress 0.5 estimated: ~12 of ~21 months elapsed (est. Q4 2025 start to summer 2027), cooling installation stage in Jul 2026 (Epoch AI).",
+            "source": "https://epoch.ai/data/ai-data-centers/directory/coreweave-lancaster-greenfield-site"
+          },
+          {
+            "note": "확보 전력 100MW는 추정: CoreWeave가 밝힌 초기 용량 100MW와 PPL 계통 보강 투자(약 2억 달러)를 근거로 함. 실제 연계 계약 용량 미공시. '100MW'가 IT 기준인지 총전력 기준인지 불명 → 낮은 해석(gross 100MW) 채택. Epoch AI는 IT 92MW로 추정.",
+            "note_en": "Secured 100MW is an estimate based on CoreWeave's stated initial 100MW and ~$200M PPL grid upgrades; interconnection capacity undisclosed. Unclear whether 100MW is IT or gross — lower reading (gross) adopted; Epoch AI estimates 92MW IT.",
+            "source": "https://www.prnewswire.com/news-releases/blue-owl-and-chirisa-technology-parks-close-4-billion-joint-venture-partnership-including-machine-investment-group-for-lancaster-campus-302537279.html"
+          }
+        ],
+        "sources": [
+          "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Multi-Billion-Dollar-Commitment-to-AI-Infrastructure-in-Pennsylvania/default.aspx",
+          "https://www.prnewswire.com/news-releases/blue-owl-and-chirisa-technology-parks-close-4-billion-joint-venture-partnership-including-machine-investment-group-for-lancaster-campus-302537279.html",
+          "https://www.witf.org/2025/09/01/data-center-site-in-lancaster-county-changes-hands-for-75m-as-developers-add-partner/",
+          "https://epoch.ai/data/ai-data-centers/directory/coreweave-lancaster-greenfield-site"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "c1",
+      "field": "company.metrics.revenue_backlog_usd_bn",
+      "value": 104,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm",
+      "published": "2026-08-11",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Revenue backlog was approximately $104 billion as of June 30, 2026.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c2",
+      "field": "company.metrics.active_power_gw",
+      "value": 1.5,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm",
+      "published": "2026-08-11",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Expanded active power by nearly 500 MWs to reach 1.5 GW",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c3",
+      "field": "company.metrics.contracted_power_gw",
+      "value": 3.7,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm",
+      "published": "2026-08-11",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Grew total contracted power to approximately 3.7 GW while further diversifying portfolio of providers and expanding powered land footprint",
+      "verification": "conflict"
+    },
+    {
+      "id": "c4",
+      "field": "company.metrics.active_data_centers (+ contracted power ~4.2 GW as of 2026-08-11)",
+      "value": { "active_data_centers": 51, "contracted_power_gw": 4.2 },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm",
+      "published": "2026-09-17",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Active Data Centers 51 Total Contracted Power ~4.2 GW Active Power ~1.5 GW",
+      "verification": "conflict"
+    },
+    {
+      "id": "c5",
+      "field": "notes (FY2025 baseline: 43 data centers, 850MW active, 3.1GW contracted)",
+      "value": { "data_centers": 43, "active_mw": 850, "contracted_gw": 3.1 },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm",
+      "published": "2026-03-02",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "As of December 31, 2025, we operated 43 data centers with over 850 MW of active power.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c6",
+      "field": "file.sites (scope: no wholly owned data centers)",
+      "value": "all existing data centers leased",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+      "published": "2026-08-12",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "We currently lease all of our existing data centers and offices.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c7",
+      "field": "sites[0].parties (owner share 0.35)",
+      "value": 0.35,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+      "published": "2026-08-12",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "As of June 30, 2026, the Company's ownership interest was 35 %.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c8",
+      "field": "sites[0].parties (developer — construction management)",
+      "value": "developer",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+      "published": "2026-08-12",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "The Company provides construction management, administrative and property management services to the JV.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c9",
+      "field": "sites[0].parties (tenant — 15-year lease)",
+      "value": "tenant",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+      "published": "2026-08-12",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "the lease will have an initial lease term of 15 years with base rent payments that are based on a percentage of construction costs incurred",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c10",
+      "field": "sites[0].buildings[0].gross_mw",
+      "value": 40,
+      "source_url": "https://www.coreweave.com/ai-data-center-development/kenilworth-new-jersey",
+      "published": "2026-10-07",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "NEST 11 has a planned 40 MW load, supported by the new electrical infrastructure funded by CoreWeave.",
+      "verification": "conflict"
+    },
+    {
+      "id": "c11",
+      "field": "sites[0].parties (developer/operator) + under construction",
+      "value": { "role": ["developer", "operator"], "status": "under_construction" },
+      "source_url": "https://www.coreweave.com/ai-data-center-development/kenilworth-new-jersey",
+      "published": "2026-10-07",
+      "source_tier": 1,
+      "source_type": "company_site",
+      "quote": "Kenilworth NEST 11 is the first CoreWeave facility under construction in Kenilworth. ... CoreWeave's role Developer and operator",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c12",
+      "field": "sites[0].buildings[0].phases[1..2] (construction Sep 2025, operating early 2027)",
+      "value": { "under_construction": "2025-09", "operating": "2027-Q1" },
+      "source_url": "https://re-nj.com/coreweave-begins-1-8-billion-data-center-project-in-kenilworth-landing-first-award-under-new-eda-tax-credit-program/",
+      "published": "2025-11-25",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "CoreWeave began construction in mid-September and expects the 392,600-square-foot AI data center to be operational in early 2027",
+      "verification": "single_source"
+    },
+    {
+      "id": "c13",
+      "field": "sites[0] (alternative capacity 250MW — not adopted)",
+      "value": 250,
+      "source_url": "https://re-nj.com/coreweave-begins-1-8-billion-data-center-project-in-kenilworth-landing-first-award-under-new-eda-tax-credit-program/",
+      "published": "2025-11-25",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "The planned 250-megawatt project is now advancing after the New Jersey Economic Development Authority approved the tax credit",
+      "verification": "conflict"
+    },
+    {
+      "id": "c14",
+      "field": "sites[0].timeline (NJEDA $250M award 2025-11-12)",
+      "value": { "date": "2025-11-12", "usd_m": 250 },
+      "source_url": "https://www.njeda.gov/wp-content/uploads/2026/08/NextNJAI-1.pdf",
+      "published": "2026-08",
+      "source_tier": 1,
+      "source_type": "gov_permit",
+      "quote": "11/12/2025 CoreWeave Kenilworth 250,000,000.00$",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c15",
+      "field": "sites[0].timeline (JV formed June 2025, multi-phase campus)",
+      "value": "2025-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm",
+      "published": "2026-03-02",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "in June 2025, we entered into a joint venture with a third-party infrastructure developer, to support the acquisition and development of a multi-phase data center campus in Kenilworth",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c16",
+      "field": "sites[0].announced / phases[0] (lease Oct 2024)",
+      "value": "2024-10",
+      "source_url": "https://www.roi-nj.com/2024/10/24/tech/coreweave-to-take-280k-sf-space-at-the-nest-in-kenilworth-invest-1-2-billion-at-facility/",
+      "published": "2024-10-24",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "CoreWeave to take 280K SF space at the NEST in Kenilworth; invest $1.2 billion at facility",
+      "verification": "single_source"
+    },
+    {
+      "id": "c17",
+      "field": "sites[0].timeline (acquisition $322M, Aug 2025)",
+      "value": { "usd_m": 322, "acres_adjacent": 27 },
+      "source_url": "https://www.datacenterdynamics.com/en/news/coreweave-acquires-nest-data-center-for-322m-at-life-sciences-campus-in-new-jersey/",
+      "published": "2025-08",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "CoreWeave acquires NEST data center for $322m at life sciences campus in New Jersey",
+      "verification": "conflict"
+    },
+    {
+      "id": "c18",
+      "field": "sites[1].buildings[0].gross_mw / power (initial 100MW, up to 300MW)",
+      "value": { "initial_mw": 100, "potential_mw": 300 },
+      "source_url": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Multi-Billion-Dollar-Commitment-to-AI-Infrastructure-in-Pennsylvania/default.aspx",
+      "published": "2025-07-15",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "The initial 100 megawatt (MW) data center, with potential to expand to 300 MW",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c19",
+      "field": "sites[1].parties (tenant; developers CTP + MIG)",
+      "value": { "coreweave": "tenant", "developers": ["chirisa-technology-parks", "machine-investment-group"] },
+      "source_url": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Multi-Billion-Dollar-Commitment-to-AI-Infrastructure-in-Pennsylvania/default.aspx",
+      "published": "2025-07-15",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "CoreWeave will be the tenant of the site, co-developed by Chirisa Technology Parks and Machine Investment Group.",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c20",
+      "field": "sites[1].parties (coreweave financier; blue-owl financier)",
+      "value": { "coreweave": "invested + lease", "blue_owl_usd_bn": 4 },
+      "source_url": "https://www.prnewswire.com/news-releases/blue-owl-and-chirisa-technology-parks-close-4-billion-joint-venture-partnership-including-machine-investment-group-for-lancaster-campus-302537279.html",
+      "published": "2025-08-25",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "CoreWeave has invested in the campus and will lease the site",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c21",
+      "field": "sites[1].power (PPL grid upgrades ~$200M)",
+      "value": 200,
+      "source_url": "https://www.prnewswire.com/news-releases/blue-owl-and-chirisa-technology-parks-close-4-billion-joint-venture-partnership-including-machine-investment-group-for-lancaster-campus-302537279.html",
+      "published": "2025-08-25",
+      "source_tier": 1,
+      "source_type": "press_release",
+      "quote": "fund approximately $200 million for local power grid infrastructure improvements in partnership with PPL Electric Utilities",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c22",
+      "field": "sites[1].buildings[0].phases[2] (operating summer 2027) + coord address",
+      "value": { "operating": "2027-Q3", "address": "216 Greenfield Road" },
+      "source_url": "https://www.witf.org/2025/09/01/data-center-site-in-lancaster-county-changes-hands-for-75m-as-developers-add-partner/",
+      "published": "2025-09-01",
+      "source_tier": 2,
+      "source_type": "news",
+      "quote": "216 Greenfield Road is being converted into a data center that is expected to be operating in summer 2027",
+      "verification": "single_source"
+    },
+    {
+      "id": "c23",
+      "field": "sites[1].buildings[0].phases[1] (under construction — estimate support)",
+      "value": "under_construction, cooling installation (2026-07 imagery)",
+      "source_url": "https://epoch.ai/data/ai-data-centers/directory/coreweave-lancaster-greenfield-site",
+      "published": "2026-07",
+      "source_tier": 3,
+      "source_type": "news",
+      "quote": "AI data center under construction ... projected to host ... supported by 92 MW of IT power",
+      "verification": "single_source"
+    },
+    {
+      "id": "c24",
+      "field": "open_questions (two further JV equity commitments, up to $1.7bn)",
+      "value": 1.7,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+      "published": "2026-08-12",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "committed to invest up to $ 1.7 billion ... to acquire equity interests in two separate joint ventures that each hold a data center development project",
+      "verification": "confirmed"
+    }
+  ],
+  "open_questions": [
+    "Lancaster 를 sites 에 넣을지 최종 판단 필요: CoreWeave 는 임차인+투자자이고 개발은 Chirisa Technology Parks·Machine Investment Group(자금 Blue Owl). 엄밀한 '자체 개발·소유'는 아님. 개발사들이 데이터에 없어 primary=coreweave 로 둠",
+    "아직 companies.json 에 없는 회사 id 참조: chirisa-technology-parks, machine-investment-group, blue-owl (Lancaster parties) — 병합 전 회사 항목 추가 또는 parties 에서 제거 필요",
+    "Kenilworth JV 의 65% 파트너('관계사' 데이터센터 개발·운영사) 이름 미공시. Onyx Equities·Machine Investment Group(NEST 캠퍼스 매도 측)일 가능성 있으나 미확인",
+    "Kenilworth 용량 상충: 회사 공식 페이지 40MW 부하 vs NJEDA 인용 보도 250MW. 규칙상 낮은 값(40MW) 채택. 250MW 가 캠퍼스 다단계 전체(별도 필지 토지임차 포함) 잠재치인지 확인 필요",
+    "Kenilworth $322M 인수 주체: 언론은 CoreWeave 가 매입했다고 보도, 10-Q 는 JV(지분 35%)가 캠퍼스를 인수·개발하고 CoreWeave 는 15년 임차 — 등기상 소유자 확인 필요",
+    "10-Q 의 '두 개의 별도 JV(각각 데이터센터 개발 프로젝트 보유), 최대 17억 달러 지분 투자 약정' 대상 사이트 미공시 — Lancaster(CoreWeave 'has invested') 포함 여부 확인 필요. 확인 시 자체 사이트 추가 가능",
+    "Lancaster 실제 착공일·계통 연계 용량·'100MW' 의 기준(IT/총전력) 미공시. 2단계 Harrisburg Pike(최대 300MW 확장분) 일정 없음 → 건물로 넣지 않음",
+    "Kenilworth 는 액체냉각 여부 불명('closed-loop' 냉각만 공개) → 건물 kind 생략",
+    "인도네시아 360MW(IT, 3개 시설, 2028 가동): CoreWeave 가 '컴퓨트 환경을 소유·운영'한다고만 발표, 개발사·위치 미공개 → 사이트 미포함",
+    "계약 전력 수치: 2Q 보도자료 ~3.7GW(6/30) vs 9월 투자자 자료 ~4.2GW(8/11 기준). metrics 에는 6/30 공시치 3.7GW 채택"
+  ]
+}
