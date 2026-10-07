@@ -253,7 +253,27 @@ button { font: inherit; cursor: pointer; }
 .rank-bar i { display: block; height: 100%; }
 .rank-note { font-size: 10.5px; color: var(--text-muted); padding: 0 4px; }
 .legend-companies { display: flex; flex-direction: column; gap: 2px; margin-bottom: 4px; max-height: 160px; overflow-y: auto; }
-@media (max-width: 767px) { .left-panel { display: none; } }
+/* 모바일 */
+.top-actions { display: flex; gap: 6px; align-items: center; }
+.sheet-btn { display: none; }
+@media (max-width: 767px) {
+  .sheet-btn { display: grid; }
+  /* 순위·사이트 패널: 평소엔 숨기고, 상단 버튼으로 바텀시트처럼 열기 */
+  .left-panel { display: none; }
+  .left-panel.sheet-open {
+    display: flex; position: fixed; left: 8px; right: 8px; bottom: 8px; width: auto;
+    max-height: 55dvh; z-index: 66; background: #fff; border-radius: 16px 16px 12px 12px;
+  }
+  /* 하단: 간단 범례 → 전체 폭 슬라이더 → 짧은 면책 문구 순서로 세로 쌓기 */
+  .bottom { flex-direction: column; align-items: stretch; gap: 6px; }
+  .legend { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 4px; padding: 6px 8px; }
+  .legend .seg.small { margin-bottom: 0; flex: 1 1 140px; }
+  .legend-title, .legend-companies { display: none; }
+  .legend-item { font-size: 11px; padding: 2px 3px; }
+  .timeline { order: 2; align-self: stretch; }
+  .footer { order: 3; align-items: center; }
+  .disclaimer { max-width: none; text-align: center; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+}
 
 /* ================= M3: 타임라인 슬라이더 ================= */
 .timeline { flex: 1; max-width: 560px; display: flex; align-items: center; gap: 12px; padding: 10px 16px 8px 10px; align-self: flex-end; }

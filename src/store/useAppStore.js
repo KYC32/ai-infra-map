@@ -41,6 +41,8 @@ export const useAppStore = create((set, get) => ({
   rankMetric: 'secured',
   // 왼쪽 패널 탭: 'rank'(회사 순위) | 'sites'(사이트 목록)
   leftTab: 'rank',
+  // 모바일: 순위·사이트 패널을 바텀시트로 열었는지
+  sheetOpen: false,
 
   // ----- 액션 -----
   // 원본(infra.json)을 받으면 시작 날짜를 정하고 화면용 데이터를 만듦
@@ -118,6 +120,7 @@ export const useAppStore = create((set, get) => ({
   setColorMode: (mode) => { set({ colorMode: mode }); get().syncHash() },
   setRankMetric: (metric) => set({ rankMetric: metric }),
   setLeftTab: (tab) => set({ leftTab: tab }),
+  toggleSheet: () => set({ sheetOpen: !get().sheetOpen }),
 }))
 
 // 선택된 사이트 객체를 편하게 꺼내는 셀렉터

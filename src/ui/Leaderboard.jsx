@@ -18,8 +18,9 @@ export default function LeftPanel() {
   const t = useT()
   const leftTab = useAppStore((s) => s.leftTab)
   const setLeftTab = useAppStore((s) => s.setLeftTab)
+  const sheetOpen = useAppStore((s) => s.sheetOpen)
   return (
-    <div className="left-panel panel">
+    <div className={`left-panel panel${sheetOpen ? ' sheet-open' : ''}`}>
       <div className="tabs">
         <button className={leftTab === 'rank' ? 'on' : ''} onClick={() => setLeftTab('rank')}>{t.rank.tab}</button>
         <button className={leftTab === 'sites' ? 'on' : ''} onClick={() => setLeftTab('sites')}>{t.rank.sitesTab}</button>

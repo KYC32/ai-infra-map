@@ -4,7 +4,10 @@
     "name": "Galaxy Digital",
     "name_ko": "갤럭시 디지털",
     "group": "miner",
-    "ticker": { "symbol": "GLXY", "exchange": "NASDAQ" },
+    "ticker": {
+      "symbol": "GLXY",
+      "exchange": "NASDAQ"
+    },
     "color": "#c3a6e8",
     "hq_country": "US",
     "summary_ko": "뉴욕 본사의 디지털자산·데이터센터 기업. 텍사스 Helios 비트코인 채굴장을 AI/HPC 데이터센터로 전환해 CoreWeave에 526MW(IT)를 15년 임대했으며, 텍사스 전역에서 5.7GW 규모의 전력 파이프라인을 추진 중이다.",
@@ -108,11 +111,11 @@
         "summary_en": "Former bitcoin mine (acquired from Argo in 2022) converted to an AI/HPC campus. Of 1.63GW ERCOT-approved power, 800MW gross (526MW IT) is leased to CoreWeave for 15 years. Phase I (133MW IT) fully delivered by June 2026; Phase II (260MW IT) deliveries from Q2 2027; Phase III (133MW IT) targeted for 2028. Uncontracted 830MW slated to receive power in 2028.",
         "power": [
           {
-            "from": "2025-05",
+            "from": "2025-03",
             "secured_mw": 800,
             "energized_mw": 0,
             "basis": "reported",
-            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000162828025027997/glxy-20250527.htm"
+            "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm"
           },
           {
             "from": "2026-01-15",
@@ -143,7 +146,9 @@
             "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000009/glxy-20251231xpressrelease_.htm"
           }
         ],
-        "substation": { "voltage": "345kV" },
+        "substation": {
+          "voltage": "345kV"
+        },
         "buildings": [
           {
             "id": "phase-1",
@@ -358,7 +363,7 @@
             "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm"
           },
           {
-            "note": "power 의 energized_mw 는 '데이터홀에 인도된 gross 전력' 기준으로 해석함. 2025-05~2026-05 는 채굴 중단 후 AI 부하 인도 전이라 0 으로 둠 (변전소 자체는 2025년 이전 800MW 변압기 설치 완료)",
+            "note": "power 의 energized_mw 는 '데이터홀에 인도된 gross 전력' 기준으로 해석함. 2025-03~2026-05 는 채굴 중단 후 AI 부하 인도 전이라 0 으로 둠 (변전소 자체는 2025년 이전 800MW 변압기 설치 완료)",
             "note_en": "energized_mw is interpreted as gross power delivered to data halls; set to 0 between mining shutdown and first delivery (substation transformers for 800MW were installed before 2025)",
             "source": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm"
           },
@@ -421,8 +426,8 @@
         "deliveries": [],
         "timeline": [
           {
-            "date": "2026-06-23",
-            "event": "맥그리거 시의회, Galaxy 'Project Merlin' 데이터센터 계획 승인 ($4억+ 투자, 500에이커)",
+            "date": "2026-06",
+            "event": "맥그리거 시의회, Galaxy 'Project Merlin' 데이터센터 계획 승인 (500에이커, $4억+ 투자 보도)",
             "event_en": "McGregor city council approves Galaxy's Project Merlin ($400M+, 500 acres)",
             "source": "https://www.kltv.com/2026/06/24/mcgregor-city-council-approves-new-data-center-plans/"
           },
@@ -453,7 +458,12 @@
     {
       "id": "c1",
       "field": "sites[0].buildings[0] (Phase I 133MW IT / 200MW gross, operating)",
-      "value": { "it_mw": 133, "gross_mw": 200, "status": "operating", "from": "2026-06" },
+      "value": {
+        "it_mw": 133,
+        "gross_mw": 200,
+        "status": "operating",
+        "from": "2026-06"
+      },
       "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm",
       "published": "2026-08-05",
       "source_tier": 1,
@@ -519,7 +529,12 @@
     {
       "id": "c7",
       "field": "sites[0].buildings[1] (Phase II 2 buildings, 8 halls, 400MW utility / 260MW IT)",
-      "value": { "buildings": 2, "data_halls": 8, "gross_mw": 400, "it_mw": 260 },
+      "value": {
+        "buildings": 2,
+        "data_halls": 8,
+        "gross_mw": 400,
+        "it_mw": 260
+      },
       "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000079/glxy-20260728.htm",
       "published": "2026-07-28",
       "source_tier": 1,
@@ -530,23 +545,30 @@
     {
       "id": "c8",
       "field": "sites[0].buildings[1].phases[3] / buildings[2].phases[1] (Phase II 2027, Phase III 2028)",
-      "value": { "phase_2": "2027", "phase_3": "2028" },
+      "value": {
+        "phase_2": "2027",
+        "phase_3": "2028"
+      },
       "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000073/glxy-20250930xpressrelease.htm",
       "published": "2025-10-21",
       "source_tier": 1,
       "source_type": "sec_filing",
-      "quote": "full capacity for Phase I expected to be delivered by the end of the first half of 2026, Phase II throughout 2027 and Phase III starting in 2028",
+      "quote": "Phase II throughout 2027 and Phase III starting in 2028",
       "verification": "confirmed"
     },
     {
       "id": "c9",
       "field": "sites[0].buildings (phase gross split 200/400/200 = 800MW)",
-      "value": { "phase_1": 200, "phase_2": 400, "phase_3": 200 },
+      "value": {
+        "phase_1": 200,
+        "phase_2": 400,
+        "phase_3": 200
+      },
       "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000047/exhibit992-q12026overvie.htm",
       "published": "2026-04-28",
       "source_tier": 1,
       "source_type": "sec_filing",
-      "quote": "Approximately 200 MW of gross power capacity for Phase I, approximately 400 MW of gross power capacity for Phase II, and approximately 200 MW ... for Phase III.",
+      "quote": "Approximately 200 MW of gross power capacity for Phase I, approximately 400 MW ... for Phase II, and approximately 200 MW ... for Phase III.",
       "verification": "confirmed"
     },
     {
@@ -596,7 +618,11 @@
     {
       "id": "c14",
       "field": "sites[0].power[1] (ERCOT +830MW, total 1.63GW)",
-      "value": { "added_mw": 830, "total_mw": 1630, "date": "2026-01-15" },
+      "value": {
+        "added_mw": 830,
+        "total_mw": 1630,
+        "date": "2026-01-15"
+      },
       "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000005/heliosercotapproval_1x15.htm",
       "published": "2026-01-15",
       "source_tier": 1,
@@ -607,7 +633,11 @@
     {
       "id": "c15",
       "field": "sites[0].buildings[3] (830MW uncontracted, Base Load, power in 2028)",
-      "value": { "gross_mw": 830, "ercot": "Batch Zero Base Load", "energize": "2028" },
+      "value": {
+        "gross_mw": 830,
+        "ercot": "Batch Zero Base Load",
+        "energize": "2028"
+      },
       "source_url": "https://investingnews.com/galaxy-provides-update-on-ercot-batch-zero-large-load-classifications",
       "published": "2026-09-08",
       "source_tier": 1,
@@ -651,7 +681,11 @@
     {
       "id": "c19",
       "field": "sites[0].parties[2] (CoreWeave tenant, 526MW IT, 15 years)",
-      "value": { "company": "coreweave", "it_mw": 526, "term_years": 15 },
+      "value": {
+        "company": "coreweave",
+        "it_mw": 526,
+        "term_years": 15
+      },
       "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm",
       "published": "2026-02-26",
       "source_tier": 1,
@@ -673,7 +707,10 @@
     {
       "id": "c21",
       "field": "sites[0].power[3] (Phase II+III 600MW from Q2 2027)",
-      "value": { "gross_mw": 600, "from": "2027-Q2" },
+      "value": {
+        "gross_mw": 600,
+        "from": "2027-Q2"
+      },
       "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000091/glxy-20260630.htm",
       "published": "2026-08-10",
       "source_tier": 1,
@@ -684,7 +721,11 @@
     {
       "id": "c22",
       "field": "sites[1].power[0] / acres (Merlin 74MW initial, 500 acres, 500MW potential)",
-      "value": { "secured_mw": 74, "acres": 500, "potential_mw": 500 },
+      "value": {
+        "secured_mw": 74,
+        "acres": 500,
+        "potential_mw": 500
+      },
       "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm",
       "published": "2026-08-05",
       "source_tier": 1,
@@ -695,18 +736,22 @@
     {
       "id": "c23",
       "field": "sites[1].timeline (McGregor council approval)",
-      "value": "2026-06-23",
+      "value": "2026-06",
       "source_url": "https://www.kltv.com/2026/06/24/mcgregor-city-council-approves-new-data-center-plans/",
       "published": "2026-06-24",
       "source_tier": 2,
       "source_type": "news",
-      "quote": "Council approval of Project Merlin on 500 acres; $400 million or more in capital investment.",
+      "quote": "the city council approved plans for a new data center. The company building the facility is Galaxy",
       "verification": "single_source"
     },
     {
       "id": "c24",
       "field": "company.metrics.power_pipeline_gw / open_questions (Caspian 700MW, Selene 900MW)",
-      "value": { "pipeline_gw": 5.7, "caspian_mw": 700, "selene_mw": 900 },
+      "value": {
+        "pipeline_gw": 5.7,
+        "caspian_mw": 700,
+        "selene_mw": 900
+      },
       "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/exhibit992-q22026overvie.htm",
       "published": "2026-08-05",
       "source_tier": 1,
@@ -734,6 +779,20 @@
       "source_tier": 1,
       "source_type": "sec_filing",
       "quote": "completed its previously announced private offering (the \"Offering\") of 9.875% Senior Secured Notes due 2031",
+      "verification": "confirmed"
+    },
+    {
+      "id": "c27",
+      "field": "sites[0].power[0] (800MW approved, transformers installed before 2025)",
+      "value": {
+        "secured_mw": 800,
+        "from": "2025-03"
+      },
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm",
+      "published": "2026-02-26",
+      "source_tier": 1,
+      "source_type": "sec_filing",
+      "quote": "Prior to 2025, we had six main power transformers installed at our project substation, enabling us to deliver the full 800 MW",
       "verification": "confirmed"
     }
   ],
